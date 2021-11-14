@@ -43,7 +43,7 @@ export class antlr4tsSQL {
     } else if (this.dialect === SQLDialect.MYSQL) {
       lexer = new MySQLLexer(chars);
     } else if (this.dialect === SQLDialect.BigQuery) {
-      lexer = new BigQueryLexer(chars);
+      lexer = new BigQueryLexer(caseChangingCharStream);
     }
     if (errorListeners !== null && errorListeners !== undefined) {
       lexer.removeErrorListener(ConsoleErrorListener.INSTANCE);
