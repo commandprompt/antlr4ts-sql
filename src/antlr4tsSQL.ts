@@ -1,4 +1,11 @@
-import { CommonTokenStream, ANTLRInputStream, Parser, ANTLRErrorListener, ConsoleErrorListener, Lexer } from "antlr4ts";
+import {
+  CommonTokenStream,
+  ANTLRInputStream,
+  Parser,
+  ANTLRErrorListener,
+  ConsoleErrorListener,
+  Lexer,
+} from "antlr4ts";
 import { ParseTree } from "antlr4ts/tree/ParseTree";
 import { CaseChangingStream } from "./models/CaseChangingStream";
 import { SQLDialect } from "./models/SQLDialect";
@@ -8,18 +15,22 @@ import { PLpgSQLLexer } from "./grammar-output/plpgsql/PLpgSQLLexer";
 import { PLpgSQLParser } from "./grammar-output/plpgsql/PLpgSQLParser";
 import { PlSqlParser } from "./grammar-output/plsql/PlSqlParser";
 import { PlSqlLexer } from "./grammar-output/plsql/PlSqlLexer";
-import {TSqlParser} from './grammar-output/tsql/TSqlParser';
-import {TSqlLexer} from './grammar-output/tsql/TSqlLexer';
+import { TSqlParser } from "./grammar-output/tsql/TSqlParser";
+import { TSqlLexer } from "./grammar-output/tsql/TSqlLexer";
+import { BigQueryParser } from "./grammar-output/bigquery/BigQueryParser";
+import { BigQueryLexer } from "./grammar-output/bigquery/BigQueryLexer";
 
 export class antlr4tsSQL {
-
   dialect: SQLDialect;
 
   constructor(dialect: SQLDialect) {
     this.dialect = dialect;
   }
 
-  getTokens(sqlScript: string, errorListeners?: ANTLRErrorListener<any>[]): CommonTokenStream {
+  getTokens(
+    sqlScript: string,
+    errorListeners?: ANTLRErrorListener<any>[]
+  ): CommonTokenStream {
     const chars = new ANTLRInputStream(sqlScript);
     const caseChangingCharStream = new CaseChangingStream(chars, true);
     let lexer: Lexer = null;
@@ -31,6 +42,8 @@ export class antlr4tsSQL {
       lexer = new PLpgSQLLexer(chars);
     } else if (this.dialect === SQLDialect.MYSQL) {
       lexer = new MySQLLexer(chars);
+    } else if (this.dialect === SQLDialect.BigQuery) {
+      lexer = new BigQueryLexer(chars);
     }
     if (errorListeners !== null && errorListeners !== undefined) {
       lexer.removeErrorListener(ConsoleErrorListener.INSTANCE);
@@ -42,7 +55,10 @@ export class antlr4tsSQL {
     return tokens;
   }
 
-  getParser(tokens: CommonTokenStream, errorListeners?: ANTLRErrorListener<any>[]): Parser {
+  getParser(
+    tokens: CommonTokenStream,
+    errorListeners?: ANTLRErrorListener<any>[]
+  ): Parser {
     let parser: Parser = null;
     if (this.dialect === SQLDialect.TSQL) {
       parser = new TSqlParser(tokens);
@@ -52,6 +68,8 @@ export class antlr4tsSQL {
       parser = new PLpgSQLParser(tokens);
     } else if (this.dialect === SQLDialect.MYSQL) {
       parser = new MultiQueryMySQLParser(tokens);
+    } else if (this.dialect === SQLDialect.BigQuery) {
+      parser = new BigQueryParser(tokens);
     }
     if (errorListeners !== null && errorListeners !== undefined) {
       parser.removeErrorListener(ConsoleErrorListener.INSTANCE);
@@ -71,6 +89,8 @@ export class antlr4tsSQL {
       return (parser as PLpgSQLParser).sql();
     } else if (parser instanceof MultiQueryMySQLParser) {
       return (parser as MultiQueryMySQLParser).sql_script();
+    } else if (parser instanceof BigQueryParser) {
+      return parser.tsql_file();
     }
     return null;
   }
@@ -84,5 +104,4 @@ export class antlr4tsSQL {
   getParseTreeFromSQL(sqlScript: string): ParseTree {
     return this.getParseTree(this.getParserFromSQL(sqlScript));
   }
-
 }
