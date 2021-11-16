@@ -62,15 +62,12 @@ from_item:
 		| using_clause
 	)
 	| LR_BRACKET query_statement RR_BRACKET (AS? alias_name)?
-	| field_path
 	| UNNEST LR_BRACKET array_expr RR_BRACKET (AS? alias_name)? (
 		WITH OFFSET (AS? alias_name)
 	)?
-	| UNNEST LR_BRACKET array_path RR_BRACKET (AS? alias_name)? (
-		WITH OFFSET (AS? alias_name)
-	)?
-	| array_path (AS? alias_name)? (WITH OFFSET (AS? alias_name))?;
-//| with_query_name (AS? alias_name)?
+	| cte_name (AS? alias_name)?;
+// | field_path | UNNEST LR_BRACKET array_path RR_BRACKET (AS? alias_name)? ( WITH OFFSET (AS?
+// alias_name) )? | array_path (AS? alias_name)? (WITH OFFSET (AS? alias_name))?;
 
 // Where Statement can contain any boolean expression
 where_statement: WHERE bool_expression;
