@@ -7,11 +7,11 @@ beforeAll(() => {
 });
 
 test("can parse and tokenize a query", () => {
-  const query = "SELECT * FROM table1";
+  const query = "SELECT * FROM `sch1.table";
   const tokens = antlr4tssql.getTokens(query);
   const parser = antlr4tssql.getParser(tokens);
   expect(parser instanceof BigQueryGrammar.BigQueryParser).toBeTruthy();
   const parseTree = antlr4tssql.getParseTree(parser);
-  expect(tokens.getTokens().length).toBe(4 + 1); // 4 "words", 1 EOF, the BigQuery Grammar skips whitespace characters
+  expect(tokens.getTokens().length).toBe(7 + 1); // 4 "words", 1 EOF, the BigQuery Grammar skips whitespace characters
   expect(parseTree instanceof BigQueryGrammar.SqlContext).toBeTruthy();
 });

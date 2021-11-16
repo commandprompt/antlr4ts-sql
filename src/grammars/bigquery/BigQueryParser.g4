@@ -37,17 +37,21 @@ query_expr:
 // A Select Statement can select from table columns w/wo aliases, wildcard expressions, or any other 'expr' (Like a function call)
 select_statement:
 	SELECT (ALL | DISTINCT)? (
-		(expr? '.'? '*' (except_statement)? (replace_statement)?)
+		(
+			expr? DOT? STAR (except_statement)? (
+				replace_statement
+			)?
+		)
 		| expr (AS? alias_name)?
 	) (
-		',' (
-			(expr? '*' (except_statement)? (replace_statement)?)
+		COMMA (
+			(expr? STAR (except_statement)? (replace_statement)?)
 			| expr (AS? alias_name)?
 		)
 	)* from_statement? where_statement? group_statement? having_statement? window_statement?;
 
 // From Statement can have one or more 'from_item's, separated by a comma
-from_statement: FROM from_item (',' from_item)*;
+from_statement: FROM from_item (COMMA from_item)*;
 
 // From Item - WIP From Items can be table expressions (project.dataset.table, Query Statements
 // (subqueries), or a valid array expression). Array expressions are still WIP
@@ -74,8 +78,8 @@ where_statement: WHERE bool_expression;
 // Group Statement can contain one or more expressions, separated by commas
 group_statement:
 	GROUP BY (
-		(expr (',' expr)*)
-		| ROLLUP LR_BRACKET expr (',' expr)* RR_BRACKET
+		(expr (COMMA expr)*)
+		| ROLLUP LR_BRACKET expr (COMMA expr)* RR_BRACKET
 	);
 
 // Having statement can contain a boolean expression (TODO: Can HAVING statement contain comma separated boolean expressions?)
@@ -87,13 +91,13 @@ window_statement:
 
 // Order Statement can contain any number of comma separated expressions to order by.
 order_clause:
-	ORDER BY expr (ASC | DESC)? (',' expr (ASC | DESC)?)*;
+	ORDER BY expr (ASC | DESC)? (COMMA expr (ASC | DESC)?)*;
 
 // Limit Statement can contain a limit number and an optional offset
 limit_clause: LIMIT count (OFFSET skip_rows)?;
 
 // Unary Operators
-unary_operator: '-' | '~' | NOT;
+unary_operator: '-' | BIT_NOT | NOT;
 
 // Main expression rule can expand to any valid BigQuery expression. Still WIP
 expr:
@@ -106,12 +110,12 @@ expr:
 		| SAFE_ORDINAL
 	) LR_BRACKET expr RR_BRACKET RIGHT_BRACKET
 	| unary_operator expr
-	| expr ('*' | '/') expr
-	| expr ('+' | '-') expr
+	| expr (STAR | DIVIDE) expr
+	| expr (PLUS | MINUS) expr
 	| expr (LESS_LESS | GREATER_GREATER) expr
-	| expr '&' expr
-	| expr '^' expr
-	| expr '|' expr
+	| expr BIT_AND expr
+	| expr BIT_XOR expr
+	| expr BIT_OR expr
 	| expr (
 		EQUAL
 		| LESS
@@ -127,13 +131,13 @@ expr:
 	| IS NOT? FALSE
 	// TODO: Separate this out into separate STRUCT and ARRAY rules.
 	| expr NOT? IN (
-		( LR_BRACKET expr (',' expr)* RR_BRACKET)
+		( LR_BRACKET expr (COMMA expr)* RR_BRACKET)
 		| query_statement
 		| UNNEST LR_BRACKET array_expr RR_BRACKET
 	)
 	| expr AND expr
 	| expr OR expr
-	| function_name LR_BRACKET ((expr (',' expr)*) | '*') RR_BRACKET
+	| function_name LR_BRACKET ((expr (COMMA expr)*) | STAR) RR_BRACKET
 	| cast_expr
 	| LR_BRACKET expr RR_BRACKET
 	| column_expr
@@ -144,15 +148,15 @@ cast_expr: CAST LR_BRACKET expr AS datatype_name RR_BRACKET;
 
 column_expr:
 	BK_QUOTE column_expr BK_QUOTE
-	| (((project_name '.')? dataset_name '.')? table_name '.')? column_name;
+	| (((project_name DOT)? dataset_name DOT)? table_name DOT)? column_name;
 // Except Statement can exclude any number of comma separated column names.
 except_statement:
-	EXCEPT LR_BRACKET column_name (',' column_name)* RR_BRACKET;
+	EXCEPT LR_BRACKET column_name (COMMA column_name)* RR_BRACKET;
 
 // Replace Statement can replace any number of optionally aliased, comma separated expressions.
 replace_statement:
 	REPLACE LR_BRACKET expr (AS? alias_name)? (
-		',' expr (AS? alias_name)*
+		COMMA expr (AS? alias_name)*
 	) RR_BRACKET;
 
 // Join Type rule can expand to be any type of JOIN keyword.
@@ -174,7 +178,7 @@ set_op:
 
 // Using Clause expands to a comma separated list of names
 using_clause:
-	USING LR_BRACKET join_name (',' join_name)* RR_BRACKET;
+	USING LR_BRACKET join_name (COMMA join_name)* RR_BRACKET;
 
 // Field path is WIP
 field_path:;
@@ -202,16 +206,16 @@ skip_rows: number;
 //with_query_name : ; WITH statement (CTE statement)
 with_statement:
 	WITH cte_name AS LR_BRACKET query_expr RR_BRACKET (
-		',' cte_name AS LR_BRACKET query_expr RR_BRACKET
+		COMMA cte_name AS LR_BRACKET query_expr RR_BRACKET
 	)*;
 
 // Name can be any ID or string, with optional quotes and parens
 name:
 	ID
-	| '"' name '"'
+	| DQOUTE name DQOUTE
 	| LR_BRACKET name RR_BRACKET
 	| BK_QUOTE name BK_QUOTE
-	| '\'' name '\'';
+	| QUOTE name QUOTE;
 // Name rules
 
 // Each specific type of name just expands to the parent name rule. This lets us assign handlers to
@@ -229,7 +233,7 @@ member_name: name;
 project_name: name;
 struct_name: name;
 table_name: name;
-table_expr: (((project_name '.')? dataset_name '.')? table_name)
+table_expr: (((project_name DOT)? dataset_name DOT)? table_name)
 	| BK_QUOTE table_expr BK_QUOTE;
 
 // NUMBER LITERALS
