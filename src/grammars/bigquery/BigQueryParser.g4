@@ -207,7 +207,12 @@ with_statement:
 	)*;
 
 // Name can be any ID or string, with optional quotes and parens
-name: ID | BK_QUOTE ID BK_QUOTE;
+name:
+	ID
+	| DQOUTE name DQOUTE
+	| LR_BRACKET name RR_BRACKET
+	| BK_QUOTE name BK_QUOTE
+	| QUOTE name QUOTE;
 // Name rules
 
 // Each specific type of name just expands to the parent name rule. This lets us assign handlers to
