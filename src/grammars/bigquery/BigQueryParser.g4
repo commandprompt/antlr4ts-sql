@@ -225,13 +225,8 @@ member_name: name;
 project_name: name;
 struct_name: name;
 table_name: name;
-pure_project_name: ID;
-pure_dataset_name: ID;
-pure_table_name: ID;
-table_expr: ((project_name DOT)? dataset_name DOT)? table_name
-	| BK_QUOTE (
-		((pure_project_name DOT)? pure_dataset_name DOT)? pure_table_name
-	) BK_QUOTE;
+table_expr: (((project_name DOT)? dataset_name DOT)? table_name)
+	| BK_QUOTE table_expr BK_QUOTE;
 
 // NUMBER LITERALS
 number: integer_type | float_type;

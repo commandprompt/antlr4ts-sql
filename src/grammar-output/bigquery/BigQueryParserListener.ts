@@ -48,9 +48,6 @@ import { Member_nameContext } from "./BigQueryParser";
 import { Project_nameContext } from "./BigQueryParser";
 import { Struct_nameContext } from "./BigQueryParser";
 import { Table_nameContext } from "./BigQueryParser";
-import { Pure_project_nameContext } from "./BigQueryParser";
-import { Pure_dataset_nameContext } from "./BigQueryParser";
-import { Pure_table_nameContext } from "./BigQueryParser";
 import { Table_exprContext } from "./BigQueryParser";
 import { NumberContext } from "./BigQueryParser";
 import { Integer_typeContext } from "./BigQueryParser";
@@ -564,39 +561,6 @@ export interface BigQueryParserListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	exitTable_name?: (ctx: Table_nameContext) => void;
-
-	/**
-	 * Enter a parse tree produced by `BigQueryParser.pure_project_name`.
-	 * @param ctx the parse tree
-	 */
-	enterPure_project_name?: (ctx: Pure_project_nameContext) => void;
-	/**
-	 * Exit a parse tree produced by `BigQueryParser.pure_project_name`.
-	 * @param ctx the parse tree
-	 */
-	exitPure_project_name?: (ctx: Pure_project_nameContext) => void;
-
-	/**
-	 * Enter a parse tree produced by `BigQueryParser.pure_dataset_name`.
-	 * @param ctx the parse tree
-	 */
-	enterPure_dataset_name?: (ctx: Pure_dataset_nameContext) => void;
-	/**
-	 * Exit a parse tree produced by `BigQueryParser.pure_dataset_name`.
-	 * @param ctx the parse tree
-	 */
-	exitPure_dataset_name?: (ctx: Pure_dataset_nameContext) => void;
-
-	/**
-	 * Enter a parse tree produced by `BigQueryParser.pure_table_name`.
-	 * @param ctx the parse tree
-	 */
-	enterPure_table_name?: (ctx: Pure_table_nameContext) => void;
-	/**
-	 * Exit a parse tree produced by `BigQueryParser.pure_table_name`.
-	 * @param ctx the parse tree
-	 */
-	exitPure_table_name?: (ctx: Pure_table_nameContext) => void;
 
 	/**
 	 * Enter a parse tree produced by `BigQueryParser.table_expr`.
