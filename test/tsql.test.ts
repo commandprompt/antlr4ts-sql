@@ -1,13 +1,13 @@
-import { antlr4tsSQL, SQLDialect } from '../dist/index';
-import { TSQLGrammar } from '../dist/index';
+import { antlr4tsSQL, SQLDialect } from "../dist/index";
+import { TSQLGrammar } from "../dist/index";
 
 let antlr4tssql = null;
 beforeAll(() => {
   antlr4tssql = new antlr4tsSQL(SQLDialect.TSQL);
 });
 
-test('can parse and tokenize a query', () => {
-  const query = 'SELECT * FROM table1';
+test("can parse and tokenize a query", () => {
+  const query = "SELECT * FROM table1";
   const tokens = antlr4tssql.getTokens(query);
   const parser = antlr4tssql.getParser(tokens);
   expect(parser instanceof TSQLGrammar.TSqlParser).toBeTruthy();

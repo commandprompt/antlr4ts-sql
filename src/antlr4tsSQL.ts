@@ -90,7 +90,7 @@ export class antlr4tsSQL {
     } else if (parser instanceof MultiQueryMySQLParser) {
       return (parser as MultiQueryMySQLParser).sql_script();
     } else if (parser instanceof BigQueryParser) {
-      return parser.tsql_file();
+      return parser.sql();
     }
     return null;
   }
