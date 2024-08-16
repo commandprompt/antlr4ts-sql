@@ -17,8 +17,6 @@ import { PlSqlParser } from "./grammar-output/plsql/PlSqlParser";
 import { PlSqlLexer } from "./grammar-output/plsql/PlSqlLexer";
 import { TSqlParser } from "./grammar-output/tsql/TSqlParser";
 import { TSqlLexer } from "./grammar-output/tsql/TSqlLexer";
-import { BigQueryParser } from "./grammar-output/bigquery/BigQueryParser";
-import { BigQueryLexer } from "./grammar-output/bigquery/BigQueryLexer";
 
 export class antlr4tsSQL {
   dialect: SQLDialect;
@@ -42,8 +40,6 @@ export class antlr4tsSQL {
       lexer = new PLpgSQLLexer(chars);
     } else if (this.dialect === SQLDialect.MYSQL) {
       lexer = new MySQLLexer(chars);
-    } else if (this.dialect === SQLDialect.BigQuery) {
-      lexer = new BigQueryLexer(caseChangingCharStream);
     }
     if (errorListeners !== null && errorListeners !== undefined) {
       lexer.removeErrorListener(ConsoleErrorListener.INSTANCE);
@@ -68,8 +64,6 @@ export class antlr4tsSQL {
       parser = new PLpgSQLParser(tokens);
     } else if (this.dialect === SQLDialect.MYSQL) {
       parser = new MultiQueryMySQLParser(tokens);
-    } else if (this.dialect === SQLDialect.BigQuery) {
-      parser = new BigQueryParser(tokens);
     }
     if (errorListeners !== null && errorListeners !== undefined) {
       parser.removeErrorListener(ConsoleErrorListener.INSTANCE);
@@ -89,8 +83,6 @@ export class antlr4tsSQL {
       return (parser as PLpgSQLParser).sql();
     } else if (parser instanceof MultiQueryMySQLParser) {
       return (parser as MultiQueryMySQLParser).sql_script();
-    } else if (parser instanceof BigQueryParser) {
-      return parser.sql();
     }
     return null;
   }

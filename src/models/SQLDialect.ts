@@ -3,5 +3,4 @@ export enum SQLDialect {
   TSQL = "TSQL",
   PLSQL = "PLSQL",
   PLpgSQL = "PLpgSQL",
-  BigQuery = "BigQuery",
 }

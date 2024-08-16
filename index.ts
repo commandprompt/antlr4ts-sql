@@ -27,7 +27,3 @@ export * from "./src/grammar-output/plsql/PlSqlLexer";
 export * as TSQLGrammar from "./src/grammar-output/tsql/TSqlParser";
 export * from "./src/grammar-output/tsql/TSqlParserListener";
 export * from "./src/grammar-output/tsql/TSqlLexer";
-
-export * as BigQueryGrammar from "./src/grammar-output/bigquery/BigQueryParser";
-export * from "./src/grammar-output/bigquery/BigQueryParserListener";
-export * from "./src/grammar-output/bigquery/BigQueryLexer";

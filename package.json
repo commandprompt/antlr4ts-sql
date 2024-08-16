@@ -1,6 +1,6 @@
 {
   "name": "antlr4ts-sql",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "Pre-built ANTL4 lexers and parsers for SQL: PostgreSQL, MySQL, SQL Server and Oracle (PL/SQL)",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -13,7 +13,6 @@
     "antlr4ts-plsql": "antlr4ts -Xexact-output-dir -o src/grammar-output/plsql -package parsers src/grammars/plsql/PlSqlLexer.g4 src/grammars/plsql/PlSqlParser.g4",
     "antlr4ts-plpgsql": "antlr4ts -Xexact-output-dir -o src/grammar-output/plpgsql -package parsers src/grammars/plpgsql/PLpgSQLLexer.g4 src/grammars/plpgsql/PLpgSQLParser.g4",
     "antlr4ts-tsql": "antlr4ts -Xexact-output-dir -o src/grammar-output/tsql -package parsers src/grammars/tsql/TSqlLexer.g4 src/grammars/tsql/TSqlParser.g4",
-    "antlr4ts-bigquery": "antlr4ts -Xexact-output-dir -o src/grammar-output/bigquery -package parsers src/grammars/bigquery/BigQueryLexer.g4 src/grammars/bigquery/BigQueryParser.g4",
     "build": "tsc --build --clean && tsc",
     "test": "npx jest",
     "postinstall": "npm run build"
@@ -34,8 +33,7 @@
     "database",
     "plpgsql",
     "plsql",
-    "tsql",
-    "bigquery"
+    "tsql"
   ],
   "author": "modelDBA",
   "license": "MIT",
@@ -49,8 +47,8 @@
   "devDependencies": {
     "@types/jest": "^26.0.20",
     "antlr4ts-cli": "^0.5.0-alpha.4",
-    "jest": "^26.6.3",
-    "ts-jest": "^26.5.3",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.2.4",
     "typescript": "^4.2.3"
   }
 }
