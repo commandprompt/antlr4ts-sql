@@ -24,6 +24,3 @@ export * as PlSQLGrammar from "./src/grammar-output/plsql/PlSqlParser";
 export * from "./src/grammar-output/plsql/PlSqlParserListener";
 export * from "./src/grammar-output/plsql/PlSqlLexer";
 
-export * as TSQLGrammar from "./src/grammar-output/tsql/TSqlParser";
-export * from "./src/grammar-output/tsql/TSqlParserListener";
-export * from "./src/grammar-output/tsql/TSqlLexer";

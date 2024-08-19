@@ -15,8 +15,6 @@ import { PLpgSQLLexer } from "./grammar-output/plpgsql/PLpgSQLLexer";
 import { PLpgSQLParser } from "./grammar-output/plpgsql/PLpgSQLParser";
 import { PlSqlParser } from "./grammar-output/plsql/PlSqlParser";
 import { PlSqlLexer } from "./grammar-output/plsql/PlSqlLexer";
-import { TSqlParser } from "./grammar-output/tsql/TSqlParser";
-import { TSqlLexer } from "./grammar-output/tsql/TSqlLexer";
 
 export class antlr4tsSQL {
   dialect: SQLDialect;
@@ -32,9 +30,7 @@ export class antlr4tsSQL {
     const chars = new ANTLRInputStream(sqlScript);
     const caseChangingCharStream = new CaseChangingStream(chars, true);
     let lexer: Lexer = null;
-    if (this.dialect === SQLDialect.TSQL) {
-      lexer = new TSqlLexer(caseChangingCharStream);
-    } else if (this.dialect === SQLDialect.PLSQL) {
+    if (this.dialect === SQLDialect.PLSQL) {
       lexer = new PlSqlLexer(caseChangingCharStream);
     } else if (this.dialect === SQLDialect.PLpgSQL) {
       lexer = new PLpgSQLLexer(chars);
@@ -56,9 +52,7 @@ export class antlr4tsSQL {
     errorListeners?: ANTLRErrorListener<any>[]
   ): Parser {
     let parser: Parser = null;
-    if (this.dialect === SQLDialect.TSQL) {
-      parser = new TSqlParser(tokens);
-    } else if (this.dialect === SQLDialect.PLSQL) {
+    if (this.dialect === SQLDialect.PLSQL) {
       parser = new PlSqlParser(tokens);
     } else if (this.dialect === SQLDialect.PLpgSQL) {
       parser = new PLpgSQLParser(tokens);
@@ -75,9 +69,7 @@ export class antlr4tsSQL {
   }
 
   getParseTree(parser: Parser): ParseTree {
-    if (parser instanceof TSqlParser) {
-      return parser.tsql_file();
-    } else if (parser instanceof PlSqlParser) {
+    if (parser instanceof PlSqlParser) {
       return (parser as PlSqlParser).sql_script();
     } else if (parser instanceof PLpgSQLParser) {
       return (parser as PLpgSQLParser).sql();
