@@ -13,8 +13,7 @@
     "antlr4ts-plsql": "antlr4ts -Xexact-output-dir -o src/grammar-output/plsql -package parsers src/grammars/plsql/PlSqlLexer.g4 src/grammars/plsql/PlSqlParser.g4",
     "antlr4ts-plpgsql": "antlr4ts -Xexact-output-dir -o src/grammar-output/plpgsql -package parsers src/grammars/plpgsql/PLpgSQLLexer.g4 src/grammars/plpgsql/PLpgSQLParser.g4",
     "build": "tsc --build --clean && tsc",
-    "test": "npx jest",
-    "postinstall": "npm run build"
+    "test": "npx jest"
   },
   "repository": {
     "type": "git",
