@@ -15,6 +15,8 @@ import { PLpgSQLLexer } from "./grammar-output/plpgsql/PLpgSQLLexer";
 import { PLpgSQLParser } from "./grammar-output/plpgsql/PLpgSQLParser";
 import { PlSqlParser } from "./grammar-output/plsql/PlSqlParser";
 import { PlSqlLexer } from "./grammar-output/plsql/PlSqlLexer";
+import { SQLiteLexer } from "./grammar-output/sqlite/SQLiteLexer";
+import { SQLiteParser } from "./grammar-output/sqlite/SQLiteParser";
 
 export class antlr4tsSQL {
   dialect: SQLDialect;
@@ -36,6 +38,8 @@ export class antlr4tsSQL {
       lexer = new PLpgSQLLexer(chars);
     } else if (this.dialect === SQLDialect.MYSQL) {
       lexer = new MySQLLexer(chars);
+    } else if (this.dialect === SQLDialect.SQLITE) {
+      lexer =  new SQLiteLexer(chars);
     }
     if (errorListeners !== null && errorListeners !== undefined) {
       lexer.removeErrorListener(ConsoleErrorListener.INSTANCE);
@@ -58,6 +62,8 @@ export class antlr4tsSQL {
       parser = new PLpgSQLParser(tokens);
     } else if (this.dialect === SQLDialect.MYSQL) {
       parser = new MultiQueryMySQLParser(tokens);
+    } else if (this.dialect === SQLDialect.SQLITE) {
+      parser = new SQLiteParser(tokens);
     }
     if (errorListeners !== null && errorListeners !== undefined) {
       parser.removeErrorListener(ConsoleErrorListener.INSTANCE);
@@ -75,6 +81,8 @@ export class antlr4tsSQL {
       return (parser as PLpgSQLParser).sql();
     } else if (parser instanceof MultiQueryMySQLParser) {
       return (parser as MultiQueryMySQLParser).sql_script();
+    } else if (parser instanceof SQLiteParser) {
+      return (parser as SQLiteParser).parse();
     }
     return null;
   }
