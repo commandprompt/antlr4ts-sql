@@ -83,166 +83,166 @@ SQLiteLexer.GT_EQ = 21;
 SQLiteLexer.EQ = 22;
 SQLiteLexer.NOT_EQ1 = 23;
 SQLiteLexer.NOT_EQ2 = 24;
-SQLiteLexer.ABORT_ = 25;
-SQLiteLexer.ACTION_ = 26;
-SQLiteLexer.ADD_ = 27;
-SQLiteLexer.AFTER_ = 28;
-SQLiteLexer.ALL_ = 29;
-SQLiteLexer.ALTER_ = 30;
-SQLiteLexer.ANALYZE_ = 31;
-SQLiteLexer.AND_ = 32;
-SQLiteLexer.AS_ = 33;
-SQLiteLexer.ASC_ = 34;
-SQLiteLexer.ATTACH_ = 35;
-SQLiteLexer.AUTOINCREMENT_ = 36;
-SQLiteLexer.BEFORE_ = 37;
-SQLiteLexer.BEGIN_ = 38;
-SQLiteLexer.BETWEEN_ = 39;
-SQLiteLexer.BY_ = 40;
-SQLiteLexer.CASCADE_ = 41;
-SQLiteLexer.CASE_ = 42;
-SQLiteLexer.CAST_ = 43;
-SQLiteLexer.CHECK_ = 44;
-SQLiteLexer.COLLATE_ = 45;
-SQLiteLexer.COLUMN_ = 46;
-SQLiteLexer.COMMIT_ = 47;
-SQLiteLexer.CONFLICT_ = 48;
-SQLiteLexer.CONSTRAINT_ = 49;
-SQLiteLexer.CREATE_ = 50;
-SQLiteLexer.CROSS_ = 51;
-SQLiteLexer.CURRENT_DATE_ = 52;
-SQLiteLexer.CURRENT_TIME_ = 53;
-SQLiteLexer.CURRENT_TIMESTAMP_ = 54;
-SQLiteLexer.DATABASE_ = 55;
-SQLiteLexer.DEFAULT_ = 56;
-SQLiteLexer.DEFERRABLE_ = 57;
-SQLiteLexer.DEFERRED_ = 58;
-SQLiteLexer.DELETE_ = 59;
-SQLiteLexer.DESC_ = 60;
-SQLiteLexer.DETACH_ = 61;
-SQLiteLexer.DISTINCT_ = 62;
-SQLiteLexer.DROP_ = 63;
-SQLiteLexer.EACH_ = 64;
-SQLiteLexer.ELSE_ = 65;
-SQLiteLexer.END_ = 66;
-SQLiteLexer.ESCAPE_ = 67;
-SQLiteLexer.EXCEPT_ = 68;
-SQLiteLexer.EXCLUSIVE_ = 69;
-SQLiteLexer.EXISTS_ = 70;
-SQLiteLexer.EXPLAIN_ = 71;
-SQLiteLexer.FAIL_ = 72;
-SQLiteLexer.FOR_ = 73;
-SQLiteLexer.FOREIGN_ = 74;
-SQLiteLexer.FROM_ = 75;
-SQLiteLexer.FULL_ = 76;
-SQLiteLexer.GLOB_ = 77;
-SQLiteLexer.GROUP_ = 78;
-SQLiteLexer.HAVING_ = 79;
-SQLiteLexer.IF_ = 80;
-SQLiteLexer.IGNORE_ = 81;
-SQLiteLexer.IMMEDIATE_ = 82;
-SQLiteLexer.IN_ = 83;
-SQLiteLexer.INDEX_ = 84;
-SQLiteLexer.INDEXED_ = 85;
-SQLiteLexer.INITIALLY_ = 86;
-SQLiteLexer.INNER_ = 87;
-SQLiteLexer.INSERT_ = 88;
-SQLiteLexer.INSTEAD_ = 89;
-SQLiteLexer.INTERSECT_ = 90;
-SQLiteLexer.INTO_ = 91;
-SQLiteLexer.IS_ = 92;
-SQLiteLexer.ISNULL_ = 93;
-SQLiteLexer.JOIN_ = 94;
-SQLiteLexer.KEY_ = 95;
-SQLiteLexer.LEFT_ = 96;
-SQLiteLexer.LIKE_ = 97;
-SQLiteLexer.LIMIT_ = 98;
-SQLiteLexer.MATCH_ = 99;
-SQLiteLexer.NATURAL_ = 100;
-SQLiteLexer.NO_ = 101;
-SQLiteLexer.NOT_ = 102;
-SQLiteLexer.NOTNULL_ = 103;
-SQLiteLexer.NULL_ = 104;
-SQLiteLexer.OF_ = 105;
-SQLiteLexer.OFFSET_ = 106;
-SQLiteLexer.ON_ = 107;
-SQLiteLexer.OR_ = 108;
-SQLiteLexer.ORDER_ = 109;
-SQLiteLexer.OUTER_ = 110;
-SQLiteLexer.PLAN_ = 111;
-SQLiteLexer.PRAGMA_ = 112;
-SQLiteLexer.PRIMARY_ = 113;
-SQLiteLexer.QUERY_ = 114;
-SQLiteLexer.RAISE_ = 115;
-SQLiteLexer.RECURSIVE_ = 116;
-SQLiteLexer.REFERENCES_ = 117;
-SQLiteLexer.REGEXP_ = 118;
-SQLiteLexer.REINDEX_ = 119;
-SQLiteLexer.RELEASE_ = 120;
-SQLiteLexer.RENAME_ = 121;
-SQLiteLexer.REPLACE_ = 122;
-SQLiteLexer.RESTRICT_ = 123;
-SQLiteLexer.RETURNING_ = 124;
-SQLiteLexer.RIGHT_ = 125;
-SQLiteLexer.ROLLBACK_ = 126;
-SQLiteLexer.ROW_ = 127;
-SQLiteLexer.ROWS_ = 128;
-SQLiteLexer.SAVEPOINT_ = 129;
-SQLiteLexer.SELECT_ = 130;
-SQLiteLexer.SET_ = 131;
-SQLiteLexer.TABLE_ = 132;
-SQLiteLexer.TEMP_ = 133;
-SQLiteLexer.TEMPORARY_ = 134;
-SQLiteLexer.THEN_ = 135;
-SQLiteLexer.TO_ = 136;
-SQLiteLexer.TRANSACTION_ = 137;
-SQLiteLexer.TRIGGER_ = 138;
-SQLiteLexer.UNION_ = 139;
-SQLiteLexer.UNIQUE_ = 140;
-SQLiteLexer.UPDATE_ = 141;
-SQLiteLexer.USING_ = 142;
-SQLiteLexer.VACUUM_ = 143;
-SQLiteLexer.VALUES_ = 144;
-SQLiteLexer.VIEW_ = 145;
-SQLiteLexer.VIRTUAL_ = 146;
-SQLiteLexer.WHEN_ = 147;
-SQLiteLexer.WHERE_ = 148;
-SQLiteLexer.WITH_ = 149;
-SQLiteLexer.WITHOUT_ = 150;
-SQLiteLexer.FIRST_VALUE_ = 151;
-SQLiteLexer.OVER_ = 152;
-SQLiteLexer.PARTITION_ = 153;
-SQLiteLexer.RANGE_ = 154;
-SQLiteLexer.PRECEDING_ = 155;
-SQLiteLexer.UNBOUNDED_ = 156;
-SQLiteLexer.CURRENT_ = 157;
-SQLiteLexer.FOLLOWING_ = 158;
-SQLiteLexer.CUME_DIST_ = 159;
-SQLiteLexer.DENSE_RANK_ = 160;
-SQLiteLexer.LAG_ = 161;
-SQLiteLexer.LAST_VALUE_ = 162;
-SQLiteLexer.LEAD_ = 163;
-SQLiteLexer.NTH_VALUE_ = 164;
-SQLiteLexer.NTILE_ = 165;
-SQLiteLexer.PERCENT_RANK_ = 166;
-SQLiteLexer.RANK_ = 167;
-SQLiteLexer.ROW_NUMBER_ = 168;
-SQLiteLexer.GENERATED_ = 169;
-SQLiteLexer.ALWAYS_ = 170;
-SQLiteLexer.STORED_ = 171;
-SQLiteLexer.TRUE_ = 172;
-SQLiteLexer.FALSE_ = 173;
-SQLiteLexer.WINDOW_ = 174;
-SQLiteLexer.NULLS_ = 175;
-SQLiteLexer.FIRST_ = 176;
-SQLiteLexer.LAST_ = 177;
-SQLiteLexer.FILTER_ = 178;
-SQLiteLexer.GROUPS_ = 179;
-SQLiteLexer.EXCLUDE_ = 180;
-SQLiteLexer.TIES_ = 181;
-SQLiteLexer.OTHERS_ = 182;
-SQLiteLexer.DO_ = 183;
-SQLiteLexer.NOTHING_ = 184;
+SQLiteLexer.ABORT = 25;
+SQLiteLexer.ACTION = 26;
+SQLiteLexer.ADD = 27;
+SQLiteLexer.AFTER = 28;
+SQLiteLexer.ALL = 29;
+SQLiteLexer.ALTER = 30;
+SQLiteLexer.ANALYZE = 31;
+SQLiteLexer.AND = 32;
+SQLiteLexer.AS = 33;
+SQLiteLexer.ASC = 34;
+SQLiteLexer.ATTACH = 35;
+SQLiteLexer.AUTOINCREMENT = 36;
+SQLiteLexer.BEFORE = 37;
+SQLiteLexer.BEGIN = 38;
+SQLiteLexer.BETWEEN = 39;
+SQLiteLexer.BY = 40;
+SQLiteLexer.CASCADE = 41;
+SQLiteLexer.CASE = 42;
+SQLiteLexer.CAST = 43;
+SQLiteLexer.CHECK = 44;
+SQLiteLexer.COLLATE = 45;
+SQLiteLexer.COLUMN = 46;
+SQLiteLexer.COMMIT = 47;
+SQLiteLexer.CONFLICT = 48;
+SQLiteLexer.CONSTRAINT = 49;
+SQLiteLexer.CREATE = 50;
+SQLiteLexer.CROSS = 51;
+SQLiteLexer.CURRENT_DATE = 52;
+SQLiteLexer.CURRENT_TIME = 53;
+SQLiteLexer.CURRENT_TIMESTAMP = 54;
+SQLiteLexer.DATABASE = 55;
+SQLiteLexer.DEFAULT = 56;
+SQLiteLexer.DEFERRABLE = 57;
+SQLiteLexer.DEFERRED = 58;
+SQLiteLexer.DELETE = 59;
+SQLiteLexer.DESC = 60;
+SQLiteLexer.DETACH = 61;
+SQLiteLexer.DISTINCT = 62;
+SQLiteLexer.DROP = 63;
+SQLiteLexer.EACH = 64;
+SQLiteLexer.ELSE = 65;
+SQLiteLexer.END = 66;
+SQLiteLexer.ESCAPE = 67;
+SQLiteLexer.EXCEPT = 68;
+SQLiteLexer.EXCLUSIVE = 69;
+SQLiteLexer.EXISTS = 70;
+SQLiteLexer.EXPLAIN = 71;
+SQLiteLexer.FAIL = 72;
+SQLiteLexer.FOR = 73;
+SQLiteLexer.FOREIGN = 74;
+SQLiteLexer.FROM = 75;
+SQLiteLexer.FULL = 76;
+SQLiteLexer.GLOB = 77;
+SQLiteLexer.GROUP = 78;
+SQLiteLexer.HAVING = 79;
+SQLiteLexer.IF = 80;
+SQLiteLexer.IGNORE = 81;
+SQLiteLexer.IMMEDIATE = 82;
+SQLiteLexer.IN = 83;
+SQLiteLexer.INDEX = 84;
+SQLiteLexer.INDEXED = 85;
+SQLiteLexer.INITIALLY = 86;
+SQLiteLexer.INNER = 87;
+SQLiteLexer.INSERT = 88;
+SQLiteLexer.INSTEAD = 89;
+SQLiteLexer.INTERSECT = 90;
+SQLiteLexer.INTO = 91;
+SQLiteLexer.IS = 92;
+SQLiteLexer.ISNULL = 93;
+SQLiteLexer.JOIN = 94;
+SQLiteLexer.KEY = 95;
+SQLiteLexer.LEFT = 96;
+SQLiteLexer.LIKE = 97;
+SQLiteLexer.LIMIT = 98;
+SQLiteLexer.MATCH = 99;
+SQLiteLexer.NATURAL = 100;
+SQLiteLexer.NO = 101;
+SQLiteLexer.NOT = 102;
+SQLiteLexer.NOTNULL = 103;
+SQLiteLexer.NULL = 104;
+SQLiteLexer.OF = 105;
+SQLiteLexer.OFFSET = 106;
+SQLiteLexer.ON = 107;
+SQLiteLexer.OR = 108;
+SQLiteLexer.ORDER = 109;
+SQLiteLexer.OUTER = 110;
+SQLiteLexer.PLAN = 111;
+SQLiteLexer.PRAGMA = 112;
+SQLiteLexer.PRIMARY = 113;
+SQLiteLexer.QUERY = 114;
+SQLiteLexer.RAISE = 115;
+SQLiteLexer.RECURSIVE = 116;
+SQLiteLexer.REFERENCES = 117;
+SQLiteLexer.REGEXP = 118;
+SQLiteLexer.REINDEX = 119;
+SQLiteLexer.RELEASE = 120;
+SQLiteLexer.RENAME = 121;
+SQLiteLexer.REPLACE = 122;
+SQLiteLexer.RESTRICT = 123;
+SQLiteLexer.RETURNING = 124;
+SQLiteLexer.RIGHT = 125;
+SQLiteLexer.ROLLBACK = 126;
+SQLiteLexer.ROW = 127;
+SQLiteLexer.ROWS = 128;
+SQLiteLexer.SAVEPOINT = 129;
+SQLiteLexer.SELECT = 130;
+SQLiteLexer.SET = 131;
+SQLiteLexer.TABLE = 132;
+SQLiteLexer.TEMP = 133;
+SQLiteLexer.TEMPORARY = 134;
+SQLiteLexer.THEN = 135;
+SQLiteLexer.TO = 136;
+SQLiteLexer.TRANSACTION = 137;
+SQLiteLexer.TRIGGER = 138;
+SQLiteLexer.UNION = 139;
+SQLiteLexer.UNIQUE = 140;
+SQLiteLexer.UPDATE = 141;
+SQLiteLexer.USING = 142;
+SQLiteLexer.VACUUM = 143;
+SQLiteLexer.VALUES = 144;
+SQLiteLexer.VIEW = 145;
+SQLiteLexer.VIRTUAL = 146;
+SQLiteLexer.WHEN = 147;
+SQLiteLexer.WHERE = 148;
+SQLiteLexer.WITH = 149;
+SQLiteLexer.WITHOUT = 150;
+SQLiteLexer.FIRST_VALUE = 151;
+SQLiteLexer.OVER = 152;
+SQLiteLexer.PARTITION = 153;
+SQLiteLexer.RANGE = 154;
+SQLiteLexer.PRECEDING = 155;
+SQLiteLexer.UNBOUNDED = 156;
+SQLiteLexer.CURRENT = 157;
+SQLiteLexer.FOLLOWING = 158;
+SQLiteLexer.CUME_DIST = 159;
+SQLiteLexer.DENSE_RANK = 160;
+SQLiteLexer.LAG = 161;
+SQLiteLexer.LAST_VALUE = 162;
+SQLiteLexer.LEAD = 163;
+SQLiteLexer.NTH_VALUE = 164;
+SQLiteLexer.NTILE = 165;
+SQLiteLexer.PERCENT_RANK = 166;
+SQLiteLexer.RANK = 167;
+SQLiteLexer.ROW_NUMBER = 168;
+SQLiteLexer.GENERATED = 169;
+SQLiteLexer.ALWAYS = 170;
+SQLiteLexer.STORED = 171;
+SQLiteLexer.TRUE = 172;
+SQLiteLexer.FALSE = 173;
+SQLiteLexer.WINDOW = 174;
+SQLiteLexer.NULLS = 175;
+SQLiteLexer.FIRST = 176;
+SQLiteLexer.LAST = 177;
+SQLiteLexer.FILTER = 178;
+SQLiteLexer.GROUPS = 179;
+SQLiteLexer.EXCLUDE = 180;
+SQLiteLexer.TIES = 181;
+SQLiteLexer.OTHERS = 182;
+SQLiteLexer.DO = 183;
+SQLiteLexer.NOTHING = 184;
 SQLiteLexer.IDENTIFIER = 185;
 SQLiteLexer.NUMERIC_LITERAL = 186;
 SQLiteLexer.BIND_PARAMETER = 187;
@@ -263,31 +263,29 @@ SQLiteLexer.modeNames = [
 SQLiteLexer.ruleNames = [
     "SCOL", "DOT", "OPEN_PAR", "CLOSE_PAR", "COMMA", "ASSIGN", "STAR", "PLUS",
     "MINUS", "TILDE", "PIPE2", "DIV", "MOD", "LT2", "GT2", "AMP", "PIPE",
-    "LT", "LT_EQ", "GT", "GT_EQ", "EQ", "NOT_EQ1", "NOT_EQ2", "ABORT_", "ACTION_",
-    "ADD_", "AFTER_", "ALL_", "ALTER_", "ANALYZE_", "AND_", "AS_", "ASC_",
-    "ATTACH_", "AUTOINCREMENT_", "BEFORE_", "BEGIN_", "BETWEEN_", "BY_", "CASCADE_",
-    "CASE_", "CAST_", "CHECK_", "COLLATE_", "COLUMN_", "COMMIT_", "CONFLICT_",
-    "CONSTRAINT_", "CREATE_", "CROSS_", "CURRENT_DATE_", "CURRENT_TIME_",
-    "CURRENT_TIMESTAMP_", "DATABASE_", "DEFAULT_", "DEFERRABLE_", "DEFERRED_",
-    "DELETE_", "DESC_", "DETACH_", "DISTINCT_", "DROP_", "EACH_", "ELSE_",
-    "END_", "ESCAPE_", "EXCEPT_", "EXCLUSIVE_", "EXISTS_", "EXPLAIN_", "FAIL_",
-    "FOR_", "FOREIGN_", "FROM_", "FULL_", "GLOB_", "GROUP_", "HAVING_", "IF_",
-    "IGNORE_", "IMMEDIATE_", "IN_", "INDEX_", "INDEXED_", "INITIALLY_", "INNER_",
-    "INSERT_", "INSTEAD_", "INTERSECT_", "INTO_", "IS_", "ISNULL_", "JOIN_",
-    "KEY_", "LEFT_", "LIKE_", "LIMIT_", "MATCH_", "NATURAL_", "NO_", "NOT_",
-    "NOTNULL_", "NULL_", "OF_", "OFFSET_", "ON_", "OR_", "ORDER_", "OUTER_",
-    "PLAN_", "PRAGMA_", "PRIMARY_", "QUERY_", "RAISE_", "RECURSIVE_", "REFERENCES_",
-    "REGEXP_", "REINDEX_", "RELEASE_", "RENAME_", "REPLACE_", "RESTRICT_",
-    "RETURNING_", "RIGHT_", "ROLLBACK_", "ROW_", "ROWS_", "SAVEPOINT_", "SELECT_",
-    "SET_", "TABLE_", "TEMP_", "TEMPORARY_", "THEN_", "TO_", "TRANSACTION_",
-    "TRIGGER_", "UNION_", "UNIQUE_", "UPDATE_", "USING_", "VACUUM_", "VALUES_",
-    "VIEW_", "VIRTUAL_", "WHEN_", "WHERE_", "WITH_", "WITHOUT_", "FIRST_VALUE_",
-    "OVER_", "PARTITION_", "RANGE_", "PRECEDING_", "UNBOUNDED_", "CURRENT_",
-    "FOLLOWING_", "CUME_DIST_", "DENSE_RANK_", "LAG_", "LAST_VALUE_", "LEAD_",
-    "NTH_VALUE_", "NTILE_", "PERCENT_RANK_", "RANK_", "ROW_NUMBER_", "GENERATED_",
-    "ALWAYS_", "STORED_", "TRUE_", "FALSE_", "WINDOW_", "NULLS_", "FIRST_",
-    "LAST_", "FILTER_", "GROUPS_", "EXCLUDE_", "TIES_", "OTHERS_", "DO_",
-    "NOTHING_", "IDENTIFIER", "NUMERIC_LITERAL", "BIND_PARAMETER", "STRING_LITERAL",
+    "LT", "LT_EQ", "GT", "GT_EQ", "EQ", "NOT_EQ1", "NOT_EQ2", "ABORT", "ACTION",
+    "ADD", "AFTER", "ALL", "ALTER", "ANALYZE", "AND", "AS", "ASC", "ATTACH",
+    "AUTOINCREMENT", "BEFORE", "BEGIN", "BETWEEN", "BY", "CASCADE", "CASE",
+    "CAST", "CHECK", "COLLATE", "COLUMN", "COMMIT", "CONFLICT", "CONSTRAINT",
+    "CREATE", "CROSS", "CURRENT_DATE", "CURRENT_TIME", "CURRENT_TIMESTAMP",
+    "DATABASE", "DEFAULT", "DEFERRABLE", "DEFERRED", "DELETE", "DESC", "DETACH",
+    "DISTINCT", "DROP", "EACH", "ELSE", "END", "ESCAPE", "EXCEPT", "EXCLUSIVE",
+    "EXISTS", "EXPLAIN", "FAIL", "FOR", "FOREIGN", "FROM", "FULL", "GLOB",
+    "GROUP", "HAVING", "IF", "IGNORE", "IMMEDIATE", "IN", "INDEX", "INDEXED",
+    "INITIALLY", "INNER", "INSERT", "INSTEAD", "INTERSECT", "INTO", "IS",
+    "ISNULL", "JOIN", "KEY", "LEFT", "LIKE", "LIMIT", "MATCH", "NATURAL",
+    "NO", "NOT", "NOTNULL", "NULL", "OF", "OFFSET", "ON", "OR", "ORDER", "OUTER",
+    "PLAN", "PRAGMA", "PRIMARY", "QUERY", "RAISE", "RECURSIVE", "REFERENCES",
+    "REGEXP", "REINDEX", "RELEASE", "RENAME", "REPLACE", "RESTRICT", "RETURNING",
+    "RIGHT", "ROLLBACK", "ROW", "ROWS", "SAVEPOINT", "SELECT", "SET", "TABLE",
+    "TEMP", "TEMPORARY", "THEN", "TO", "TRANSACTION", "TRIGGER", "UNION",
+    "UNIQUE", "UPDATE", "USING", "VACUUM", "VALUES", "VIEW", "VIRTUAL", "WHEN",
+    "WHERE", "WITH", "WITHOUT", "FIRST_VALUE", "OVER", "PARTITION", "RANGE",
+    "PRECEDING", "UNBOUNDED", "CURRENT", "FOLLOWING", "CUME_DIST", "DENSE_RANK",
+    "LAG", "LAST_VALUE", "LEAD", "NTH_VALUE", "NTILE", "PERCENT_RANK", "RANK",
+    "ROW_NUMBER", "GENERATED", "ALWAYS", "STORED", "TRUE", "FALSE", "WINDOW",
+    "NULLS", "FIRST", "LAST", "FILTER", "GROUPS", "EXCLUDE", "TIES", "OTHERS",
+    "DO", "NOTHING", "IDENTIFIER", "NUMERIC_LITERAL", "BIND_PARAMETER", "STRING_LITERAL",
     "BLOB_LITERAL", "SINGLE_LINE_COMMENT", "MULTILINE_COMMENT", "SPACES",
     "UNEXPECTED_CHAR", "HEX_DIGIT", "DIGIT",
 ];
@@ -300,30 +298,28 @@ SQLiteLexer._SYMBOLIC_NAMES = [
     undefined, "SCOL", "DOT", "OPEN_PAR", "CLOSE_PAR", "COMMA", "ASSIGN",
     "STAR", "PLUS", "MINUS", "TILDE", "PIPE2", "DIV", "MOD", "LT2", "GT2",
     "AMP", "PIPE", "LT", "LT_EQ", "GT", "GT_EQ", "EQ", "NOT_EQ1", "NOT_EQ2",
-    "ABORT_", "ACTION_", "ADD_", "AFTER_", "ALL_", "ALTER_", "ANALYZE_", "AND_",
-    "AS_", "ASC_", "ATTACH_", "AUTOINCREMENT_", "BEFORE_", "BEGIN_", "BETWEEN_",
-    "BY_", "CASCADE_", "CASE_", "CAST_", "CHECK_", "COLLATE_", "COLUMN_",
-    "COMMIT_", "CONFLICT_", "CONSTRAINT_", "CREATE_", "CROSS_", "CURRENT_DATE_",
-    "CURRENT_TIME_", "CURRENT_TIMESTAMP_", "DATABASE_", "DEFAULT_", "DEFERRABLE_",
-    "DEFERRED_", "DELETE_", "DESC_", "DETACH_", "DISTINCT_", "DROP_", "EACH_",
-    "ELSE_", "END_", "ESCAPE_", "EXCEPT_", "EXCLUSIVE_", "EXISTS_", "EXPLAIN_",
-    "FAIL_", "FOR_", "FOREIGN_", "FROM_", "FULL_", "GLOB_", "GROUP_", "HAVING_",
-    "IF_", "IGNORE_", "IMMEDIATE_", "IN_", "INDEX_", "INDEXED_", "INITIALLY_",
-    "INNER_", "INSERT_", "INSTEAD_", "INTERSECT_", "INTO_", "IS_", "ISNULL_",
-    "JOIN_", "KEY_", "LEFT_", "LIKE_", "LIMIT_", "MATCH_", "NATURAL_", "NO_",
-    "NOT_", "NOTNULL_", "NULL_", "OF_", "OFFSET_", "ON_", "OR_", "ORDER_",
-    "OUTER_", "PLAN_", "PRAGMA_", "PRIMARY_", "QUERY_", "RAISE_", "RECURSIVE_",
-    "REFERENCES_", "REGEXP_", "REINDEX_", "RELEASE_", "RENAME_", "REPLACE_",
-    "RESTRICT_", "RETURNING_", "RIGHT_", "ROLLBACK_", "ROW_", "ROWS_", "SAVEPOINT_",
-    "SELECT_", "SET_", "TABLE_", "TEMP_", "TEMPORARY_", "THEN_", "TO_", "TRANSACTION_",
-    "TRIGGER_", "UNION_", "UNIQUE_", "UPDATE_", "USING_", "VACUUM_", "VALUES_",
-    "VIEW_", "VIRTUAL_", "WHEN_", "WHERE_", "WITH_", "WITHOUT_", "FIRST_VALUE_",
-    "OVER_", "PARTITION_", "RANGE_", "PRECEDING_", "UNBOUNDED_", "CURRENT_",
-    "FOLLOWING_", "CUME_DIST_", "DENSE_RANK_", "LAG_", "LAST_VALUE_", "LEAD_",
-    "NTH_VALUE_", "NTILE_", "PERCENT_RANK_", "RANK_", "ROW_NUMBER_", "GENERATED_",
-    "ALWAYS_", "STORED_", "TRUE_", "FALSE_", "WINDOW_", "NULLS_", "FIRST_",
-    "LAST_", "FILTER_", "GROUPS_", "EXCLUDE_", "TIES_", "OTHERS_", "DO_",
-    "NOTHING_", "IDENTIFIER", "NUMERIC_LITERAL", "BIND_PARAMETER", "STRING_LITERAL",
+    "ABORT", "ACTION", "ADD", "AFTER", "ALL", "ALTER", "ANALYZE", "AND", "AS",
+    "ASC", "ATTACH", "AUTOINCREMENT", "BEFORE", "BEGIN", "BETWEEN", "BY",
+    "CASCADE", "CASE", "CAST", "CHECK", "COLLATE", "COLUMN", "COMMIT", "CONFLICT",
+    "CONSTRAINT", "CREATE", "CROSS", "CURRENT_DATE", "CURRENT_TIME", "CURRENT_TIMESTAMP",
+    "DATABASE", "DEFAULT", "DEFERRABLE", "DEFERRED", "DELETE", "DESC", "DETACH",
+    "DISTINCT", "DROP", "EACH", "ELSE", "END", "ESCAPE", "EXCEPT", "EXCLUSIVE",
+    "EXISTS", "EXPLAIN", "FAIL", "FOR", "FOREIGN", "FROM", "FULL", "GLOB",
+    "GROUP", "HAVING", "IF", "IGNORE", "IMMEDIATE", "IN", "INDEX", "INDEXED",
+    "INITIALLY", "INNER", "INSERT", "INSTEAD", "INTERSECT", "INTO", "IS",
+    "ISNULL", "JOIN", "KEY", "LEFT", "LIKE", "LIMIT", "MATCH", "NATURAL",
+    "NO", "NOT", "NOTNULL", "NULL", "OF", "OFFSET", "ON", "OR", "ORDER", "OUTER",
+    "PLAN", "PRAGMA", "PRIMARY", "QUERY", "RAISE", "RECURSIVE", "REFERENCES",
+    "REGEXP", "REINDEX", "RELEASE", "RENAME", "REPLACE", "RESTRICT", "RETURNING",
+    "RIGHT", "ROLLBACK", "ROW", "ROWS", "SAVEPOINT", "SELECT", "SET", "TABLE",
+    "TEMP", "TEMPORARY", "THEN", "TO", "TRANSACTION", "TRIGGER", "UNION",
+    "UNIQUE", "UPDATE", "USING", "VACUUM", "VALUES", "VIEW", "VIRTUAL", "WHEN",
+    "WHERE", "WITH", "WITHOUT", "FIRST_VALUE", "OVER", "PARTITION", "RANGE",
+    "PRECEDING", "UNBOUNDED", "CURRENT", "FOLLOWING", "CUME_DIST", "DENSE_RANK",
+    "LAG", "LAST_VALUE", "LEAD", "NTH_VALUE", "NTILE", "PERCENT_RANK", "RANK",
+    "ROW_NUMBER", "GENERATED", "ALWAYS", "STORED", "TRUE", "FALSE", "WINDOW",
+    "NULLS", "FIRST", "LAST", "FILTER", "GROUPS", "EXCLUDE", "TIES", "OTHERS",
+    "DO", "NOTHING", "IDENTIFIER", "NUMERIC_LITERAL", "BIND_PARAMETER", "STRING_LITERAL",
     "BLOB_LITERAL", "SINGLE_LINE_COMMENT", "MULTILINE_COMMENT", "SPACES",
     "UNEXPECTED_CHAR",
 ];
