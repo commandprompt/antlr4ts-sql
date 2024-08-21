@@ -40,166 +40,166 @@ export class SQLiteLexer extends Lexer {
 	public static readonly EQ = 22;
 	public static readonly NOT_EQ1 = 23;
 	public static readonly NOT_EQ2 = 24;
-	public static readonly ABORT_ = 25;
-	public static readonly ACTION_ = 26;
-	public static readonly ADD_ = 27;
-	public static readonly AFTER_ = 28;
-	public static readonly ALL_ = 29;
-	public static readonly ALTER_ = 30;
-	public static readonly ANALYZE_ = 31;
-	public static readonly AND_ = 32;
-	public static readonly AS_ = 33;
-	public static readonly ASC_ = 34;
-	public static readonly ATTACH_ = 35;
-	public static readonly AUTOINCREMENT_ = 36;
-	public static readonly BEFORE_ = 37;
-	public static readonly BEGIN_ = 38;
-	public static readonly BETWEEN_ = 39;
-	public static readonly BY_ = 40;
-	public static readonly CASCADE_ = 41;
-	public static readonly CASE_ = 42;
-	public static readonly CAST_ = 43;
-	public static readonly CHECK_ = 44;
-	public static readonly COLLATE_ = 45;
-	public static readonly COLUMN_ = 46;
-	public static readonly COMMIT_ = 47;
-	public static readonly CONFLICT_ = 48;
-	public static readonly CONSTRAINT_ = 49;
-	public static readonly CREATE_ = 50;
-	public static readonly CROSS_ = 51;
-	public static readonly CURRENT_DATE_ = 52;
-	public static readonly CURRENT_TIME_ = 53;
-	public static readonly CURRENT_TIMESTAMP_ = 54;
-	public static readonly DATABASE_ = 55;
-	public static readonly DEFAULT_ = 56;
-	public static readonly DEFERRABLE_ = 57;
-	public static readonly DEFERRED_ = 58;
-	public static readonly DELETE_ = 59;
-	public static readonly DESC_ = 60;
-	public static readonly DETACH_ = 61;
-	public static readonly DISTINCT_ = 62;
-	public static readonly DROP_ = 63;
-	public static readonly EACH_ = 64;
-	public static readonly ELSE_ = 65;
-	public static readonly END_ = 66;
-	public static readonly ESCAPE_ = 67;
-	public static readonly EXCEPT_ = 68;
-	public static readonly EXCLUSIVE_ = 69;
-	public static readonly EXISTS_ = 70;
-	public static readonly EXPLAIN_ = 71;
-	public static readonly FAIL_ = 72;
-	public static readonly FOR_ = 73;
-	public static readonly FOREIGN_ = 74;
-	public static readonly FROM_ = 75;
-	public static readonly FULL_ = 76;
-	public static readonly GLOB_ = 77;
-	public static readonly GROUP_ = 78;
-	public static readonly HAVING_ = 79;
-	public static readonly IF_ = 80;
-	public static readonly IGNORE_ = 81;
-	public static readonly IMMEDIATE_ = 82;
-	public static readonly IN_ = 83;
-	public static readonly INDEX_ = 84;
-	public static readonly INDEXED_ = 85;
-	public static readonly INITIALLY_ = 86;
-	public static readonly INNER_ = 87;
-	public static readonly INSERT_ = 88;
-	public static readonly INSTEAD_ = 89;
-	public static readonly INTERSECT_ = 90;
-	public static readonly INTO_ = 91;
-	public static readonly IS_ = 92;
-	public static readonly ISNULL_ = 93;
-	public static readonly JOIN_ = 94;
-	public static readonly KEY_ = 95;
-	public static readonly LEFT_ = 96;
-	public static readonly LIKE_ = 97;
-	public static readonly LIMIT_ = 98;
-	public static readonly MATCH_ = 99;
-	public static readonly NATURAL_ = 100;
-	public static readonly NO_ = 101;
-	public static readonly NOT_ = 102;
-	public static readonly NOTNULL_ = 103;
-	public static readonly NULL_ = 104;
-	public static readonly OF_ = 105;
-	public static readonly OFFSET_ = 106;
-	public static readonly ON_ = 107;
-	public static readonly OR_ = 108;
-	public static readonly ORDER_ = 109;
-	public static readonly OUTER_ = 110;
-	public static readonly PLAN_ = 111;
-	public static readonly PRAGMA_ = 112;
-	public static readonly PRIMARY_ = 113;
-	public static readonly QUERY_ = 114;
-	public static readonly RAISE_ = 115;
-	public static readonly RECURSIVE_ = 116;
-	public static readonly REFERENCES_ = 117;
-	public static readonly REGEXP_ = 118;
-	public static readonly REINDEX_ = 119;
-	public static readonly RELEASE_ = 120;
-	public static readonly RENAME_ = 121;
-	public static readonly REPLACE_ = 122;
-	public static readonly RESTRICT_ = 123;
-	public static readonly RETURNING_ = 124;
-	public static readonly RIGHT_ = 125;
-	public static readonly ROLLBACK_ = 126;
-	public static readonly ROW_ = 127;
-	public static readonly ROWS_ = 128;
-	public static readonly SAVEPOINT_ = 129;
-	public static readonly SELECT_ = 130;
-	public static readonly SET_ = 131;
-	public static readonly TABLE_ = 132;
-	public static readonly TEMP_ = 133;
-	public static readonly TEMPORARY_ = 134;
-	public static readonly THEN_ = 135;
-	public static readonly TO_ = 136;
-	public static readonly TRANSACTION_ = 137;
-	public static readonly TRIGGER_ = 138;
-	public static readonly UNION_ = 139;
-	public static readonly UNIQUE_ = 140;
-	public static readonly UPDATE_ = 141;
-	public static readonly USING_ = 142;
-	public static readonly VACUUM_ = 143;
-	public static readonly VALUES_ = 144;
-	public static readonly VIEW_ = 145;
-	public static readonly VIRTUAL_ = 146;
-	public static readonly WHEN_ = 147;
-	public static readonly WHERE_ = 148;
-	public static readonly WITH_ = 149;
-	public static readonly WITHOUT_ = 150;
-	public static readonly FIRST_VALUE_ = 151;
-	public static readonly OVER_ = 152;
-	public static readonly PARTITION_ = 153;
-	public static readonly RANGE_ = 154;
-	public static readonly PRECEDING_ = 155;
-	public static readonly UNBOUNDED_ = 156;
-	public static readonly CURRENT_ = 157;
-	public static readonly FOLLOWING_ = 158;
-	public static readonly CUME_DIST_ = 159;
-	public static readonly DENSE_RANK_ = 160;
-	public static readonly LAG_ = 161;
-	public static readonly LAST_VALUE_ = 162;
-	public static readonly LEAD_ = 163;
-	public static readonly NTH_VALUE_ = 164;
-	public static readonly NTILE_ = 165;
-	public static readonly PERCENT_RANK_ = 166;
-	public static readonly RANK_ = 167;
-	public static readonly ROW_NUMBER_ = 168;
-	public static readonly GENERATED_ = 169;
-	public static readonly ALWAYS_ = 170;
-	public static readonly STORED_ = 171;
-	public static readonly TRUE_ = 172;
-	public static readonly FALSE_ = 173;
-	public static readonly WINDOW_ = 174;
-	public static readonly NULLS_ = 175;
-	public static readonly FIRST_ = 176;
-	public static readonly LAST_ = 177;
-	public static readonly FILTER_ = 178;
-	public static readonly GROUPS_ = 179;
-	public static readonly EXCLUDE_ = 180;
-	public static readonly TIES_ = 181;
-	public static readonly OTHERS_ = 182;
-	public static readonly DO_ = 183;
-	public static readonly NOTHING_ = 184;
+	public static readonly ABORT = 25;
+	public static readonly ACTION = 26;
+	public static readonly ADD = 27;
+	public static readonly AFTER = 28;
+	public static readonly ALL = 29;
+	public static readonly ALTER = 30;
+	public static readonly ANALYZE = 31;
+	public static readonly AND = 32;
+	public static readonly AS = 33;
+	public static readonly ASC = 34;
+	public static readonly ATTACH = 35;
+	public static readonly AUTOINCREMENT = 36;
+	public static readonly BEFORE = 37;
+	public static readonly BEGIN = 38;
+	public static readonly BETWEEN = 39;
+	public static readonly BY = 40;
+	public static readonly CASCADE = 41;
+	public static readonly CASE = 42;
+	public static readonly CAST = 43;
+	public static readonly CHECK = 44;
+	public static readonly COLLATE = 45;
+	public static readonly COLUMN = 46;
+	public static readonly COMMIT = 47;
+	public static readonly CONFLICT = 48;
+	public static readonly CONSTRAINT = 49;
+	public static readonly CREATE = 50;
+	public static readonly CROSS = 51;
+	public static readonly CURRENT_DATE = 52;
+	public static readonly CURRENT_TIME = 53;
+	public static readonly CURRENT_TIMESTAMP = 54;
+	public static readonly DATABASE = 55;
+	public static readonly DEFAULT = 56;
+	public static readonly DEFERRABLE = 57;
+	public static readonly DEFERRED = 58;
+	public static readonly DELETE = 59;
+	public static readonly DESC = 60;
+	public static readonly DETACH = 61;
+	public static readonly DISTINCT = 62;
+	public static readonly DROP = 63;
+	public static readonly EACH = 64;
+	public static readonly ELSE = 65;
+	public static readonly END = 66;
+	public static readonly ESCAPE = 67;
+	public static readonly EXCEPT = 68;
+	public static readonly EXCLUSIVE = 69;
+	public static readonly EXISTS = 70;
+	public static readonly EXPLAIN = 71;
+	public static readonly FAIL = 72;
+	public static readonly FOR = 73;
+	public static readonly FOREIGN = 74;
+	public static readonly FROM = 75;
+	public static readonly FULL = 76;
+	public static readonly GLOB = 77;
+	public static readonly GROUP = 78;
+	public static readonly HAVING = 79;
+	public static readonly IF = 80;
+	public static readonly IGNORE = 81;
+	public static readonly IMMEDIATE = 82;
+	public static readonly IN = 83;
+	public static readonly INDEX = 84;
+	public static readonly INDEXED = 85;
+	public static readonly INITIALLY = 86;
+	public static readonly INNER = 87;
+	public static readonly INSERT = 88;
+	public static readonly INSTEAD = 89;
+	public static readonly INTERSECT = 90;
+	public static readonly INTO = 91;
+	public static readonly IS = 92;
+	public static readonly ISNULL = 93;
+	public static readonly JOIN = 94;
+	public static readonly KEY = 95;
+	public static readonly LEFT = 96;
+	public static readonly LIKE = 97;
+	public static readonly LIMIT = 98;
+	public static readonly MATCH = 99;
+	public static readonly NATURAL = 100;
+	public static readonly NO = 101;
+	public static readonly NOT = 102;
+	public static readonly NOTNULL = 103;
+	public static readonly NULL = 104;
+	public static readonly OF = 105;
+	public static readonly OFFSET = 106;
+	public static readonly ON = 107;
+	public static readonly OR = 108;
+	public static readonly ORDER = 109;
+	public static readonly OUTER = 110;
+	public static readonly PLAN = 111;
+	public static readonly PRAGMA = 112;
+	public static readonly PRIMARY = 113;
+	public static readonly QUERY = 114;
+	public static readonly RAISE = 115;
+	public static readonly RECURSIVE = 116;
+	public static readonly REFERENCES = 117;
+	public static readonly REGEXP = 118;
+	public static readonly REINDEX = 119;
+	public static readonly RELEASE = 120;
+	public static readonly RENAME = 121;
+	public static readonly REPLACE = 122;
+	public static readonly RESTRICT = 123;
+	public static readonly RETURNING = 124;
+	public static readonly RIGHT = 125;
+	public static readonly ROLLBACK = 126;
+	public static readonly ROW = 127;
+	public static readonly ROWS = 128;
+	public static readonly SAVEPOINT = 129;
+	public static readonly SELECT = 130;
+	public static readonly SET = 131;
+	public static readonly TABLE = 132;
+	public static readonly TEMP = 133;
+	public static readonly TEMPORARY = 134;
+	public static readonly THEN = 135;
+	public static readonly TO = 136;
+	public static readonly TRANSACTION = 137;
+	public static readonly TRIGGER = 138;
+	public static readonly UNION = 139;
+	public static readonly UNIQUE = 140;
+	public static readonly UPDATE = 141;
+	public static readonly USING = 142;
+	public static readonly VACUUM = 143;
+	public static readonly VALUES = 144;
+	public static readonly VIEW = 145;
+	public static readonly VIRTUAL = 146;
+	public static readonly WHEN = 147;
+	public static readonly WHERE = 148;
+	public static readonly WITH = 149;
+	public static readonly WITHOUT = 150;
+	public static readonly FIRST_VALUE = 151;
+	public static readonly OVER = 152;
+	public static readonly PARTITION = 153;
+	public static readonly RANGE = 154;
+	public static readonly PRECEDING = 155;
+	public static readonly UNBOUNDED = 156;
+	public static readonly CURRENT = 157;
+	public static readonly FOLLOWING = 158;
+	public static readonly CUME_DIST = 159;
+	public static readonly DENSE_RANK = 160;
+	public static readonly LAG = 161;
+	public static readonly LAST_VALUE = 162;
+	public static readonly LEAD = 163;
+	public static readonly NTH_VALUE = 164;
+	public static readonly NTILE = 165;
+	public static readonly PERCENT_RANK = 166;
+	public static readonly RANK = 167;
+	public static readonly ROW_NUMBER = 168;
+	public static readonly GENERATED = 169;
+	public static readonly ALWAYS = 170;
+	public static readonly STORED = 171;
+	public static readonly TRUE = 172;
+	public static readonly FALSE = 173;
+	public static readonly WINDOW = 174;
+	public static readonly NULLS = 175;
+	public static readonly FIRST = 176;
+	public static readonly LAST = 177;
+	public static readonly FILTER = 178;
+	public static readonly GROUPS = 179;
+	public static readonly EXCLUDE = 180;
+	public static readonly TIES = 181;
+	public static readonly OTHERS = 182;
+	public static readonly DO = 183;
+	public static readonly NOTHING = 184;
 	public static readonly IDENTIFIER = 185;
 	public static readonly NUMERIC_LITERAL = 186;
 	public static readonly BIND_PARAMETER = 187;
@@ -223,31 +223,29 @@ export class SQLiteLexer extends Lexer {
 	public static readonly ruleNames: string[] = [
 		"SCOL", "DOT", "OPEN_PAR", "CLOSE_PAR", "COMMA", "ASSIGN", "STAR", "PLUS", 
 		"MINUS", "TILDE", "PIPE2", "DIV", "MOD", "LT2", "GT2", "AMP", "PIPE", 
-		"LT", "LT_EQ", "GT", "GT_EQ", "EQ", "NOT_EQ1", "NOT_EQ2", "ABORT_", "ACTION_", 
-		"ADD_", "AFTER_", "ALL_", "ALTER_", "ANALYZE_", "AND_", "AS_", "ASC_", 
-		"ATTACH_", "AUTOINCREMENT_", "BEFORE_", "BEGIN_", "BETWEEN_", "BY_", "CASCADE_", 
-		"CASE_", "CAST_", "CHECK_", "COLLATE_", "COLUMN_", "COMMIT_", "CONFLICT_", 
-		"CONSTRAINT_", "CREATE_", "CROSS_", "CURRENT_DATE_", "CURRENT_TIME_", 
-		"CURRENT_TIMESTAMP_", "DATABASE_", "DEFAULT_", "DEFERRABLE_", "DEFERRED_", 
-		"DELETE_", "DESC_", "DETACH_", "DISTINCT_", "DROP_", "EACH_", "ELSE_", 
-		"END_", "ESCAPE_", "EXCEPT_", "EXCLUSIVE_", "EXISTS_", "EXPLAIN_", "FAIL_", 
-		"FOR_", "FOREIGN_", "FROM_", "FULL_", "GLOB_", "GROUP_", "HAVING_", "IF_", 
-		"IGNORE_", "IMMEDIATE_", "IN_", "INDEX_", "INDEXED_", "INITIALLY_", "INNER_", 
-		"INSERT_", "INSTEAD_", "INTERSECT_", "INTO_", "IS_", "ISNULL_", "JOIN_", 
-		"KEY_", "LEFT_", "LIKE_", "LIMIT_", "MATCH_", "NATURAL_", "NO_", "NOT_", 
-		"NOTNULL_", "NULL_", "OF_", "OFFSET_", "ON_", "OR_", "ORDER_", "OUTER_", 
-		"PLAN_", "PRAGMA_", "PRIMARY_", "QUERY_", "RAISE_", "RECURSIVE_", "REFERENCES_", 
-		"REGEXP_", "REINDEX_", "RELEASE_", "RENAME_", "REPLACE_", "RESTRICT_", 
-		"RETURNING_", "RIGHT_", "ROLLBACK_", "ROW_", "ROWS_", "SAVEPOINT_", "SELECT_", 
-		"SET_", "TABLE_", "TEMP_", "TEMPORARY_", "THEN_", "TO_", "TRANSACTION_", 
-		"TRIGGER_", "UNION_", "UNIQUE_", "UPDATE_", "USING_", "VACUUM_", "VALUES_", 
-		"VIEW_", "VIRTUAL_", "WHEN_", "WHERE_", "WITH_", "WITHOUT_", "FIRST_VALUE_", 
-		"OVER_", "PARTITION_", "RANGE_", "PRECEDING_", "UNBOUNDED_", "CURRENT_", 
-		"FOLLOWING_", "CUME_DIST_", "DENSE_RANK_", "LAG_", "LAST_VALUE_", "LEAD_", 
-		"NTH_VALUE_", "NTILE_", "PERCENT_RANK_", "RANK_", "ROW_NUMBER_", "GENERATED_", 
-		"ALWAYS_", "STORED_", "TRUE_", "FALSE_", "WINDOW_", "NULLS_", "FIRST_", 
-		"LAST_", "FILTER_", "GROUPS_", "EXCLUDE_", "TIES_", "OTHERS_", "DO_", 
-		"NOTHING_", "IDENTIFIER", "NUMERIC_LITERAL", "BIND_PARAMETER", "STRING_LITERAL", 
+		"LT", "LT_EQ", "GT", "GT_EQ", "EQ", "NOT_EQ1", "NOT_EQ2", "ABORT", "ACTION", 
+		"ADD", "AFTER", "ALL", "ALTER", "ANALYZE", "AND", "AS", "ASC", "ATTACH", 
+		"AUTOINCREMENT", "BEFORE", "BEGIN", "BETWEEN", "BY", "CASCADE", "CASE", 
+		"CAST", "CHECK", "COLLATE", "COLUMN", "COMMIT", "CONFLICT", "CONSTRAINT", 
+		"CREATE", "CROSS", "CURRENT_DATE", "CURRENT_TIME", "CURRENT_TIMESTAMP", 
+		"DATABASE", "DEFAULT", "DEFERRABLE", "DEFERRED", "DELETE", "DESC", "DETACH", 
+		"DISTINCT", "DROP", "EACH", "ELSE", "END", "ESCAPE", "EXCEPT", "EXCLUSIVE", 
+		"EXISTS", "EXPLAIN", "FAIL", "FOR", "FOREIGN", "FROM", "FULL", "GLOB", 
+		"GROUP", "HAVING", "IF", "IGNORE", "IMMEDIATE", "IN", "INDEX", "INDEXED", 
+		"INITIALLY", "INNER", "INSERT", "INSTEAD", "INTERSECT", "INTO", "IS", 
+		"ISNULL", "JOIN", "KEY", "LEFT", "LIKE", "LIMIT", "MATCH", "NATURAL", 
+		"NO", "NOT", "NOTNULL", "NULL", "OF", "OFFSET", "ON", "OR", "ORDER", "OUTER", 
+		"PLAN", "PRAGMA", "PRIMARY", "QUERY", "RAISE", "RECURSIVE", "REFERENCES", 
+		"REGEXP", "REINDEX", "RELEASE", "RENAME", "REPLACE", "RESTRICT", "RETURNING", 
+		"RIGHT", "ROLLBACK", "ROW", "ROWS", "SAVEPOINT", "SELECT", "SET", "TABLE", 
+		"TEMP", "TEMPORARY", "THEN", "TO", "TRANSACTION", "TRIGGER", "UNION", 
+		"UNIQUE", "UPDATE", "USING", "VACUUM", "VALUES", "VIEW", "VIRTUAL", "WHEN", 
+		"WHERE", "WITH", "WITHOUT", "FIRST_VALUE", "OVER", "PARTITION", "RANGE", 
+		"PRECEDING", "UNBOUNDED", "CURRENT", "FOLLOWING", "CUME_DIST", "DENSE_RANK", 
+		"LAG", "LAST_VALUE", "LEAD", "NTH_VALUE", "NTILE", "PERCENT_RANK", "RANK", 
+		"ROW_NUMBER", "GENERATED", "ALWAYS", "STORED", "TRUE", "FALSE", "WINDOW", 
+		"NULLS", "FIRST", "LAST", "FILTER", "GROUPS", "EXCLUDE", "TIES", "OTHERS", 
+		"DO", "NOTHING", "IDENTIFIER", "NUMERIC_LITERAL", "BIND_PARAMETER", "STRING_LITERAL", 
 		"BLOB_LITERAL", "SINGLE_LINE_COMMENT", "MULTILINE_COMMENT", "SPACES", 
 		"UNEXPECTED_CHAR", "HEX_DIGIT", "DIGIT",
 	];
@@ -261,30 +259,28 @@ export class SQLiteLexer extends Lexer {
 		undefined, "SCOL", "DOT", "OPEN_PAR", "CLOSE_PAR", "COMMA", "ASSIGN", 
 		"STAR", "PLUS", "MINUS", "TILDE", "PIPE2", "DIV", "MOD", "LT2", "GT2", 
 		"AMP", "PIPE", "LT", "LT_EQ", "GT", "GT_EQ", "EQ", "NOT_EQ1", "NOT_EQ2", 
-		"ABORT_", "ACTION_", "ADD_", "AFTER_", "ALL_", "ALTER_", "ANALYZE_", "AND_", 
-		"AS_", "ASC_", "ATTACH_", "AUTOINCREMENT_", "BEFORE_", "BEGIN_", "BETWEEN_", 
-		"BY_", "CASCADE_", "CASE_", "CAST_", "CHECK_", "COLLATE_", "COLUMN_", 
-		"COMMIT_", "CONFLICT_", "CONSTRAINT_", "CREATE_", "CROSS_", "CURRENT_DATE_", 
-		"CURRENT_TIME_", "CURRENT_TIMESTAMP_", "DATABASE_", "DEFAULT_", "DEFERRABLE_", 
-		"DEFERRED_", "DELETE_", "DESC_", "DETACH_", "DISTINCT_", "DROP_", "EACH_", 
-		"ELSE_", "END_", "ESCAPE_", "EXCEPT_", "EXCLUSIVE_", "EXISTS_", "EXPLAIN_", 
-		"FAIL_", "FOR_", "FOREIGN_", "FROM_", "FULL_", "GLOB_", "GROUP_", "HAVING_", 
-		"IF_", "IGNORE_", "IMMEDIATE_", "IN_", "INDEX_", "INDEXED_", "INITIALLY_", 
-		"INNER_", "INSERT_", "INSTEAD_", "INTERSECT_", "INTO_", "IS_", "ISNULL_", 
-		"JOIN_", "KEY_", "LEFT_", "LIKE_", "LIMIT_", "MATCH_", "NATURAL_", "NO_", 
-		"NOT_", "NOTNULL_", "NULL_", "OF_", "OFFSET_", "ON_", "OR_", "ORDER_", 
-		"OUTER_", "PLAN_", "PRAGMA_", "PRIMARY_", "QUERY_", "RAISE_", "RECURSIVE_", 
-		"REFERENCES_", "REGEXP_", "REINDEX_", "RELEASE_", "RENAME_", "REPLACE_", 
-		"RESTRICT_", "RETURNING_", "RIGHT_", "ROLLBACK_", "ROW_", "ROWS_", "SAVEPOINT_", 
-		"SELECT_", "SET_", "TABLE_", "TEMP_", "TEMPORARY_", "THEN_", "TO_", "TRANSACTION_", 
-		"TRIGGER_", "UNION_", "UNIQUE_", "UPDATE_", "USING_", "VACUUM_", "VALUES_", 
-		"VIEW_", "VIRTUAL_", "WHEN_", "WHERE_", "WITH_", "WITHOUT_", "FIRST_VALUE_", 
-		"OVER_", "PARTITION_", "RANGE_", "PRECEDING_", "UNBOUNDED_", "CURRENT_", 
-		"FOLLOWING_", "CUME_DIST_", "DENSE_RANK_", "LAG_", "LAST_VALUE_", "LEAD_", 
-		"NTH_VALUE_", "NTILE_", "PERCENT_RANK_", "RANK_", "ROW_NUMBER_", "GENERATED_", 
-		"ALWAYS_", "STORED_", "TRUE_", "FALSE_", "WINDOW_", "NULLS_", "FIRST_", 
-		"LAST_", "FILTER_", "GROUPS_", "EXCLUDE_", "TIES_", "OTHERS_", "DO_", 
-		"NOTHING_", "IDENTIFIER", "NUMERIC_LITERAL", "BIND_PARAMETER", "STRING_LITERAL", 
+		"ABORT", "ACTION", "ADD", "AFTER", "ALL", "ALTER", "ANALYZE", "AND", "AS", 
+		"ASC", "ATTACH", "AUTOINCREMENT", "BEFORE", "BEGIN", "BETWEEN", "BY", 
+		"CASCADE", "CASE", "CAST", "CHECK", "COLLATE", "COLUMN", "COMMIT", "CONFLICT", 
+		"CONSTRAINT", "CREATE", "CROSS", "CURRENT_DATE", "CURRENT_TIME", "CURRENT_TIMESTAMP", 
+		"DATABASE", "DEFAULT", "DEFERRABLE", "DEFERRED", "DELETE", "DESC", "DETACH", 
+		"DISTINCT", "DROP", "EACH", "ELSE", "END", "ESCAPE", "EXCEPT", "EXCLUSIVE", 
+		"EXISTS", "EXPLAIN", "FAIL", "FOR", "FOREIGN", "FROM", "FULL", "GLOB", 
+		"GROUP", "HAVING", "IF", "IGNORE", "IMMEDIATE", "IN", "INDEX", "INDEXED", 
+		"INITIALLY", "INNER", "INSERT", "INSTEAD", "INTERSECT", "INTO", "IS", 
+		"ISNULL", "JOIN", "KEY", "LEFT", "LIKE", "LIMIT", "MATCH", "NATURAL", 
+		"NO", "NOT", "NOTNULL", "NULL", "OF", "OFFSET", "ON", "OR", "ORDER", "OUTER", 
+		"PLAN", "PRAGMA", "PRIMARY", "QUERY", "RAISE", "RECURSIVE", "REFERENCES", 
+		"REGEXP", "REINDEX", "RELEASE", "RENAME", "REPLACE", "RESTRICT", "RETURNING", 
+		"RIGHT", "ROLLBACK", "ROW", "ROWS", "SAVEPOINT", "SELECT", "SET", "TABLE", 
+		"TEMP", "TEMPORARY", "THEN", "TO", "TRANSACTION", "TRIGGER", "UNION", 
+		"UNIQUE", "UPDATE", "USING", "VACUUM", "VALUES", "VIEW", "VIRTUAL", "WHEN", 
+		"WHERE", "WITH", "WITHOUT", "FIRST_VALUE", "OVER", "PARTITION", "RANGE", 
+		"PRECEDING", "UNBOUNDED", "CURRENT", "FOLLOWING", "CUME_DIST", "DENSE_RANK", 
+		"LAG", "LAST_VALUE", "LEAD", "NTH_VALUE", "NTILE", "PERCENT_RANK", "RANK", 
+		"ROW_NUMBER", "GENERATED", "ALWAYS", "STORED", "TRUE", "FALSE", "WINDOW", 
+		"NULLS", "FIRST", "LAST", "FILTER", "GROUPS", "EXCLUDE", "TIES", "OTHERS", 
+		"DO", "NOTHING", "IDENTIFIER", "NUMERIC_LITERAL", "BIND_PARAMETER", "STRING_LITERAL", 
 		"BLOB_LITERAL", "SINGLE_LINE_COMMENT", "MULTILINE_COMMENT", "SPACES", 
 		"UNEXPECTED_CHAR",
 	];

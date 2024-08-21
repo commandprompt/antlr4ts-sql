@@ -50,166 +50,166 @@ export class SQLiteParser extends Parser {
 	public static readonly EQ = 22;
 	public static readonly NOT_EQ1 = 23;
 	public static readonly NOT_EQ2 = 24;
-	public static readonly ABORT_ = 25;
-	public static readonly ACTION_ = 26;
-	public static readonly ADD_ = 27;
-	public static readonly AFTER_ = 28;
-	public static readonly ALL_ = 29;
-	public static readonly ALTER_ = 30;
-	public static readonly ANALYZE_ = 31;
-	public static readonly AND_ = 32;
-	public static readonly AS_ = 33;
-	public static readonly ASC_ = 34;
-	public static readonly ATTACH_ = 35;
-	public static readonly AUTOINCREMENT_ = 36;
-	public static readonly BEFORE_ = 37;
-	public static readonly BEGIN_ = 38;
-	public static readonly BETWEEN_ = 39;
-	public static readonly BY_ = 40;
-	public static readonly CASCADE_ = 41;
-	public static readonly CASE_ = 42;
-	public static readonly CAST_ = 43;
-	public static readonly CHECK_ = 44;
-	public static readonly COLLATE_ = 45;
-	public static readonly COLUMN_ = 46;
-	public static readonly COMMIT_ = 47;
-	public static readonly CONFLICT_ = 48;
-	public static readonly CONSTRAINT_ = 49;
-	public static readonly CREATE_ = 50;
-	public static readonly CROSS_ = 51;
-	public static readonly CURRENT_DATE_ = 52;
-	public static readonly CURRENT_TIME_ = 53;
-	public static readonly CURRENT_TIMESTAMP_ = 54;
-	public static readonly DATABASE_ = 55;
-	public static readonly DEFAULT_ = 56;
-	public static readonly DEFERRABLE_ = 57;
-	public static readonly DEFERRED_ = 58;
-	public static readonly DELETE_ = 59;
-	public static readonly DESC_ = 60;
-	public static readonly DETACH_ = 61;
-	public static readonly DISTINCT_ = 62;
-	public static readonly DROP_ = 63;
-	public static readonly EACH_ = 64;
-	public static readonly ELSE_ = 65;
-	public static readonly END_ = 66;
-	public static readonly ESCAPE_ = 67;
-	public static readonly EXCEPT_ = 68;
-	public static readonly EXCLUSIVE_ = 69;
-	public static readonly EXISTS_ = 70;
-	public static readonly EXPLAIN_ = 71;
-	public static readonly FAIL_ = 72;
-	public static readonly FOR_ = 73;
-	public static readonly FOREIGN_ = 74;
-	public static readonly FROM_ = 75;
-	public static readonly FULL_ = 76;
-	public static readonly GLOB_ = 77;
-	public static readonly GROUP_ = 78;
-	public static readonly HAVING_ = 79;
-	public static readonly IF_ = 80;
-	public static readonly IGNORE_ = 81;
-	public static readonly IMMEDIATE_ = 82;
-	public static readonly IN_ = 83;
-	public static readonly INDEX_ = 84;
-	public static readonly INDEXED_ = 85;
-	public static readonly INITIALLY_ = 86;
-	public static readonly INNER_ = 87;
-	public static readonly INSERT_ = 88;
-	public static readonly INSTEAD_ = 89;
-	public static readonly INTERSECT_ = 90;
-	public static readonly INTO_ = 91;
-	public static readonly IS_ = 92;
-	public static readonly ISNULL_ = 93;
-	public static readonly JOIN_ = 94;
-	public static readonly KEY_ = 95;
-	public static readonly LEFT_ = 96;
-	public static readonly LIKE_ = 97;
-	public static readonly LIMIT_ = 98;
-	public static readonly MATCH_ = 99;
-	public static readonly NATURAL_ = 100;
-	public static readonly NO_ = 101;
-	public static readonly NOT_ = 102;
-	public static readonly NOTNULL_ = 103;
-	public static readonly NULL_ = 104;
-	public static readonly OF_ = 105;
-	public static readonly OFFSET_ = 106;
-	public static readonly ON_ = 107;
-	public static readonly OR_ = 108;
-	public static readonly ORDER_ = 109;
-	public static readonly OUTER_ = 110;
-	public static readonly PLAN_ = 111;
-	public static readonly PRAGMA_ = 112;
-	public static readonly PRIMARY_ = 113;
-	public static readonly QUERY_ = 114;
-	public static readonly RAISE_ = 115;
-	public static readonly RECURSIVE_ = 116;
-	public static readonly REFERENCES_ = 117;
-	public static readonly REGEXP_ = 118;
-	public static readonly REINDEX_ = 119;
-	public static readonly RELEASE_ = 120;
-	public static readonly RENAME_ = 121;
-	public static readonly REPLACE_ = 122;
-	public static readonly RESTRICT_ = 123;
-	public static readonly RETURNING_ = 124;
-	public static readonly RIGHT_ = 125;
-	public static readonly ROLLBACK_ = 126;
-	public static readonly ROW_ = 127;
-	public static readonly ROWS_ = 128;
-	public static readonly SAVEPOINT_ = 129;
-	public static readonly SELECT_ = 130;
-	public static readonly SET_ = 131;
-	public static readonly TABLE_ = 132;
-	public static readonly TEMP_ = 133;
-	public static readonly TEMPORARY_ = 134;
-	public static readonly THEN_ = 135;
-	public static readonly TO_ = 136;
-	public static readonly TRANSACTION_ = 137;
-	public static readonly TRIGGER_ = 138;
-	public static readonly UNION_ = 139;
-	public static readonly UNIQUE_ = 140;
-	public static readonly UPDATE_ = 141;
-	public static readonly USING_ = 142;
-	public static readonly VACUUM_ = 143;
-	public static readonly VALUES_ = 144;
-	public static readonly VIEW_ = 145;
-	public static readonly VIRTUAL_ = 146;
-	public static readonly WHEN_ = 147;
-	public static readonly WHERE_ = 148;
-	public static readonly WITH_ = 149;
-	public static readonly WITHOUT_ = 150;
-	public static readonly FIRST_VALUE_ = 151;
-	public static readonly OVER_ = 152;
-	public static readonly PARTITION_ = 153;
-	public static readonly RANGE_ = 154;
-	public static readonly PRECEDING_ = 155;
-	public static readonly UNBOUNDED_ = 156;
-	public static readonly CURRENT_ = 157;
-	public static readonly FOLLOWING_ = 158;
-	public static readonly CUME_DIST_ = 159;
-	public static readonly DENSE_RANK_ = 160;
-	public static readonly LAG_ = 161;
-	public static readonly LAST_VALUE_ = 162;
-	public static readonly LEAD_ = 163;
-	public static readonly NTH_VALUE_ = 164;
-	public static readonly NTILE_ = 165;
-	public static readonly PERCENT_RANK_ = 166;
-	public static readonly RANK_ = 167;
-	public static readonly ROW_NUMBER_ = 168;
-	public static readonly GENERATED_ = 169;
-	public static readonly ALWAYS_ = 170;
-	public static readonly STORED_ = 171;
-	public static readonly TRUE_ = 172;
-	public static readonly FALSE_ = 173;
-	public static readonly WINDOW_ = 174;
-	public static readonly NULLS_ = 175;
-	public static readonly FIRST_ = 176;
-	public static readonly LAST_ = 177;
-	public static readonly FILTER_ = 178;
-	public static readonly GROUPS_ = 179;
-	public static readonly EXCLUDE_ = 180;
-	public static readonly TIES_ = 181;
-	public static readonly OTHERS_ = 182;
-	public static readonly DO_ = 183;
-	public static readonly NOTHING_ = 184;
+	public static readonly ABORT = 25;
+	public static readonly ACTION = 26;
+	public static readonly ADD = 27;
+	public static readonly AFTER = 28;
+	public static readonly ALL = 29;
+	public static readonly ALTER = 30;
+	public static readonly ANALYZE = 31;
+	public static readonly AND = 32;
+	public static readonly AS = 33;
+	public static readonly ASC = 34;
+	public static readonly ATTACH = 35;
+	public static readonly AUTOINCREMENT = 36;
+	public static readonly BEFORE = 37;
+	public static readonly BEGIN = 38;
+	public static readonly BETWEEN = 39;
+	public static readonly BY = 40;
+	public static readonly CASCADE = 41;
+	public static readonly CASE = 42;
+	public static readonly CAST = 43;
+	public static readonly CHECK = 44;
+	public static readonly COLLATE = 45;
+	public static readonly COLUMN = 46;
+	public static readonly COMMIT = 47;
+	public static readonly CONFLICT = 48;
+	public static readonly CONSTRAINT = 49;
+	public static readonly CREATE = 50;
+	public static readonly CROSS = 51;
+	public static readonly CURRENT_DATE = 52;
+	public static readonly CURRENT_TIME = 53;
+	public static readonly CURRENT_TIMESTAMP = 54;
+	public static readonly DATABASE = 55;
+	public static readonly DEFAULT = 56;
+	public static readonly DEFERRABLE = 57;
+	public static readonly DEFERRED = 58;
+	public static readonly DELETE = 59;
+	public static readonly DESC = 60;
+	public static readonly DETACH = 61;
+	public static readonly DISTINCT = 62;
+	public static readonly DROP = 63;
+	public static readonly EACH = 64;
+	public static readonly ELSE = 65;
+	public static readonly END = 66;
+	public static readonly ESCAPE = 67;
+	public static readonly EXCEPT = 68;
+	public static readonly EXCLUSIVE = 69;
+	public static readonly EXISTS = 70;
+	public static readonly EXPLAIN = 71;
+	public static readonly FAIL = 72;
+	public static readonly FOR = 73;
+	public static readonly FOREIGN = 74;
+	public static readonly FROM = 75;
+	public static readonly FULL = 76;
+	public static readonly GLOB = 77;
+	public static readonly GROUP = 78;
+	public static readonly HAVING = 79;
+	public static readonly IF = 80;
+	public static readonly IGNORE = 81;
+	public static readonly IMMEDIATE = 82;
+	public static readonly IN = 83;
+	public static readonly INDEX = 84;
+	public static readonly INDEXED = 85;
+	public static readonly INITIALLY = 86;
+	public static readonly INNER = 87;
+	public static readonly INSERT = 88;
+	public static readonly INSTEAD = 89;
+	public static readonly INTERSECT = 90;
+	public static readonly INTO = 91;
+	public static readonly IS = 92;
+	public static readonly ISNULL = 93;
+	public static readonly JOIN = 94;
+	public static readonly KEY = 95;
+	public static readonly LEFT = 96;
+	public static readonly LIKE = 97;
+	public static readonly LIMIT = 98;
+	public static readonly MATCH = 99;
+	public static readonly NATURAL = 100;
+	public static readonly NO = 101;
+	public static readonly NOT = 102;
+	public static readonly NOTNULL = 103;
+	public static readonly NULL = 104;
+	public static readonly OF = 105;
+	public static readonly OFFSET = 106;
+	public static readonly ON = 107;
+	public static readonly OR = 108;
+	public static readonly ORDER = 109;
+	public static readonly OUTER = 110;
+	public static readonly PLAN = 111;
+	public static readonly PRAGMA = 112;
+	public static readonly PRIMARY = 113;
+	public static readonly QUERY = 114;
+	public static readonly RAISE = 115;
+	public static readonly RECURSIVE = 116;
+	public static readonly REFERENCES = 117;
+	public static readonly REGEXP = 118;
+	public static readonly REINDEX = 119;
+	public static readonly RELEASE = 120;
+	public static readonly RENAME = 121;
+	public static readonly REPLACE = 122;
+	public static readonly RESTRICT = 123;
+	public static readonly RETURNING = 124;
+	public static readonly RIGHT = 125;
+	public static readonly ROLLBACK = 126;
+	public static readonly ROW = 127;
+	public static readonly ROWS = 128;
+	public static readonly SAVEPOINT = 129;
+	public static readonly SELECT = 130;
+	public static readonly SET = 131;
+	public static readonly TABLE = 132;
+	public static readonly TEMP = 133;
+	public static readonly TEMPORARY = 134;
+	public static readonly THEN = 135;
+	public static readonly TO = 136;
+	public static readonly TRANSACTION = 137;
+	public static readonly TRIGGER = 138;
+	public static readonly UNION = 139;
+	public static readonly UNIQUE = 140;
+	public static readonly UPDATE = 141;
+	public static readonly USING = 142;
+	public static readonly VACUUM = 143;
+	public static readonly VALUES = 144;
+	public static readonly VIEW = 145;
+	public static readonly VIRTUAL = 146;
+	public static readonly WHEN = 147;
+	public static readonly WHERE = 148;
+	public static readonly WITH = 149;
+	public static readonly WITHOUT = 150;
+	public static readonly FIRST_VALUE = 151;
+	public static readonly OVER = 152;
+	public static readonly PARTITION = 153;
+	public static readonly RANGE = 154;
+	public static readonly PRECEDING = 155;
+	public static readonly UNBOUNDED = 156;
+	public static readonly CURRENT = 157;
+	public static readonly FOLLOWING = 158;
+	public static readonly CUME_DIST = 159;
+	public static readonly DENSE_RANK = 160;
+	public static readonly LAG = 161;
+	public static readonly LAST_VALUE = 162;
+	public static readonly LEAD = 163;
+	public static readonly NTH_VALUE = 164;
+	public static readonly NTILE = 165;
+	public static readonly PERCENT_RANK = 166;
+	public static readonly RANK = 167;
+	public static readonly ROW_NUMBER = 168;
+	public static readonly GENERATED = 169;
+	public static readonly ALWAYS = 170;
+	public static readonly STORED = 171;
+	public static readonly TRUE = 172;
+	public static readonly FALSE = 173;
+	public static readonly WINDOW = 174;
+	public static readonly NULLS = 175;
+	public static readonly FIRST = 176;
+	public static readonly LAST = 177;
+	public static readonly FILTER = 178;
+	public static readonly GROUPS = 179;
+	public static readonly EXCLUDE = 180;
+	public static readonly TIES = 181;
+	public static readonly OTHERS = 182;
+	public static readonly DO = 183;
+	public static readonly NOTHING = 184;
 	public static readonly IDENTIFIER = 185;
 	public static readonly NUMERIC_LITERAL = 186;
 	public static readonly BIND_PARAMETER = 187;
@@ -370,30 +370,28 @@ export class SQLiteParser extends Parser {
 		undefined, "SCOL", "DOT", "OPEN_PAR", "CLOSE_PAR", "COMMA", "ASSIGN", 
 		"STAR", "PLUS", "MINUS", "TILDE", "PIPE2", "DIV", "MOD", "LT2", "GT2", 
 		"AMP", "PIPE", "LT", "LT_EQ", "GT", "GT_EQ", "EQ", "NOT_EQ1", "NOT_EQ2", 
-		"ABORT_", "ACTION_", "ADD_", "AFTER_", "ALL_", "ALTER_", "ANALYZE_", "AND_", 
-		"AS_", "ASC_", "ATTACH_", "AUTOINCREMENT_", "BEFORE_", "BEGIN_", "BETWEEN_", 
-		"BY_", "CASCADE_", "CASE_", "CAST_", "CHECK_", "COLLATE_", "COLUMN_", 
-		"COMMIT_", "CONFLICT_", "CONSTRAINT_", "CREATE_", "CROSS_", "CURRENT_DATE_", 
-		"CURRENT_TIME_", "CURRENT_TIMESTAMP_", "DATABASE_", "DEFAULT_", "DEFERRABLE_", 
-		"DEFERRED_", "DELETE_", "DESC_", "DETACH_", "DISTINCT_", "DROP_", "EACH_", 
-		"ELSE_", "END_", "ESCAPE_", "EXCEPT_", "EXCLUSIVE_", "EXISTS_", "EXPLAIN_", 
-		"FAIL_", "FOR_", "FOREIGN_", "FROM_", "FULL_", "GLOB_", "GROUP_", "HAVING_", 
-		"IF_", "IGNORE_", "IMMEDIATE_", "IN_", "INDEX_", "INDEXED_", "INITIALLY_", 
-		"INNER_", "INSERT_", "INSTEAD_", "INTERSECT_", "INTO_", "IS_", "ISNULL_", 
-		"JOIN_", "KEY_", "LEFT_", "LIKE_", "LIMIT_", "MATCH_", "NATURAL_", "NO_", 
-		"NOT_", "NOTNULL_", "NULL_", "OF_", "OFFSET_", "ON_", "OR_", "ORDER_", 
-		"OUTER_", "PLAN_", "PRAGMA_", "PRIMARY_", "QUERY_", "RAISE_", "RECURSIVE_", 
-		"REFERENCES_", "REGEXP_", "REINDEX_", "RELEASE_", "RENAME_", "REPLACE_", 
-		"RESTRICT_", "RETURNING_", "RIGHT_", "ROLLBACK_", "ROW_", "ROWS_", "SAVEPOINT_", 
-		"SELECT_", "SET_", "TABLE_", "TEMP_", "TEMPORARY_", "THEN_", "TO_", "TRANSACTION_", 
-		"TRIGGER_", "UNION_", "UNIQUE_", "UPDATE_", "USING_", "VACUUM_", "VALUES_", 
-		"VIEW_", "VIRTUAL_", "WHEN_", "WHERE_", "WITH_", "WITHOUT_", "FIRST_VALUE_", 
-		"OVER_", "PARTITION_", "RANGE_", "PRECEDING_", "UNBOUNDED_", "CURRENT_", 
-		"FOLLOWING_", "CUME_DIST_", "DENSE_RANK_", "LAG_", "LAST_VALUE_", "LEAD_", 
-		"NTH_VALUE_", "NTILE_", "PERCENT_RANK_", "RANK_", "ROW_NUMBER_", "GENERATED_", 
-		"ALWAYS_", "STORED_", "TRUE_", "FALSE_", "WINDOW_", "NULLS_", "FIRST_", 
-		"LAST_", "FILTER_", "GROUPS_", "EXCLUDE_", "TIES_", "OTHERS_", "DO_", 
-		"NOTHING_", "IDENTIFIER", "NUMERIC_LITERAL", "BIND_PARAMETER", "STRING_LITERAL", 
+		"ABORT", "ACTION", "ADD", "AFTER", "ALL", "ALTER", "ANALYZE", "AND", "AS", 
+		"ASC", "ATTACH", "AUTOINCREMENT", "BEFORE", "BEGIN", "BETWEEN", "BY", 
+		"CASCADE", "CASE", "CAST", "CHECK", "COLLATE", "COLUMN", "COMMIT", "CONFLICT", 
+		"CONSTRAINT", "CREATE", "CROSS", "CURRENT_DATE", "CURRENT_TIME", "CURRENT_TIMESTAMP", 
+		"DATABASE", "DEFAULT", "DEFERRABLE", "DEFERRED", "DELETE", "DESC", "DETACH", 
+		"DISTINCT", "DROP", "EACH", "ELSE", "END", "ESCAPE", "EXCEPT", "EXCLUSIVE", 
+		"EXISTS", "EXPLAIN", "FAIL", "FOR", "FOREIGN", "FROM", "FULL", "GLOB", 
+		"GROUP", "HAVING", "IF", "IGNORE", "IMMEDIATE", "IN", "INDEX", "INDEXED", 
+		"INITIALLY", "INNER", "INSERT", "INSTEAD", "INTERSECT", "INTO", "IS", 
+		"ISNULL", "JOIN", "KEY", "LEFT", "LIKE", "LIMIT", "MATCH", "NATURAL", 
+		"NO", "NOT", "NOTNULL", "NULL", "OF", "OFFSET", "ON", "OR", "ORDER", "OUTER", 
+		"PLAN", "PRAGMA", "PRIMARY", "QUERY", "RAISE", "RECURSIVE", "REFERENCES", 
+		"REGEXP", "REINDEX", "RELEASE", "RENAME", "REPLACE", "RESTRICT", "RETURNING", 
+		"RIGHT", "ROLLBACK", "ROW", "ROWS", "SAVEPOINT", "SELECT", "SET", "TABLE", 
+		"TEMP", "TEMPORARY", "THEN", "TO", "TRANSACTION", "TRIGGER", "UNION", 
+		"UNIQUE", "UPDATE", "USING", "VACUUM", "VALUES", "VIEW", "VIRTUAL", "WHEN", 
+		"WHERE", "WITH", "WITHOUT", "FIRST_VALUE", "OVER", "PARTITION", "RANGE", 
+		"PRECEDING", "UNBOUNDED", "CURRENT", "FOLLOWING", "CUME_DIST", "DENSE_RANK", 
+		"LAG", "LAST_VALUE", "LEAD", "NTH_VALUE", "NTILE", "PERCENT_RANK", "RANK", 
+		"ROW_NUMBER", "GENERATED", "ALWAYS", "STORED", "TRUE", "FALSE", "WINDOW", 
+		"NULLS", "FIRST", "LAST", "FILTER", "GROUPS", "EXCLUDE", "TIES", "OTHERS", 
+		"DO", "NOTHING", "IDENTIFIER", "NUMERIC_LITERAL", "BIND_PARAMETER", "STRING_LITERAL", 
 		"BLOB_LITERAL", "SINGLE_LINE_COMMENT", "MULTILINE_COMMENT", "SPACES", 
 		"UNEXPECTED_CHAR",
 	];
@@ -434,7 +432,7 @@ export class SQLiteParser extends Parser {
 			this.state = 229;
 			this._errHandler.sync(this);
 			_la = this._input.LA(1);
-			while ((((_la) & ~0x1F) === 0 && ((1 << _la) & ((1 << SQLiteParser.SCOL) | (1 << SQLiteParser.ALTER_) | (1 << SQLiteParser.ANALYZE_))) !== 0) || ((((_la - 35)) & ~0x1F) === 0 && ((1 << (_la - 35)) & ((1 << (SQLiteParser.ATTACH_ - 35)) | (1 << (SQLiteParser.BEGIN_ - 35)) | (1 << (SQLiteParser.COMMIT_ - 35)) | (1 << (SQLiteParser.CREATE_ - 35)) | (1 << (SQLiteParser.DELETE_ - 35)) | (1 << (SQLiteParser.DETACH_ - 35)) | (1 << (SQLiteParser.DROP_ - 35)) | (1 << (SQLiteParser.END_ - 35)))) !== 0) || _la === SQLiteParser.EXPLAIN_ || _la === SQLiteParser.INSERT_ || ((((_la - 112)) & ~0x1F) === 0 && ((1 << (_la - 112)) & ((1 << (SQLiteParser.PRAGMA_ - 112)) | (1 << (SQLiteParser.REINDEX_ - 112)) | (1 << (SQLiteParser.RELEASE_ - 112)) | (1 << (SQLiteParser.REPLACE_ - 112)) | (1 << (SQLiteParser.ROLLBACK_ - 112)) | (1 << (SQLiteParser.SAVEPOINT_ - 112)) | (1 << (SQLiteParser.SELECT_ - 112)) | (1 << (SQLiteParser.UPDATE_ - 112)) | (1 << (SQLiteParser.VACUUM_ - 112)))) !== 0) || _la === SQLiteParser.VALUES_ || _la === SQLiteParser.WITH_) {
+			while ((((_la) & ~0x1F) === 0 && ((1 << _la) & ((1 << SQLiteParser.SCOL) | (1 << SQLiteParser.ALTER) | (1 << SQLiteParser.ANALYZE))) !== 0) || ((((_la - 35)) & ~0x1F) === 0 && ((1 << (_la - 35)) & ((1 << (SQLiteParser.ATTACH - 35)) | (1 << (SQLiteParser.BEGIN - 35)) | (1 << (SQLiteParser.COMMIT - 35)) | (1 << (SQLiteParser.CREATE - 35)) | (1 << (SQLiteParser.DELETE - 35)) | (1 << (SQLiteParser.DETACH - 35)) | (1 << (SQLiteParser.DROP - 35)) | (1 << (SQLiteParser.END - 35)))) !== 0) || _la === SQLiteParser.EXPLAIN || _la === SQLiteParser.INSERT || ((((_la - 112)) & ~0x1F) === 0 && ((1 << (_la - 112)) & ((1 << (SQLiteParser.PRAGMA - 112)) | (1 << (SQLiteParser.REINDEX - 112)) | (1 << (SQLiteParser.RELEASE - 112)) | (1 << (SQLiteParser.REPLACE - 112)) | (1 << (SQLiteParser.ROLLBACK - 112)) | (1 << (SQLiteParser.SAVEPOINT - 112)) | (1 << (SQLiteParser.SELECT - 112)) | (1 << (SQLiteParser.UPDATE - 112)) | (1 << (SQLiteParser.VACUUM - 112)))) !== 0) || _la === SQLiteParser.VALUES || _la === SQLiteParser.WITH) {
 				{
 				{
 				this.state = 226;
@@ -561,19 +559,19 @@ export class SQLiteParser extends Parser {
 			this.state = 263;
 			this._errHandler.sync(this);
 			_la = this._input.LA(1);
-			if (_la === SQLiteParser.EXPLAIN_) {
+			if (_la === SQLiteParser.EXPLAIN) {
 				{
 				this.state = 258;
-				this.match(SQLiteParser.EXPLAIN_);
+				this.match(SQLiteParser.EXPLAIN);
 				this.state = 261;
 				this._errHandler.sync(this);
 				_la = this._input.LA(1);
-				if (_la === SQLiteParser.QUERY_) {
+				if (_la === SQLiteParser.QUERY) {
 					{
 					this.state = 259;
-					this.match(SQLiteParser.QUERY_);
+					this.match(SQLiteParser.QUERY);
 					this.state = 260;
-					this.match(SQLiteParser.PLAN_);
+					this.match(SQLiteParser.PLAN);
 					}
 				}
 
@@ -775,9 +773,9 @@ export class SQLiteParser extends Parser {
 			this.enterOuterAlt(_localctx, 1);
 			{
 			this.state = 291;
-			this.match(SQLiteParser.ALTER_);
+			this.match(SQLiteParser.ALTER);
 			this.state = 292;
-			this.match(SQLiteParser.TABLE_);
+			this.match(SQLiteParser.TABLE);
 			this.state = 296;
 			this._errHandler.sync(this);
 			switch ( this.interpreter.adaptivePredict(this._input, 8, this._ctx) ) {
@@ -795,17 +793,17 @@ export class SQLiteParser extends Parser {
 			this.state = 321;
 			this._errHandler.sync(this);
 			switch (this._input.LA(1)) {
-			case SQLiteParser.RENAME_:
+			case SQLiteParser.RENAME:
 				{
 				this.state = 299;
-				this.match(SQLiteParser.RENAME_);
+				this.match(SQLiteParser.RENAME);
 				this.state = 309;
 				this._errHandler.sync(this);
 				switch ( this.interpreter.adaptivePredict(this._input, 10, this._ctx) ) {
 				case 1:
 					{
 					this.state = 300;
-					this.match(SQLiteParser.TO_);
+					this.match(SQLiteParser.TO);
 					this.state = 301;
 					_localctx._new_table_name = this.table_name();
 					}
@@ -819,14 +817,14 @@ export class SQLiteParser extends Parser {
 					case 1:
 						{
 						this.state = 302;
-						this.match(SQLiteParser.COLUMN_);
+						this.match(SQLiteParser.COLUMN);
 						}
 						break;
 					}
 					this.state = 305;
 					_localctx._old_column_name = this.column_name();
 					this.state = 306;
-					this.match(SQLiteParser.TO_);
+					this.match(SQLiteParser.TO);
 					this.state = 307;
 					_localctx._new_column_name = this.column_name();
 					}
@@ -834,17 +832,17 @@ export class SQLiteParser extends Parser {
 				}
 				}
 				break;
-			case SQLiteParser.ADD_:
+			case SQLiteParser.ADD:
 				{
 				this.state = 311;
-				this.match(SQLiteParser.ADD_);
+				this.match(SQLiteParser.ADD);
 				this.state = 313;
 				this._errHandler.sync(this);
 				switch ( this.interpreter.adaptivePredict(this._input, 11, this._ctx) ) {
 				case 1:
 					{
 					this.state = 312;
-					this.match(SQLiteParser.COLUMN_);
+					this.match(SQLiteParser.COLUMN);
 					}
 					break;
 				}
@@ -852,17 +850,17 @@ export class SQLiteParser extends Parser {
 				this.column_def();
 				}
 				break;
-			case SQLiteParser.DROP_:
+			case SQLiteParser.DROP:
 				{
 				this.state = 316;
-				this.match(SQLiteParser.DROP_);
+				this.match(SQLiteParser.DROP);
 				this.state = 318;
 				this._errHandler.sync(this);
 				switch ( this.interpreter.adaptivePredict(this._input, 12, this._ctx) ) {
 				case 1:
 					{
 					this.state = 317;
-					this.match(SQLiteParser.COLUMN_);
+					this.match(SQLiteParser.COLUMN);
 					}
 					break;
 				}
@@ -897,7 +895,7 @@ export class SQLiteParser extends Parser {
 			this.enterOuterAlt(_localctx, 1);
 			{
 			this.state = 323;
-			this.match(SQLiteParser.ANALYZE_);
+			this.match(SQLiteParser.ANALYZE);
 			this.state = 331;
 			this._errHandler.sync(this);
 			switch ( this.interpreter.adaptivePredict(this._input, 15, this._ctx) ) {
@@ -951,21 +949,21 @@ export class SQLiteParser extends Parser {
 			this.enterOuterAlt(_localctx, 1);
 			{
 			this.state = 333;
-			this.match(SQLiteParser.ATTACH_);
+			this.match(SQLiteParser.ATTACH);
 			this.state = 335;
 			this._errHandler.sync(this);
 			switch ( this.interpreter.adaptivePredict(this._input, 16, this._ctx) ) {
 			case 1:
 				{
 				this.state = 334;
-				this.match(SQLiteParser.DATABASE_);
+				this.match(SQLiteParser.DATABASE);
 				}
 				break;
 			}
 			this.state = 337;
 			this.expr(0);
 			this.state = 338;
-			this.match(SQLiteParser.AS_);
+			this.match(SQLiteParser.AS);
 			this.state = 339;
 			this.schema_name();
 			}
@@ -993,15 +991,15 @@ export class SQLiteParser extends Parser {
 			this.enterOuterAlt(_localctx, 1);
 			{
 			this.state = 341;
-			this.match(SQLiteParser.BEGIN_);
+			this.match(SQLiteParser.BEGIN);
 			this.state = 343;
 			this._errHandler.sync(this);
 			_la = this._input.LA(1);
-			if (((((_la - 58)) & ~0x1F) === 0 && ((1 << (_la - 58)) & ((1 << (SQLiteParser.DEFERRED_ - 58)) | (1 << (SQLiteParser.EXCLUSIVE_ - 58)) | (1 << (SQLiteParser.IMMEDIATE_ - 58)))) !== 0)) {
+			if (((((_la - 58)) & ~0x1F) === 0 && ((1 << (_la - 58)) & ((1 << (SQLiteParser.DEFERRED - 58)) | (1 << (SQLiteParser.EXCLUSIVE - 58)) | (1 << (SQLiteParser.IMMEDIATE - 58)))) !== 0)) {
 				{
 				this.state = 342;
 				_la = this._input.LA(1);
-				if (!(((((_la - 58)) & ~0x1F) === 0 && ((1 << (_la - 58)) & ((1 << (SQLiteParser.DEFERRED_ - 58)) | (1 << (SQLiteParser.EXCLUSIVE_ - 58)) | (1 << (SQLiteParser.IMMEDIATE_ - 58)))) !== 0))) {
+				if (!(((((_la - 58)) & ~0x1F) === 0 && ((1 << (_la - 58)) & ((1 << (SQLiteParser.DEFERRED - 58)) | (1 << (SQLiteParser.EXCLUSIVE - 58)) | (1 << (SQLiteParser.IMMEDIATE - 58)))) !== 0))) {
 				this._errHandler.recoverInline(this);
 				} else {
 					if (this._input.LA(1) === Token.EOF) {
@@ -1017,10 +1015,10 @@ export class SQLiteParser extends Parser {
 			this.state = 349;
 			this._errHandler.sync(this);
 			_la = this._input.LA(1);
-			if (_la === SQLiteParser.TRANSACTION_) {
+			if (_la === SQLiteParser.TRANSACTION) {
 				{
 				this.state = 345;
-				this.match(SQLiteParser.TRANSACTION_);
+				this.match(SQLiteParser.TRANSACTION);
 				this.state = 347;
 				this._errHandler.sync(this);
 				switch ( this.interpreter.adaptivePredict(this._input, 18, this._ctx) ) {
@@ -1060,7 +1058,7 @@ export class SQLiteParser extends Parser {
 			{
 			this.state = 351;
 			_la = this._input.LA(1);
-			if (!(_la === SQLiteParser.COMMIT_ || _la === SQLiteParser.END_)) {
+			if (!(_la === SQLiteParser.COMMIT || _la === SQLiteParser.END)) {
 			this._errHandler.recoverInline(this);
 			} else {
 				if (this._input.LA(1) === Token.EOF) {
@@ -1073,10 +1071,10 @@ export class SQLiteParser extends Parser {
 			this.state = 353;
 			this._errHandler.sync(this);
 			_la = this._input.LA(1);
-			if (_la === SQLiteParser.TRANSACTION_) {
+			if (_la === SQLiteParser.TRANSACTION) {
 				{
 				this.state = 352;
-				this.match(SQLiteParser.TRANSACTION_);
+				this.match(SQLiteParser.TRANSACTION);
 				}
 			}
 
@@ -1105,31 +1103,31 @@ export class SQLiteParser extends Parser {
 			this.enterOuterAlt(_localctx, 1);
 			{
 			this.state = 355;
-			this.match(SQLiteParser.ROLLBACK_);
+			this.match(SQLiteParser.ROLLBACK);
 			this.state = 357;
 			this._errHandler.sync(this);
 			_la = this._input.LA(1);
-			if (_la === SQLiteParser.TRANSACTION_) {
+			if (_la === SQLiteParser.TRANSACTION) {
 				{
 				this.state = 356;
-				this.match(SQLiteParser.TRANSACTION_);
+				this.match(SQLiteParser.TRANSACTION);
 				}
 			}
 
 			this.state = 364;
 			this._errHandler.sync(this);
 			_la = this._input.LA(1);
-			if (_la === SQLiteParser.TO_) {
+			if (_la === SQLiteParser.TO) {
 				{
 				this.state = 359;
-				this.match(SQLiteParser.TO_);
+				this.match(SQLiteParser.TO);
 				this.state = 361;
 				this._errHandler.sync(this);
 				switch ( this.interpreter.adaptivePredict(this._input, 22, this._ctx) ) {
 				case 1:
 					{
 					this.state = 360;
-					this.match(SQLiteParser.SAVEPOINT_);
+					this.match(SQLiteParser.SAVEPOINT);
 					}
 					break;
 				}
@@ -1162,7 +1160,7 @@ export class SQLiteParser extends Parser {
 			this.enterOuterAlt(_localctx, 1);
 			{
 			this.state = 366;
-			this.match(SQLiteParser.SAVEPOINT_);
+			this.match(SQLiteParser.SAVEPOINT);
 			this.state = 367;
 			this.savepoint_name();
 			}
@@ -1189,14 +1187,14 @@ export class SQLiteParser extends Parser {
 			this.enterOuterAlt(_localctx, 1);
 			{
 			this.state = 369;
-			this.match(SQLiteParser.RELEASE_);
+			this.match(SQLiteParser.RELEASE);
 			this.state = 371;
 			this._errHandler.sync(this);
 			switch ( this.interpreter.adaptivePredict(this._input, 24, this._ctx) ) {
 			case 1:
 				{
 				this.state = 370;
-				this.match(SQLiteParser.SAVEPOINT_);
+				this.match(SQLiteParser.SAVEPOINT);
 				}
 				break;
 			}
@@ -1227,30 +1225,30 @@ export class SQLiteParser extends Parser {
 			this.enterOuterAlt(_localctx, 1);
 			{
 			this.state = 375;
-			this.match(SQLiteParser.CREATE_);
+			this.match(SQLiteParser.CREATE);
 			this.state = 377;
 			this._errHandler.sync(this);
 			_la = this._input.LA(1);
-			if (_la === SQLiteParser.UNIQUE_) {
+			if (_la === SQLiteParser.UNIQUE) {
 				{
 				this.state = 376;
-				this.match(SQLiteParser.UNIQUE_);
+				this.match(SQLiteParser.UNIQUE);
 				}
 			}
 
 			this.state = 379;
-			this.match(SQLiteParser.INDEX_);
+			this.match(SQLiteParser.INDEX);
 			this.state = 383;
 			this._errHandler.sync(this);
 			switch ( this.interpreter.adaptivePredict(this._input, 26, this._ctx) ) {
 			case 1:
 				{
 				this.state = 380;
-				this.match(SQLiteParser.IF_);
+				this.match(SQLiteParser.IF);
 				this.state = 381;
-				this.match(SQLiteParser.NOT_);
+				this.match(SQLiteParser.NOT);
 				this.state = 382;
-				this.match(SQLiteParser.EXISTS_);
+				this.match(SQLiteParser.EXISTS);
 				}
 				break;
 			}
@@ -1269,7 +1267,7 @@ export class SQLiteParser extends Parser {
 			this.state = 390;
 			this.index_name();
 			this.state = 391;
-			this.match(SQLiteParser.ON_);
+			this.match(SQLiteParser.ON);
 			this.state = 392;
 			this.table_name();
 			this.state = 393;
@@ -1297,10 +1295,10 @@ export class SQLiteParser extends Parser {
 			this.state = 405;
 			this._errHandler.sync(this);
 			_la = this._input.LA(1);
-			if (_la === SQLiteParser.WHERE_) {
+			if (_la === SQLiteParser.WHERE) {
 				{
 				this.state = 403;
-				this.match(SQLiteParser.WHERE_);
+				this.match(SQLiteParser.WHERE);
 				this.state = 404;
 				this.expr(0);
 				}
@@ -1350,10 +1348,10 @@ export class SQLiteParser extends Parser {
 			this.state = 413;
 			this._errHandler.sync(this);
 			_la = this._input.LA(1);
-			if (_la === SQLiteParser.COLLATE_) {
+			if (_la === SQLiteParser.COLLATE) {
 				{
 				this.state = 411;
-				this.match(SQLiteParser.COLLATE_);
+				this.match(SQLiteParser.COLLATE);
 				this.state = 412;
 				this.collation_name();
 				}
@@ -1362,7 +1360,7 @@ export class SQLiteParser extends Parser {
 			this.state = 416;
 			this._errHandler.sync(this);
 			_la = this._input.LA(1);
-			if (_la === SQLiteParser.ASC_ || _la === SQLiteParser.DESC_) {
+			if (_la === SQLiteParser.ASC || _la === SQLiteParser.DESC) {
 				{
 				this.state = 415;
 				this.asc_desc();
@@ -1395,15 +1393,15 @@ export class SQLiteParser extends Parser {
 			this.enterOuterAlt(_localctx, 1);
 			{
 			this.state = 418;
-			this.match(SQLiteParser.CREATE_);
+			this.match(SQLiteParser.CREATE);
 			this.state = 420;
 			this._errHandler.sync(this);
 			_la = this._input.LA(1);
-			if (_la === SQLiteParser.TEMP_ || _la === SQLiteParser.TEMPORARY_) {
+			if (_la === SQLiteParser.TEMP || _la === SQLiteParser.TEMPORARY) {
 				{
 				this.state = 419;
 				_la = this._input.LA(1);
-				if (!(_la === SQLiteParser.TEMP_ || _la === SQLiteParser.TEMPORARY_)) {
+				if (!(_la === SQLiteParser.TEMP || _la === SQLiteParser.TEMPORARY)) {
 				this._errHandler.recoverInline(this);
 				} else {
 					if (this._input.LA(1) === Token.EOF) {
@@ -1417,18 +1415,18 @@ export class SQLiteParser extends Parser {
 			}
 
 			this.state = 422;
-			this.match(SQLiteParser.TABLE_);
+			this.match(SQLiteParser.TABLE);
 			this.state = 426;
 			this._errHandler.sync(this);
 			switch ( this.interpreter.adaptivePredict(this._input, 34, this._ctx) ) {
 			case 1:
 				{
 				this.state = 423;
-				this.match(SQLiteParser.IF_);
+				this.match(SQLiteParser.IF);
 				this.state = 424;
-				this.match(SQLiteParser.NOT_);
+				this.match(SQLiteParser.NOT);
 				this.state = 425;
-				this.match(SQLiteParser.EXISTS_);
+				this.match(SQLiteParser.EXISTS);
 				}
 				break;
 			}
@@ -1494,10 +1492,10 @@ export class SQLiteParser extends Parser {
 				this.state = 453;
 				this._errHandler.sync(this);
 				_la = this._input.LA(1);
-				if (_la === SQLiteParser.WITHOUT_) {
+				if (_la === SQLiteParser.WITHOUT) {
 					{
 					this.state = 451;
-					this.match(SQLiteParser.WITHOUT_);
+					this.match(SQLiteParser.WITHOUT);
 					this.state = 452;
 					_localctx._row_ROW_ID = this.match(SQLiteParser.IDENTIFIER);
 					}
@@ -1505,10 +1503,10 @@ export class SQLiteParser extends Parser {
 
 				}
 				break;
-			case SQLiteParser.AS_:
+			case SQLiteParser.AS:
 				{
 				this.state = 455;
-				this.match(SQLiteParser.AS_);
+				this.match(SQLiteParser.AS);
 				this.state = 456;
 				this.select_stmt();
 				}
@@ -1555,7 +1553,7 @@ export class SQLiteParser extends Parser {
 			this.state = 466;
 			this._errHandler.sync(this);
 			_la = this._input.LA(1);
-			while (((((_la - 33)) & ~0x1F) === 0 && ((1 << (_la - 33)) & ((1 << (SQLiteParser.AS_ - 33)) | (1 << (SQLiteParser.CHECK_ - 33)) | (1 << (SQLiteParser.COLLATE_ - 33)) | (1 << (SQLiteParser.CONSTRAINT_ - 33)) | (1 << (SQLiteParser.DEFAULT_ - 33)))) !== 0) || ((((_la - 102)) & ~0x1F) === 0 && ((1 << (_la - 102)) & ((1 << (SQLiteParser.NOT_ - 102)) | (1 << (SQLiteParser.NULL_ - 102)) | (1 << (SQLiteParser.PRIMARY_ - 102)) | (1 << (SQLiteParser.REFERENCES_ - 102)))) !== 0) || _la === SQLiteParser.UNIQUE_ || _la === SQLiteParser.GENERATED_) {
+			while (((((_la - 33)) & ~0x1F) === 0 && ((1 << (_la - 33)) & ((1 << (SQLiteParser.AS - 33)) | (1 << (SQLiteParser.CHECK - 33)) | (1 << (SQLiteParser.COLLATE - 33)) | (1 << (SQLiteParser.CONSTRAINT - 33)) | (1 << (SQLiteParser.DEFAULT - 33)))) !== 0) || ((((_la - 102)) & ~0x1F) === 0 && ((1 << (_la - 102)) & ((1 << (SQLiteParser.NOT - 102)) | (1 << (SQLiteParser.NULL - 102)) | (1 << (SQLiteParser.PRIMARY - 102)) | (1 << (SQLiteParser.REFERENCES - 102)))) !== 0) || _la === SQLiteParser.UNIQUE || _la === SQLiteParser.GENERATED) {
 				{
 				{
 				this.state = 463;
@@ -1666,10 +1664,10 @@ export class SQLiteParser extends Parser {
 			this.state = 488;
 			this._errHandler.sync(this);
 			_la = this._input.LA(1);
-			if (_la === SQLiteParser.CONSTRAINT_) {
+			if (_la === SQLiteParser.CONSTRAINT) {
 				{
 				this.state = 486;
-				this.match(SQLiteParser.CONSTRAINT_);
+				this.match(SQLiteParser.CONSTRAINT);
 				this.state = 487;
 				this.name();
 				}
@@ -1678,17 +1676,17 @@ export class SQLiteParser extends Parser {
 			this.state = 539;
 			this._errHandler.sync(this);
 			switch (this._input.LA(1)) {
-			case SQLiteParser.PRIMARY_:
+			case SQLiteParser.PRIMARY:
 				{
 				{
 				this.state = 490;
-				this.match(SQLiteParser.PRIMARY_);
+				this.match(SQLiteParser.PRIMARY);
 				this.state = 491;
-				this.match(SQLiteParser.KEY_);
+				this.match(SQLiteParser.KEY);
 				this.state = 493;
 				this._errHandler.sync(this);
 				_la = this._input.LA(1);
-				if (_la === SQLiteParser.ASC_ || _la === SQLiteParser.DESC_) {
+				if (_la === SQLiteParser.ASC || _la === SQLiteParser.DESC) {
 					{
 					this.state = 492;
 					this.asc_desc();
@@ -1698,7 +1696,7 @@ export class SQLiteParser extends Parser {
 				this.state = 496;
 				this._errHandler.sync(this);
 				_la = this._input.LA(1);
-				if (_la === SQLiteParser.ON_) {
+				if (_la === SQLiteParser.ON) {
 					{
 					this.state = 495;
 					this.conflict_clause();
@@ -1708,44 +1706,44 @@ export class SQLiteParser extends Parser {
 				this.state = 499;
 				this._errHandler.sync(this);
 				_la = this._input.LA(1);
-				if (_la === SQLiteParser.AUTOINCREMENT_) {
+				if (_la === SQLiteParser.AUTOINCREMENT) {
 					{
 					this.state = 498;
-					this.match(SQLiteParser.AUTOINCREMENT_);
+					this.match(SQLiteParser.AUTOINCREMENT);
 					}
 				}
 
 				}
 				}
 				break;
-			case SQLiteParser.NOT_:
-			case SQLiteParser.NULL_:
-			case SQLiteParser.UNIQUE_:
+			case SQLiteParser.NOT:
+			case SQLiteParser.NULL:
+			case SQLiteParser.UNIQUE:
 				{
 				this.state = 506;
 				this._errHandler.sync(this);
 				switch (this._input.LA(1)) {
-				case SQLiteParser.NOT_:
-				case SQLiteParser.NULL_:
+				case SQLiteParser.NOT:
+				case SQLiteParser.NULL:
 					{
 					this.state = 502;
 					this._errHandler.sync(this);
 					_la = this._input.LA(1);
-					if (_la === SQLiteParser.NOT_) {
+					if (_la === SQLiteParser.NOT) {
 						{
 						this.state = 501;
-						this.match(SQLiteParser.NOT_);
+						this.match(SQLiteParser.NOT);
 						}
 					}
 
 					this.state = 504;
-					this.match(SQLiteParser.NULL_);
+					this.match(SQLiteParser.NULL);
 					}
 					break;
-				case SQLiteParser.UNIQUE_:
+				case SQLiteParser.UNIQUE:
 					{
 					this.state = 505;
-					this.match(SQLiteParser.UNIQUE_);
+					this.match(SQLiteParser.UNIQUE);
 					}
 					break;
 				default:
@@ -1754,7 +1752,7 @@ export class SQLiteParser extends Parser {
 				this.state = 509;
 				this._errHandler.sync(this);
 				_la = this._input.LA(1);
-				if (_la === SQLiteParser.ON_) {
+				if (_la === SQLiteParser.ON) {
 					{
 					this.state = 508;
 					this.conflict_clause();
@@ -1763,10 +1761,10 @@ export class SQLiteParser extends Parser {
 
 				}
 				break;
-			case SQLiteParser.CHECK_:
+			case SQLiteParser.CHECK:
 				{
 				this.state = 511;
-				this.match(SQLiteParser.CHECK_);
+				this.match(SQLiteParser.CHECK);
 				this.state = 512;
 				this.match(SQLiteParser.OPEN_PAR);
 				this.state = 513;
@@ -1775,10 +1773,10 @@ export class SQLiteParser extends Parser {
 				this.match(SQLiteParser.CLOSE_PAR);
 				}
 				break;
-			case SQLiteParser.DEFAULT_:
+			case SQLiteParser.DEFAULT:
 				{
 				this.state = 516;
-				this.match(SQLiteParser.DEFAULT_);
+				this.match(SQLiteParser.DEFAULT);
 				this.state = 523;
 				this._errHandler.sync(this);
 				switch ( this.interpreter.adaptivePredict(this._input, 51, this._ctx) ) {
@@ -1809,37 +1807,37 @@ export class SQLiteParser extends Parser {
 				}
 				}
 				break;
-			case SQLiteParser.COLLATE_:
+			case SQLiteParser.COLLATE:
 				{
 				this.state = 525;
-				this.match(SQLiteParser.COLLATE_);
+				this.match(SQLiteParser.COLLATE);
 				this.state = 526;
 				this.collation_name();
 				}
 				break;
-			case SQLiteParser.REFERENCES_:
+			case SQLiteParser.REFERENCES:
 				{
 				this.state = 527;
 				this.foreign_key_clause();
 				}
 				break;
-			case SQLiteParser.AS_:
-			case SQLiteParser.GENERATED_:
+			case SQLiteParser.AS:
+			case SQLiteParser.GENERATED:
 				{
 				this.state = 530;
 				this._errHandler.sync(this);
 				_la = this._input.LA(1);
-				if (_la === SQLiteParser.GENERATED_) {
+				if (_la === SQLiteParser.GENERATED) {
 					{
 					this.state = 528;
-					this.match(SQLiteParser.GENERATED_);
+					this.match(SQLiteParser.GENERATED);
 					this.state = 529;
-					this.match(SQLiteParser.ALWAYS_);
+					this.match(SQLiteParser.ALWAYS);
 					}
 				}
 
 				this.state = 532;
-				this.match(SQLiteParser.AS_);
+				this.match(SQLiteParser.AS);
 				this.state = 533;
 				this.match(SQLiteParser.OPEN_PAR);
 				this.state = 534;
@@ -1849,11 +1847,11 @@ export class SQLiteParser extends Parser {
 				this.state = 537;
 				this._errHandler.sync(this);
 				_la = this._input.LA(1);
-				if (_la === SQLiteParser.VIRTUAL_ || _la === SQLiteParser.STORED_) {
+				if (_la === SQLiteParser.VIRTUAL || _la === SQLiteParser.STORED) {
 					{
 					this.state = 536;
 					_la = this._input.LA(1);
-					if (!(_la === SQLiteParser.VIRTUAL_ || _la === SQLiteParser.STORED_)) {
+					if (!(_la === SQLiteParser.VIRTUAL || _la === SQLiteParser.STORED)) {
 					this._errHandler.recoverInline(this);
 					} else {
 						if (this._input.LA(1) === Token.EOF) {
@@ -1944,10 +1942,10 @@ export class SQLiteParser extends Parser {
 			this.state = 548;
 			this._errHandler.sync(this);
 			_la = this._input.LA(1);
-			if (_la === SQLiteParser.CONSTRAINT_) {
+			if (_la === SQLiteParser.CONSTRAINT) {
 				{
 				this.state = 546;
-				this.match(SQLiteParser.CONSTRAINT_);
+				this.match(SQLiteParser.CONSTRAINT);
 				this.state = 547;
 				this.name();
 				}
@@ -1956,24 +1954,24 @@ export class SQLiteParser extends Parser {
 			this.state = 587;
 			this._errHandler.sync(this);
 			switch (this._input.LA(1)) {
-			case SQLiteParser.PRIMARY_:
-			case SQLiteParser.UNIQUE_:
+			case SQLiteParser.PRIMARY:
+			case SQLiteParser.UNIQUE:
 				{
 				this.state = 553;
 				this._errHandler.sync(this);
 				switch (this._input.LA(1)) {
-				case SQLiteParser.PRIMARY_:
+				case SQLiteParser.PRIMARY:
 					{
 					this.state = 550;
-					this.match(SQLiteParser.PRIMARY_);
+					this.match(SQLiteParser.PRIMARY);
 					this.state = 551;
-					this.match(SQLiteParser.KEY_);
+					this.match(SQLiteParser.KEY);
 					}
 					break;
-				case SQLiteParser.UNIQUE_:
+				case SQLiteParser.UNIQUE:
 					{
 					this.state = 552;
-					this.match(SQLiteParser.UNIQUE_);
+					this.match(SQLiteParser.UNIQUE);
 					}
 					break;
 				default:
@@ -2004,7 +2002,7 @@ export class SQLiteParser extends Parser {
 				this.state = 566;
 				this._errHandler.sync(this);
 				_la = this._input.LA(1);
-				if (_la === SQLiteParser.ON_) {
+				if (_la === SQLiteParser.ON) {
 					{
 					this.state = 565;
 					this.conflict_clause();
@@ -2013,10 +2011,10 @@ export class SQLiteParser extends Parser {
 
 				}
 				break;
-			case SQLiteParser.CHECK_:
+			case SQLiteParser.CHECK:
 				{
 				this.state = 568;
-				this.match(SQLiteParser.CHECK_);
+				this.match(SQLiteParser.CHECK);
 				this.state = 569;
 				this.match(SQLiteParser.OPEN_PAR);
 				this.state = 570;
@@ -2025,12 +2023,12 @@ export class SQLiteParser extends Parser {
 				this.match(SQLiteParser.CLOSE_PAR);
 				}
 				break;
-			case SQLiteParser.FOREIGN_:
+			case SQLiteParser.FOREIGN:
 				{
 				this.state = 573;
-				this.match(SQLiteParser.FOREIGN_);
+				this.match(SQLiteParser.FOREIGN);
 				this.state = 574;
-				this.match(SQLiteParser.KEY_);
+				this.match(SQLiteParser.KEY);
 				this.state = 575;
 				this.match(SQLiteParser.OPEN_PAR);
 				this.state = 576;
@@ -2085,7 +2083,7 @@ export class SQLiteParser extends Parser {
 			this.enterOuterAlt(_localctx, 1);
 			{
 			this.state = 589;
-			this.match(SQLiteParser.REFERENCES_);
+			this.match(SQLiteParser.REFERENCES);
 			this.state = 590;
 			this.foreign_table();
 			this.state = 602;
@@ -2121,18 +2119,18 @@ export class SQLiteParser extends Parser {
 			this.state = 618;
 			this._errHandler.sync(this);
 			_la = this._input.LA(1);
-			while (_la === SQLiteParser.MATCH_ || _la === SQLiteParser.ON_) {
+			while (_la === SQLiteParser.MATCH || _la === SQLiteParser.ON) {
 				{
 				this.state = 616;
 				this._errHandler.sync(this);
 				switch (this._input.LA(1)) {
-				case SQLiteParser.ON_:
+				case SQLiteParser.ON:
 					{
 					this.state = 604;
-					this.match(SQLiteParser.ON_);
+					this.match(SQLiteParser.ON);
 					this.state = 605;
 					_la = this._input.LA(1);
-					if (!(_la === SQLiteParser.DELETE_ || _la === SQLiteParser.UPDATE_)) {
+					if (!(_la === SQLiteParser.DELETE || _la === SQLiteParser.UPDATE)) {
 					this._errHandler.recoverInline(this);
 					} else {
 						if (this._input.LA(1) === Token.EOF) {
@@ -2145,13 +2143,13 @@ export class SQLiteParser extends Parser {
 					this.state = 612;
 					this._errHandler.sync(this);
 					switch (this._input.LA(1)) {
-					case SQLiteParser.SET_:
+					case SQLiteParser.SET:
 						{
 						this.state = 606;
-						this.match(SQLiteParser.SET_);
+						this.match(SQLiteParser.SET);
 						this.state = 607;
 						_la = this._input.LA(1);
-						if (!(_la === SQLiteParser.DEFAULT_ || _la === SQLiteParser.NULL_)) {
+						if (!(_la === SQLiteParser.DEFAULT || _la === SQLiteParser.NULL)) {
 						this._errHandler.recoverInline(this);
 						} else {
 							if (this._input.LA(1) === Token.EOF) {
@@ -2163,24 +2161,24 @@ export class SQLiteParser extends Parser {
 						}
 						}
 						break;
-					case SQLiteParser.CASCADE_:
+					case SQLiteParser.CASCADE:
 						{
 						this.state = 608;
-						this.match(SQLiteParser.CASCADE_);
+						this.match(SQLiteParser.CASCADE);
 						}
 						break;
-					case SQLiteParser.RESTRICT_:
+					case SQLiteParser.RESTRICT:
 						{
 						this.state = 609;
-						this.match(SQLiteParser.RESTRICT_);
+						this.match(SQLiteParser.RESTRICT);
 						}
 						break;
-					case SQLiteParser.NO_:
+					case SQLiteParser.NO:
 						{
 						this.state = 610;
-						this.match(SQLiteParser.NO_);
+						this.match(SQLiteParser.NO);
 						this.state = 611;
-						this.match(SQLiteParser.ACTION_);
+						this.match(SQLiteParser.ACTION);
 						}
 						break;
 					default:
@@ -2188,10 +2186,10 @@ export class SQLiteParser extends Parser {
 					}
 					}
 					break;
-				case SQLiteParser.MATCH_:
+				case SQLiteParser.MATCH:
 					{
 					this.state = 614;
-					this.match(SQLiteParser.MATCH_);
+					this.match(SQLiteParser.MATCH);
 					this.state = 615;
 					this.name();
 					}
@@ -2212,25 +2210,25 @@ export class SQLiteParser extends Parser {
 				this.state = 622;
 				this._errHandler.sync(this);
 				_la = this._input.LA(1);
-				if (_la === SQLiteParser.NOT_) {
+				if (_la === SQLiteParser.NOT) {
 					{
 					this.state = 621;
-					this.match(SQLiteParser.NOT_);
+					this.match(SQLiteParser.NOT);
 					}
 				}
 
 				this.state = 624;
-				this.match(SQLiteParser.DEFERRABLE_);
+				this.match(SQLiteParser.DEFERRABLE);
 				this.state = 627;
 				this._errHandler.sync(this);
 				_la = this._input.LA(1);
-				if (_la === SQLiteParser.INITIALLY_) {
+				if (_la === SQLiteParser.INITIALLY) {
 					{
 					this.state = 625;
-					this.match(SQLiteParser.INITIALLY_);
+					this.match(SQLiteParser.INITIALLY);
 					this.state = 626;
 					_la = this._input.LA(1);
-					if (!(_la === SQLiteParser.DEFERRED_ || _la === SQLiteParser.IMMEDIATE_)) {
+					if (!(_la === SQLiteParser.DEFERRED || _la === SQLiteParser.IMMEDIATE)) {
 					this._errHandler.recoverInline(this);
 					} else {
 						if (this._input.LA(1) === Token.EOF) {
@@ -2271,12 +2269,12 @@ export class SQLiteParser extends Parser {
 			this.enterOuterAlt(_localctx, 1);
 			{
 			this.state = 631;
-			this.match(SQLiteParser.ON_);
+			this.match(SQLiteParser.ON);
 			this.state = 632;
-			this.match(SQLiteParser.CONFLICT_);
+			this.match(SQLiteParser.CONFLICT);
 			this.state = 633;
 			_la = this._input.LA(1);
-			if (!(_la === SQLiteParser.ABORT_ || _la === SQLiteParser.FAIL_ || _la === SQLiteParser.IGNORE_ || _la === SQLiteParser.REPLACE_ || _la === SQLiteParser.ROLLBACK_)) {
+			if (!(_la === SQLiteParser.ABORT || _la === SQLiteParser.FAIL || _la === SQLiteParser.IGNORE || _la === SQLiteParser.REPLACE || _la === SQLiteParser.ROLLBACK)) {
 			this._errHandler.recoverInline(this);
 			} else {
 				if (this._input.LA(1) === Token.EOF) {
@@ -2311,15 +2309,15 @@ export class SQLiteParser extends Parser {
 			this.enterOuterAlt(_localctx, 1);
 			{
 			this.state = 635;
-			this.match(SQLiteParser.CREATE_);
+			this.match(SQLiteParser.CREATE);
 			this.state = 637;
 			this._errHandler.sync(this);
 			_la = this._input.LA(1);
-			if (_la === SQLiteParser.TEMP_ || _la === SQLiteParser.TEMPORARY_) {
+			if (_la === SQLiteParser.TEMP || _la === SQLiteParser.TEMPORARY) {
 				{
 				this.state = 636;
 				_la = this._input.LA(1);
-				if (!(_la === SQLiteParser.TEMP_ || _la === SQLiteParser.TEMPORARY_)) {
+				if (!(_la === SQLiteParser.TEMP || _la === SQLiteParser.TEMPORARY)) {
 				this._errHandler.recoverInline(this);
 				} else {
 					if (this._input.LA(1) === Token.EOF) {
@@ -2333,18 +2331,18 @@ export class SQLiteParser extends Parser {
 			}
 
 			this.state = 639;
-			this.match(SQLiteParser.TRIGGER_);
+			this.match(SQLiteParser.TRIGGER);
 			this.state = 643;
 			this._errHandler.sync(this);
 			switch ( this.interpreter.adaptivePredict(this._input, 71, this._ctx) ) {
 			case 1:
 				{
 				this.state = 640;
-				this.match(SQLiteParser.IF_);
+				this.match(SQLiteParser.IF);
 				this.state = 641;
-				this.match(SQLiteParser.NOT_);
+				this.match(SQLiteParser.NOT);
 				this.state = 642;
-				this.match(SQLiteParser.EXISTS_);
+				this.match(SQLiteParser.EXISTS);
 				}
 				break;
 			}
@@ -2365,29 +2363,29 @@ export class SQLiteParser extends Parser {
 			this.state = 655;
 			this._errHandler.sync(this);
 			switch (this._input.LA(1)) {
-			case SQLiteParser.BEFORE_:
+			case SQLiteParser.BEFORE:
 				{
 				this.state = 651;
-				this.match(SQLiteParser.BEFORE_);
+				this.match(SQLiteParser.BEFORE);
 				}
 				break;
-			case SQLiteParser.AFTER_:
+			case SQLiteParser.AFTER:
 				{
 				this.state = 652;
-				this.match(SQLiteParser.AFTER_);
+				this.match(SQLiteParser.AFTER);
 				}
 				break;
-			case SQLiteParser.INSTEAD_:
+			case SQLiteParser.INSTEAD:
 				{
 				this.state = 653;
-				this.match(SQLiteParser.INSTEAD_);
+				this.match(SQLiteParser.INSTEAD);
 				this.state = 654;
-				this.match(SQLiteParser.OF_);
+				this.match(SQLiteParser.OF);
 				}
 				break;
-			case SQLiteParser.DELETE_:
-			case SQLiteParser.INSERT_:
-			case SQLiteParser.UPDATE_:
+			case SQLiteParser.DELETE:
+			case SQLiteParser.INSERT:
+			case SQLiteParser.UPDATE:
 				break;
 			default:
 				break;
@@ -2395,29 +2393,29 @@ export class SQLiteParser extends Parser {
 			this.state = 671;
 			this._errHandler.sync(this);
 			switch (this._input.LA(1)) {
-			case SQLiteParser.DELETE_:
+			case SQLiteParser.DELETE:
 				{
 				this.state = 657;
-				this.match(SQLiteParser.DELETE_);
+				this.match(SQLiteParser.DELETE);
 				}
 				break;
-			case SQLiteParser.INSERT_:
+			case SQLiteParser.INSERT:
 				{
 				this.state = 658;
-				this.match(SQLiteParser.INSERT_);
+				this.match(SQLiteParser.INSERT);
 				}
 				break;
-			case SQLiteParser.UPDATE_:
+			case SQLiteParser.UPDATE:
 				{
 				this.state = 659;
-				this.match(SQLiteParser.UPDATE_);
+				this.match(SQLiteParser.UPDATE);
 				this.state = 669;
 				this._errHandler.sync(this);
 				_la = this._input.LA(1);
-				if (_la === SQLiteParser.OF_) {
+				if (_la === SQLiteParser.OF) {
 					{
 					this.state = 660;
-					this.match(SQLiteParser.OF_);
+					this.match(SQLiteParser.OF);
 					this.state = 661;
 					this.column_name();
 					this.state = 666;
@@ -2445,37 +2443,37 @@ export class SQLiteParser extends Parser {
 				throw new NoViableAltException(this);
 			}
 			this.state = 673;
-			this.match(SQLiteParser.ON_);
+			this.match(SQLiteParser.ON);
 			this.state = 674;
 			this.table_name();
 			this.state = 678;
 			this._errHandler.sync(this);
 			_la = this._input.LA(1);
-			if (_la === SQLiteParser.FOR_) {
+			if (_la === SQLiteParser.FOR) {
 				{
 				this.state = 675;
-				this.match(SQLiteParser.FOR_);
+				this.match(SQLiteParser.FOR);
 				this.state = 676;
-				this.match(SQLiteParser.EACH_);
+				this.match(SQLiteParser.EACH);
 				this.state = 677;
-				this.match(SQLiteParser.ROW_);
+				this.match(SQLiteParser.ROW);
 				}
 			}
 
 			this.state = 682;
 			this._errHandler.sync(this);
 			_la = this._input.LA(1);
-			if (_la === SQLiteParser.WHEN_) {
+			if (_la === SQLiteParser.WHEN) {
 				{
 				this.state = 680;
-				this.match(SQLiteParser.WHEN_);
+				this.match(SQLiteParser.WHEN);
 				this.state = 681;
 				this.expr(0);
 				}
 			}
 
 			this.state = 684;
-			this.match(SQLiteParser.BEGIN_);
+			this.match(SQLiteParser.BEGIN);
 			this.state = 693;
 			this._errHandler.sync(this);
 			_la = this._input.LA(1);
@@ -2520,9 +2518,9 @@ export class SQLiteParser extends Parser {
 				this.state = 695;
 				this._errHandler.sync(this);
 				_la = this._input.LA(1);
-			} while (_la === SQLiteParser.DELETE_ || _la === SQLiteParser.INSERT_ || ((((_la - 122)) & ~0x1F) === 0 && ((1 << (_la - 122)) & ((1 << (SQLiteParser.REPLACE_ - 122)) | (1 << (SQLiteParser.SELECT_ - 122)) | (1 << (SQLiteParser.UPDATE_ - 122)) | (1 << (SQLiteParser.VALUES_ - 122)) | (1 << (SQLiteParser.WITH_ - 122)))) !== 0));
+			} while (_la === SQLiteParser.DELETE || _la === SQLiteParser.INSERT || ((((_la - 122)) & ~0x1F) === 0 && ((1 << (_la - 122)) & ((1 << (SQLiteParser.REPLACE - 122)) | (1 << (SQLiteParser.SELECT - 122)) | (1 << (SQLiteParser.UPDATE - 122)) | (1 << (SQLiteParser.VALUES - 122)) | (1 << (SQLiteParser.WITH - 122)))) !== 0));
 			this.state = 697;
-			this.match(SQLiteParser.END_);
+			this.match(SQLiteParser.END);
 			}
 		}
 		catch (re) {
@@ -2548,15 +2546,15 @@ export class SQLiteParser extends Parser {
 			this.enterOuterAlt(_localctx, 1);
 			{
 			this.state = 699;
-			this.match(SQLiteParser.CREATE_);
+			this.match(SQLiteParser.CREATE);
 			this.state = 701;
 			this._errHandler.sync(this);
 			_la = this._input.LA(1);
-			if (_la === SQLiteParser.TEMP_ || _la === SQLiteParser.TEMPORARY_) {
+			if (_la === SQLiteParser.TEMP || _la === SQLiteParser.TEMPORARY) {
 				{
 				this.state = 700;
 				_la = this._input.LA(1);
-				if (!(_la === SQLiteParser.TEMP_ || _la === SQLiteParser.TEMPORARY_)) {
+				if (!(_la === SQLiteParser.TEMP || _la === SQLiteParser.TEMPORARY)) {
 				this._errHandler.recoverInline(this);
 				} else {
 					if (this._input.LA(1) === Token.EOF) {
@@ -2570,18 +2568,18 @@ export class SQLiteParser extends Parser {
 			}
 
 			this.state = 703;
-			this.match(SQLiteParser.VIEW_);
+			this.match(SQLiteParser.VIEW);
 			this.state = 707;
 			this._errHandler.sync(this);
 			switch ( this.interpreter.adaptivePredict(this._input, 82, this._ctx) ) {
 			case 1:
 				{
 				this.state = 704;
-				this.match(SQLiteParser.IF_);
+				this.match(SQLiteParser.IF);
 				this.state = 705;
-				this.match(SQLiteParser.NOT_);
+				this.match(SQLiteParser.NOT);
 				this.state = 706;
-				this.match(SQLiteParser.EXISTS_);
+				this.match(SQLiteParser.EXISTS);
 				}
 				break;
 			}
@@ -2630,7 +2628,7 @@ export class SQLiteParser extends Parser {
 			}
 
 			this.state = 728;
-			this.match(SQLiteParser.AS_);
+			this.match(SQLiteParser.AS);
 			this.state = 729;
 			this.select_stmt();
 			}
@@ -2658,22 +2656,22 @@ export class SQLiteParser extends Parser {
 			this.enterOuterAlt(_localctx, 1);
 			{
 			this.state = 731;
-			this.match(SQLiteParser.CREATE_);
+			this.match(SQLiteParser.CREATE);
 			this.state = 732;
-			this.match(SQLiteParser.VIRTUAL_);
+			this.match(SQLiteParser.VIRTUAL);
 			this.state = 733;
-			this.match(SQLiteParser.TABLE_);
+			this.match(SQLiteParser.TABLE);
 			this.state = 737;
 			this._errHandler.sync(this);
 			switch ( this.interpreter.adaptivePredict(this._input, 86, this._ctx) ) {
 			case 1:
 				{
 				this.state = 734;
-				this.match(SQLiteParser.IF_);
+				this.match(SQLiteParser.IF);
 				this.state = 735;
-				this.match(SQLiteParser.NOT_);
+				this.match(SQLiteParser.NOT);
 				this.state = 736;
-				this.match(SQLiteParser.EXISTS_);
+				this.match(SQLiteParser.EXISTS);
 				}
 				break;
 			}
@@ -2692,7 +2690,7 @@ export class SQLiteParser extends Parser {
 			this.state = 744;
 			this.table_name();
 			this.state = 745;
-			this.match(SQLiteParser.USING_);
+			this.match(SQLiteParser.USING);
 			this.state = 746;
 			this.module_name();
 			this.state = 758;
@@ -2750,21 +2748,21 @@ export class SQLiteParser extends Parser {
 			this.enterOuterAlt(_localctx, 1);
 			{
 			this.state = 760;
-			this.match(SQLiteParser.WITH_);
+			this.match(SQLiteParser.WITH);
 			this.state = 762;
 			this._errHandler.sync(this);
 			switch ( this.interpreter.adaptivePredict(this._input, 90, this._ctx) ) {
 			case 1:
 				{
 				this.state = 761;
-				this.match(SQLiteParser.RECURSIVE_);
+				this.match(SQLiteParser.RECURSIVE);
 				}
 				break;
 			}
 			this.state = 764;
 			this.cte_table_name();
 			this.state = 765;
-			this.match(SQLiteParser.AS_);
+			this.match(SQLiteParser.AS);
 			this.state = 766;
 			this.match(SQLiteParser.OPEN_PAR);
 			this.state = 767;
@@ -2782,7 +2780,7 @@ export class SQLiteParser extends Parser {
 				this.state = 770;
 				this.cte_table_name();
 				this.state = 771;
-				this.match(SQLiteParser.AS_);
+				this.match(SQLiteParser.AS);
 				this.state = 772;
 				this.match(SQLiteParser.OPEN_PAR);
 				this.state = 773;
@@ -2878,20 +2876,20 @@ export class SQLiteParser extends Parser {
 			this.state = 795;
 			this.cte_table_name();
 			this.state = 796;
-			this.match(SQLiteParser.AS_);
+			this.match(SQLiteParser.AS);
 			this.state = 797;
 			this.match(SQLiteParser.OPEN_PAR);
 			this.state = 798;
 			this.initial_select();
 			this.state = 799;
-			this.match(SQLiteParser.UNION_);
+			this.match(SQLiteParser.UNION);
 			this.state = 801;
 			this._errHandler.sync(this);
 			_la = this._input.LA(1);
-			if (_la === SQLiteParser.ALL_) {
+			if (_la === SQLiteParser.ALL) {
 				{
 				this.state = 800;
-				this.match(SQLiteParser.ALL_);
+				this.match(SQLiteParser.ALL);
 				}
 			}
 
@@ -2956,7 +2954,7 @@ export class SQLiteParser extends Parser {
 			}
 
 			this.state = 820;
-			this.match(SQLiteParser.AS_);
+			this.match(SQLiteParser.AS);
 			this.state = 821;
 			this.match(SQLiteParser.OPEN_PAR);
 			this.state = 822;
@@ -2990,7 +2988,7 @@ export class SQLiteParser extends Parser {
 			this.state = 826;
 			this._errHandler.sync(this);
 			_la = this._input.LA(1);
-			if (_la === SQLiteParser.WITH_) {
+			if (_la === SQLiteParser.WITH) {
 				{
 				this.state = 825;
 				this.with_clause();
@@ -2998,18 +2996,18 @@ export class SQLiteParser extends Parser {
 			}
 
 			this.state = 828;
-			this.match(SQLiteParser.DELETE_);
+			this.match(SQLiteParser.DELETE);
 			this.state = 829;
-			this.match(SQLiteParser.FROM_);
+			this.match(SQLiteParser.FROM);
 			this.state = 830;
 			this.qualified_table_name();
 			this.state = 833;
 			this._errHandler.sync(this);
 			_la = this._input.LA(1);
-			if (_la === SQLiteParser.WHERE_) {
+			if (_la === SQLiteParser.WHERE) {
 				{
 				this.state = 831;
-				this.match(SQLiteParser.WHERE_);
+				this.match(SQLiteParser.WHERE);
 				this.state = 832;
 				this.expr(0);
 				}
@@ -3018,7 +3016,7 @@ export class SQLiteParser extends Parser {
 			this.state = 836;
 			this._errHandler.sync(this);
 			_la = this._input.LA(1);
-			if (_la === SQLiteParser.RETURNING_) {
+			if (_la === SQLiteParser.RETURNING) {
 				{
 				this.state = 835;
 				this.returning_clause();
@@ -3052,7 +3050,7 @@ export class SQLiteParser extends Parser {
 			this.state = 839;
 			this._errHandler.sync(this);
 			_la = this._input.LA(1);
-			if (_la === SQLiteParser.WITH_) {
+			if (_la === SQLiteParser.WITH) {
 				{
 				this.state = 838;
 				this.with_clause();
@@ -3060,18 +3058,18 @@ export class SQLiteParser extends Parser {
 			}
 
 			this.state = 841;
-			this.match(SQLiteParser.DELETE_);
+			this.match(SQLiteParser.DELETE);
 			this.state = 842;
-			this.match(SQLiteParser.FROM_);
+			this.match(SQLiteParser.FROM);
 			this.state = 843;
 			this.qualified_table_name();
 			this.state = 846;
 			this._errHandler.sync(this);
 			_la = this._input.LA(1);
-			if (_la === SQLiteParser.WHERE_) {
+			if (_la === SQLiteParser.WHERE) {
 				{
 				this.state = 844;
-				this.match(SQLiteParser.WHERE_);
+				this.match(SQLiteParser.WHERE);
 				this.state = 845;
 				this.expr(0);
 				}
@@ -3080,7 +3078,7 @@ export class SQLiteParser extends Parser {
 			this.state = 849;
 			this._errHandler.sync(this);
 			_la = this._input.LA(1);
-			if (_la === SQLiteParser.RETURNING_) {
+			if (_la === SQLiteParser.RETURNING) {
 				{
 				this.state = 848;
 				this.returning_clause();
@@ -3090,12 +3088,12 @@ export class SQLiteParser extends Parser {
 			this.state = 855;
 			this._errHandler.sync(this);
 			_la = this._input.LA(1);
-			if (_la === SQLiteParser.LIMIT_ || _la === SQLiteParser.ORDER_) {
+			if (_la === SQLiteParser.LIMIT || _la === SQLiteParser.ORDER) {
 				{
 				this.state = 852;
 				this._errHandler.sync(this);
 				_la = this._input.LA(1);
-				if (_la === SQLiteParser.ORDER_) {
+				if (_la === SQLiteParser.ORDER) {
 					{
 					this.state = 851;
 					this.order_by_stmt();
@@ -3131,14 +3129,14 @@ export class SQLiteParser extends Parser {
 			this.enterOuterAlt(_localctx, 1);
 			{
 			this.state = 857;
-			this.match(SQLiteParser.DETACH_);
+			this.match(SQLiteParser.DETACH);
 			this.state = 859;
 			this._errHandler.sync(this);
 			switch ( this.interpreter.adaptivePredict(this._input, 105, this._ctx) ) {
 			case 1:
 				{
 				this.state = 858;
-				this.match(SQLiteParser.DATABASE_);
+				this.match(SQLiteParser.DATABASE);
 				}
 				break;
 			}
@@ -3169,11 +3167,11 @@ export class SQLiteParser extends Parser {
 			this.enterOuterAlt(_localctx, 1);
 			{
 			this.state = 863;
-			this.match(SQLiteParser.DROP_);
+			this.match(SQLiteParser.DROP);
 			this.state = 864;
 			_localctx._object = this._input.LT(1);
 			_la = this._input.LA(1);
-			if (!(_la === SQLiteParser.INDEX_ || ((((_la - 132)) & ~0x1F) === 0 && ((1 << (_la - 132)) & ((1 << (SQLiteParser.TABLE_ - 132)) | (1 << (SQLiteParser.TRIGGER_ - 132)) | (1 << (SQLiteParser.VIEW_ - 132)))) !== 0))) {
+			if (!(_la === SQLiteParser.INDEX || ((((_la - 132)) & ~0x1F) === 0 && ((1 << (_la - 132)) & ((1 << (SQLiteParser.TABLE - 132)) | (1 << (SQLiteParser.TRIGGER - 132)) | (1 << (SQLiteParser.VIEW - 132)))) !== 0))) {
 				_localctx._object = this._errHandler.recoverInline(this);
 			} else {
 				if (this._input.LA(1) === Token.EOF) {
@@ -3189,9 +3187,9 @@ export class SQLiteParser extends Parser {
 			case 1:
 				{
 				this.state = 865;
-				this.match(SQLiteParser.IF_);
+				this.match(SQLiteParser.IF);
 				this.state = 866;
-				this.match(SQLiteParser.EXISTS_);
+				this.match(SQLiteParser.EXISTS);
 				}
 				break;
 			}
@@ -3315,161 +3313,166 @@ export class SQLiteParser extends Parser {
 				case SQLiteParser.PLUS:
 				case SQLiteParser.MINUS:
 				case SQLiteParser.TILDE:
-				case SQLiteParser.ABORT_:
-				case SQLiteParser.ACTION_:
-				case SQLiteParser.ADD_:
-				case SQLiteParser.AFTER_:
-				case SQLiteParser.ALL_:
-				case SQLiteParser.ALTER_:
-				case SQLiteParser.ANALYZE_:
-				case SQLiteParser.AND_:
-				case SQLiteParser.AS_:
-				case SQLiteParser.ASC_:
-				case SQLiteParser.ATTACH_:
-				case SQLiteParser.AUTOINCREMENT_:
-				case SQLiteParser.BEFORE_:
-				case SQLiteParser.BEGIN_:
-				case SQLiteParser.BETWEEN_:
-				case SQLiteParser.BY_:
-				case SQLiteParser.CASCADE_:
-				case SQLiteParser.CASE_:
-				case SQLiteParser.CAST_:
-				case SQLiteParser.CHECK_:
-				case SQLiteParser.COLLATE_:
-				case SQLiteParser.COLUMN_:
-				case SQLiteParser.COMMIT_:
-				case SQLiteParser.CONFLICT_:
-				case SQLiteParser.CONSTRAINT_:
-				case SQLiteParser.CREATE_:
-				case SQLiteParser.CROSS_:
-				case SQLiteParser.CURRENT_DATE_:
-				case SQLiteParser.CURRENT_TIME_:
-				case SQLiteParser.CURRENT_TIMESTAMP_:
-				case SQLiteParser.DATABASE_:
-				case SQLiteParser.DEFAULT_:
-				case SQLiteParser.DEFERRABLE_:
-				case SQLiteParser.DEFERRED_:
-				case SQLiteParser.DELETE_:
-				case SQLiteParser.DESC_:
-				case SQLiteParser.DETACH_:
-				case SQLiteParser.DISTINCT_:
-				case SQLiteParser.DROP_:
-				case SQLiteParser.EACH_:
-				case SQLiteParser.ELSE_:
-				case SQLiteParser.END_:
-				case SQLiteParser.ESCAPE_:
-				case SQLiteParser.EXCEPT_:
-				case SQLiteParser.EXCLUSIVE_:
-				case SQLiteParser.EXISTS_:
-				case SQLiteParser.EXPLAIN_:
-				case SQLiteParser.FAIL_:
-				case SQLiteParser.FOR_:
-				case SQLiteParser.FOREIGN_:
-				case SQLiteParser.FROM_:
-				case SQLiteParser.FULL_:
-				case SQLiteParser.GLOB_:
-				case SQLiteParser.GROUP_:
-				case SQLiteParser.HAVING_:
-				case SQLiteParser.IF_:
-				case SQLiteParser.IGNORE_:
-				case SQLiteParser.IMMEDIATE_:
-				case SQLiteParser.IN_:
-				case SQLiteParser.INDEX_:
-				case SQLiteParser.INDEXED_:
-				case SQLiteParser.INITIALLY_:
-				case SQLiteParser.INNER_:
-				case SQLiteParser.INSERT_:
-				case SQLiteParser.INSTEAD_:
-				case SQLiteParser.INTERSECT_:
-				case SQLiteParser.INTO_:
-				case SQLiteParser.IS_:
-				case SQLiteParser.ISNULL_:
-				case SQLiteParser.JOIN_:
-				case SQLiteParser.KEY_:
-				case SQLiteParser.LEFT_:
-				case SQLiteParser.LIKE_:
-				case SQLiteParser.LIMIT_:
-				case SQLiteParser.MATCH_:
-				case SQLiteParser.NATURAL_:
-				case SQLiteParser.NO_:
-				case SQLiteParser.NOT_:
-				case SQLiteParser.NOTNULL_:
-				case SQLiteParser.NULL_:
-				case SQLiteParser.OF_:
-				case SQLiteParser.OFFSET_:
-				case SQLiteParser.ON_:
-				case SQLiteParser.OR_:
-				case SQLiteParser.ORDER_:
-				case SQLiteParser.OUTER_:
-				case SQLiteParser.PLAN_:
-				case SQLiteParser.PRAGMA_:
-				case SQLiteParser.PRIMARY_:
-				case SQLiteParser.QUERY_:
-				case SQLiteParser.RAISE_:
-				case SQLiteParser.RECURSIVE_:
-				case SQLiteParser.REFERENCES_:
-				case SQLiteParser.REGEXP_:
-				case SQLiteParser.REINDEX_:
-				case SQLiteParser.RELEASE_:
-				case SQLiteParser.RENAME_:
-				case SQLiteParser.REPLACE_:
-				case SQLiteParser.RESTRICT_:
-				case SQLiteParser.RIGHT_:
-				case SQLiteParser.ROLLBACK_:
-				case SQLiteParser.ROW_:
-				case SQLiteParser.ROWS_:
-				case SQLiteParser.SAVEPOINT_:
-				case SQLiteParser.SELECT_:
-				case SQLiteParser.SET_:
-				case SQLiteParser.TABLE_:
-				case SQLiteParser.TEMP_:
-				case SQLiteParser.TEMPORARY_:
-				case SQLiteParser.THEN_:
-				case SQLiteParser.TO_:
-				case SQLiteParser.TRANSACTION_:
-				case SQLiteParser.TRIGGER_:
-				case SQLiteParser.UNION_:
-				case SQLiteParser.UNIQUE_:
-				case SQLiteParser.UPDATE_:
-				case SQLiteParser.USING_:
-				case SQLiteParser.VACUUM_:
-				case SQLiteParser.VALUES_:
-				case SQLiteParser.VIEW_:
-				case SQLiteParser.VIRTUAL_:
-				case SQLiteParser.WHEN_:
-				case SQLiteParser.WHERE_:
-				case SQLiteParser.WITH_:
-				case SQLiteParser.WITHOUT_:
-				case SQLiteParser.FIRST_VALUE_:
-				case SQLiteParser.OVER_:
-				case SQLiteParser.PARTITION_:
-				case SQLiteParser.RANGE_:
-				case SQLiteParser.PRECEDING_:
-				case SQLiteParser.UNBOUNDED_:
-				case SQLiteParser.CURRENT_:
-				case SQLiteParser.FOLLOWING_:
-				case SQLiteParser.CUME_DIST_:
-				case SQLiteParser.DENSE_RANK_:
-				case SQLiteParser.LAG_:
-				case SQLiteParser.LAST_VALUE_:
-				case SQLiteParser.LEAD_:
-				case SQLiteParser.NTH_VALUE_:
-				case SQLiteParser.NTILE_:
-				case SQLiteParser.PERCENT_RANK_:
-				case SQLiteParser.RANK_:
-				case SQLiteParser.ROW_NUMBER_:
-				case SQLiteParser.GENERATED_:
-				case SQLiteParser.ALWAYS_:
-				case SQLiteParser.STORED_:
-				case SQLiteParser.TRUE_:
-				case SQLiteParser.FALSE_:
-				case SQLiteParser.WINDOW_:
-				case SQLiteParser.NULLS_:
-				case SQLiteParser.FIRST_:
-				case SQLiteParser.LAST_:
-				case SQLiteParser.FILTER_:
-				case SQLiteParser.GROUPS_:
-				case SQLiteParser.EXCLUDE_:
+				case SQLiteParser.ABORT:
+				case SQLiteParser.ACTION:
+				case SQLiteParser.ADD:
+				case SQLiteParser.AFTER:
+				case SQLiteParser.ALL:
+				case SQLiteParser.ALTER:
+				case SQLiteParser.ANALYZE:
+				case SQLiteParser.AND:
+				case SQLiteParser.AS:
+				case SQLiteParser.ASC:
+				case SQLiteParser.ATTACH:
+				case SQLiteParser.AUTOINCREMENT:
+				case SQLiteParser.BEFORE:
+				case SQLiteParser.BEGIN:
+				case SQLiteParser.BETWEEN:
+				case SQLiteParser.BY:
+				case SQLiteParser.CASCADE:
+				case SQLiteParser.CASE:
+				case SQLiteParser.CAST:
+				case SQLiteParser.CHECK:
+				case SQLiteParser.COLLATE:
+				case SQLiteParser.COLUMN:
+				case SQLiteParser.COMMIT:
+				case SQLiteParser.CONFLICT:
+				case SQLiteParser.CONSTRAINT:
+				case SQLiteParser.CREATE:
+				case SQLiteParser.CROSS:
+				case SQLiteParser.CURRENT_DATE:
+				case SQLiteParser.CURRENT_TIME:
+				case SQLiteParser.CURRENT_TIMESTAMP:
+				case SQLiteParser.DATABASE:
+				case SQLiteParser.DEFAULT:
+				case SQLiteParser.DEFERRABLE:
+				case SQLiteParser.DEFERRED:
+				case SQLiteParser.DELETE:
+				case SQLiteParser.DESC:
+				case SQLiteParser.DETACH:
+				case SQLiteParser.DISTINCT:
+				case SQLiteParser.DROP:
+				case SQLiteParser.EACH:
+				case SQLiteParser.ELSE:
+				case SQLiteParser.END:
+				case SQLiteParser.ESCAPE:
+				case SQLiteParser.EXCEPT:
+				case SQLiteParser.EXCLUSIVE:
+				case SQLiteParser.EXISTS:
+				case SQLiteParser.EXPLAIN:
+				case SQLiteParser.FAIL:
+				case SQLiteParser.FOR:
+				case SQLiteParser.FOREIGN:
+				case SQLiteParser.FROM:
+				case SQLiteParser.FULL:
+				case SQLiteParser.GLOB:
+				case SQLiteParser.GROUP:
+				case SQLiteParser.HAVING:
+				case SQLiteParser.IF:
+				case SQLiteParser.IGNORE:
+				case SQLiteParser.IMMEDIATE:
+				case SQLiteParser.IN:
+				case SQLiteParser.INDEX:
+				case SQLiteParser.INDEXED:
+				case SQLiteParser.INITIALLY:
+				case SQLiteParser.INNER:
+				case SQLiteParser.INSERT:
+				case SQLiteParser.INSTEAD:
+				case SQLiteParser.INTERSECT:
+				case SQLiteParser.INTO:
+				case SQLiteParser.IS:
+				case SQLiteParser.ISNULL:
+				case SQLiteParser.JOIN:
+				case SQLiteParser.KEY:
+				case SQLiteParser.LEFT:
+				case SQLiteParser.LIKE:
+				case SQLiteParser.LIMIT:
+				case SQLiteParser.MATCH:
+				case SQLiteParser.NATURAL:
+				case SQLiteParser.NO:
+				case SQLiteParser.NOT:
+				case SQLiteParser.NOTNULL:
+				case SQLiteParser.NULL:
+				case SQLiteParser.OF:
+				case SQLiteParser.OFFSET:
+				case SQLiteParser.ON:
+				case SQLiteParser.OR:
+				case SQLiteParser.ORDER:
+				case SQLiteParser.OUTER:
+				case SQLiteParser.PLAN:
+				case SQLiteParser.PRAGMA:
+				case SQLiteParser.PRIMARY:
+				case SQLiteParser.QUERY:
+				case SQLiteParser.RAISE:
+				case SQLiteParser.RECURSIVE:
+				case SQLiteParser.REFERENCES:
+				case SQLiteParser.REGEXP:
+				case SQLiteParser.REINDEX:
+				case SQLiteParser.RELEASE:
+				case SQLiteParser.RENAME:
+				case SQLiteParser.REPLACE:
+				case SQLiteParser.RESTRICT:
+				case SQLiteParser.RETURNING:
+				case SQLiteParser.RIGHT:
+				case SQLiteParser.ROLLBACK:
+				case SQLiteParser.ROW:
+				case SQLiteParser.ROWS:
+				case SQLiteParser.SAVEPOINT:
+				case SQLiteParser.SELECT:
+				case SQLiteParser.SET:
+				case SQLiteParser.TABLE:
+				case SQLiteParser.TEMP:
+				case SQLiteParser.TEMPORARY:
+				case SQLiteParser.THEN:
+				case SQLiteParser.TO:
+				case SQLiteParser.TRANSACTION:
+				case SQLiteParser.TRIGGER:
+				case SQLiteParser.UNION:
+				case SQLiteParser.UNIQUE:
+				case SQLiteParser.UPDATE:
+				case SQLiteParser.USING:
+				case SQLiteParser.VACUUM:
+				case SQLiteParser.VALUES:
+				case SQLiteParser.VIEW:
+				case SQLiteParser.VIRTUAL:
+				case SQLiteParser.WHEN:
+				case SQLiteParser.WHERE:
+				case SQLiteParser.WITH:
+				case SQLiteParser.WITHOUT:
+				case SQLiteParser.FIRST_VALUE:
+				case SQLiteParser.OVER:
+				case SQLiteParser.PARTITION:
+				case SQLiteParser.RANGE:
+				case SQLiteParser.PRECEDING:
+				case SQLiteParser.UNBOUNDED:
+				case SQLiteParser.CURRENT:
+				case SQLiteParser.FOLLOWING:
+				case SQLiteParser.CUME_DIST:
+				case SQLiteParser.DENSE_RANK:
+				case SQLiteParser.LAG:
+				case SQLiteParser.LAST_VALUE:
+				case SQLiteParser.LEAD:
+				case SQLiteParser.NTH_VALUE:
+				case SQLiteParser.NTILE:
+				case SQLiteParser.PERCENT_RANK:
+				case SQLiteParser.RANK:
+				case SQLiteParser.ROW_NUMBER:
+				case SQLiteParser.GENERATED:
+				case SQLiteParser.ALWAYS:
+				case SQLiteParser.STORED:
+				case SQLiteParser.TRUE:
+				case SQLiteParser.FALSE:
+				case SQLiteParser.WINDOW:
+				case SQLiteParser.NULLS:
+				case SQLiteParser.FIRST:
+				case SQLiteParser.LAST:
+				case SQLiteParser.FILTER:
+				case SQLiteParser.GROUPS:
+				case SQLiteParser.EXCLUDE:
+				case SQLiteParser.TIES:
+				case SQLiteParser.OTHERS:
+				case SQLiteParser.DO:
+				case SQLiteParser.NOTHING:
 				case SQLiteParser.IDENTIFIER:
 				case SQLiteParser.NUMERIC_LITERAL:
 				case SQLiteParser.BIND_PARAMETER:
@@ -3483,7 +3486,7 @@ export class SQLiteParser extends Parser {
 					case 1:
 						{
 						this.state = 895;
-						this.match(SQLiteParser.DISTINCT_);
+						this.match(SQLiteParser.DISTINCT);
 						}
 						break;
 					}
@@ -3574,13 +3577,13 @@ export class SQLiteParser extends Parser {
 			case 7:
 				{
 				this.state = 927;
-				this.match(SQLiteParser.CAST_);
+				this.match(SQLiteParser.CAST);
 				this.state = 928;
 				this.match(SQLiteParser.OPEN_PAR);
 				this.state = 929;
 				this.expr(0);
 				this.state = 930;
-				this.match(SQLiteParser.AS_);
+				this.match(SQLiteParser.AS);
 				this.state = 931;
 				this.type_name();
 				this.state = 932;
@@ -3593,20 +3596,20 @@ export class SQLiteParser extends Parser {
 				this.state = 938;
 				this._errHandler.sync(this);
 				_la = this._input.LA(1);
-				if (_la === SQLiteParser.EXISTS_ || _la === SQLiteParser.NOT_) {
+				if (_la === SQLiteParser.EXISTS || _la === SQLiteParser.NOT) {
 					{
 					this.state = 935;
 					this._errHandler.sync(this);
 					_la = this._input.LA(1);
-					if (_la === SQLiteParser.NOT_) {
+					if (_la === SQLiteParser.NOT) {
 						{
 						this.state = 934;
-						this.match(SQLiteParser.NOT_);
+						this.match(SQLiteParser.NOT);
 						}
 					}
 
 					this.state = 937;
-					this.match(SQLiteParser.EXISTS_);
+					this.match(SQLiteParser.EXISTS);
 					}
 				}
 
@@ -3622,7 +3625,7 @@ export class SQLiteParser extends Parser {
 			case 9:
 				{
 				this.state = 944;
-				this.match(SQLiteParser.CASE_);
+				this.match(SQLiteParser.CASE);
 				this.state = 946;
 				this._errHandler.sync(this);
 				switch ( this.interpreter.adaptivePredict(this._input, 118, this._ctx) ) {
@@ -3640,11 +3643,11 @@ export class SQLiteParser extends Parser {
 					{
 					{
 					this.state = 948;
-					this.match(SQLiteParser.WHEN_);
+					this.match(SQLiteParser.WHEN);
 					this.state = 949;
 					this.expr(0);
 					this.state = 950;
-					this.match(SQLiteParser.THEN_);
+					this.match(SQLiteParser.THEN);
 					this.state = 951;
 					this.expr(0);
 					}
@@ -3652,21 +3655,21 @@ export class SQLiteParser extends Parser {
 					this.state = 955;
 					this._errHandler.sync(this);
 					_la = this._input.LA(1);
-				} while (_la === SQLiteParser.WHEN_);
+				} while (_la === SQLiteParser.WHEN);
 				this.state = 959;
 				this._errHandler.sync(this);
 				_la = this._input.LA(1);
-				if (_la === SQLiteParser.ELSE_) {
+				if (_la === SQLiteParser.ELSE) {
 					{
 					this.state = 957;
-					this.match(SQLiteParser.ELSE_);
+					this.match(SQLiteParser.ELSE);
 					this.state = 958;
 					this.expr(0);
 					}
 				}
 
 				this.state = 961;
-				this.match(SQLiteParser.END_);
+				this.match(SQLiteParser.END);
 				}
 				break;
 
@@ -3848,72 +3851,72 @@ export class SQLiteParser extends Parser {
 						case 5:
 							{
 							this.state = 986;
-							this.match(SQLiteParser.IS_);
+							this.match(SQLiteParser.IS);
 							}
 							break;
 
 						case 6:
 							{
 							this.state = 987;
-							this.match(SQLiteParser.IS_);
+							this.match(SQLiteParser.IS);
 							this.state = 988;
-							this.match(SQLiteParser.NOT_);
+							this.match(SQLiteParser.NOT);
 							}
 							break;
 
 						case 7:
 							{
 							this.state = 989;
-							this.match(SQLiteParser.IS_);
+							this.match(SQLiteParser.IS);
 							this.state = 991;
 							this._errHandler.sync(this);
 							_la = this._input.LA(1);
-							if (_la === SQLiteParser.NOT_) {
+							if (_la === SQLiteParser.NOT) {
 								{
 								this.state = 990;
-								this.match(SQLiteParser.NOT_);
+								this.match(SQLiteParser.NOT);
 								}
 							}
 
 							this.state = 993;
-							this.match(SQLiteParser.DISTINCT_);
+							this.match(SQLiteParser.DISTINCT);
 							this.state = 994;
-							this.match(SQLiteParser.FROM_);
+							this.match(SQLiteParser.FROM);
 							}
 							break;
 
 						case 8:
 							{
 							this.state = 995;
-							this.match(SQLiteParser.IN_);
+							this.match(SQLiteParser.IN);
 							}
 							break;
 
 						case 9:
 							{
 							this.state = 996;
-							this.match(SQLiteParser.LIKE_);
+							this.match(SQLiteParser.LIKE);
 							}
 							break;
 
 						case 10:
 							{
 							this.state = 997;
-							this.match(SQLiteParser.GLOB_);
+							this.match(SQLiteParser.GLOB);
 							}
 							break;
 
 						case 11:
 							{
 							this.state = 998;
-							this.match(SQLiteParser.MATCH_);
+							this.match(SQLiteParser.MATCH);
 							}
 							break;
 
 						case 12:
 							{
 							this.state = 999;
-							this.match(SQLiteParser.REGEXP_);
+							this.match(SQLiteParser.REGEXP);
 							}
 							break;
 						}
@@ -3931,7 +3934,7 @@ export class SQLiteParser extends Parser {
 							throw this.createFailedPredicateException("this.precpred(this._ctx, 14)");
 						}
 						this.state = 1004;
-						this.match(SQLiteParser.AND_);
+						this.match(SQLiteParser.AND);
 						this.state = 1005;
 						this.expr(15);
 						}
@@ -3946,7 +3949,7 @@ export class SQLiteParser extends Parser {
 							throw this.createFailedPredicateException("this.precpred(this._ctx, 13)");
 						}
 						this.state = 1007;
-						this.match(SQLiteParser.OR_);
+						this.match(SQLiteParser.OR);
 						this.state = 1008;
 						this.expr(14);
 						}
@@ -3961,14 +3964,14 @@ export class SQLiteParser extends Parser {
 							throw this.createFailedPredicateException("this.precpred(this._ctx, 6)");
 						}
 						this.state = 1010;
-						this.match(SQLiteParser.IS_);
+						this.match(SQLiteParser.IS);
 						this.state = 1012;
 						this._errHandler.sync(this);
 						switch ( this.interpreter.adaptivePredict(this._input, 124, this._ctx) ) {
 						case 1:
 							{
 							this.state = 1011;
-							this.match(SQLiteParser.NOT_);
+							this.match(SQLiteParser.NOT);
 							}
 							break;
 						}
@@ -3988,19 +3991,19 @@ export class SQLiteParser extends Parser {
 						this.state = 1017;
 						this._errHandler.sync(this);
 						_la = this._input.LA(1);
-						if (_la === SQLiteParser.NOT_) {
+						if (_la === SQLiteParser.NOT) {
 							{
 							this.state = 1016;
-							this.match(SQLiteParser.NOT_);
+							this.match(SQLiteParser.NOT);
 							}
 						}
 
 						this.state = 1019;
-						this.match(SQLiteParser.BETWEEN_);
+						this.match(SQLiteParser.BETWEEN);
 						this.state = 1020;
 						this.expr(0);
 						this.state = 1021;
-						this.match(SQLiteParser.AND_);
+						this.match(SQLiteParser.AND);
 						this.state = 1022;
 						this.expr(6);
 						}
@@ -4015,7 +4018,7 @@ export class SQLiteParser extends Parser {
 							throw this.createFailedPredicateException("this.precpred(this._ctx, 9)");
 						}
 						this.state = 1025;
-						this.match(SQLiteParser.COLLATE_);
+						this.match(SQLiteParser.COLLATE);
 						this.state = 1026;
 						this.collation_name();
 						}
@@ -4032,16 +4035,16 @@ export class SQLiteParser extends Parser {
 						this.state = 1029;
 						this._errHandler.sync(this);
 						_la = this._input.LA(1);
-						if (_la === SQLiteParser.NOT_) {
+						if (_la === SQLiteParser.NOT) {
 							{
 							this.state = 1028;
-							this.match(SQLiteParser.NOT_);
+							this.match(SQLiteParser.NOT);
 							}
 						}
 
 						this.state = 1031;
 						_la = this._input.LA(1);
-						if (!(((((_la - 77)) & ~0x1F) === 0 && ((1 << (_la - 77)) & ((1 << (SQLiteParser.GLOB_ - 77)) | (1 << (SQLiteParser.LIKE_ - 77)) | (1 << (SQLiteParser.MATCH_ - 77)))) !== 0) || _la === SQLiteParser.REGEXP_)) {
+						if (!(((((_la - 77)) & ~0x1F) === 0 && ((1 << (_la - 77)) & ((1 << (SQLiteParser.GLOB - 77)) | (1 << (SQLiteParser.LIKE - 77)) | (1 << (SQLiteParser.MATCH - 77)))) !== 0) || _la === SQLiteParser.REGEXP)) {
 						this._errHandler.recoverInline(this);
 						} else {
 							if (this._input.LA(1) === Token.EOF) {
@@ -4059,7 +4062,7 @@ export class SQLiteParser extends Parser {
 						case 1:
 							{
 							this.state = 1033;
-							this.match(SQLiteParser.ESCAPE_);
+							this.match(SQLiteParser.ESCAPE);
 							this.state = 1034;
 							this.expr(0);
 							}
@@ -4079,24 +4082,24 @@ export class SQLiteParser extends Parser {
 						this.state = 1042;
 						this._errHandler.sync(this);
 						switch (this._input.LA(1)) {
-						case SQLiteParser.ISNULL_:
+						case SQLiteParser.ISNULL:
 							{
 							this.state = 1038;
-							this.match(SQLiteParser.ISNULL_);
+							this.match(SQLiteParser.ISNULL);
 							}
 							break;
-						case SQLiteParser.NOTNULL_:
+						case SQLiteParser.NOTNULL:
 							{
 							this.state = 1039;
-							this.match(SQLiteParser.NOTNULL_);
+							this.match(SQLiteParser.NOTNULL);
 							}
 							break;
-						case SQLiteParser.NOT_:
+						case SQLiteParser.NOT:
 							{
 							this.state = 1040;
-							this.match(SQLiteParser.NOT_);
+							this.match(SQLiteParser.NOT);
 							this.state = 1041;
-							this.match(SQLiteParser.NULL_);
+							this.match(SQLiteParser.NULL);
 							}
 							break;
 						default:
@@ -4116,15 +4119,15 @@ export class SQLiteParser extends Parser {
 						this.state = 1046;
 						this._errHandler.sync(this);
 						_la = this._input.LA(1);
-						if (_la === SQLiteParser.NOT_) {
+						if (_la === SQLiteParser.NOT) {
 							{
 							this.state = 1045;
-							this.match(SQLiteParser.NOT_);
+							this.match(SQLiteParser.NOT);
 							}
 						}
 
 						this.state = 1048;
-						this.match(SQLiteParser.IN_);
+						this.match(SQLiteParser.IN);
 						this.state = 1087;
 						this._errHandler.sync(this);
 						switch ( this.interpreter.adaptivePredict(this._input, 136, this._ctx) ) {
@@ -4210,7 +4213,7 @@ export class SQLiteParser extends Parser {
 							this.state = 1083;
 							this._errHandler.sync(this);
 							_la = this._input.LA(1);
-							if ((((_la) & ~0x1F) === 0 && ((1 << _la) & ((1 << SQLiteParser.OPEN_PAR) | (1 << SQLiteParser.PLUS) | (1 << SQLiteParser.MINUS) | (1 << SQLiteParser.TILDE) | (1 << SQLiteParser.ABORT_) | (1 << SQLiteParser.ACTION_) | (1 << SQLiteParser.ADD_) | (1 << SQLiteParser.AFTER_) | (1 << SQLiteParser.ALL_) | (1 << SQLiteParser.ALTER_) | (1 << SQLiteParser.ANALYZE_))) !== 0) || ((((_la - 32)) & ~0x1F) === 0 && ((1 << (_la - 32)) & ((1 << (SQLiteParser.AND_ - 32)) | (1 << (SQLiteParser.AS_ - 32)) | (1 << (SQLiteParser.ASC_ - 32)) | (1 << (SQLiteParser.ATTACH_ - 32)) | (1 << (SQLiteParser.AUTOINCREMENT_ - 32)) | (1 << (SQLiteParser.BEFORE_ - 32)) | (1 << (SQLiteParser.BEGIN_ - 32)) | (1 << (SQLiteParser.BETWEEN_ - 32)) | (1 << (SQLiteParser.BY_ - 32)) | (1 << (SQLiteParser.CASCADE_ - 32)) | (1 << (SQLiteParser.CASE_ - 32)) | (1 << (SQLiteParser.CAST_ - 32)) | (1 << (SQLiteParser.CHECK_ - 32)) | (1 << (SQLiteParser.COLLATE_ - 32)) | (1 << (SQLiteParser.COLUMN_ - 32)) | (1 << (SQLiteParser.COMMIT_ - 32)) | (1 << (SQLiteParser.CONFLICT_ - 32)) | (1 << (SQLiteParser.CONSTRAINT_ - 32)) | (1 << (SQLiteParser.CREATE_ - 32)) | (1 << (SQLiteParser.CROSS_ - 32)) | (1 << (SQLiteParser.CURRENT_DATE_ - 32)) | (1 << (SQLiteParser.CURRENT_TIME_ - 32)) | (1 << (SQLiteParser.CURRENT_TIMESTAMP_ - 32)) | (1 << (SQLiteParser.DATABASE_ - 32)) | (1 << (SQLiteParser.DEFAULT_ - 32)) | (1 << (SQLiteParser.DEFERRABLE_ - 32)) | (1 << (SQLiteParser.DEFERRED_ - 32)) | (1 << (SQLiteParser.DELETE_ - 32)) | (1 << (SQLiteParser.DESC_ - 32)) | (1 << (SQLiteParser.DETACH_ - 32)) | (1 << (SQLiteParser.DISTINCT_ - 32)) | (1 << (SQLiteParser.DROP_ - 32)))) !== 0) || ((((_la - 64)) & ~0x1F) === 0 && ((1 << (_la - 64)) & ((1 << (SQLiteParser.EACH_ - 64)) | (1 << (SQLiteParser.ELSE_ - 64)) | (1 << (SQLiteParser.END_ - 64)) | (1 << (SQLiteParser.ESCAPE_ - 64)) | (1 << (SQLiteParser.EXCEPT_ - 64)) | (1 << (SQLiteParser.EXCLUSIVE_ - 64)) | (1 << (SQLiteParser.EXISTS_ - 64)) | (1 << (SQLiteParser.EXPLAIN_ - 64)) | (1 << (SQLiteParser.FAIL_ - 64)) | (1 << (SQLiteParser.FOR_ - 64)) | (1 << (SQLiteParser.FOREIGN_ - 64)) | (1 << (SQLiteParser.FROM_ - 64)) | (1 << (SQLiteParser.FULL_ - 64)) | (1 << (SQLiteParser.GLOB_ - 64)) | (1 << (SQLiteParser.GROUP_ - 64)) | (1 << (SQLiteParser.HAVING_ - 64)) | (1 << (SQLiteParser.IF_ - 64)) | (1 << (SQLiteParser.IGNORE_ - 64)) | (1 << (SQLiteParser.IMMEDIATE_ - 64)) | (1 << (SQLiteParser.IN_ - 64)) | (1 << (SQLiteParser.INDEX_ - 64)) | (1 << (SQLiteParser.INDEXED_ - 64)) | (1 << (SQLiteParser.INITIALLY_ - 64)) | (1 << (SQLiteParser.INNER_ - 64)) | (1 << (SQLiteParser.INSERT_ - 64)) | (1 << (SQLiteParser.INSTEAD_ - 64)) | (1 << (SQLiteParser.INTERSECT_ - 64)) | (1 << (SQLiteParser.INTO_ - 64)) | (1 << (SQLiteParser.IS_ - 64)) | (1 << (SQLiteParser.ISNULL_ - 64)) | (1 << (SQLiteParser.JOIN_ - 64)) | (1 << (SQLiteParser.KEY_ - 64)))) !== 0) || ((((_la - 96)) & ~0x1F) === 0 && ((1 << (_la - 96)) & ((1 << (SQLiteParser.LEFT_ - 96)) | (1 << (SQLiteParser.LIKE_ - 96)) | (1 << (SQLiteParser.LIMIT_ - 96)) | (1 << (SQLiteParser.MATCH_ - 96)) | (1 << (SQLiteParser.NATURAL_ - 96)) | (1 << (SQLiteParser.NO_ - 96)) | (1 << (SQLiteParser.NOT_ - 96)) | (1 << (SQLiteParser.NOTNULL_ - 96)) | (1 << (SQLiteParser.NULL_ - 96)) | (1 << (SQLiteParser.OF_ - 96)) | (1 << (SQLiteParser.OFFSET_ - 96)) | (1 << (SQLiteParser.ON_ - 96)) | (1 << (SQLiteParser.OR_ - 96)) | (1 << (SQLiteParser.ORDER_ - 96)) | (1 << (SQLiteParser.OUTER_ - 96)) | (1 << (SQLiteParser.PLAN_ - 96)) | (1 << (SQLiteParser.PRAGMA_ - 96)) | (1 << (SQLiteParser.PRIMARY_ - 96)) | (1 << (SQLiteParser.QUERY_ - 96)) | (1 << (SQLiteParser.RAISE_ - 96)) | (1 << (SQLiteParser.RECURSIVE_ - 96)) | (1 << (SQLiteParser.REFERENCES_ - 96)) | (1 << (SQLiteParser.REGEXP_ - 96)) | (1 << (SQLiteParser.REINDEX_ - 96)) | (1 << (SQLiteParser.RELEASE_ - 96)) | (1 << (SQLiteParser.RENAME_ - 96)) | (1 << (SQLiteParser.REPLACE_ - 96)) | (1 << (SQLiteParser.RESTRICT_ - 96)) | (1 << (SQLiteParser.RIGHT_ - 96)) | (1 << (SQLiteParser.ROLLBACK_ - 96)) | (1 << (SQLiteParser.ROW_ - 96)))) !== 0) || ((((_la - 128)) & ~0x1F) === 0 && ((1 << (_la - 128)) & ((1 << (SQLiteParser.ROWS_ - 128)) | (1 << (SQLiteParser.SAVEPOINT_ - 128)) | (1 << (SQLiteParser.SELECT_ - 128)) | (1 << (SQLiteParser.SET_ - 128)) | (1 << (SQLiteParser.TABLE_ - 128)) | (1 << (SQLiteParser.TEMP_ - 128)) | (1 << (SQLiteParser.TEMPORARY_ - 128)) | (1 << (SQLiteParser.THEN_ - 128)) | (1 << (SQLiteParser.TO_ - 128)) | (1 << (SQLiteParser.TRANSACTION_ - 128)) | (1 << (SQLiteParser.TRIGGER_ - 128)) | (1 << (SQLiteParser.UNION_ - 128)) | (1 << (SQLiteParser.UNIQUE_ - 128)) | (1 << (SQLiteParser.UPDATE_ - 128)) | (1 << (SQLiteParser.USING_ - 128)) | (1 << (SQLiteParser.VACUUM_ - 128)) | (1 << (SQLiteParser.VALUES_ - 128)) | (1 << (SQLiteParser.VIEW_ - 128)) | (1 << (SQLiteParser.VIRTUAL_ - 128)) | (1 << (SQLiteParser.WHEN_ - 128)) | (1 << (SQLiteParser.WHERE_ - 128)) | (1 << (SQLiteParser.WITH_ - 128)) | (1 << (SQLiteParser.WITHOUT_ - 128)) | (1 << (SQLiteParser.FIRST_VALUE_ - 128)) | (1 << (SQLiteParser.OVER_ - 128)) | (1 << (SQLiteParser.PARTITION_ - 128)) | (1 << (SQLiteParser.RANGE_ - 128)) | (1 << (SQLiteParser.PRECEDING_ - 128)) | (1 << (SQLiteParser.UNBOUNDED_ - 128)) | (1 << (SQLiteParser.CURRENT_ - 128)) | (1 << (SQLiteParser.FOLLOWING_ - 128)) | (1 << (SQLiteParser.CUME_DIST_ - 128)))) !== 0) || ((((_la - 160)) & ~0x1F) === 0 && ((1 << (_la - 160)) & ((1 << (SQLiteParser.DENSE_RANK_ - 160)) | (1 << (SQLiteParser.LAG_ - 160)) | (1 << (SQLiteParser.LAST_VALUE_ - 160)) | (1 << (SQLiteParser.LEAD_ - 160)) | (1 << (SQLiteParser.NTH_VALUE_ - 160)) | (1 << (SQLiteParser.NTILE_ - 160)) | (1 << (SQLiteParser.PERCENT_RANK_ - 160)) | (1 << (SQLiteParser.RANK_ - 160)) | (1 << (SQLiteParser.ROW_NUMBER_ - 160)) | (1 << (SQLiteParser.GENERATED_ - 160)) | (1 << (SQLiteParser.ALWAYS_ - 160)) | (1 << (SQLiteParser.STORED_ - 160)) | (1 << (SQLiteParser.TRUE_ - 160)) | (1 << (SQLiteParser.FALSE_ - 160)) | (1 << (SQLiteParser.WINDOW_ - 160)) | (1 << (SQLiteParser.NULLS_ - 160)) | (1 << (SQLiteParser.FIRST_ - 160)) | (1 << (SQLiteParser.LAST_ - 160)) | (1 << (SQLiteParser.FILTER_ - 160)) | (1 << (SQLiteParser.GROUPS_ - 160)) | (1 << (SQLiteParser.EXCLUDE_ - 160)) | (1 << (SQLiteParser.IDENTIFIER - 160)) | (1 << (SQLiteParser.NUMERIC_LITERAL - 160)) | (1 << (SQLiteParser.BIND_PARAMETER - 160)) | (1 << (SQLiteParser.STRING_LITERAL - 160)) | (1 << (SQLiteParser.BLOB_LITERAL - 160)))) !== 0)) {
+							if ((((_la) & ~0x1F) === 0 && ((1 << _la) & ((1 << SQLiteParser.OPEN_PAR) | (1 << SQLiteParser.PLUS) | (1 << SQLiteParser.MINUS) | (1 << SQLiteParser.TILDE) | (1 << SQLiteParser.ABORT) | (1 << SQLiteParser.ACTION) | (1 << SQLiteParser.ADD) | (1 << SQLiteParser.AFTER) | (1 << SQLiteParser.ALL) | (1 << SQLiteParser.ALTER) | (1 << SQLiteParser.ANALYZE))) !== 0) || ((((_la - 32)) & ~0x1F) === 0 && ((1 << (_la - 32)) & ((1 << (SQLiteParser.AND - 32)) | (1 << (SQLiteParser.AS - 32)) | (1 << (SQLiteParser.ASC - 32)) | (1 << (SQLiteParser.ATTACH - 32)) | (1 << (SQLiteParser.AUTOINCREMENT - 32)) | (1 << (SQLiteParser.BEFORE - 32)) | (1 << (SQLiteParser.BEGIN - 32)) | (1 << (SQLiteParser.BETWEEN - 32)) | (1 << (SQLiteParser.BY - 32)) | (1 << (SQLiteParser.CASCADE - 32)) | (1 << (SQLiteParser.CASE - 32)) | (1 << (SQLiteParser.CAST - 32)) | (1 << (SQLiteParser.CHECK - 32)) | (1 << (SQLiteParser.COLLATE - 32)) | (1 << (SQLiteParser.COLUMN - 32)) | (1 << (SQLiteParser.COMMIT - 32)) | (1 << (SQLiteParser.CONFLICT - 32)) | (1 << (SQLiteParser.CONSTRAINT - 32)) | (1 << (SQLiteParser.CREATE - 32)) | (1 << (SQLiteParser.CROSS - 32)) | (1 << (SQLiteParser.CURRENT_DATE - 32)) | (1 << (SQLiteParser.CURRENT_TIME - 32)) | (1 << (SQLiteParser.CURRENT_TIMESTAMP - 32)) | (1 << (SQLiteParser.DATABASE - 32)) | (1 << (SQLiteParser.DEFAULT - 32)) | (1 << (SQLiteParser.DEFERRABLE - 32)) | (1 << (SQLiteParser.DEFERRED - 32)) | (1 << (SQLiteParser.DELETE - 32)) | (1 << (SQLiteParser.DESC - 32)) | (1 << (SQLiteParser.DETACH - 32)) | (1 << (SQLiteParser.DISTINCT - 32)) | (1 << (SQLiteParser.DROP - 32)))) !== 0) || ((((_la - 64)) & ~0x1F) === 0 && ((1 << (_la - 64)) & ((1 << (SQLiteParser.EACH - 64)) | (1 << (SQLiteParser.ELSE - 64)) | (1 << (SQLiteParser.END - 64)) | (1 << (SQLiteParser.ESCAPE - 64)) | (1 << (SQLiteParser.EXCEPT - 64)) | (1 << (SQLiteParser.EXCLUSIVE - 64)) | (1 << (SQLiteParser.EXISTS - 64)) | (1 << (SQLiteParser.EXPLAIN - 64)) | (1 << (SQLiteParser.FAIL - 64)) | (1 << (SQLiteParser.FOR - 64)) | (1 << (SQLiteParser.FOREIGN - 64)) | (1 << (SQLiteParser.FROM - 64)) | (1 << (SQLiteParser.FULL - 64)) | (1 << (SQLiteParser.GLOB - 64)) | (1 << (SQLiteParser.GROUP - 64)) | (1 << (SQLiteParser.HAVING - 64)) | (1 << (SQLiteParser.IF - 64)) | (1 << (SQLiteParser.IGNORE - 64)) | (1 << (SQLiteParser.IMMEDIATE - 64)) | (1 << (SQLiteParser.IN - 64)) | (1 << (SQLiteParser.INDEX - 64)) | (1 << (SQLiteParser.INDEXED - 64)) | (1 << (SQLiteParser.INITIALLY - 64)) | (1 << (SQLiteParser.INNER - 64)) | (1 << (SQLiteParser.INSERT - 64)) | (1 << (SQLiteParser.INSTEAD - 64)) | (1 << (SQLiteParser.INTERSECT - 64)) | (1 << (SQLiteParser.INTO - 64)) | (1 << (SQLiteParser.IS - 64)) | (1 << (SQLiteParser.ISNULL - 64)) | (1 << (SQLiteParser.JOIN - 64)) | (1 << (SQLiteParser.KEY - 64)))) !== 0) || ((((_la - 96)) & ~0x1F) === 0 && ((1 << (_la - 96)) & ((1 << (SQLiteParser.LEFT - 96)) | (1 << (SQLiteParser.LIKE - 96)) | (1 << (SQLiteParser.LIMIT - 96)) | (1 << (SQLiteParser.MATCH - 96)) | (1 << (SQLiteParser.NATURAL - 96)) | (1 << (SQLiteParser.NO - 96)) | (1 << (SQLiteParser.NOT - 96)) | (1 << (SQLiteParser.NOTNULL - 96)) | (1 << (SQLiteParser.NULL - 96)) | (1 << (SQLiteParser.OF - 96)) | (1 << (SQLiteParser.OFFSET - 96)) | (1 << (SQLiteParser.ON - 96)) | (1 << (SQLiteParser.OR - 96)) | (1 << (SQLiteParser.ORDER - 96)) | (1 << (SQLiteParser.OUTER - 96)) | (1 << (SQLiteParser.PLAN - 96)) | (1 << (SQLiteParser.PRAGMA - 96)) | (1 << (SQLiteParser.PRIMARY - 96)) | (1 << (SQLiteParser.QUERY - 96)) | (1 << (SQLiteParser.RAISE - 96)) | (1 << (SQLiteParser.RECURSIVE - 96)) | (1 << (SQLiteParser.REFERENCES - 96)) | (1 << (SQLiteParser.REGEXP - 96)) | (1 << (SQLiteParser.REINDEX - 96)) | (1 << (SQLiteParser.RELEASE - 96)) | (1 << (SQLiteParser.RENAME - 96)) | (1 << (SQLiteParser.REPLACE - 96)) | (1 << (SQLiteParser.RESTRICT - 96)) | (1 << (SQLiteParser.RETURNING - 96)) | (1 << (SQLiteParser.RIGHT - 96)) | (1 << (SQLiteParser.ROLLBACK - 96)) | (1 << (SQLiteParser.ROW - 96)))) !== 0) || ((((_la - 128)) & ~0x1F) === 0 && ((1 << (_la - 128)) & ((1 << (SQLiteParser.ROWS - 128)) | (1 << (SQLiteParser.SAVEPOINT - 128)) | (1 << (SQLiteParser.SELECT - 128)) | (1 << (SQLiteParser.SET - 128)) | (1 << (SQLiteParser.TABLE - 128)) | (1 << (SQLiteParser.TEMP - 128)) | (1 << (SQLiteParser.TEMPORARY - 128)) | (1 << (SQLiteParser.THEN - 128)) | (1 << (SQLiteParser.TO - 128)) | (1 << (SQLiteParser.TRANSACTION - 128)) | (1 << (SQLiteParser.TRIGGER - 128)) | (1 << (SQLiteParser.UNION - 128)) | (1 << (SQLiteParser.UNIQUE - 128)) | (1 << (SQLiteParser.UPDATE - 128)) | (1 << (SQLiteParser.USING - 128)) | (1 << (SQLiteParser.VACUUM - 128)) | (1 << (SQLiteParser.VALUES - 128)) | (1 << (SQLiteParser.VIEW - 128)) | (1 << (SQLiteParser.VIRTUAL - 128)) | (1 << (SQLiteParser.WHEN - 128)) | (1 << (SQLiteParser.WHERE - 128)) | (1 << (SQLiteParser.WITH - 128)) | (1 << (SQLiteParser.WITHOUT - 128)) | (1 << (SQLiteParser.FIRST_VALUE - 128)) | (1 << (SQLiteParser.OVER - 128)) | (1 << (SQLiteParser.PARTITION - 128)) | (1 << (SQLiteParser.RANGE - 128)) | (1 << (SQLiteParser.PRECEDING - 128)) | (1 << (SQLiteParser.UNBOUNDED - 128)) | (1 << (SQLiteParser.CURRENT - 128)) | (1 << (SQLiteParser.FOLLOWING - 128)) | (1 << (SQLiteParser.CUME_DIST - 128)))) !== 0) || ((((_la - 160)) & ~0x1F) === 0 && ((1 << (_la - 160)) & ((1 << (SQLiteParser.DENSE_RANK - 160)) | (1 << (SQLiteParser.LAG - 160)) | (1 << (SQLiteParser.LAST_VALUE - 160)) | (1 << (SQLiteParser.LEAD - 160)) | (1 << (SQLiteParser.NTH_VALUE - 160)) | (1 << (SQLiteParser.NTILE - 160)) | (1 << (SQLiteParser.PERCENT_RANK - 160)) | (1 << (SQLiteParser.RANK - 160)) | (1 << (SQLiteParser.ROW_NUMBER - 160)) | (1 << (SQLiteParser.GENERATED - 160)) | (1 << (SQLiteParser.ALWAYS - 160)) | (1 << (SQLiteParser.STORED - 160)) | (1 << (SQLiteParser.TRUE - 160)) | (1 << (SQLiteParser.FALSE - 160)) | (1 << (SQLiteParser.WINDOW - 160)) | (1 << (SQLiteParser.NULLS - 160)) | (1 << (SQLiteParser.FIRST - 160)) | (1 << (SQLiteParser.LAST - 160)) | (1 << (SQLiteParser.FILTER - 160)) | (1 << (SQLiteParser.GROUPS - 160)) | (1 << (SQLiteParser.EXCLUDE - 160)) | (1 << (SQLiteParser.TIES - 160)) | (1 << (SQLiteParser.OTHERS - 160)) | (1 << (SQLiteParser.DO - 160)) | (1 << (SQLiteParser.NOTHING - 160)) | (1 << (SQLiteParser.IDENTIFIER - 160)) | (1 << (SQLiteParser.NUMERIC_LITERAL - 160)) | (1 << (SQLiteParser.BIND_PARAMETER - 160)) | (1 << (SQLiteParser.STRING_LITERAL - 160)) | (1 << (SQLiteParser.BLOB_LITERAL - 160)))) !== 0)) {
 								{
 								this.state = 1075;
 								this.expr(0);
@@ -4272,25 +4275,25 @@ export class SQLiteParser extends Parser {
 			this.enterOuterAlt(_localctx, 1);
 			{
 			this.state = 1094;
-			this.match(SQLiteParser.RAISE_);
+			this.match(SQLiteParser.RAISE);
 			this.state = 1095;
 			this.match(SQLiteParser.OPEN_PAR);
 			this.state = 1100;
 			this._errHandler.sync(this);
 			switch (this._input.LA(1)) {
-			case SQLiteParser.IGNORE_:
+			case SQLiteParser.IGNORE:
 				{
 				this.state = 1096;
-				this.match(SQLiteParser.IGNORE_);
+				this.match(SQLiteParser.IGNORE);
 				}
 				break;
-			case SQLiteParser.ABORT_:
-			case SQLiteParser.FAIL_:
-			case SQLiteParser.ROLLBACK_:
+			case SQLiteParser.ABORT:
+			case SQLiteParser.FAIL:
+			case SQLiteParser.ROLLBACK:
 				{
 				this.state = 1097;
 				_la = this._input.LA(1);
-				if (!(_la === SQLiteParser.ABORT_ || _la === SQLiteParser.FAIL_ || _la === SQLiteParser.ROLLBACK_)) {
+				if (!(_la === SQLiteParser.ABORT || _la === SQLiteParser.FAIL || _la === SQLiteParser.ROLLBACK)) {
 				this._errHandler.recoverInline(this);
 				} else {
 					if (this._input.LA(1) === Token.EOF) {
@@ -4337,7 +4340,7 @@ export class SQLiteParser extends Parser {
 			{
 			this.state = 1104;
 			_la = this._input.LA(1);
-			if (!(((((_la - 52)) & ~0x1F) === 0 && ((1 << (_la - 52)) & ((1 << (SQLiteParser.CURRENT_DATE_ - 52)) | (1 << (SQLiteParser.CURRENT_TIME_ - 52)) | (1 << (SQLiteParser.CURRENT_TIMESTAMP_ - 52)))) !== 0) || _la === SQLiteParser.NULL_ || ((((_la - 172)) & ~0x1F) === 0 && ((1 << (_la - 172)) & ((1 << (SQLiteParser.TRUE_ - 172)) | (1 << (SQLiteParser.FALSE_ - 172)) | (1 << (SQLiteParser.NUMERIC_LITERAL - 172)) | (1 << (SQLiteParser.STRING_LITERAL - 172)) | (1 << (SQLiteParser.BLOB_LITERAL - 172)))) !== 0))) {
+			if (!(((((_la - 52)) & ~0x1F) === 0 && ((1 << (_la - 52)) & ((1 << (SQLiteParser.CURRENT_DATE - 52)) | (1 << (SQLiteParser.CURRENT_TIME - 52)) | (1 << (SQLiteParser.CURRENT_TIMESTAMP - 52)))) !== 0) || _la === SQLiteParser.NULL || ((((_la - 172)) & ~0x1F) === 0 && ((1 << (_la - 172)) & ((1 << (SQLiteParser.TRUE - 172)) | (1 << (SQLiteParser.FALSE - 172)) | (1 << (SQLiteParser.NUMERIC_LITERAL - 172)) | (1 << (SQLiteParser.STRING_LITERAL - 172)) | (1 << (SQLiteParser.BLOB_LITERAL - 172)))) !== 0))) {
 			this._errHandler.recoverInline(this);
 			} else {
 				if (this._input.LA(1) === Token.EOF) {
@@ -4418,7 +4421,7 @@ export class SQLiteParser extends Parser {
 			this.enterOuterAlt(_localctx, 1);
 			{
 			this.state = 1117;
-			this.match(SQLiteParser.VALUES_);
+			this.match(SQLiteParser.VALUES);
 			this.state = 1118;
 			this.value_row();
 			this.state = 1123;
@@ -4464,7 +4467,7 @@ export class SQLiteParser extends Parser {
 			this.state = 1127;
 			this._errHandler.sync(this);
 			_la = this._input.LA(1);
-			if (_la === SQLiteParser.WITH_) {
+			if (_la === SQLiteParser.WITH) {
 				{
 				this.state = 1126;
 				this.with_clause();
@@ -4477,26 +4480,26 @@ export class SQLiteParser extends Parser {
 			case 1:
 				{
 				this.state = 1129;
-				this.match(SQLiteParser.INSERT_);
+				this.match(SQLiteParser.INSERT);
 				}
 				break;
 
 			case 2:
 				{
 				this.state = 1130;
-				this.match(SQLiteParser.REPLACE_);
+				this.match(SQLiteParser.REPLACE);
 				}
 				break;
 
 			case 3:
 				{
 				this.state = 1131;
-				this.match(SQLiteParser.INSERT_);
+				this.match(SQLiteParser.INSERT);
 				this.state = 1132;
-				this.match(SQLiteParser.OR_);
+				this.match(SQLiteParser.OR);
 				this.state = 1133;
 				_la = this._input.LA(1);
-				if (!(_la === SQLiteParser.ABORT_ || _la === SQLiteParser.FAIL_ || _la === SQLiteParser.IGNORE_ || _la === SQLiteParser.REPLACE_ || _la === SQLiteParser.ROLLBACK_)) {
+				if (!(_la === SQLiteParser.ABORT || _la === SQLiteParser.FAIL || _la === SQLiteParser.IGNORE || _la === SQLiteParser.REPLACE || _la === SQLiteParser.ROLLBACK)) {
 				this._errHandler.recoverInline(this);
 				} else {
 					if (this._input.LA(1) === Token.EOF) {
@@ -4510,7 +4513,7 @@ export class SQLiteParser extends Parser {
 				break;
 			}
 			this.state = 1136;
-			this.match(SQLiteParser.INTO_);
+			this.match(SQLiteParser.INTO);
 			this.state = 1140;
 			this._errHandler.sync(this);
 			switch ( this.interpreter.adaptivePredict(this._input, 144, this._ctx) ) {
@@ -4528,10 +4531,10 @@ export class SQLiteParser extends Parser {
 			this.state = 1145;
 			this._errHandler.sync(this);
 			_la = this._input.LA(1);
-			if (_la === SQLiteParser.AS_) {
+			if (_la === SQLiteParser.AS) {
 				{
 				this.state = 1143;
-				this.match(SQLiteParser.AS_);
+				this.match(SQLiteParser.AS);
 				this.state = 1144;
 				this.table_alias();
 				}
@@ -4570,9 +4573,9 @@ export class SQLiteParser extends Parser {
 			this.state = 1169;
 			this._errHandler.sync(this);
 			switch (this._input.LA(1)) {
-			case SQLiteParser.SELECT_:
-			case SQLiteParser.VALUES_:
-			case SQLiteParser.WITH_:
+			case SQLiteParser.SELECT:
+			case SQLiteParser.VALUES:
+			case SQLiteParser.WITH:
 				{
 				{
 				this.state = 1162;
@@ -4595,7 +4598,7 @@ export class SQLiteParser extends Parser {
 				this.state = 1165;
 				this._errHandler.sync(this);
 				_la = this._input.LA(1);
-				if (_la === SQLiteParser.ON_) {
+				if (_la === SQLiteParser.ON) {
 					{
 					this.state = 1164;
 					this.upsert_clause();
@@ -4605,12 +4608,12 @@ export class SQLiteParser extends Parser {
 				}
 				}
 				break;
-			case SQLiteParser.DEFAULT_:
+			case SQLiteParser.DEFAULT:
 				{
 				this.state = 1167;
-				this.match(SQLiteParser.DEFAULT_);
+				this.match(SQLiteParser.DEFAULT);
 				this.state = 1168;
-				this.match(SQLiteParser.VALUES_);
+				this.match(SQLiteParser.VALUES);
 				}
 				break;
 			default:
@@ -4619,7 +4622,7 @@ export class SQLiteParser extends Parser {
 			this.state = 1172;
 			this._errHandler.sync(this);
 			_la = this._input.LA(1);
-			if (_la === SQLiteParser.RETURNING_) {
+			if (_la === SQLiteParser.RETURNING) {
 				{
 				this.state = 1171;
 				this.returning_clause();
@@ -4651,7 +4654,7 @@ export class SQLiteParser extends Parser {
 			this.enterOuterAlt(_localctx, 1);
 			{
 			this.state = 1174;
-			this.match(SQLiteParser.RETURNING_);
+			this.match(SQLiteParser.RETURNING);
 			this.state = 1175;
 			this.result_column();
 			this.state = 1180;
@@ -4695,9 +4698,9 @@ export class SQLiteParser extends Parser {
 			this.enterOuterAlt(_localctx, 1);
 			{
 			this.state = 1183;
-			this.match(SQLiteParser.ON_);
+			this.match(SQLiteParser.ON);
 			this.state = 1184;
-			this.match(SQLiteParser.CONFLICT_);
+			this.match(SQLiteParser.CONFLICT);
 			this.state = 1199;
 			this._errHandler.sync(this);
 			_la = this._input.LA(1);
@@ -4728,10 +4731,10 @@ export class SQLiteParser extends Parser {
 				this.state = 1197;
 				this._errHandler.sync(this);
 				_la = this._input.LA(1);
-				if (_la === SQLiteParser.WHERE_) {
+				if (_la === SQLiteParser.WHERE) {
 					{
 					this.state = 1195;
-					this.match(SQLiteParser.WHERE_);
+					this.match(SQLiteParser.WHERE);
 					this.state = 1196;
 					this.expr(0);
 					}
@@ -4741,22 +4744,22 @@ export class SQLiteParser extends Parser {
 			}
 
 			this.state = 1201;
-			this.match(SQLiteParser.DO_);
+			this.match(SQLiteParser.DO);
 			this.state = 1228;
 			this._errHandler.sync(this);
 			switch (this._input.LA(1)) {
-			case SQLiteParser.NOTHING_:
+			case SQLiteParser.NOTHING:
 				{
 				this.state = 1202;
-				this.match(SQLiteParser.NOTHING_);
+				this.match(SQLiteParser.NOTHING);
 				}
 				break;
-			case SQLiteParser.UPDATE_:
+			case SQLiteParser.UPDATE:
 				{
 				this.state = 1203;
-				this.match(SQLiteParser.UPDATE_);
+				this.match(SQLiteParser.UPDATE);
 				this.state = 1204;
-				this.match(SQLiteParser.SET_);
+				this.match(SQLiteParser.SET);
 				{
 				this.state = 1207;
 				this._errHandler.sync(this);
@@ -4817,10 +4820,10 @@ export class SQLiteParser extends Parser {
 				this.state = 1226;
 				this._errHandler.sync(this);
 				_la = this._input.LA(1);
-				if (_la === SQLiteParser.WHERE_) {
+				if (_la === SQLiteParser.WHERE) {
 					{
 					this.state = 1224;
-					this.match(SQLiteParser.WHERE_);
+					this.match(SQLiteParser.WHERE);
 					this.state = 1225;
 					this.expr(0);
 					}
@@ -4856,7 +4859,7 @@ export class SQLiteParser extends Parser {
 			this.enterOuterAlt(_localctx, 1);
 			{
 			this.state = 1230;
-			this.match(SQLiteParser.PRAGMA_);
+			this.match(SQLiteParser.PRAGMA);
 			this.state = 1234;
 			this._errHandler.sync(this);
 			switch ( this.interpreter.adaptivePredict(this._input, 161, this._ctx) ) {
@@ -4894,29 +4897,29 @@ export class SQLiteParser extends Parser {
 				break;
 			case SQLiteParser.EOF:
 			case SQLiteParser.SCOL:
-			case SQLiteParser.ALTER_:
-			case SQLiteParser.ANALYZE_:
-			case SQLiteParser.ATTACH_:
-			case SQLiteParser.BEGIN_:
-			case SQLiteParser.COMMIT_:
-			case SQLiteParser.CREATE_:
-			case SQLiteParser.DELETE_:
-			case SQLiteParser.DETACH_:
-			case SQLiteParser.DROP_:
-			case SQLiteParser.END_:
-			case SQLiteParser.EXPLAIN_:
-			case SQLiteParser.INSERT_:
-			case SQLiteParser.PRAGMA_:
-			case SQLiteParser.REINDEX_:
-			case SQLiteParser.RELEASE_:
-			case SQLiteParser.REPLACE_:
-			case SQLiteParser.ROLLBACK_:
-			case SQLiteParser.SAVEPOINT_:
-			case SQLiteParser.SELECT_:
-			case SQLiteParser.UPDATE_:
-			case SQLiteParser.VACUUM_:
-			case SQLiteParser.VALUES_:
-			case SQLiteParser.WITH_:
+			case SQLiteParser.ALTER:
+			case SQLiteParser.ANALYZE:
+			case SQLiteParser.ATTACH:
+			case SQLiteParser.BEGIN:
+			case SQLiteParser.COMMIT:
+			case SQLiteParser.CREATE:
+			case SQLiteParser.DELETE:
+			case SQLiteParser.DETACH:
+			case SQLiteParser.DROP:
+			case SQLiteParser.END:
+			case SQLiteParser.EXPLAIN:
+			case SQLiteParser.INSERT:
+			case SQLiteParser.PRAGMA:
+			case SQLiteParser.REINDEX:
+			case SQLiteParser.RELEASE:
+			case SQLiteParser.REPLACE:
+			case SQLiteParser.ROLLBACK:
+			case SQLiteParser.SAVEPOINT:
+			case SQLiteParser.SELECT:
+			case SQLiteParser.UPDATE:
+			case SQLiteParser.VACUUM:
+			case SQLiteParser.VALUES:
+			case SQLiteParser.WITH:
 				break;
 			default:
 				break;
@@ -4992,7 +4995,7 @@ export class SQLiteParser extends Parser {
 			this.enterOuterAlt(_localctx, 1);
 			{
 			this.state = 1250;
-			this.match(SQLiteParser.REINDEX_);
+			this.match(SQLiteParser.REINDEX);
 			this.state = 1261;
 			this._errHandler.sync(this);
 			switch ( this.interpreter.adaptivePredict(this._input, 166, this._ctx) ) {
@@ -5065,7 +5068,7 @@ export class SQLiteParser extends Parser {
 			this.state = 1264;
 			this._errHandler.sync(this);
 			_la = this._input.LA(1);
-			if (_la === SQLiteParser.WITH_) {
+			if (_la === SQLiteParser.WITH) {
 				{
 				this.state = 1263;
 				this.common_table_stmt();
@@ -5095,7 +5098,7 @@ export class SQLiteParser extends Parser {
 			this.state = 1276;
 			this._errHandler.sync(this);
 			_la = this._input.LA(1);
-			if (_la === SQLiteParser.ORDER_) {
+			if (_la === SQLiteParser.ORDER) {
 				{
 				this.state = 1275;
 				this.order_by_stmt();
@@ -5105,7 +5108,7 @@ export class SQLiteParser extends Parser {
 			this.state = 1279;
 			this._errHandler.sync(this);
 			_la = this._input.LA(1);
-			if (_la === SQLiteParser.LIMIT_) {
+			if (_la === SQLiteParser.LIMIT) {
 				{
 				this.state = 1278;
 				this.limit_stmt();
@@ -5141,7 +5144,7 @@ export class SQLiteParser extends Parser {
 			this.state = 1289;
 			this._errHandler.sync(this);
 			_la = this._input.LA(1);
-			while (_la === SQLiteParser.COMMA || _la === SQLiteParser.CROSS_ || _la === SQLiteParser.FULL_ || ((((_la - 87)) & ~0x1F) === 0 && ((1 << (_la - 87)) & ((1 << (SQLiteParser.INNER_ - 87)) | (1 << (SQLiteParser.JOIN_ - 87)) | (1 << (SQLiteParser.LEFT_ - 87)) | (1 << (SQLiteParser.NATURAL_ - 87)))) !== 0) || _la === SQLiteParser.RIGHT_) {
+			while (_la === SQLiteParser.COMMA || _la === SQLiteParser.CROSS || _la === SQLiteParser.FULL || ((((_la - 87)) & ~0x1F) === 0 && ((1 << (_la - 87)) & ((1 << (SQLiteParser.INNER - 87)) | (1 << (SQLiteParser.JOIN - 87)) | (1 << (SQLiteParser.LEFT - 87)) | (1 << (SQLiteParser.NATURAL - 87)))) !== 0) || _la === SQLiteParser.RIGHT) {
 				{
 				{
 				this.state = 1282;
@@ -5189,12 +5192,12 @@ export class SQLiteParser extends Parser {
 			this.state = 1355;
 			this._errHandler.sync(this);
 			switch (this._input.LA(1)) {
-			case SQLiteParser.SELECT_:
+			case SQLiteParser.SELECT:
 				this.enterOuterAlt(_localctx, 1);
 				{
 				{
 				this.state = 1292;
-				this.match(SQLiteParser.SELECT_);
+				this.match(SQLiteParser.SELECT);
 				this.state = 1294;
 				this._errHandler.sync(this);
 				switch ( this.interpreter.adaptivePredict(this._input, 173, this._ctx) ) {
@@ -5202,7 +5205,7 @@ export class SQLiteParser extends Parser {
 					{
 					this.state = 1293;
 					_la = this._input.LA(1);
-					if (!(_la === SQLiteParser.ALL_ || _la === SQLiteParser.DISTINCT_)) {
+					if (!(_la === SQLiteParser.ALL || _la === SQLiteParser.DISTINCT)) {
 					this._errHandler.recoverInline(this);
 					} else {
 						if (this._input.LA(1) === Token.EOF) {
@@ -5236,10 +5239,10 @@ export class SQLiteParser extends Parser {
 				this.state = 1316;
 				this._errHandler.sync(this);
 				_la = this._input.LA(1);
-				if (_la === SQLiteParser.FROM_) {
+				if (_la === SQLiteParser.FROM) {
 					{
 					this.state = 1304;
-					this.match(SQLiteParser.FROM_);
+					this.match(SQLiteParser.FROM);
 					this.state = 1314;
 					this._errHandler.sync(this);
 					switch ( this.interpreter.adaptivePredict(this._input, 176, this._ctx) ) {
@@ -5279,10 +5282,10 @@ export class SQLiteParser extends Parser {
 				this.state = 1320;
 				this._errHandler.sync(this);
 				_la = this._input.LA(1);
-				if (_la === SQLiteParser.WHERE_) {
+				if (_la === SQLiteParser.WHERE) {
 					{
 					this.state = 1318;
-					this.match(SQLiteParser.WHERE_);
+					this.match(SQLiteParser.WHERE);
 					this.state = 1319;
 					_localctx._whereExpr = this.expr(0);
 					}
@@ -5291,12 +5294,12 @@ export class SQLiteParser extends Parser {
 				this.state = 1336;
 				this._errHandler.sync(this);
 				_la = this._input.LA(1);
-				if (_la === SQLiteParser.GROUP_) {
+				if (_la === SQLiteParser.GROUP) {
 					{
 					this.state = 1322;
-					this.match(SQLiteParser.GROUP_);
+					this.match(SQLiteParser.GROUP);
 					this.state = 1323;
-					this.match(SQLiteParser.BY_);
+					this.match(SQLiteParser.BY);
 					this.state = 1324;
 					_localctx._expr = this.expr(0);
 					_localctx._groupByExpr.push(_localctx._expr);
@@ -5320,10 +5323,10 @@ export class SQLiteParser extends Parser {
 					this.state = 1334;
 					this._errHandler.sync(this);
 					_la = this._input.LA(1);
-					if (_la === SQLiteParser.HAVING_) {
+					if (_la === SQLiteParser.HAVING) {
 						{
 						this.state = 1332;
-						this.match(SQLiteParser.HAVING_);
+						this.match(SQLiteParser.HAVING);
 						this.state = 1333;
 						_localctx._havingExpr = this.expr(0);
 						}
@@ -5335,14 +5338,14 @@ export class SQLiteParser extends Parser {
 				this.state = 1352;
 				this._errHandler.sync(this);
 				_la = this._input.LA(1);
-				if (_la === SQLiteParser.WINDOW_) {
+				if (_la === SQLiteParser.WINDOW) {
 					{
 					this.state = 1338;
-					this.match(SQLiteParser.WINDOW_);
+					this.match(SQLiteParser.WINDOW);
 					this.state = 1339;
 					this.window_name();
 					this.state = 1340;
-					this.match(SQLiteParser.AS_);
+					this.match(SQLiteParser.AS);
 					this.state = 1341;
 					this.window_defn();
 					this.state = 1349;
@@ -5356,7 +5359,7 @@ export class SQLiteParser extends Parser {
 						this.state = 1343;
 						this.window_name();
 						this.state = 1344;
-						this.match(SQLiteParser.AS_);
+						this.match(SQLiteParser.AS);
 						this.state = 1345;
 						this.window_defn();
 						}
@@ -5371,7 +5374,7 @@ export class SQLiteParser extends Parser {
 				}
 				}
 				break;
-			case SQLiteParser.VALUES_:
+			case SQLiteParser.VALUES:
 				this.enterOuterAlt(_localctx, 2);
 				{
 				this.state = 1354;
@@ -5432,7 +5435,7 @@ export class SQLiteParser extends Parser {
 			this.state = 1360;
 			this._errHandler.sync(this);
 			_la = this._input.LA(1);
-			if (_la === SQLiteParser.WITH_) {
+			if (_la === SQLiteParser.WITH) {
 				{
 				this.state = 1359;
 				this.common_table_stmt();
@@ -5444,7 +5447,7 @@ export class SQLiteParser extends Parser {
 			this.state = 1364;
 			this._errHandler.sync(this);
 			_la = this._input.LA(1);
-			if (_la === SQLiteParser.ORDER_) {
+			if (_la === SQLiteParser.ORDER) {
 				{
 				this.state = 1363;
 				this.order_by_stmt();
@@ -5454,7 +5457,7 @@ export class SQLiteParser extends Parser {
 			this.state = 1367;
 			this._errHandler.sync(this);
 			_la = this._input.LA(1);
-			if (_la === SQLiteParser.LIMIT_) {
+			if (_la === SQLiteParser.LIMIT) {
 				{
 				this.state = 1366;
 				this.limit_stmt();
@@ -5488,7 +5491,7 @@ export class SQLiteParser extends Parser {
 			this.state = 1370;
 			this._errHandler.sync(this);
 			_la = this._input.LA(1);
-			if (_la === SQLiteParser.WITH_) {
+			if (_la === SQLiteParser.WITH) {
 				{
 				this.state = 1369;
 				this.common_table_stmt();
@@ -5506,32 +5509,32 @@ export class SQLiteParser extends Parser {
 				this.state = 1379;
 				this._errHandler.sync(this);
 				switch (this._input.LA(1)) {
-				case SQLiteParser.UNION_:
+				case SQLiteParser.UNION:
 					{
 					this.state = 1373;
-					this.match(SQLiteParser.UNION_);
+					this.match(SQLiteParser.UNION);
 					this.state = 1375;
 					this._errHandler.sync(this);
 					_la = this._input.LA(1);
-					if (_la === SQLiteParser.ALL_) {
+					if (_la === SQLiteParser.ALL) {
 						{
 						this.state = 1374;
-						this.match(SQLiteParser.ALL_);
+						this.match(SQLiteParser.ALL);
 						}
 					}
 
 					}
 					break;
-				case SQLiteParser.INTERSECT_:
+				case SQLiteParser.INTERSECT:
 					{
 					this.state = 1377;
-					this.match(SQLiteParser.INTERSECT_);
+					this.match(SQLiteParser.INTERSECT);
 					}
 					break;
-				case SQLiteParser.EXCEPT_:
+				case SQLiteParser.EXCEPT:
 					{
 					this.state = 1378;
-					this.match(SQLiteParser.EXCEPT_);
+					this.match(SQLiteParser.EXCEPT);
 					}
 					break;
 				default:
@@ -5544,11 +5547,11 @@ export class SQLiteParser extends Parser {
 				this.state = 1384;
 				this._errHandler.sync(this);
 				_la = this._input.LA(1);
-			} while (_la === SQLiteParser.EXCEPT_ || _la === SQLiteParser.INTERSECT_ || _la === SQLiteParser.UNION_);
+			} while (_la === SQLiteParser.EXCEPT || _la === SQLiteParser.INTERSECT || _la === SQLiteParser.UNION);
 			this.state = 1387;
 			this._errHandler.sync(this);
 			_la = this._input.LA(1);
-			if (_la === SQLiteParser.ORDER_) {
+			if (_la === SQLiteParser.ORDER) {
 				{
 				this.state = 1386;
 				this.order_by_stmt();
@@ -5558,7 +5561,7 @@ export class SQLiteParser extends Parser {
 			this.state = 1390;
 			this._errHandler.sync(this);
 			_la = this._input.LA(1);
-			if (_la === SQLiteParser.LIMIT_) {
+			if (_la === SQLiteParser.LIMIT) {
 				{
 				this.state = 1389;
 				this.limit_stmt();
@@ -5619,7 +5622,7 @@ export class SQLiteParser extends Parser {
 					case 1:
 						{
 						this.state = 1398;
-						this.match(SQLiteParser.AS_);
+						this.match(SQLiteParser.AS);
 						}
 						break;
 					}
@@ -5631,69 +5634,69 @@ export class SQLiteParser extends Parser {
 				this.state = 1409;
 				this._errHandler.sync(this);
 				switch (this._input.LA(1)) {
-				case SQLiteParser.INDEXED_:
+				case SQLiteParser.INDEXED:
 					{
 					this.state = 1404;
-					this.match(SQLiteParser.INDEXED_);
+					this.match(SQLiteParser.INDEXED);
 					this.state = 1405;
-					this.match(SQLiteParser.BY_);
+					this.match(SQLiteParser.BY);
 					this.state = 1406;
 					this.index_name();
 					}
 					break;
-				case SQLiteParser.NOT_:
+				case SQLiteParser.NOT:
 					{
 					this.state = 1407;
-					this.match(SQLiteParser.NOT_);
+					this.match(SQLiteParser.NOT);
 					this.state = 1408;
-					this.match(SQLiteParser.INDEXED_);
+					this.match(SQLiteParser.INDEXED);
 					}
 					break;
 				case SQLiteParser.EOF:
 				case SQLiteParser.SCOL:
 				case SQLiteParser.CLOSE_PAR:
 				case SQLiteParser.COMMA:
-				case SQLiteParser.ALTER_:
-				case SQLiteParser.ANALYZE_:
-				case SQLiteParser.ATTACH_:
-				case SQLiteParser.BEGIN_:
-				case SQLiteParser.COMMIT_:
-				case SQLiteParser.CREATE_:
-				case SQLiteParser.CROSS_:
-				case SQLiteParser.DELETE_:
-				case SQLiteParser.DETACH_:
-				case SQLiteParser.DROP_:
-				case SQLiteParser.END_:
-				case SQLiteParser.EXCEPT_:
-				case SQLiteParser.EXPLAIN_:
-				case SQLiteParser.FULL_:
-				case SQLiteParser.GROUP_:
-				case SQLiteParser.INNER_:
-				case SQLiteParser.INSERT_:
-				case SQLiteParser.INTERSECT_:
-				case SQLiteParser.JOIN_:
-				case SQLiteParser.LEFT_:
-				case SQLiteParser.LIMIT_:
-				case SQLiteParser.NATURAL_:
-				case SQLiteParser.ON_:
-				case SQLiteParser.ORDER_:
-				case SQLiteParser.PRAGMA_:
-				case SQLiteParser.REINDEX_:
-				case SQLiteParser.RELEASE_:
-				case SQLiteParser.REPLACE_:
-				case SQLiteParser.RETURNING_:
-				case SQLiteParser.RIGHT_:
-				case SQLiteParser.ROLLBACK_:
-				case SQLiteParser.SAVEPOINT_:
-				case SQLiteParser.SELECT_:
-				case SQLiteParser.UNION_:
-				case SQLiteParser.UPDATE_:
-				case SQLiteParser.USING_:
-				case SQLiteParser.VACUUM_:
-				case SQLiteParser.VALUES_:
-				case SQLiteParser.WHERE_:
-				case SQLiteParser.WITH_:
-				case SQLiteParser.WINDOW_:
+				case SQLiteParser.ALTER:
+				case SQLiteParser.ANALYZE:
+				case SQLiteParser.ATTACH:
+				case SQLiteParser.BEGIN:
+				case SQLiteParser.COMMIT:
+				case SQLiteParser.CREATE:
+				case SQLiteParser.CROSS:
+				case SQLiteParser.DELETE:
+				case SQLiteParser.DETACH:
+				case SQLiteParser.DROP:
+				case SQLiteParser.END:
+				case SQLiteParser.EXCEPT:
+				case SQLiteParser.EXPLAIN:
+				case SQLiteParser.FULL:
+				case SQLiteParser.GROUP:
+				case SQLiteParser.INNER:
+				case SQLiteParser.INSERT:
+				case SQLiteParser.INTERSECT:
+				case SQLiteParser.JOIN:
+				case SQLiteParser.LEFT:
+				case SQLiteParser.LIMIT:
+				case SQLiteParser.NATURAL:
+				case SQLiteParser.ON:
+				case SQLiteParser.ORDER:
+				case SQLiteParser.PRAGMA:
+				case SQLiteParser.REINDEX:
+				case SQLiteParser.RELEASE:
+				case SQLiteParser.REPLACE:
+				case SQLiteParser.RETURNING:
+				case SQLiteParser.RIGHT:
+				case SQLiteParser.ROLLBACK:
+				case SQLiteParser.SAVEPOINT:
+				case SQLiteParser.SELECT:
+				case SQLiteParser.UNION:
+				case SQLiteParser.UPDATE:
+				case SQLiteParser.USING:
+				case SQLiteParser.VACUUM:
+				case SQLiteParser.VALUES:
+				case SQLiteParser.WHERE:
+				case SQLiteParser.WITH:
+				case SQLiteParser.WINDOW:
 					break;
 				default:
 					break;
@@ -5752,7 +5755,7 @@ export class SQLiteParser extends Parser {
 					case 1:
 						{
 						this.state = 1427;
-						this.match(SQLiteParser.AS_);
+						this.match(SQLiteParser.AS);
 						}
 						break;
 					}
@@ -5827,7 +5830,7 @@ export class SQLiteParser extends Parser {
 					case 1:
 						{
 						this.state = 1450;
-						this.match(SQLiteParser.AS_);
+						this.match(SQLiteParser.AS);
 						}
 						break;
 					}
@@ -5891,15 +5894,15 @@ export class SQLiteParser extends Parser {
 				this.state = 1468;
 				this._errHandler.sync(this);
 				_la = this._input.LA(1);
-				if (_la === SQLiteParser.AS_ || _la === SQLiteParser.IDENTIFIER || _la === SQLiteParser.STRING_LITERAL) {
+				if (_la === SQLiteParser.AS || _la === SQLiteParser.IDENTIFIER || _la === SQLiteParser.STRING_LITERAL) {
 					{
 					this.state = 1465;
 					this._errHandler.sync(this);
 					_la = this._input.LA(1);
-					if (_la === SQLiteParser.AS_) {
+					if (_la === SQLiteParser.AS) {
 						{
 						this.state = 1464;
-						this.match(SQLiteParser.AS_);
+						this.match(SQLiteParser.AS);
 						}
 					}
 
@@ -5942,35 +5945,35 @@ export class SQLiteParser extends Parser {
 				this.match(SQLiteParser.COMMA);
 				}
 				break;
-			case SQLiteParser.CROSS_:
-			case SQLiteParser.FULL_:
-			case SQLiteParser.INNER_:
-			case SQLiteParser.JOIN_:
-			case SQLiteParser.LEFT_:
-			case SQLiteParser.NATURAL_:
-			case SQLiteParser.RIGHT_:
+			case SQLiteParser.CROSS:
+			case SQLiteParser.FULL:
+			case SQLiteParser.INNER:
+			case SQLiteParser.JOIN:
+			case SQLiteParser.LEFT:
+			case SQLiteParser.NATURAL:
+			case SQLiteParser.RIGHT:
 				this.enterOuterAlt(_localctx, 2);
 				{
 				this.state = 1474;
 				this._errHandler.sync(this);
 				_la = this._input.LA(1);
-				if (_la === SQLiteParser.NATURAL_) {
+				if (_la === SQLiteParser.NATURAL) {
 					{
 					this.state = 1473;
-					this.match(SQLiteParser.NATURAL_);
+					this.match(SQLiteParser.NATURAL);
 					}
 				}
 
 				this.state = 1482;
 				this._errHandler.sync(this);
 				switch (this._input.LA(1)) {
-				case SQLiteParser.FULL_:
-				case SQLiteParser.LEFT_:
-				case SQLiteParser.RIGHT_:
+				case SQLiteParser.FULL:
+				case SQLiteParser.LEFT:
+				case SQLiteParser.RIGHT:
 					{
 					this.state = 1476;
 					_la = this._input.LA(1);
-					if (!(_la === SQLiteParser.FULL_ || _la === SQLiteParser.LEFT_ || _la === SQLiteParser.RIGHT_)) {
+					if (!(_la === SQLiteParser.FULL || _la === SQLiteParser.LEFT || _la === SQLiteParser.RIGHT)) {
 					this._errHandler.recoverInline(this);
 					} else {
 						if (this._input.LA(1) === Token.EOF) {
@@ -5983,34 +5986,34 @@ export class SQLiteParser extends Parser {
 					this.state = 1478;
 					this._errHandler.sync(this);
 					_la = this._input.LA(1);
-					if (_la === SQLiteParser.OUTER_) {
+					if (_la === SQLiteParser.OUTER) {
 						{
 						this.state = 1477;
-						this.match(SQLiteParser.OUTER_);
+						this.match(SQLiteParser.OUTER);
 						}
 					}
 
 					}
 					break;
-				case SQLiteParser.INNER_:
+				case SQLiteParser.INNER:
 					{
 					this.state = 1480;
-					this.match(SQLiteParser.INNER_);
+					this.match(SQLiteParser.INNER);
 					}
 					break;
-				case SQLiteParser.CROSS_:
+				case SQLiteParser.CROSS:
 					{
 					this.state = 1481;
-					this.match(SQLiteParser.CROSS_);
+					this.match(SQLiteParser.CROSS);
 					}
 					break;
-				case SQLiteParser.JOIN_:
+				case SQLiteParser.JOIN:
 					break;
 				default:
 					break;
 				}
 				this.state = 1484;
-				this.match(SQLiteParser.JOIN_);
+				this.match(SQLiteParser.JOIN);
 				}
 				break;
 			default:
@@ -6040,20 +6043,20 @@ export class SQLiteParser extends Parser {
 			this.state = 1501;
 			this._errHandler.sync(this);
 			switch (this._input.LA(1)) {
-			case SQLiteParser.ON_:
+			case SQLiteParser.ON:
 				this.enterOuterAlt(_localctx, 1);
 				{
 				this.state = 1487;
-				this.match(SQLiteParser.ON_);
+				this.match(SQLiteParser.ON);
 				this.state = 1488;
 				this.expr(0);
 				}
 				break;
-			case SQLiteParser.USING_:
+			case SQLiteParser.USING:
 				this.enterOuterAlt(_localctx, 2);
 				{
 				this.state = 1489;
-				this.match(SQLiteParser.USING_);
+				this.match(SQLiteParser.USING);
 				this.state = 1490;
 				this.match(SQLiteParser.OPEN_PAR);
 				this.state = 1491;
@@ -6105,35 +6108,35 @@ export class SQLiteParser extends Parser {
 			this.state = 1509;
 			this._errHandler.sync(this);
 			switch (this._input.LA(1)) {
-			case SQLiteParser.UNION_:
+			case SQLiteParser.UNION:
 				this.enterOuterAlt(_localctx, 1);
 				{
 				this.state = 1503;
-				this.match(SQLiteParser.UNION_);
+				this.match(SQLiteParser.UNION);
 				this.state = 1505;
 				this._errHandler.sync(this);
 				_la = this._input.LA(1);
-				if (_la === SQLiteParser.ALL_) {
+				if (_la === SQLiteParser.ALL) {
 					{
 					this.state = 1504;
-					this.match(SQLiteParser.ALL_);
+					this.match(SQLiteParser.ALL);
 					}
 				}
 
 				}
 				break;
-			case SQLiteParser.INTERSECT_:
+			case SQLiteParser.INTERSECT:
 				this.enterOuterAlt(_localctx, 2);
 				{
 				this.state = 1507;
-				this.match(SQLiteParser.INTERSECT_);
+				this.match(SQLiteParser.INTERSECT);
 				}
 				break;
-			case SQLiteParser.EXCEPT_:
+			case SQLiteParser.EXCEPT:
 				this.enterOuterAlt(_localctx, 3);
 				{
 				this.state = 1508;
-				this.match(SQLiteParser.EXCEPT_);
+				this.match(SQLiteParser.EXCEPT);
 				}
 				break;
 			default:
@@ -6165,7 +6168,7 @@ export class SQLiteParser extends Parser {
 			this.state = 1512;
 			this._errHandler.sync(this);
 			_la = this._input.LA(1);
-			if (_la === SQLiteParser.WITH_) {
+			if (_la === SQLiteParser.WITH) {
 				{
 				this.state = 1511;
 				this.with_clause();
@@ -6173,17 +6176,17 @@ export class SQLiteParser extends Parser {
 			}
 
 			this.state = 1514;
-			this.match(SQLiteParser.UPDATE_);
+			this.match(SQLiteParser.UPDATE);
 			this.state = 1517;
 			this._errHandler.sync(this);
 			switch ( this.interpreter.adaptivePredict(this._input, 219, this._ctx) ) {
 			case 1:
 				{
 				this.state = 1515;
-				this.match(SQLiteParser.OR_);
+				this.match(SQLiteParser.OR);
 				this.state = 1516;
 				_la = this._input.LA(1);
-				if (!(_la === SQLiteParser.ABORT_ || _la === SQLiteParser.FAIL_ || _la === SQLiteParser.IGNORE_ || _la === SQLiteParser.REPLACE_ || _la === SQLiteParser.ROLLBACK_)) {
+				if (!(_la === SQLiteParser.ABORT || _la === SQLiteParser.FAIL || _la === SQLiteParser.IGNORE || _la === SQLiteParser.REPLACE || _la === SQLiteParser.ROLLBACK)) {
 				this._errHandler.recoverInline(this);
 				} else {
 					if (this._input.LA(1) === Token.EOF) {
@@ -6199,7 +6202,7 @@ export class SQLiteParser extends Parser {
 			this.state = 1519;
 			this.qualified_table_name();
 			this.state = 1520;
-			this.match(SQLiteParser.SET_);
+			this.match(SQLiteParser.SET);
 			this.state = 1523;
 			this._errHandler.sync(this);
 			switch ( this.interpreter.adaptivePredict(this._input, 220, this._ctx) ) {
@@ -6259,10 +6262,10 @@ export class SQLiteParser extends Parser {
 			this.state = 1552;
 			this._errHandler.sync(this);
 			_la = this._input.LA(1);
-			if (_la === SQLiteParser.FROM_) {
+			if (_la === SQLiteParser.FROM) {
 				{
 				this.state = 1540;
-				this.match(SQLiteParser.FROM_);
+				this.match(SQLiteParser.FROM);
 				this.state = 1550;
 				this._errHandler.sync(this);
 				switch ( this.interpreter.adaptivePredict(this._input, 224, this._ctx) ) {
@@ -6302,10 +6305,10 @@ export class SQLiteParser extends Parser {
 			this.state = 1556;
 			this._errHandler.sync(this);
 			_la = this._input.LA(1);
-			if (_la === SQLiteParser.WHERE_) {
+			if (_la === SQLiteParser.WHERE) {
 				{
 				this.state = 1554;
-				this.match(SQLiteParser.WHERE_);
+				this.match(SQLiteParser.WHERE);
 				this.state = 1555;
 				this.expr(0);
 				}
@@ -6314,7 +6317,7 @@ export class SQLiteParser extends Parser {
 			this.state = 1559;
 			this._errHandler.sync(this);
 			_la = this._input.LA(1);
-			if (_la === SQLiteParser.RETURNING_) {
+			if (_la === SQLiteParser.RETURNING) {
 				{
 				this.state = 1558;
 				this.returning_clause();
@@ -6394,7 +6397,7 @@ export class SQLiteParser extends Parser {
 			this.state = 1573;
 			this._errHandler.sync(this);
 			_la = this._input.LA(1);
-			if (_la === SQLiteParser.WITH_) {
+			if (_la === SQLiteParser.WITH) {
 				{
 				this.state = 1572;
 				this.with_clause();
@@ -6402,17 +6405,17 @@ export class SQLiteParser extends Parser {
 			}
 
 			this.state = 1575;
-			this.match(SQLiteParser.UPDATE_);
+			this.match(SQLiteParser.UPDATE);
 			this.state = 1578;
 			this._errHandler.sync(this);
 			switch ( this.interpreter.adaptivePredict(this._input, 230, this._ctx) ) {
 			case 1:
 				{
 				this.state = 1576;
-				this.match(SQLiteParser.OR_);
+				this.match(SQLiteParser.OR);
 				this.state = 1577;
 				_la = this._input.LA(1);
-				if (!(_la === SQLiteParser.ABORT_ || _la === SQLiteParser.FAIL_ || _la === SQLiteParser.IGNORE_ || _la === SQLiteParser.REPLACE_ || _la === SQLiteParser.ROLLBACK_)) {
+				if (!(_la === SQLiteParser.ABORT || _la === SQLiteParser.FAIL || _la === SQLiteParser.IGNORE || _la === SQLiteParser.REPLACE || _la === SQLiteParser.ROLLBACK)) {
 				this._errHandler.recoverInline(this);
 				} else {
 					if (this._input.LA(1) === Token.EOF) {
@@ -6428,7 +6431,7 @@ export class SQLiteParser extends Parser {
 			this.state = 1580;
 			this.qualified_table_name();
 			this.state = 1581;
-			this.match(SQLiteParser.SET_);
+			this.match(SQLiteParser.SET);
 			this.state = 1584;
 			this._errHandler.sync(this);
 			switch ( this.interpreter.adaptivePredict(this._input, 231, this._ctx) ) {
@@ -6488,10 +6491,10 @@ export class SQLiteParser extends Parser {
 			this.state = 1603;
 			this._errHandler.sync(this);
 			_la = this._input.LA(1);
-			if (_la === SQLiteParser.WHERE_) {
+			if (_la === SQLiteParser.WHERE) {
 				{
 				this.state = 1601;
-				this.match(SQLiteParser.WHERE_);
+				this.match(SQLiteParser.WHERE);
 				this.state = 1602;
 				this.expr(0);
 				}
@@ -6500,7 +6503,7 @@ export class SQLiteParser extends Parser {
 			this.state = 1606;
 			this._errHandler.sync(this);
 			_la = this._input.LA(1);
-			if (_la === SQLiteParser.RETURNING_) {
+			if (_la === SQLiteParser.RETURNING) {
 				{
 				this.state = 1605;
 				this.returning_clause();
@@ -6510,12 +6513,12 @@ export class SQLiteParser extends Parser {
 			this.state = 1612;
 			this._errHandler.sync(this);
 			_la = this._input.LA(1);
-			if (_la === SQLiteParser.LIMIT_ || _la === SQLiteParser.ORDER_) {
+			if (_la === SQLiteParser.LIMIT || _la === SQLiteParser.ORDER) {
 				{
 				this.state = 1609;
 				this._errHandler.sync(this);
 				_la = this._input.LA(1);
-				if (_la === SQLiteParser.ORDER_) {
+				if (_la === SQLiteParser.ORDER) {
 					{
 					this.state = 1608;
 					this.order_by_stmt();
@@ -6568,10 +6571,10 @@ export class SQLiteParser extends Parser {
 			this.state = 1622;
 			this._errHandler.sync(this);
 			_la = this._input.LA(1);
-			if (_la === SQLiteParser.AS_) {
+			if (_la === SQLiteParser.AS) {
 				{
 				this.state = 1620;
-				this.match(SQLiteParser.AS_);
+				this.match(SQLiteParser.AS);
 				this.state = 1621;
 				this.alias();
 				}
@@ -6580,54 +6583,54 @@ export class SQLiteParser extends Parser {
 			this.state = 1629;
 			this._errHandler.sync(this);
 			switch (this._input.LA(1)) {
-			case SQLiteParser.INDEXED_:
+			case SQLiteParser.INDEXED:
 				{
 				this.state = 1624;
-				this.match(SQLiteParser.INDEXED_);
+				this.match(SQLiteParser.INDEXED);
 				this.state = 1625;
-				this.match(SQLiteParser.BY_);
+				this.match(SQLiteParser.BY);
 				this.state = 1626;
 				this.index_name();
 				}
 				break;
-			case SQLiteParser.NOT_:
+			case SQLiteParser.NOT:
 				{
 				this.state = 1627;
-				this.match(SQLiteParser.NOT_);
+				this.match(SQLiteParser.NOT);
 				this.state = 1628;
-				this.match(SQLiteParser.INDEXED_);
+				this.match(SQLiteParser.INDEXED);
 				}
 				break;
 			case SQLiteParser.EOF:
 			case SQLiteParser.SCOL:
-			case SQLiteParser.ALTER_:
-			case SQLiteParser.ANALYZE_:
-			case SQLiteParser.ATTACH_:
-			case SQLiteParser.BEGIN_:
-			case SQLiteParser.COMMIT_:
-			case SQLiteParser.CREATE_:
-			case SQLiteParser.DELETE_:
-			case SQLiteParser.DETACH_:
-			case SQLiteParser.DROP_:
-			case SQLiteParser.END_:
-			case SQLiteParser.EXPLAIN_:
-			case SQLiteParser.INSERT_:
-			case SQLiteParser.LIMIT_:
-			case SQLiteParser.ORDER_:
-			case SQLiteParser.PRAGMA_:
-			case SQLiteParser.REINDEX_:
-			case SQLiteParser.RELEASE_:
-			case SQLiteParser.REPLACE_:
-			case SQLiteParser.RETURNING_:
-			case SQLiteParser.ROLLBACK_:
-			case SQLiteParser.SAVEPOINT_:
-			case SQLiteParser.SELECT_:
-			case SQLiteParser.SET_:
-			case SQLiteParser.UPDATE_:
-			case SQLiteParser.VACUUM_:
-			case SQLiteParser.VALUES_:
-			case SQLiteParser.WHERE_:
-			case SQLiteParser.WITH_:
+			case SQLiteParser.ALTER:
+			case SQLiteParser.ANALYZE:
+			case SQLiteParser.ATTACH:
+			case SQLiteParser.BEGIN:
+			case SQLiteParser.COMMIT:
+			case SQLiteParser.CREATE:
+			case SQLiteParser.DELETE:
+			case SQLiteParser.DETACH:
+			case SQLiteParser.DROP:
+			case SQLiteParser.END:
+			case SQLiteParser.EXPLAIN:
+			case SQLiteParser.INSERT:
+			case SQLiteParser.LIMIT:
+			case SQLiteParser.ORDER:
+			case SQLiteParser.PRAGMA:
+			case SQLiteParser.REINDEX:
+			case SQLiteParser.RELEASE:
+			case SQLiteParser.REPLACE:
+			case SQLiteParser.RETURNING:
+			case SQLiteParser.ROLLBACK:
+			case SQLiteParser.SAVEPOINT:
+			case SQLiteParser.SELECT:
+			case SQLiteParser.SET:
+			case SQLiteParser.UPDATE:
+			case SQLiteParser.VACUUM:
+			case SQLiteParser.VALUES:
+			case SQLiteParser.WHERE:
+			case SQLiteParser.WITH:
 				break;
 			default:
 				break;
@@ -6657,7 +6660,7 @@ export class SQLiteParser extends Parser {
 			this.enterOuterAlt(_localctx, 1);
 			{
 			this.state = 1631;
-			this.match(SQLiteParser.VACUUM_);
+			this.match(SQLiteParser.VACUUM);
 			this.state = 1633;
 			this._errHandler.sync(this);
 			switch ( this.interpreter.adaptivePredict(this._input, 241, this._ctx) ) {
@@ -6671,10 +6674,10 @@ export class SQLiteParser extends Parser {
 			this.state = 1637;
 			this._errHandler.sync(this);
 			_la = this._input.LA(1);
-			if (_la === SQLiteParser.INTO_) {
+			if (_la === SQLiteParser.INTO) {
 				{
 				this.state = 1635;
-				this.match(SQLiteParser.INTO_);
+				this.match(SQLiteParser.INTO);
 				this.state = 1636;
 				this.filename();
 				}
@@ -6704,11 +6707,11 @@ export class SQLiteParser extends Parser {
 			this.enterOuterAlt(_localctx, 1);
 			{
 			this.state = 1639;
-			this.match(SQLiteParser.FILTER_);
+			this.match(SQLiteParser.FILTER);
 			this.state = 1640;
 			this.match(SQLiteParser.OPEN_PAR);
 			this.state = 1641;
-			this.match(SQLiteParser.WHERE_);
+			this.match(SQLiteParser.WHERE);
 			this.state = 1642;
 			this.expr(0);
 			this.state = 1643;
@@ -6752,12 +6755,12 @@ export class SQLiteParser extends Parser {
 			this.state = 1659;
 			this._errHandler.sync(this);
 			_la = this._input.LA(1);
-			if (_la === SQLiteParser.PARTITION_) {
+			if (_la === SQLiteParser.PARTITION) {
 				{
 				this.state = 1649;
-				this.match(SQLiteParser.PARTITION_);
+				this.match(SQLiteParser.PARTITION);
 				this.state = 1650;
-				this.match(SQLiteParser.BY_);
+				this.match(SQLiteParser.BY);
 				this.state = 1651;
 				this.expr(0);
 				this.state = 1656;
@@ -6781,9 +6784,9 @@ export class SQLiteParser extends Parser {
 
 			{
 			this.state = 1661;
-			this.match(SQLiteParser.ORDER_);
+			this.match(SQLiteParser.ORDER);
 			this.state = 1662;
-			this.match(SQLiteParser.BY_);
+			this.match(SQLiteParser.BY);
 			this.state = 1663;
 			this.ordering_term();
 			this.state = 1668;
@@ -6806,7 +6809,7 @@ export class SQLiteParser extends Parser {
 			this.state = 1672;
 			this._errHandler.sync(this);
 			_la = this._input.LA(1);
-			if (_la === SQLiteParser.ROWS_ || _la === SQLiteParser.RANGE_ || _la === SQLiteParser.GROUPS_) {
+			if (_la === SQLiteParser.ROWS || _la === SQLiteParser.RANGE || _la === SQLiteParser.GROUPS) {
 				{
 				this.state = 1671;
 				this.frame_spec();
@@ -6840,7 +6843,7 @@ export class SQLiteParser extends Parser {
 			this.enterOuterAlt(_localctx, 1);
 			{
 			this.state = 1676;
-			this.match(SQLiteParser.OVER_);
+			this.match(SQLiteParser.OVER);
 			this.state = 1710;
 			this._errHandler.sync(this);
 			switch ( this.interpreter.adaptivePredict(this._input, 254, this._ctx) ) {
@@ -6868,12 +6871,12 @@ export class SQLiteParser extends Parser {
 				this.state = 1692;
 				this._errHandler.sync(this);
 				_la = this._input.LA(1);
-				if (_la === SQLiteParser.PARTITION_) {
+				if (_la === SQLiteParser.PARTITION) {
 					{
 					this.state = 1682;
-					this.match(SQLiteParser.PARTITION_);
+					this.match(SQLiteParser.PARTITION);
 					this.state = 1683;
-					this.match(SQLiteParser.BY_);
+					this.match(SQLiteParser.BY);
 					this.state = 1684;
 					this.expr(0);
 					this.state = 1689;
@@ -6898,12 +6901,12 @@ export class SQLiteParser extends Parser {
 				this.state = 1704;
 				this._errHandler.sync(this);
 				_la = this._input.LA(1);
-				if (_la === SQLiteParser.ORDER_) {
+				if (_la === SQLiteParser.ORDER) {
 					{
 					this.state = 1694;
-					this.match(SQLiteParser.ORDER_);
+					this.match(SQLiteParser.ORDER);
 					this.state = 1695;
-					this.match(SQLiteParser.BY_);
+					this.match(SQLiteParser.BY);
 					this.state = 1696;
 					this.ordering_term();
 					this.state = 1701;
@@ -6928,7 +6931,7 @@ export class SQLiteParser extends Parser {
 				this.state = 1707;
 				this._errHandler.sync(this);
 				_la = this._input.LA(1);
-				if (_la === SQLiteParser.ROWS_ || _la === SQLiteParser.RANGE_ || _la === SQLiteParser.GROUPS_) {
+				if (_la === SQLiteParser.ROWS || _la === SQLiteParser.RANGE || _la === SQLiteParser.GROUPS) {
 					{
 					this.state = 1706;
 					this.frame_spec();
@@ -6969,39 +6972,39 @@ export class SQLiteParser extends Parser {
 			this.state = 1722;
 			this._errHandler.sync(this);
 			_la = this._input.LA(1);
-			if (_la === SQLiteParser.EXCLUDE_) {
+			if (_la === SQLiteParser.EXCLUDE) {
 				{
 				this.state = 1713;
-				this.match(SQLiteParser.EXCLUDE_);
+				this.match(SQLiteParser.EXCLUDE);
 				this.state = 1720;
 				this._errHandler.sync(this);
 				switch (this._input.LA(1)) {
-				case SQLiteParser.NO_:
+				case SQLiteParser.NO:
 					{
 					this.state = 1714;
-					this.match(SQLiteParser.NO_);
+					this.match(SQLiteParser.NO);
 					this.state = 1715;
-					this.match(SQLiteParser.OTHERS_);
+					this.match(SQLiteParser.OTHERS);
 					}
 					break;
-				case SQLiteParser.CURRENT_:
+				case SQLiteParser.CURRENT:
 					{
 					this.state = 1716;
-					this.match(SQLiteParser.CURRENT_);
+					this.match(SQLiteParser.CURRENT);
 					this.state = 1717;
-					this.match(SQLiteParser.ROW_);
+					this.match(SQLiteParser.ROW);
 					}
 					break;
-				case SQLiteParser.GROUP_:
+				case SQLiteParser.GROUP:
 					{
 					this.state = 1718;
-					this.match(SQLiteParser.GROUP_);
+					this.match(SQLiteParser.GROUP);
 					}
 					break;
-				case SQLiteParser.TIES_:
+				case SQLiteParser.TIES:
 					{
 					this.state = 1719;
-					this.match(SQLiteParser.TIES_);
+					this.match(SQLiteParser.TIES);
 					}
 					break;
 				default:
@@ -7036,7 +7039,7 @@ export class SQLiteParser extends Parser {
 			{
 			this.state = 1724;
 			_la = this._input.LA(1);
-			if (!(_la === SQLiteParser.ROWS_ || _la === SQLiteParser.RANGE_ || _la === SQLiteParser.GROUPS_)) {
+			if (!(_la === SQLiteParser.ROWS || _la === SQLiteParser.RANGE || _la === SQLiteParser.GROUPS)) {
 			this._errHandler.recoverInline(this);
 			} else {
 				if (this._input.LA(1) === Token.EOF) {
@@ -7059,11 +7062,11 @@ export class SQLiteParser extends Parser {
 			case 2:
 				{
 				this.state = 1726;
-				this.match(SQLiteParser.BETWEEN_);
+				this.match(SQLiteParser.BETWEEN);
 				this.state = 1727;
 				this.frame_left();
 				this.state = 1728;
-				this.match(SQLiteParser.AND_);
+				this.match(SQLiteParser.AND);
 				this.state = 1729;
 				this.frame_right();
 				}
@@ -7104,161 +7107,166 @@ export class SQLiteParser extends Parser {
 			case SQLiteParser.PLUS:
 			case SQLiteParser.MINUS:
 			case SQLiteParser.TILDE:
-			case SQLiteParser.ABORT_:
-			case SQLiteParser.ACTION_:
-			case SQLiteParser.ADD_:
-			case SQLiteParser.AFTER_:
-			case SQLiteParser.ALL_:
-			case SQLiteParser.ALTER_:
-			case SQLiteParser.ANALYZE_:
-			case SQLiteParser.AND_:
-			case SQLiteParser.AS_:
-			case SQLiteParser.ASC_:
-			case SQLiteParser.ATTACH_:
-			case SQLiteParser.AUTOINCREMENT_:
-			case SQLiteParser.BEFORE_:
-			case SQLiteParser.BEGIN_:
-			case SQLiteParser.BETWEEN_:
-			case SQLiteParser.BY_:
-			case SQLiteParser.CASCADE_:
-			case SQLiteParser.CASE_:
-			case SQLiteParser.CAST_:
-			case SQLiteParser.CHECK_:
-			case SQLiteParser.COLLATE_:
-			case SQLiteParser.COLUMN_:
-			case SQLiteParser.COMMIT_:
-			case SQLiteParser.CONFLICT_:
-			case SQLiteParser.CONSTRAINT_:
-			case SQLiteParser.CREATE_:
-			case SQLiteParser.CROSS_:
-			case SQLiteParser.CURRENT_DATE_:
-			case SQLiteParser.CURRENT_TIME_:
-			case SQLiteParser.CURRENT_TIMESTAMP_:
-			case SQLiteParser.DATABASE_:
-			case SQLiteParser.DEFAULT_:
-			case SQLiteParser.DEFERRABLE_:
-			case SQLiteParser.DEFERRED_:
-			case SQLiteParser.DELETE_:
-			case SQLiteParser.DESC_:
-			case SQLiteParser.DETACH_:
-			case SQLiteParser.DISTINCT_:
-			case SQLiteParser.DROP_:
-			case SQLiteParser.EACH_:
-			case SQLiteParser.ELSE_:
-			case SQLiteParser.END_:
-			case SQLiteParser.ESCAPE_:
-			case SQLiteParser.EXCEPT_:
-			case SQLiteParser.EXCLUSIVE_:
-			case SQLiteParser.EXISTS_:
-			case SQLiteParser.EXPLAIN_:
-			case SQLiteParser.FAIL_:
-			case SQLiteParser.FOR_:
-			case SQLiteParser.FOREIGN_:
-			case SQLiteParser.FROM_:
-			case SQLiteParser.FULL_:
-			case SQLiteParser.GLOB_:
-			case SQLiteParser.GROUP_:
-			case SQLiteParser.HAVING_:
-			case SQLiteParser.IF_:
-			case SQLiteParser.IGNORE_:
-			case SQLiteParser.IMMEDIATE_:
-			case SQLiteParser.IN_:
-			case SQLiteParser.INDEX_:
-			case SQLiteParser.INDEXED_:
-			case SQLiteParser.INITIALLY_:
-			case SQLiteParser.INNER_:
-			case SQLiteParser.INSERT_:
-			case SQLiteParser.INSTEAD_:
-			case SQLiteParser.INTERSECT_:
-			case SQLiteParser.INTO_:
-			case SQLiteParser.IS_:
-			case SQLiteParser.ISNULL_:
-			case SQLiteParser.JOIN_:
-			case SQLiteParser.KEY_:
-			case SQLiteParser.LEFT_:
-			case SQLiteParser.LIKE_:
-			case SQLiteParser.LIMIT_:
-			case SQLiteParser.MATCH_:
-			case SQLiteParser.NATURAL_:
-			case SQLiteParser.NO_:
-			case SQLiteParser.NOT_:
-			case SQLiteParser.NOTNULL_:
-			case SQLiteParser.NULL_:
-			case SQLiteParser.OF_:
-			case SQLiteParser.OFFSET_:
-			case SQLiteParser.ON_:
-			case SQLiteParser.OR_:
-			case SQLiteParser.ORDER_:
-			case SQLiteParser.OUTER_:
-			case SQLiteParser.PLAN_:
-			case SQLiteParser.PRAGMA_:
-			case SQLiteParser.PRIMARY_:
-			case SQLiteParser.QUERY_:
-			case SQLiteParser.RAISE_:
-			case SQLiteParser.RECURSIVE_:
-			case SQLiteParser.REFERENCES_:
-			case SQLiteParser.REGEXP_:
-			case SQLiteParser.REINDEX_:
-			case SQLiteParser.RELEASE_:
-			case SQLiteParser.RENAME_:
-			case SQLiteParser.REPLACE_:
-			case SQLiteParser.RESTRICT_:
-			case SQLiteParser.RIGHT_:
-			case SQLiteParser.ROLLBACK_:
-			case SQLiteParser.ROW_:
-			case SQLiteParser.ROWS_:
-			case SQLiteParser.SAVEPOINT_:
-			case SQLiteParser.SELECT_:
-			case SQLiteParser.SET_:
-			case SQLiteParser.TABLE_:
-			case SQLiteParser.TEMP_:
-			case SQLiteParser.TEMPORARY_:
-			case SQLiteParser.THEN_:
-			case SQLiteParser.TO_:
-			case SQLiteParser.TRANSACTION_:
-			case SQLiteParser.TRIGGER_:
-			case SQLiteParser.UNION_:
-			case SQLiteParser.UNIQUE_:
-			case SQLiteParser.UPDATE_:
-			case SQLiteParser.USING_:
-			case SQLiteParser.VACUUM_:
-			case SQLiteParser.VALUES_:
-			case SQLiteParser.VIEW_:
-			case SQLiteParser.VIRTUAL_:
-			case SQLiteParser.WHEN_:
-			case SQLiteParser.WHERE_:
-			case SQLiteParser.WITH_:
-			case SQLiteParser.WITHOUT_:
-			case SQLiteParser.FIRST_VALUE_:
-			case SQLiteParser.OVER_:
-			case SQLiteParser.PARTITION_:
-			case SQLiteParser.RANGE_:
-			case SQLiteParser.PRECEDING_:
-			case SQLiteParser.UNBOUNDED_:
-			case SQLiteParser.CURRENT_:
-			case SQLiteParser.FOLLOWING_:
-			case SQLiteParser.CUME_DIST_:
-			case SQLiteParser.DENSE_RANK_:
-			case SQLiteParser.LAG_:
-			case SQLiteParser.LAST_VALUE_:
-			case SQLiteParser.LEAD_:
-			case SQLiteParser.NTH_VALUE_:
-			case SQLiteParser.NTILE_:
-			case SQLiteParser.PERCENT_RANK_:
-			case SQLiteParser.RANK_:
-			case SQLiteParser.ROW_NUMBER_:
-			case SQLiteParser.GENERATED_:
-			case SQLiteParser.ALWAYS_:
-			case SQLiteParser.STORED_:
-			case SQLiteParser.TRUE_:
-			case SQLiteParser.FALSE_:
-			case SQLiteParser.WINDOW_:
-			case SQLiteParser.NULLS_:
-			case SQLiteParser.FIRST_:
-			case SQLiteParser.LAST_:
-			case SQLiteParser.FILTER_:
-			case SQLiteParser.GROUPS_:
-			case SQLiteParser.EXCLUDE_:
+			case SQLiteParser.ABORT:
+			case SQLiteParser.ACTION:
+			case SQLiteParser.ADD:
+			case SQLiteParser.AFTER:
+			case SQLiteParser.ALL:
+			case SQLiteParser.ALTER:
+			case SQLiteParser.ANALYZE:
+			case SQLiteParser.AND:
+			case SQLiteParser.AS:
+			case SQLiteParser.ASC:
+			case SQLiteParser.ATTACH:
+			case SQLiteParser.AUTOINCREMENT:
+			case SQLiteParser.BEFORE:
+			case SQLiteParser.BEGIN:
+			case SQLiteParser.BETWEEN:
+			case SQLiteParser.BY:
+			case SQLiteParser.CASCADE:
+			case SQLiteParser.CASE:
+			case SQLiteParser.CAST:
+			case SQLiteParser.CHECK:
+			case SQLiteParser.COLLATE:
+			case SQLiteParser.COLUMN:
+			case SQLiteParser.COMMIT:
+			case SQLiteParser.CONFLICT:
+			case SQLiteParser.CONSTRAINT:
+			case SQLiteParser.CREATE:
+			case SQLiteParser.CROSS:
+			case SQLiteParser.CURRENT_DATE:
+			case SQLiteParser.CURRENT_TIME:
+			case SQLiteParser.CURRENT_TIMESTAMP:
+			case SQLiteParser.DATABASE:
+			case SQLiteParser.DEFAULT:
+			case SQLiteParser.DEFERRABLE:
+			case SQLiteParser.DEFERRED:
+			case SQLiteParser.DELETE:
+			case SQLiteParser.DESC:
+			case SQLiteParser.DETACH:
+			case SQLiteParser.DISTINCT:
+			case SQLiteParser.DROP:
+			case SQLiteParser.EACH:
+			case SQLiteParser.ELSE:
+			case SQLiteParser.END:
+			case SQLiteParser.ESCAPE:
+			case SQLiteParser.EXCEPT:
+			case SQLiteParser.EXCLUSIVE:
+			case SQLiteParser.EXISTS:
+			case SQLiteParser.EXPLAIN:
+			case SQLiteParser.FAIL:
+			case SQLiteParser.FOR:
+			case SQLiteParser.FOREIGN:
+			case SQLiteParser.FROM:
+			case SQLiteParser.FULL:
+			case SQLiteParser.GLOB:
+			case SQLiteParser.GROUP:
+			case SQLiteParser.HAVING:
+			case SQLiteParser.IF:
+			case SQLiteParser.IGNORE:
+			case SQLiteParser.IMMEDIATE:
+			case SQLiteParser.IN:
+			case SQLiteParser.INDEX:
+			case SQLiteParser.INDEXED:
+			case SQLiteParser.INITIALLY:
+			case SQLiteParser.INNER:
+			case SQLiteParser.INSERT:
+			case SQLiteParser.INSTEAD:
+			case SQLiteParser.INTERSECT:
+			case SQLiteParser.INTO:
+			case SQLiteParser.IS:
+			case SQLiteParser.ISNULL:
+			case SQLiteParser.JOIN:
+			case SQLiteParser.KEY:
+			case SQLiteParser.LEFT:
+			case SQLiteParser.LIKE:
+			case SQLiteParser.LIMIT:
+			case SQLiteParser.MATCH:
+			case SQLiteParser.NATURAL:
+			case SQLiteParser.NO:
+			case SQLiteParser.NOT:
+			case SQLiteParser.NOTNULL:
+			case SQLiteParser.NULL:
+			case SQLiteParser.OF:
+			case SQLiteParser.OFFSET:
+			case SQLiteParser.ON:
+			case SQLiteParser.OR:
+			case SQLiteParser.ORDER:
+			case SQLiteParser.OUTER:
+			case SQLiteParser.PLAN:
+			case SQLiteParser.PRAGMA:
+			case SQLiteParser.PRIMARY:
+			case SQLiteParser.QUERY:
+			case SQLiteParser.RAISE:
+			case SQLiteParser.RECURSIVE:
+			case SQLiteParser.REFERENCES:
+			case SQLiteParser.REGEXP:
+			case SQLiteParser.REINDEX:
+			case SQLiteParser.RELEASE:
+			case SQLiteParser.RENAME:
+			case SQLiteParser.REPLACE:
+			case SQLiteParser.RESTRICT:
+			case SQLiteParser.RETURNING:
+			case SQLiteParser.RIGHT:
+			case SQLiteParser.ROLLBACK:
+			case SQLiteParser.ROW:
+			case SQLiteParser.ROWS:
+			case SQLiteParser.SAVEPOINT:
+			case SQLiteParser.SELECT:
+			case SQLiteParser.SET:
+			case SQLiteParser.TABLE:
+			case SQLiteParser.TEMP:
+			case SQLiteParser.TEMPORARY:
+			case SQLiteParser.THEN:
+			case SQLiteParser.TO:
+			case SQLiteParser.TRANSACTION:
+			case SQLiteParser.TRIGGER:
+			case SQLiteParser.UNION:
+			case SQLiteParser.UNIQUE:
+			case SQLiteParser.UPDATE:
+			case SQLiteParser.USING:
+			case SQLiteParser.VACUUM:
+			case SQLiteParser.VALUES:
+			case SQLiteParser.VIEW:
+			case SQLiteParser.VIRTUAL:
+			case SQLiteParser.WHEN:
+			case SQLiteParser.WHERE:
+			case SQLiteParser.WITH:
+			case SQLiteParser.WITHOUT:
+			case SQLiteParser.FIRST_VALUE:
+			case SQLiteParser.OVER:
+			case SQLiteParser.PARTITION:
+			case SQLiteParser.RANGE:
+			case SQLiteParser.PRECEDING:
+			case SQLiteParser.UNBOUNDED:
+			case SQLiteParser.CURRENT:
+			case SQLiteParser.FOLLOWING:
+			case SQLiteParser.CUME_DIST:
+			case SQLiteParser.DENSE_RANK:
+			case SQLiteParser.LAG:
+			case SQLiteParser.LAST_VALUE:
+			case SQLiteParser.LEAD:
+			case SQLiteParser.NTH_VALUE:
+			case SQLiteParser.NTILE:
+			case SQLiteParser.PERCENT_RANK:
+			case SQLiteParser.RANK:
+			case SQLiteParser.ROW_NUMBER:
+			case SQLiteParser.GENERATED:
+			case SQLiteParser.ALWAYS:
+			case SQLiteParser.STORED:
+			case SQLiteParser.TRUE:
+			case SQLiteParser.FALSE:
+			case SQLiteParser.WINDOW:
+			case SQLiteParser.NULLS:
+			case SQLiteParser.FIRST:
+			case SQLiteParser.LAST:
+			case SQLiteParser.FILTER:
+			case SQLiteParser.GROUPS:
+			case SQLiteParser.EXCLUDE:
+			case SQLiteParser.TIES:
+			case SQLiteParser.OTHERS:
+			case SQLiteParser.DO:
+			case SQLiteParser.NOTHING:
 			case SQLiteParser.IDENTIFIER:
 			case SQLiteParser.NUMERIC_LITERAL:
 			case SQLiteParser.BIND_PARAMETER:
@@ -7331,161 +7339,166 @@ export class SQLiteParser extends Parser {
 			case SQLiteParser.PLUS:
 			case SQLiteParser.MINUS:
 			case SQLiteParser.TILDE:
-			case SQLiteParser.ABORT_:
-			case SQLiteParser.ACTION_:
-			case SQLiteParser.ADD_:
-			case SQLiteParser.AFTER_:
-			case SQLiteParser.ALL_:
-			case SQLiteParser.ALTER_:
-			case SQLiteParser.ANALYZE_:
-			case SQLiteParser.AND_:
-			case SQLiteParser.AS_:
-			case SQLiteParser.ASC_:
-			case SQLiteParser.ATTACH_:
-			case SQLiteParser.AUTOINCREMENT_:
-			case SQLiteParser.BEFORE_:
-			case SQLiteParser.BEGIN_:
-			case SQLiteParser.BETWEEN_:
-			case SQLiteParser.BY_:
-			case SQLiteParser.CASCADE_:
-			case SQLiteParser.CASE_:
-			case SQLiteParser.CAST_:
-			case SQLiteParser.CHECK_:
-			case SQLiteParser.COLLATE_:
-			case SQLiteParser.COLUMN_:
-			case SQLiteParser.COMMIT_:
-			case SQLiteParser.CONFLICT_:
-			case SQLiteParser.CONSTRAINT_:
-			case SQLiteParser.CREATE_:
-			case SQLiteParser.CROSS_:
-			case SQLiteParser.CURRENT_DATE_:
-			case SQLiteParser.CURRENT_TIME_:
-			case SQLiteParser.CURRENT_TIMESTAMP_:
-			case SQLiteParser.DATABASE_:
-			case SQLiteParser.DEFAULT_:
-			case SQLiteParser.DEFERRABLE_:
-			case SQLiteParser.DEFERRED_:
-			case SQLiteParser.DELETE_:
-			case SQLiteParser.DESC_:
-			case SQLiteParser.DETACH_:
-			case SQLiteParser.DISTINCT_:
-			case SQLiteParser.DROP_:
-			case SQLiteParser.EACH_:
-			case SQLiteParser.ELSE_:
-			case SQLiteParser.END_:
-			case SQLiteParser.ESCAPE_:
-			case SQLiteParser.EXCEPT_:
-			case SQLiteParser.EXCLUSIVE_:
-			case SQLiteParser.EXISTS_:
-			case SQLiteParser.EXPLAIN_:
-			case SQLiteParser.FAIL_:
-			case SQLiteParser.FOR_:
-			case SQLiteParser.FOREIGN_:
-			case SQLiteParser.FROM_:
-			case SQLiteParser.FULL_:
-			case SQLiteParser.GLOB_:
-			case SQLiteParser.GROUP_:
-			case SQLiteParser.HAVING_:
-			case SQLiteParser.IF_:
-			case SQLiteParser.IGNORE_:
-			case SQLiteParser.IMMEDIATE_:
-			case SQLiteParser.IN_:
-			case SQLiteParser.INDEX_:
-			case SQLiteParser.INDEXED_:
-			case SQLiteParser.INITIALLY_:
-			case SQLiteParser.INNER_:
-			case SQLiteParser.INSERT_:
-			case SQLiteParser.INSTEAD_:
-			case SQLiteParser.INTERSECT_:
-			case SQLiteParser.INTO_:
-			case SQLiteParser.IS_:
-			case SQLiteParser.ISNULL_:
-			case SQLiteParser.JOIN_:
-			case SQLiteParser.KEY_:
-			case SQLiteParser.LEFT_:
-			case SQLiteParser.LIKE_:
-			case SQLiteParser.LIMIT_:
-			case SQLiteParser.MATCH_:
-			case SQLiteParser.NATURAL_:
-			case SQLiteParser.NO_:
-			case SQLiteParser.NOT_:
-			case SQLiteParser.NOTNULL_:
-			case SQLiteParser.NULL_:
-			case SQLiteParser.OF_:
-			case SQLiteParser.OFFSET_:
-			case SQLiteParser.ON_:
-			case SQLiteParser.OR_:
-			case SQLiteParser.ORDER_:
-			case SQLiteParser.OUTER_:
-			case SQLiteParser.PLAN_:
-			case SQLiteParser.PRAGMA_:
-			case SQLiteParser.PRIMARY_:
-			case SQLiteParser.QUERY_:
-			case SQLiteParser.RAISE_:
-			case SQLiteParser.RECURSIVE_:
-			case SQLiteParser.REFERENCES_:
-			case SQLiteParser.REGEXP_:
-			case SQLiteParser.REINDEX_:
-			case SQLiteParser.RELEASE_:
-			case SQLiteParser.RENAME_:
-			case SQLiteParser.REPLACE_:
-			case SQLiteParser.RESTRICT_:
-			case SQLiteParser.RIGHT_:
-			case SQLiteParser.ROLLBACK_:
-			case SQLiteParser.ROW_:
-			case SQLiteParser.ROWS_:
-			case SQLiteParser.SAVEPOINT_:
-			case SQLiteParser.SELECT_:
-			case SQLiteParser.SET_:
-			case SQLiteParser.TABLE_:
-			case SQLiteParser.TEMP_:
-			case SQLiteParser.TEMPORARY_:
-			case SQLiteParser.THEN_:
-			case SQLiteParser.TO_:
-			case SQLiteParser.TRANSACTION_:
-			case SQLiteParser.TRIGGER_:
-			case SQLiteParser.UNION_:
-			case SQLiteParser.UNIQUE_:
-			case SQLiteParser.UPDATE_:
-			case SQLiteParser.USING_:
-			case SQLiteParser.VACUUM_:
-			case SQLiteParser.VALUES_:
-			case SQLiteParser.VIEW_:
-			case SQLiteParser.VIRTUAL_:
-			case SQLiteParser.WHEN_:
-			case SQLiteParser.WHERE_:
-			case SQLiteParser.WITH_:
-			case SQLiteParser.WITHOUT_:
-			case SQLiteParser.FIRST_VALUE_:
-			case SQLiteParser.OVER_:
-			case SQLiteParser.PARTITION_:
-			case SQLiteParser.RANGE_:
-			case SQLiteParser.PRECEDING_:
-			case SQLiteParser.UNBOUNDED_:
-			case SQLiteParser.CURRENT_:
-			case SQLiteParser.FOLLOWING_:
-			case SQLiteParser.CUME_DIST_:
-			case SQLiteParser.DENSE_RANK_:
-			case SQLiteParser.LAG_:
-			case SQLiteParser.LAST_VALUE_:
-			case SQLiteParser.LEAD_:
-			case SQLiteParser.NTH_VALUE_:
-			case SQLiteParser.NTILE_:
-			case SQLiteParser.PERCENT_RANK_:
-			case SQLiteParser.RANK_:
-			case SQLiteParser.ROW_NUMBER_:
-			case SQLiteParser.GENERATED_:
-			case SQLiteParser.ALWAYS_:
-			case SQLiteParser.STORED_:
-			case SQLiteParser.TRUE_:
-			case SQLiteParser.FALSE_:
-			case SQLiteParser.WINDOW_:
-			case SQLiteParser.NULLS_:
-			case SQLiteParser.FIRST_:
-			case SQLiteParser.LAST_:
-			case SQLiteParser.FILTER_:
-			case SQLiteParser.GROUPS_:
-			case SQLiteParser.EXCLUDE_:
+			case SQLiteParser.ABORT:
+			case SQLiteParser.ACTION:
+			case SQLiteParser.ADD:
+			case SQLiteParser.AFTER:
+			case SQLiteParser.ALL:
+			case SQLiteParser.ALTER:
+			case SQLiteParser.ANALYZE:
+			case SQLiteParser.AND:
+			case SQLiteParser.AS:
+			case SQLiteParser.ASC:
+			case SQLiteParser.ATTACH:
+			case SQLiteParser.AUTOINCREMENT:
+			case SQLiteParser.BEFORE:
+			case SQLiteParser.BEGIN:
+			case SQLiteParser.BETWEEN:
+			case SQLiteParser.BY:
+			case SQLiteParser.CASCADE:
+			case SQLiteParser.CASE:
+			case SQLiteParser.CAST:
+			case SQLiteParser.CHECK:
+			case SQLiteParser.COLLATE:
+			case SQLiteParser.COLUMN:
+			case SQLiteParser.COMMIT:
+			case SQLiteParser.CONFLICT:
+			case SQLiteParser.CONSTRAINT:
+			case SQLiteParser.CREATE:
+			case SQLiteParser.CROSS:
+			case SQLiteParser.CURRENT_DATE:
+			case SQLiteParser.CURRENT_TIME:
+			case SQLiteParser.CURRENT_TIMESTAMP:
+			case SQLiteParser.DATABASE:
+			case SQLiteParser.DEFAULT:
+			case SQLiteParser.DEFERRABLE:
+			case SQLiteParser.DEFERRED:
+			case SQLiteParser.DELETE:
+			case SQLiteParser.DESC:
+			case SQLiteParser.DETACH:
+			case SQLiteParser.DISTINCT:
+			case SQLiteParser.DROP:
+			case SQLiteParser.EACH:
+			case SQLiteParser.ELSE:
+			case SQLiteParser.END:
+			case SQLiteParser.ESCAPE:
+			case SQLiteParser.EXCEPT:
+			case SQLiteParser.EXCLUSIVE:
+			case SQLiteParser.EXISTS:
+			case SQLiteParser.EXPLAIN:
+			case SQLiteParser.FAIL:
+			case SQLiteParser.FOR:
+			case SQLiteParser.FOREIGN:
+			case SQLiteParser.FROM:
+			case SQLiteParser.FULL:
+			case SQLiteParser.GLOB:
+			case SQLiteParser.GROUP:
+			case SQLiteParser.HAVING:
+			case SQLiteParser.IF:
+			case SQLiteParser.IGNORE:
+			case SQLiteParser.IMMEDIATE:
+			case SQLiteParser.IN:
+			case SQLiteParser.INDEX:
+			case SQLiteParser.INDEXED:
+			case SQLiteParser.INITIALLY:
+			case SQLiteParser.INNER:
+			case SQLiteParser.INSERT:
+			case SQLiteParser.INSTEAD:
+			case SQLiteParser.INTERSECT:
+			case SQLiteParser.INTO:
+			case SQLiteParser.IS:
+			case SQLiteParser.ISNULL:
+			case SQLiteParser.JOIN:
+			case SQLiteParser.KEY:
+			case SQLiteParser.LEFT:
+			case SQLiteParser.LIKE:
+			case SQLiteParser.LIMIT:
+			case SQLiteParser.MATCH:
+			case SQLiteParser.NATURAL:
+			case SQLiteParser.NO:
+			case SQLiteParser.NOT:
+			case SQLiteParser.NOTNULL:
+			case SQLiteParser.NULL:
+			case SQLiteParser.OF:
+			case SQLiteParser.OFFSET:
+			case SQLiteParser.ON:
+			case SQLiteParser.OR:
+			case SQLiteParser.ORDER:
+			case SQLiteParser.OUTER:
+			case SQLiteParser.PLAN:
+			case SQLiteParser.PRAGMA:
+			case SQLiteParser.PRIMARY:
+			case SQLiteParser.QUERY:
+			case SQLiteParser.RAISE:
+			case SQLiteParser.RECURSIVE:
+			case SQLiteParser.REFERENCES:
+			case SQLiteParser.REGEXP:
+			case SQLiteParser.REINDEX:
+			case SQLiteParser.RELEASE:
+			case SQLiteParser.RENAME:
+			case SQLiteParser.REPLACE:
+			case SQLiteParser.RESTRICT:
+			case SQLiteParser.RETURNING:
+			case SQLiteParser.RIGHT:
+			case SQLiteParser.ROLLBACK:
+			case SQLiteParser.ROW:
+			case SQLiteParser.ROWS:
+			case SQLiteParser.SAVEPOINT:
+			case SQLiteParser.SELECT:
+			case SQLiteParser.SET:
+			case SQLiteParser.TABLE:
+			case SQLiteParser.TEMP:
+			case SQLiteParser.TEMPORARY:
+			case SQLiteParser.THEN:
+			case SQLiteParser.TO:
+			case SQLiteParser.TRANSACTION:
+			case SQLiteParser.TRIGGER:
+			case SQLiteParser.UNION:
+			case SQLiteParser.UNIQUE:
+			case SQLiteParser.UPDATE:
+			case SQLiteParser.USING:
+			case SQLiteParser.VACUUM:
+			case SQLiteParser.VALUES:
+			case SQLiteParser.VIEW:
+			case SQLiteParser.VIRTUAL:
+			case SQLiteParser.WHEN:
+			case SQLiteParser.WHERE:
+			case SQLiteParser.WITH:
+			case SQLiteParser.WITHOUT:
+			case SQLiteParser.FIRST_VALUE:
+			case SQLiteParser.OVER:
+			case SQLiteParser.PARTITION:
+			case SQLiteParser.RANGE:
+			case SQLiteParser.PRECEDING:
+			case SQLiteParser.UNBOUNDED:
+			case SQLiteParser.CURRENT:
+			case SQLiteParser.FOLLOWING:
+			case SQLiteParser.CUME_DIST:
+			case SQLiteParser.DENSE_RANK:
+			case SQLiteParser.LAG:
+			case SQLiteParser.LAST_VALUE:
+			case SQLiteParser.LEAD:
+			case SQLiteParser.NTH_VALUE:
+			case SQLiteParser.NTILE:
+			case SQLiteParser.PERCENT_RANK:
+			case SQLiteParser.RANK:
+			case SQLiteParser.ROW_NUMBER:
+			case SQLiteParser.GENERATED:
+			case SQLiteParser.ALWAYS:
+			case SQLiteParser.STORED:
+			case SQLiteParser.TRUE:
+			case SQLiteParser.FALSE:
+			case SQLiteParser.WINDOW:
+			case SQLiteParser.NULLS:
+			case SQLiteParser.FIRST:
+			case SQLiteParser.LAST:
+			case SQLiteParser.FILTER:
+			case SQLiteParser.GROUPS:
+			case SQLiteParser.EXCLUDE:
+			case SQLiteParser.TIES:
+			case SQLiteParser.OTHERS:
+			case SQLiteParser.DO:
+			case SQLiteParser.NOTHING:
 			case SQLiteParser.IDENTIFIER:
 			case SQLiteParser.NUMERIC_LITERAL:
 			case SQLiteParser.BIND_PARAMETER:
@@ -7498,7 +7511,7 @@ export class SQLiteParser extends Parser {
 				case 1:
 					{
 					this.state = 1750;
-					this.match(SQLiteParser.DISTINCT_);
+					this.match(SQLiteParser.DISTINCT);
 					}
 					break;
 				}
@@ -7538,7 +7551,7 @@ export class SQLiteParser extends Parser {
 			this.state = 1766;
 			this._errHandler.sync(this);
 			_la = this._input.LA(1);
-			if (_la === SQLiteParser.FILTER_) {
+			if (_la === SQLiteParser.FILTER) {
 				{
 				this.state = 1765;
 				this.filter_clause();
@@ -7580,161 +7593,166 @@ export class SQLiteParser extends Parser {
 			case SQLiteParser.PLUS:
 			case SQLiteParser.MINUS:
 			case SQLiteParser.TILDE:
-			case SQLiteParser.ABORT_:
-			case SQLiteParser.ACTION_:
-			case SQLiteParser.ADD_:
-			case SQLiteParser.AFTER_:
-			case SQLiteParser.ALL_:
-			case SQLiteParser.ALTER_:
-			case SQLiteParser.ANALYZE_:
-			case SQLiteParser.AND_:
-			case SQLiteParser.AS_:
-			case SQLiteParser.ASC_:
-			case SQLiteParser.ATTACH_:
-			case SQLiteParser.AUTOINCREMENT_:
-			case SQLiteParser.BEFORE_:
-			case SQLiteParser.BEGIN_:
-			case SQLiteParser.BETWEEN_:
-			case SQLiteParser.BY_:
-			case SQLiteParser.CASCADE_:
-			case SQLiteParser.CASE_:
-			case SQLiteParser.CAST_:
-			case SQLiteParser.CHECK_:
-			case SQLiteParser.COLLATE_:
-			case SQLiteParser.COLUMN_:
-			case SQLiteParser.COMMIT_:
-			case SQLiteParser.CONFLICT_:
-			case SQLiteParser.CONSTRAINT_:
-			case SQLiteParser.CREATE_:
-			case SQLiteParser.CROSS_:
-			case SQLiteParser.CURRENT_DATE_:
-			case SQLiteParser.CURRENT_TIME_:
-			case SQLiteParser.CURRENT_TIMESTAMP_:
-			case SQLiteParser.DATABASE_:
-			case SQLiteParser.DEFAULT_:
-			case SQLiteParser.DEFERRABLE_:
-			case SQLiteParser.DEFERRED_:
-			case SQLiteParser.DELETE_:
-			case SQLiteParser.DESC_:
-			case SQLiteParser.DETACH_:
-			case SQLiteParser.DISTINCT_:
-			case SQLiteParser.DROP_:
-			case SQLiteParser.EACH_:
-			case SQLiteParser.ELSE_:
-			case SQLiteParser.END_:
-			case SQLiteParser.ESCAPE_:
-			case SQLiteParser.EXCEPT_:
-			case SQLiteParser.EXCLUSIVE_:
-			case SQLiteParser.EXISTS_:
-			case SQLiteParser.EXPLAIN_:
-			case SQLiteParser.FAIL_:
-			case SQLiteParser.FOR_:
-			case SQLiteParser.FOREIGN_:
-			case SQLiteParser.FROM_:
-			case SQLiteParser.FULL_:
-			case SQLiteParser.GLOB_:
-			case SQLiteParser.GROUP_:
-			case SQLiteParser.HAVING_:
-			case SQLiteParser.IF_:
-			case SQLiteParser.IGNORE_:
-			case SQLiteParser.IMMEDIATE_:
-			case SQLiteParser.IN_:
-			case SQLiteParser.INDEX_:
-			case SQLiteParser.INDEXED_:
-			case SQLiteParser.INITIALLY_:
-			case SQLiteParser.INNER_:
-			case SQLiteParser.INSERT_:
-			case SQLiteParser.INSTEAD_:
-			case SQLiteParser.INTERSECT_:
-			case SQLiteParser.INTO_:
-			case SQLiteParser.IS_:
-			case SQLiteParser.ISNULL_:
-			case SQLiteParser.JOIN_:
-			case SQLiteParser.KEY_:
-			case SQLiteParser.LEFT_:
-			case SQLiteParser.LIKE_:
-			case SQLiteParser.LIMIT_:
-			case SQLiteParser.MATCH_:
-			case SQLiteParser.NATURAL_:
-			case SQLiteParser.NO_:
-			case SQLiteParser.NOT_:
-			case SQLiteParser.NOTNULL_:
-			case SQLiteParser.NULL_:
-			case SQLiteParser.OF_:
-			case SQLiteParser.OFFSET_:
-			case SQLiteParser.ON_:
-			case SQLiteParser.OR_:
-			case SQLiteParser.ORDER_:
-			case SQLiteParser.OUTER_:
-			case SQLiteParser.PLAN_:
-			case SQLiteParser.PRAGMA_:
-			case SQLiteParser.PRIMARY_:
-			case SQLiteParser.QUERY_:
-			case SQLiteParser.RAISE_:
-			case SQLiteParser.RECURSIVE_:
-			case SQLiteParser.REFERENCES_:
-			case SQLiteParser.REGEXP_:
-			case SQLiteParser.REINDEX_:
-			case SQLiteParser.RELEASE_:
-			case SQLiteParser.RENAME_:
-			case SQLiteParser.REPLACE_:
-			case SQLiteParser.RESTRICT_:
-			case SQLiteParser.RIGHT_:
-			case SQLiteParser.ROLLBACK_:
-			case SQLiteParser.ROW_:
-			case SQLiteParser.ROWS_:
-			case SQLiteParser.SAVEPOINT_:
-			case SQLiteParser.SELECT_:
-			case SQLiteParser.SET_:
-			case SQLiteParser.TABLE_:
-			case SQLiteParser.TEMP_:
-			case SQLiteParser.TEMPORARY_:
-			case SQLiteParser.THEN_:
-			case SQLiteParser.TO_:
-			case SQLiteParser.TRANSACTION_:
-			case SQLiteParser.TRIGGER_:
-			case SQLiteParser.UNION_:
-			case SQLiteParser.UNIQUE_:
-			case SQLiteParser.UPDATE_:
-			case SQLiteParser.USING_:
-			case SQLiteParser.VACUUM_:
-			case SQLiteParser.VALUES_:
-			case SQLiteParser.VIEW_:
-			case SQLiteParser.VIRTUAL_:
-			case SQLiteParser.WHEN_:
-			case SQLiteParser.WHERE_:
-			case SQLiteParser.WITH_:
-			case SQLiteParser.WITHOUT_:
-			case SQLiteParser.FIRST_VALUE_:
-			case SQLiteParser.OVER_:
-			case SQLiteParser.PARTITION_:
-			case SQLiteParser.RANGE_:
-			case SQLiteParser.PRECEDING_:
-			case SQLiteParser.UNBOUNDED_:
-			case SQLiteParser.CURRENT_:
-			case SQLiteParser.FOLLOWING_:
-			case SQLiteParser.CUME_DIST_:
-			case SQLiteParser.DENSE_RANK_:
-			case SQLiteParser.LAG_:
-			case SQLiteParser.LAST_VALUE_:
-			case SQLiteParser.LEAD_:
-			case SQLiteParser.NTH_VALUE_:
-			case SQLiteParser.NTILE_:
-			case SQLiteParser.PERCENT_RANK_:
-			case SQLiteParser.RANK_:
-			case SQLiteParser.ROW_NUMBER_:
-			case SQLiteParser.GENERATED_:
-			case SQLiteParser.ALWAYS_:
-			case SQLiteParser.STORED_:
-			case SQLiteParser.TRUE_:
-			case SQLiteParser.FALSE_:
-			case SQLiteParser.WINDOW_:
-			case SQLiteParser.NULLS_:
-			case SQLiteParser.FIRST_:
-			case SQLiteParser.LAST_:
-			case SQLiteParser.FILTER_:
-			case SQLiteParser.GROUPS_:
-			case SQLiteParser.EXCLUDE_:
+			case SQLiteParser.ABORT:
+			case SQLiteParser.ACTION:
+			case SQLiteParser.ADD:
+			case SQLiteParser.AFTER:
+			case SQLiteParser.ALL:
+			case SQLiteParser.ALTER:
+			case SQLiteParser.ANALYZE:
+			case SQLiteParser.AND:
+			case SQLiteParser.AS:
+			case SQLiteParser.ASC:
+			case SQLiteParser.ATTACH:
+			case SQLiteParser.AUTOINCREMENT:
+			case SQLiteParser.BEFORE:
+			case SQLiteParser.BEGIN:
+			case SQLiteParser.BETWEEN:
+			case SQLiteParser.BY:
+			case SQLiteParser.CASCADE:
+			case SQLiteParser.CASE:
+			case SQLiteParser.CAST:
+			case SQLiteParser.CHECK:
+			case SQLiteParser.COLLATE:
+			case SQLiteParser.COLUMN:
+			case SQLiteParser.COMMIT:
+			case SQLiteParser.CONFLICT:
+			case SQLiteParser.CONSTRAINT:
+			case SQLiteParser.CREATE:
+			case SQLiteParser.CROSS:
+			case SQLiteParser.CURRENT_DATE:
+			case SQLiteParser.CURRENT_TIME:
+			case SQLiteParser.CURRENT_TIMESTAMP:
+			case SQLiteParser.DATABASE:
+			case SQLiteParser.DEFAULT:
+			case SQLiteParser.DEFERRABLE:
+			case SQLiteParser.DEFERRED:
+			case SQLiteParser.DELETE:
+			case SQLiteParser.DESC:
+			case SQLiteParser.DETACH:
+			case SQLiteParser.DISTINCT:
+			case SQLiteParser.DROP:
+			case SQLiteParser.EACH:
+			case SQLiteParser.ELSE:
+			case SQLiteParser.END:
+			case SQLiteParser.ESCAPE:
+			case SQLiteParser.EXCEPT:
+			case SQLiteParser.EXCLUSIVE:
+			case SQLiteParser.EXISTS:
+			case SQLiteParser.EXPLAIN:
+			case SQLiteParser.FAIL:
+			case SQLiteParser.FOR:
+			case SQLiteParser.FOREIGN:
+			case SQLiteParser.FROM:
+			case SQLiteParser.FULL:
+			case SQLiteParser.GLOB:
+			case SQLiteParser.GROUP:
+			case SQLiteParser.HAVING:
+			case SQLiteParser.IF:
+			case SQLiteParser.IGNORE:
+			case SQLiteParser.IMMEDIATE:
+			case SQLiteParser.IN:
+			case SQLiteParser.INDEX:
+			case SQLiteParser.INDEXED:
+			case SQLiteParser.INITIALLY:
+			case SQLiteParser.INNER:
+			case SQLiteParser.INSERT:
+			case SQLiteParser.INSTEAD:
+			case SQLiteParser.INTERSECT:
+			case SQLiteParser.INTO:
+			case SQLiteParser.IS:
+			case SQLiteParser.ISNULL:
+			case SQLiteParser.JOIN:
+			case SQLiteParser.KEY:
+			case SQLiteParser.LEFT:
+			case SQLiteParser.LIKE:
+			case SQLiteParser.LIMIT:
+			case SQLiteParser.MATCH:
+			case SQLiteParser.NATURAL:
+			case SQLiteParser.NO:
+			case SQLiteParser.NOT:
+			case SQLiteParser.NOTNULL:
+			case SQLiteParser.NULL:
+			case SQLiteParser.OF:
+			case SQLiteParser.OFFSET:
+			case SQLiteParser.ON:
+			case SQLiteParser.OR:
+			case SQLiteParser.ORDER:
+			case SQLiteParser.OUTER:
+			case SQLiteParser.PLAN:
+			case SQLiteParser.PRAGMA:
+			case SQLiteParser.PRIMARY:
+			case SQLiteParser.QUERY:
+			case SQLiteParser.RAISE:
+			case SQLiteParser.RECURSIVE:
+			case SQLiteParser.REFERENCES:
+			case SQLiteParser.REGEXP:
+			case SQLiteParser.REINDEX:
+			case SQLiteParser.RELEASE:
+			case SQLiteParser.RENAME:
+			case SQLiteParser.REPLACE:
+			case SQLiteParser.RESTRICT:
+			case SQLiteParser.RETURNING:
+			case SQLiteParser.RIGHT:
+			case SQLiteParser.ROLLBACK:
+			case SQLiteParser.ROW:
+			case SQLiteParser.ROWS:
+			case SQLiteParser.SAVEPOINT:
+			case SQLiteParser.SELECT:
+			case SQLiteParser.SET:
+			case SQLiteParser.TABLE:
+			case SQLiteParser.TEMP:
+			case SQLiteParser.TEMPORARY:
+			case SQLiteParser.THEN:
+			case SQLiteParser.TO:
+			case SQLiteParser.TRANSACTION:
+			case SQLiteParser.TRIGGER:
+			case SQLiteParser.UNION:
+			case SQLiteParser.UNIQUE:
+			case SQLiteParser.UPDATE:
+			case SQLiteParser.USING:
+			case SQLiteParser.VACUUM:
+			case SQLiteParser.VALUES:
+			case SQLiteParser.VIEW:
+			case SQLiteParser.VIRTUAL:
+			case SQLiteParser.WHEN:
+			case SQLiteParser.WHERE:
+			case SQLiteParser.WITH:
+			case SQLiteParser.WITHOUT:
+			case SQLiteParser.FIRST_VALUE:
+			case SQLiteParser.OVER:
+			case SQLiteParser.PARTITION:
+			case SQLiteParser.RANGE:
+			case SQLiteParser.PRECEDING:
+			case SQLiteParser.UNBOUNDED:
+			case SQLiteParser.CURRENT:
+			case SQLiteParser.FOLLOWING:
+			case SQLiteParser.CUME_DIST:
+			case SQLiteParser.DENSE_RANK:
+			case SQLiteParser.LAG:
+			case SQLiteParser.LAST_VALUE:
+			case SQLiteParser.LEAD:
+			case SQLiteParser.NTH_VALUE:
+			case SQLiteParser.NTILE:
+			case SQLiteParser.PERCENT_RANK:
+			case SQLiteParser.RANK:
+			case SQLiteParser.ROW_NUMBER:
+			case SQLiteParser.GENERATED:
+			case SQLiteParser.ALWAYS:
+			case SQLiteParser.STORED:
+			case SQLiteParser.TRUE:
+			case SQLiteParser.FALSE:
+			case SQLiteParser.WINDOW:
+			case SQLiteParser.NULLS:
+			case SQLiteParser.FIRST:
+			case SQLiteParser.LAST:
+			case SQLiteParser.FILTER:
+			case SQLiteParser.GROUPS:
+			case SQLiteParser.EXCLUDE:
+			case SQLiteParser.TIES:
+			case SQLiteParser.OTHERS:
+			case SQLiteParser.DO:
+			case SQLiteParser.NOTHING:
 			case SQLiteParser.IDENTIFIER:
 			case SQLiteParser.NUMERIC_LITERAL:
 			case SQLiteParser.BIND_PARAMETER:
@@ -7777,7 +7795,7 @@ export class SQLiteParser extends Parser {
 			this.state = 1783;
 			this._errHandler.sync(this);
 			_la = this._input.LA(1);
-			if (_la === SQLiteParser.FILTER_) {
+			if (_la === SQLiteParser.FILTER) {
 				{
 				this.state = 1782;
 				this.filter_clause();
@@ -7785,7 +7803,7 @@ export class SQLiteParser extends Parser {
 			}
 
 			this.state = 1785;
-			this.match(SQLiteParser.OVER_);
+			this.match(SQLiteParser.OVER);
 			this.state = 1788;
 			this._errHandler.sync(this);
 			switch ( this.interpreter.adaptivePredict(this._input, 267, this._ctx) ) {
@@ -7828,14 +7846,14 @@ export class SQLiteParser extends Parser {
 			this.enterOuterAlt(_localctx, 1);
 			{
 			this.state = 1790;
-			this.match(SQLiteParser.WITH_);
+			this.match(SQLiteParser.WITH);
 			this.state = 1792;
 			this._errHandler.sync(this);
 			switch ( this.interpreter.adaptivePredict(this._input, 268, this._ctx) ) {
 			case 1:
 				{
 				this.state = 1791;
-				this.match(SQLiteParser.RECURSIVE_);
+				this.match(SQLiteParser.RECURSIVE);
 				}
 				break;
 			}
@@ -7882,9 +7900,9 @@ export class SQLiteParser extends Parser {
 			this.enterOuterAlt(_localctx, 1);
 			{
 			this.state = 1802;
-			this.match(SQLiteParser.ORDER_);
+			this.match(SQLiteParser.ORDER);
 			this.state = 1803;
-			this.match(SQLiteParser.BY_);
+			this.match(SQLiteParser.BY);
 			this.state = 1804;
 			this.ordering_term();
 			this.state = 1809;
@@ -7928,17 +7946,17 @@ export class SQLiteParser extends Parser {
 			this.enterOuterAlt(_localctx, 1);
 			{
 			this.state = 1812;
-			this.match(SQLiteParser.LIMIT_);
+			this.match(SQLiteParser.LIMIT);
 			this.state = 1813;
 			this.expr(0);
 			this.state = 1816;
 			this._errHandler.sync(this);
 			_la = this._input.LA(1);
-			if (_la === SQLiteParser.COMMA || _la === SQLiteParser.OFFSET_) {
+			if (_la === SQLiteParser.COMMA || _la === SQLiteParser.OFFSET) {
 				{
 				this.state = 1814;
 				_la = this._input.LA(1);
-				if (!(_la === SQLiteParser.COMMA || _la === SQLiteParser.OFFSET_)) {
+				if (!(_la === SQLiteParser.COMMA || _la === SQLiteParser.OFFSET)) {
 				this._errHandler.recoverInline(this);
 				} else {
 					if (this._input.LA(1) === Token.EOF) {
@@ -7982,10 +8000,10 @@ export class SQLiteParser extends Parser {
 			this.state = 1821;
 			this._errHandler.sync(this);
 			_la = this._input.LA(1);
-			if (_la === SQLiteParser.COLLATE_) {
+			if (_la === SQLiteParser.COLLATE) {
 				{
 				this.state = 1819;
-				this.match(SQLiteParser.COLLATE_);
+				this.match(SQLiteParser.COLLATE);
 				this.state = 1820;
 				this.collation_name();
 				}
@@ -7994,7 +8012,7 @@ export class SQLiteParser extends Parser {
 			this.state = 1824;
 			this._errHandler.sync(this);
 			_la = this._input.LA(1);
-			if (_la === SQLiteParser.ASC_ || _la === SQLiteParser.DESC_) {
+			if (_la === SQLiteParser.ASC || _la === SQLiteParser.DESC) {
 				{
 				this.state = 1823;
 				this.asc_desc();
@@ -8004,13 +8022,13 @@ export class SQLiteParser extends Parser {
 			this.state = 1828;
 			this._errHandler.sync(this);
 			_la = this._input.LA(1);
-			if (_la === SQLiteParser.NULLS_) {
+			if (_la === SQLiteParser.NULLS) {
 				{
 				this.state = 1826;
-				this.match(SQLiteParser.NULLS_);
+				this.match(SQLiteParser.NULLS);
 				this.state = 1827;
 				_la = this._input.LA(1);
-				if (!(_la === SQLiteParser.FIRST_ || _la === SQLiteParser.LAST_)) {
+				if (!(_la === SQLiteParser.FIRST || _la === SQLiteParser.LAST)) {
 				this._errHandler.recoverInline(this);
 				} else {
 					if (this._input.LA(1) === Token.EOF) {
@@ -8049,7 +8067,7 @@ export class SQLiteParser extends Parser {
 			{
 			this.state = 1830;
 			_la = this._input.LA(1);
-			if (!(_la === SQLiteParser.ASC_ || _la === SQLiteParser.DESC_)) {
+			if (!(_la === SQLiteParser.ASC || _la === SQLiteParser.DESC)) {
 			this._errHandler.recoverInline(this);
 			} else {
 				if (this._input.LA(1) === Token.EOF) {
@@ -8089,7 +8107,7 @@ export class SQLiteParser extends Parser {
 				this.state = 1832;
 				this.expr(0);
 				this.state = 1833;
-				this.match(SQLiteParser.PRECEDING_);
+				this.match(SQLiteParser.PRECEDING);
 				}
 				break;
 
@@ -8099,7 +8117,7 @@ export class SQLiteParser extends Parser {
 				this.state = 1835;
 				this.expr(0);
 				this.state = 1836;
-				this.match(SQLiteParser.FOLLOWING_);
+				this.match(SQLiteParser.FOLLOWING);
 				}
 				break;
 
@@ -8107,9 +8125,9 @@ export class SQLiteParser extends Parser {
 				this.enterOuterAlt(_localctx, 3);
 				{
 				this.state = 1838;
-				this.match(SQLiteParser.CURRENT_);
+				this.match(SQLiteParser.CURRENT);
 				this.state = 1839;
-				this.match(SQLiteParser.ROW_);
+				this.match(SQLiteParser.ROW);
 				}
 				break;
 
@@ -8117,9 +8135,9 @@ export class SQLiteParser extends Parser {
 				this.enterOuterAlt(_localctx, 4);
 				{
 				this.state = 1840;
-				this.match(SQLiteParser.UNBOUNDED_);
+				this.match(SQLiteParser.UNBOUNDED);
 				this.state = 1841;
-				this.match(SQLiteParser.PRECEDING_);
+				this.match(SQLiteParser.PRECEDING);
 				}
 				break;
 			}
@@ -8152,7 +8170,7 @@ export class SQLiteParser extends Parser {
 				this.state = 1844;
 				this.expr(0);
 				this.state = 1845;
-				this.match(SQLiteParser.PRECEDING_);
+				this.match(SQLiteParser.PRECEDING);
 				}
 				break;
 
@@ -8162,7 +8180,7 @@ export class SQLiteParser extends Parser {
 				this.state = 1847;
 				this.expr(0);
 				this.state = 1848;
-				this.match(SQLiteParser.FOLLOWING_);
+				this.match(SQLiteParser.FOLLOWING);
 				}
 				break;
 
@@ -8170,9 +8188,9 @@ export class SQLiteParser extends Parser {
 				this.enterOuterAlt(_localctx, 3);
 				{
 				this.state = 1850;
-				this.match(SQLiteParser.CURRENT_);
+				this.match(SQLiteParser.CURRENT);
 				this.state = 1851;
-				this.match(SQLiteParser.ROW_);
+				this.match(SQLiteParser.ROW);
 				}
 				break;
 
@@ -8180,9 +8198,9 @@ export class SQLiteParser extends Parser {
 				this.enterOuterAlt(_localctx, 4);
 				{
 				this.state = 1852;
-				this.match(SQLiteParser.UNBOUNDED_);
+				this.match(SQLiteParser.UNBOUNDED);
 				this.state = 1853;
-				this.match(SQLiteParser.FOLLOWING_);
+				this.match(SQLiteParser.FOLLOWING);
 				}
 				break;
 			}
@@ -8215,7 +8233,7 @@ export class SQLiteParser extends Parser {
 				this.state = 1856;
 				this.expr(0);
 				this.state = 1857;
-				this.match(SQLiteParser.PRECEDING_);
+				this.match(SQLiteParser.PRECEDING);
 				}
 				break;
 
@@ -8223,9 +8241,9 @@ export class SQLiteParser extends Parser {
 				this.enterOuterAlt(_localctx, 2);
 				{
 				this.state = 1859;
-				this.match(SQLiteParser.UNBOUNDED_);
+				this.match(SQLiteParser.UNBOUNDED);
 				this.state = 1860;
-				this.match(SQLiteParser.PRECEDING_);
+				this.match(SQLiteParser.PRECEDING);
 				}
 				break;
 
@@ -8233,9 +8251,9 @@ export class SQLiteParser extends Parser {
 				this.enterOuterAlt(_localctx, 3);
 				{
 				this.state = 1861;
-				this.match(SQLiteParser.CURRENT_);
+				this.match(SQLiteParser.CURRENT);
 				this.state = 1862;
-				this.match(SQLiteParser.ROW_);
+				this.match(SQLiteParser.ROW);
 				}
 				break;
 			}
@@ -8263,13 +8281,13 @@ export class SQLiteParser extends Parser {
 			this.state = 1950;
 			this._errHandler.sync(this);
 			switch (this._input.LA(1)) {
-			case SQLiteParser.FIRST_VALUE_:
-			case SQLiteParser.LAST_VALUE_:
+			case SQLiteParser.FIRST_VALUE:
+			case SQLiteParser.LAST_VALUE:
 				this.enterOuterAlt(_localctx, 1);
 				{
 				this.state = 1865;
 				_la = this._input.LA(1);
-				if (!(_la === SQLiteParser.FIRST_VALUE_ || _la === SQLiteParser.LAST_VALUE_)) {
+				if (!(_la === SQLiteParser.FIRST_VALUE || _la === SQLiteParser.LAST_VALUE)) {
 				this._errHandler.recoverInline(this);
 				} else {
 					if (this._input.LA(1) === Token.EOF) {
@@ -8286,13 +8304,13 @@ export class SQLiteParser extends Parser {
 				this.state = 1868;
 				this.match(SQLiteParser.CLOSE_PAR);
 				this.state = 1869;
-				this.match(SQLiteParser.OVER_);
+				this.match(SQLiteParser.OVER);
 				this.state = 1870;
 				this.match(SQLiteParser.OPEN_PAR);
 				this.state = 1872;
 				this._errHandler.sync(this);
 				_la = this._input.LA(1);
-				if (_la === SQLiteParser.PARTITION_) {
+				if (_la === SQLiteParser.PARTITION) {
 					{
 					this.state = 1871;
 					this.partition_by();
@@ -8304,7 +8322,7 @@ export class SQLiteParser extends Parser {
 				this.state = 1876;
 				this._errHandler.sync(this);
 				_la = this._input.LA(1);
-				if (_la === SQLiteParser.ROWS_ || _la === SQLiteParser.RANGE_ || _la === SQLiteParser.GROUPS_) {
+				if (_la === SQLiteParser.ROWS || _la === SQLiteParser.RANGE || _la === SQLiteParser.GROUPS) {
 					{
 					this.state = 1875;
 					this.frame_clause();
@@ -8315,13 +8333,13 @@ export class SQLiteParser extends Parser {
 				this.match(SQLiteParser.CLOSE_PAR);
 				}
 				break;
-			case SQLiteParser.CUME_DIST_:
-			case SQLiteParser.PERCENT_RANK_:
+			case SQLiteParser.CUME_DIST:
+			case SQLiteParser.PERCENT_RANK:
 				this.enterOuterAlt(_localctx, 2);
 				{
 				this.state = 1880;
 				_la = this._input.LA(1);
-				if (!(_la === SQLiteParser.CUME_DIST_ || _la === SQLiteParser.PERCENT_RANK_)) {
+				if (!(_la === SQLiteParser.CUME_DIST || _la === SQLiteParser.PERCENT_RANK)) {
 				this._errHandler.recoverInline(this);
 				} else {
 					if (this._input.LA(1) === Token.EOF) {
@@ -8336,13 +8354,13 @@ export class SQLiteParser extends Parser {
 				this.state = 1882;
 				this.match(SQLiteParser.CLOSE_PAR);
 				this.state = 1883;
-				this.match(SQLiteParser.OVER_);
+				this.match(SQLiteParser.OVER);
 				this.state = 1884;
 				this.match(SQLiteParser.OPEN_PAR);
 				this.state = 1886;
 				this._errHandler.sync(this);
 				_la = this._input.LA(1);
-				if (_la === SQLiteParser.PARTITION_) {
+				if (_la === SQLiteParser.PARTITION) {
 					{
 					this.state = 1885;
 					this.partition_by();
@@ -8352,7 +8370,7 @@ export class SQLiteParser extends Parser {
 				this.state = 1889;
 				this._errHandler.sync(this);
 				_la = this._input.LA(1);
-				if (_la === SQLiteParser.ORDER_) {
+				if (_la === SQLiteParser.ORDER) {
 					{
 					this.state = 1888;
 					this.order_by_expr();
@@ -8363,14 +8381,14 @@ export class SQLiteParser extends Parser {
 				this.match(SQLiteParser.CLOSE_PAR);
 				}
 				break;
-			case SQLiteParser.DENSE_RANK_:
-			case SQLiteParser.RANK_:
-			case SQLiteParser.ROW_NUMBER_:
+			case SQLiteParser.DENSE_RANK:
+			case SQLiteParser.RANK:
+			case SQLiteParser.ROW_NUMBER:
 				this.enterOuterAlt(_localctx, 3);
 				{
 				this.state = 1892;
 				_la = this._input.LA(1);
-				if (!(((((_la - 160)) & ~0x1F) === 0 && ((1 << (_la - 160)) & ((1 << (SQLiteParser.DENSE_RANK_ - 160)) | (1 << (SQLiteParser.RANK_ - 160)) | (1 << (SQLiteParser.ROW_NUMBER_ - 160)))) !== 0))) {
+				if (!(((((_la - 160)) & ~0x1F) === 0 && ((1 << (_la - 160)) & ((1 << (SQLiteParser.DENSE_RANK - 160)) | (1 << (SQLiteParser.RANK - 160)) | (1 << (SQLiteParser.ROW_NUMBER - 160)))) !== 0))) {
 				this._errHandler.recoverInline(this);
 				} else {
 					if (this._input.LA(1) === Token.EOF) {
@@ -8385,13 +8403,13 @@ export class SQLiteParser extends Parser {
 				this.state = 1894;
 				this.match(SQLiteParser.CLOSE_PAR);
 				this.state = 1895;
-				this.match(SQLiteParser.OVER_);
+				this.match(SQLiteParser.OVER);
 				this.state = 1896;
 				this.match(SQLiteParser.OPEN_PAR);
 				this.state = 1898;
 				this._errHandler.sync(this);
 				_la = this._input.LA(1);
-				if (_la === SQLiteParser.PARTITION_) {
+				if (_la === SQLiteParser.PARTITION) {
 					{
 					this.state = 1897;
 					this.partition_by();
@@ -8404,13 +8422,13 @@ export class SQLiteParser extends Parser {
 				this.match(SQLiteParser.CLOSE_PAR);
 				}
 				break;
-			case SQLiteParser.LAG_:
-			case SQLiteParser.LEAD_:
+			case SQLiteParser.LAG:
+			case SQLiteParser.LEAD:
 				this.enterOuterAlt(_localctx, 4);
 				{
 				this.state = 1903;
 				_la = this._input.LA(1);
-				if (!(_la === SQLiteParser.LAG_ || _la === SQLiteParser.LEAD_)) {
+				if (!(_la === SQLiteParser.LAG || _la === SQLiteParser.LEAD)) {
 				this._errHandler.recoverInline(this);
 				} else {
 					if (this._input.LA(1) === Token.EOF) {
@@ -8447,13 +8465,13 @@ export class SQLiteParser extends Parser {
 				this.state = 1912;
 				this.match(SQLiteParser.CLOSE_PAR);
 				this.state = 1913;
-				this.match(SQLiteParser.OVER_);
+				this.match(SQLiteParser.OVER);
 				this.state = 1914;
 				this.match(SQLiteParser.OPEN_PAR);
 				this.state = 1916;
 				this._errHandler.sync(this);
 				_la = this._input.LA(1);
-				if (_la === SQLiteParser.PARTITION_) {
+				if (_la === SQLiteParser.PARTITION) {
 					{
 					this.state = 1915;
 					this.partition_by();
@@ -8466,11 +8484,11 @@ export class SQLiteParser extends Parser {
 				this.match(SQLiteParser.CLOSE_PAR);
 				}
 				break;
-			case SQLiteParser.NTH_VALUE_:
+			case SQLiteParser.NTH_VALUE:
 				this.enterOuterAlt(_localctx, 5);
 				{
 				this.state = 1921;
-				this.match(SQLiteParser.NTH_VALUE_);
+				this.match(SQLiteParser.NTH_VALUE);
 				this.state = 1922;
 				this.match(SQLiteParser.OPEN_PAR);
 				this.state = 1923;
@@ -8482,13 +8500,13 @@ export class SQLiteParser extends Parser {
 				this.state = 1926;
 				this.match(SQLiteParser.CLOSE_PAR);
 				this.state = 1927;
-				this.match(SQLiteParser.OVER_);
+				this.match(SQLiteParser.OVER);
 				this.state = 1928;
 				this.match(SQLiteParser.OPEN_PAR);
 				this.state = 1930;
 				this._errHandler.sync(this);
 				_la = this._input.LA(1);
-				if (_la === SQLiteParser.PARTITION_) {
+				if (_la === SQLiteParser.PARTITION) {
 					{
 					this.state = 1929;
 					this.partition_by();
@@ -8500,7 +8518,7 @@ export class SQLiteParser extends Parser {
 				this.state = 1934;
 				this._errHandler.sync(this);
 				_la = this._input.LA(1);
-				if (_la === SQLiteParser.ROWS_ || _la === SQLiteParser.RANGE_ || _la === SQLiteParser.GROUPS_) {
+				if (_la === SQLiteParser.ROWS || _la === SQLiteParser.RANGE || _la === SQLiteParser.GROUPS) {
 					{
 					this.state = 1933;
 					this.frame_clause();
@@ -8511,11 +8529,11 @@ export class SQLiteParser extends Parser {
 				this.match(SQLiteParser.CLOSE_PAR);
 				}
 				break;
-			case SQLiteParser.NTILE_:
+			case SQLiteParser.NTILE:
 				this.enterOuterAlt(_localctx, 6);
 				{
 				this.state = 1938;
-				this.match(SQLiteParser.NTILE_);
+				this.match(SQLiteParser.NTILE);
 				this.state = 1939;
 				this.match(SQLiteParser.OPEN_PAR);
 				this.state = 1940;
@@ -8523,13 +8541,13 @@ export class SQLiteParser extends Parser {
 				this.state = 1941;
 				this.match(SQLiteParser.CLOSE_PAR);
 				this.state = 1942;
-				this.match(SQLiteParser.OVER_);
+				this.match(SQLiteParser.OVER);
 				this.state = 1943;
 				this.match(SQLiteParser.OPEN_PAR);
 				this.state = 1945;
 				this._errHandler.sync(this);
 				_la = this._input.LA(1);
-				if (_la === SQLiteParser.PARTITION_) {
+				if (_la === SQLiteParser.PARTITION) {
 					{
 					this.state = 1944;
 					this.partition_by();
@@ -8623,9 +8641,9 @@ export class SQLiteParser extends Parser {
 			this.enterOuterAlt(_localctx, 1);
 			{
 			this.state = 1958;
-			this.match(SQLiteParser.PARTITION_);
+			this.match(SQLiteParser.PARTITION);
 			this.state = 1959;
-			this.match(SQLiteParser.BY_);
+			this.match(SQLiteParser.BY);
 			this.state = 1961;
 			this._errHandler.sync(this);
 			_alt = 1;
@@ -8671,9 +8689,9 @@ export class SQLiteParser extends Parser {
 			this.enterOuterAlt(_localctx, 1);
 			{
 			this.state = 1965;
-			this.match(SQLiteParser.ORDER_);
+			this.match(SQLiteParser.ORDER);
 			this.state = 1966;
-			this.match(SQLiteParser.BY_);
+			this.match(SQLiteParser.BY);
 			this.state = 1968;
 			this._errHandler.sync(this);
 			_la = this._input.LA(1);
@@ -8687,7 +8705,7 @@ export class SQLiteParser extends Parser {
 				this.state = 1970;
 				this._errHandler.sync(this);
 				_la = this._input.LA(1);
-			} while ((((_la) & ~0x1F) === 0 && ((1 << _la) & ((1 << SQLiteParser.OPEN_PAR) | (1 << SQLiteParser.PLUS) | (1 << SQLiteParser.MINUS) | (1 << SQLiteParser.TILDE) | (1 << SQLiteParser.ABORT_) | (1 << SQLiteParser.ACTION_) | (1 << SQLiteParser.ADD_) | (1 << SQLiteParser.AFTER_) | (1 << SQLiteParser.ALL_) | (1 << SQLiteParser.ALTER_) | (1 << SQLiteParser.ANALYZE_))) !== 0) || ((((_la - 32)) & ~0x1F) === 0 && ((1 << (_la - 32)) & ((1 << (SQLiteParser.AND_ - 32)) | (1 << (SQLiteParser.AS_ - 32)) | (1 << (SQLiteParser.ASC_ - 32)) | (1 << (SQLiteParser.ATTACH_ - 32)) | (1 << (SQLiteParser.AUTOINCREMENT_ - 32)) | (1 << (SQLiteParser.BEFORE_ - 32)) | (1 << (SQLiteParser.BEGIN_ - 32)) | (1 << (SQLiteParser.BETWEEN_ - 32)) | (1 << (SQLiteParser.BY_ - 32)) | (1 << (SQLiteParser.CASCADE_ - 32)) | (1 << (SQLiteParser.CASE_ - 32)) | (1 << (SQLiteParser.CAST_ - 32)) | (1 << (SQLiteParser.CHECK_ - 32)) | (1 << (SQLiteParser.COLLATE_ - 32)) | (1 << (SQLiteParser.COLUMN_ - 32)) | (1 << (SQLiteParser.COMMIT_ - 32)) | (1 << (SQLiteParser.CONFLICT_ - 32)) | (1 << (SQLiteParser.CONSTRAINT_ - 32)) | (1 << (SQLiteParser.CREATE_ - 32)) | (1 << (SQLiteParser.CROSS_ - 32)) | (1 << (SQLiteParser.CURRENT_DATE_ - 32)) | (1 << (SQLiteParser.CURRENT_TIME_ - 32)) | (1 << (SQLiteParser.CURRENT_TIMESTAMP_ - 32)) | (1 << (SQLiteParser.DATABASE_ - 32)) | (1 << (SQLiteParser.DEFAULT_ - 32)) | (1 << (SQLiteParser.DEFERRABLE_ - 32)) | (1 << (SQLiteParser.DEFERRED_ - 32)) | (1 << (SQLiteParser.DELETE_ - 32)) | (1 << (SQLiteParser.DESC_ - 32)) | (1 << (SQLiteParser.DETACH_ - 32)) | (1 << (SQLiteParser.DISTINCT_ - 32)) | (1 << (SQLiteParser.DROP_ - 32)))) !== 0) || ((((_la - 64)) & ~0x1F) === 0 && ((1 << (_la - 64)) & ((1 << (SQLiteParser.EACH_ - 64)) | (1 << (SQLiteParser.ELSE_ - 64)) | (1 << (SQLiteParser.END_ - 64)) | (1 << (SQLiteParser.ESCAPE_ - 64)) | (1 << (SQLiteParser.EXCEPT_ - 64)) | (1 << (SQLiteParser.EXCLUSIVE_ - 64)) | (1 << (SQLiteParser.EXISTS_ - 64)) | (1 << (SQLiteParser.EXPLAIN_ - 64)) | (1 << (SQLiteParser.FAIL_ - 64)) | (1 << (SQLiteParser.FOR_ - 64)) | (1 << (SQLiteParser.FOREIGN_ - 64)) | (1 << (SQLiteParser.FROM_ - 64)) | (1 << (SQLiteParser.FULL_ - 64)) | (1 << (SQLiteParser.GLOB_ - 64)) | (1 << (SQLiteParser.GROUP_ - 64)) | (1 << (SQLiteParser.HAVING_ - 64)) | (1 << (SQLiteParser.IF_ - 64)) | (1 << (SQLiteParser.IGNORE_ - 64)) | (1 << (SQLiteParser.IMMEDIATE_ - 64)) | (1 << (SQLiteParser.IN_ - 64)) | (1 << (SQLiteParser.INDEX_ - 64)) | (1 << (SQLiteParser.INDEXED_ - 64)) | (1 << (SQLiteParser.INITIALLY_ - 64)) | (1 << (SQLiteParser.INNER_ - 64)) | (1 << (SQLiteParser.INSERT_ - 64)) | (1 << (SQLiteParser.INSTEAD_ - 64)) | (1 << (SQLiteParser.INTERSECT_ - 64)) | (1 << (SQLiteParser.INTO_ - 64)) | (1 << (SQLiteParser.IS_ - 64)) | (1 << (SQLiteParser.ISNULL_ - 64)) | (1 << (SQLiteParser.JOIN_ - 64)) | (1 << (SQLiteParser.KEY_ - 64)))) !== 0) || ((((_la - 96)) & ~0x1F) === 0 && ((1 << (_la - 96)) & ((1 << (SQLiteParser.LEFT_ - 96)) | (1 << (SQLiteParser.LIKE_ - 96)) | (1 << (SQLiteParser.LIMIT_ - 96)) | (1 << (SQLiteParser.MATCH_ - 96)) | (1 << (SQLiteParser.NATURAL_ - 96)) | (1 << (SQLiteParser.NO_ - 96)) | (1 << (SQLiteParser.NOT_ - 96)) | (1 << (SQLiteParser.NOTNULL_ - 96)) | (1 << (SQLiteParser.NULL_ - 96)) | (1 << (SQLiteParser.OF_ - 96)) | (1 << (SQLiteParser.OFFSET_ - 96)) | (1 << (SQLiteParser.ON_ - 96)) | (1 << (SQLiteParser.OR_ - 96)) | (1 << (SQLiteParser.ORDER_ - 96)) | (1 << (SQLiteParser.OUTER_ - 96)) | (1 << (SQLiteParser.PLAN_ - 96)) | (1 << (SQLiteParser.PRAGMA_ - 96)) | (1 << (SQLiteParser.PRIMARY_ - 96)) | (1 << (SQLiteParser.QUERY_ - 96)) | (1 << (SQLiteParser.RAISE_ - 96)) | (1 << (SQLiteParser.RECURSIVE_ - 96)) | (1 << (SQLiteParser.REFERENCES_ - 96)) | (1 << (SQLiteParser.REGEXP_ - 96)) | (1 << (SQLiteParser.REINDEX_ - 96)) | (1 << (SQLiteParser.RELEASE_ - 96)) | (1 << (SQLiteParser.RENAME_ - 96)) | (1 << (SQLiteParser.REPLACE_ - 96)) | (1 << (SQLiteParser.RESTRICT_ - 96)) | (1 << (SQLiteParser.RIGHT_ - 96)) | (1 << (SQLiteParser.ROLLBACK_ - 96)) | (1 << (SQLiteParser.ROW_ - 96)))) !== 0) || ((((_la - 128)) & ~0x1F) === 0 && ((1 << (_la - 128)) & ((1 << (SQLiteParser.ROWS_ - 128)) | (1 << (SQLiteParser.SAVEPOINT_ - 128)) | (1 << (SQLiteParser.SELECT_ - 128)) | (1 << (SQLiteParser.SET_ - 128)) | (1 << (SQLiteParser.TABLE_ - 128)) | (1 << (SQLiteParser.TEMP_ - 128)) | (1 << (SQLiteParser.TEMPORARY_ - 128)) | (1 << (SQLiteParser.THEN_ - 128)) | (1 << (SQLiteParser.TO_ - 128)) | (1 << (SQLiteParser.TRANSACTION_ - 128)) | (1 << (SQLiteParser.TRIGGER_ - 128)) | (1 << (SQLiteParser.UNION_ - 128)) | (1 << (SQLiteParser.UNIQUE_ - 128)) | (1 << (SQLiteParser.UPDATE_ - 128)) | (1 << (SQLiteParser.USING_ - 128)) | (1 << (SQLiteParser.VACUUM_ - 128)) | (1 << (SQLiteParser.VALUES_ - 128)) | (1 << (SQLiteParser.VIEW_ - 128)) | (1 << (SQLiteParser.VIRTUAL_ - 128)) | (1 << (SQLiteParser.WHEN_ - 128)) | (1 << (SQLiteParser.WHERE_ - 128)) | (1 << (SQLiteParser.WITH_ - 128)) | (1 << (SQLiteParser.WITHOUT_ - 128)) | (1 << (SQLiteParser.FIRST_VALUE_ - 128)) | (1 << (SQLiteParser.OVER_ - 128)) | (1 << (SQLiteParser.PARTITION_ - 128)) | (1 << (SQLiteParser.RANGE_ - 128)) | (1 << (SQLiteParser.PRECEDING_ - 128)) | (1 << (SQLiteParser.UNBOUNDED_ - 128)) | (1 << (SQLiteParser.CURRENT_ - 128)) | (1 << (SQLiteParser.FOLLOWING_ - 128)) | (1 << (SQLiteParser.CUME_DIST_ - 128)))) !== 0) || ((((_la - 160)) & ~0x1F) === 0 && ((1 << (_la - 160)) & ((1 << (SQLiteParser.DENSE_RANK_ - 160)) | (1 << (SQLiteParser.LAG_ - 160)) | (1 << (SQLiteParser.LAST_VALUE_ - 160)) | (1 << (SQLiteParser.LEAD_ - 160)) | (1 << (SQLiteParser.NTH_VALUE_ - 160)) | (1 << (SQLiteParser.NTILE_ - 160)) | (1 << (SQLiteParser.PERCENT_RANK_ - 160)) | (1 << (SQLiteParser.RANK_ - 160)) | (1 << (SQLiteParser.ROW_NUMBER_ - 160)) | (1 << (SQLiteParser.GENERATED_ - 160)) | (1 << (SQLiteParser.ALWAYS_ - 160)) | (1 << (SQLiteParser.STORED_ - 160)) | (1 << (SQLiteParser.TRUE_ - 160)) | (1 << (SQLiteParser.FALSE_ - 160)) | (1 << (SQLiteParser.WINDOW_ - 160)) | (1 << (SQLiteParser.NULLS_ - 160)) | (1 << (SQLiteParser.FIRST_ - 160)) | (1 << (SQLiteParser.LAST_ - 160)) | (1 << (SQLiteParser.FILTER_ - 160)) | (1 << (SQLiteParser.GROUPS_ - 160)) | (1 << (SQLiteParser.EXCLUDE_ - 160)) | (1 << (SQLiteParser.IDENTIFIER - 160)) | (1 << (SQLiteParser.NUMERIC_LITERAL - 160)) | (1 << (SQLiteParser.BIND_PARAMETER - 160)) | (1 << (SQLiteParser.STRING_LITERAL - 160)) | (1 << (SQLiteParser.BLOB_LITERAL - 160)))) !== 0));
+			} while ((((_la) & ~0x1F) === 0 && ((1 << _la) & ((1 << SQLiteParser.OPEN_PAR) | (1 << SQLiteParser.PLUS) | (1 << SQLiteParser.MINUS) | (1 << SQLiteParser.TILDE) | (1 << SQLiteParser.ABORT) | (1 << SQLiteParser.ACTION) | (1 << SQLiteParser.ADD) | (1 << SQLiteParser.AFTER) | (1 << SQLiteParser.ALL) | (1 << SQLiteParser.ALTER) | (1 << SQLiteParser.ANALYZE))) !== 0) || ((((_la - 32)) & ~0x1F) === 0 && ((1 << (_la - 32)) & ((1 << (SQLiteParser.AND - 32)) | (1 << (SQLiteParser.AS - 32)) | (1 << (SQLiteParser.ASC - 32)) | (1 << (SQLiteParser.ATTACH - 32)) | (1 << (SQLiteParser.AUTOINCREMENT - 32)) | (1 << (SQLiteParser.BEFORE - 32)) | (1 << (SQLiteParser.BEGIN - 32)) | (1 << (SQLiteParser.BETWEEN - 32)) | (1 << (SQLiteParser.BY - 32)) | (1 << (SQLiteParser.CASCADE - 32)) | (1 << (SQLiteParser.CASE - 32)) | (1 << (SQLiteParser.CAST - 32)) | (1 << (SQLiteParser.CHECK - 32)) | (1 << (SQLiteParser.COLLATE - 32)) | (1 << (SQLiteParser.COLUMN - 32)) | (1 << (SQLiteParser.COMMIT - 32)) | (1 << (SQLiteParser.CONFLICT - 32)) | (1 << (SQLiteParser.CONSTRAINT - 32)) | (1 << (SQLiteParser.CREATE - 32)) | (1 << (SQLiteParser.CROSS - 32)) | (1 << (SQLiteParser.CURRENT_DATE - 32)) | (1 << (SQLiteParser.CURRENT_TIME - 32)) | (1 << (SQLiteParser.CURRENT_TIMESTAMP - 32)) | (1 << (SQLiteParser.DATABASE - 32)) | (1 << (SQLiteParser.DEFAULT - 32)) | (1 << (SQLiteParser.DEFERRABLE - 32)) | (1 << (SQLiteParser.DEFERRED - 32)) | (1 << (SQLiteParser.DELETE - 32)) | (1 << (SQLiteParser.DESC - 32)) | (1 << (SQLiteParser.DETACH - 32)) | (1 << (SQLiteParser.DISTINCT - 32)) | (1 << (SQLiteParser.DROP - 32)))) !== 0) || ((((_la - 64)) & ~0x1F) === 0 && ((1 << (_la - 64)) & ((1 << (SQLiteParser.EACH - 64)) | (1 << (SQLiteParser.ELSE - 64)) | (1 << (SQLiteParser.END - 64)) | (1 << (SQLiteParser.ESCAPE - 64)) | (1 << (SQLiteParser.EXCEPT - 64)) | (1 << (SQLiteParser.EXCLUSIVE - 64)) | (1 << (SQLiteParser.EXISTS - 64)) | (1 << (SQLiteParser.EXPLAIN - 64)) | (1 << (SQLiteParser.FAIL - 64)) | (1 << (SQLiteParser.FOR - 64)) | (1 << (SQLiteParser.FOREIGN - 64)) | (1 << (SQLiteParser.FROM - 64)) | (1 << (SQLiteParser.FULL - 64)) | (1 << (SQLiteParser.GLOB - 64)) | (1 << (SQLiteParser.GROUP - 64)) | (1 << (SQLiteParser.HAVING - 64)) | (1 << (SQLiteParser.IF - 64)) | (1 << (SQLiteParser.IGNORE - 64)) | (1 << (SQLiteParser.IMMEDIATE - 64)) | (1 << (SQLiteParser.IN - 64)) | (1 << (SQLiteParser.INDEX - 64)) | (1 << (SQLiteParser.INDEXED - 64)) | (1 << (SQLiteParser.INITIALLY - 64)) | (1 << (SQLiteParser.INNER - 64)) | (1 << (SQLiteParser.INSERT - 64)) | (1 << (SQLiteParser.INSTEAD - 64)) | (1 << (SQLiteParser.INTERSECT - 64)) | (1 << (SQLiteParser.INTO - 64)) | (1 << (SQLiteParser.IS - 64)) | (1 << (SQLiteParser.ISNULL - 64)) | (1 << (SQLiteParser.JOIN - 64)) | (1 << (SQLiteParser.KEY - 64)))) !== 0) || ((((_la - 96)) & ~0x1F) === 0 && ((1 << (_la - 96)) & ((1 << (SQLiteParser.LEFT - 96)) | (1 << (SQLiteParser.LIKE - 96)) | (1 << (SQLiteParser.LIMIT - 96)) | (1 << (SQLiteParser.MATCH - 96)) | (1 << (SQLiteParser.NATURAL - 96)) | (1 << (SQLiteParser.NO - 96)) | (1 << (SQLiteParser.NOT - 96)) | (1 << (SQLiteParser.NOTNULL - 96)) | (1 << (SQLiteParser.NULL - 96)) | (1 << (SQLiteParser.OF - 96)) | (1 << (SQLiteParser.OFFSET - 96)) | (1 << (SQLiteParser.ON - 96)) | (1 << (SQLiteParser.OR - 96)) | (1 << (SQLiteParser.ORDER - 96)) | (1 << (SQLiteParser.OUTER - 96)) | (1 << (SQLiteParser.PLAN - 96)) | (1 << (SQLiteParser.PRAGMA - 96)) | (1 << (SQLiteParser.PRIMARY - 96)) | (1 << (SQLiteParser.QUERY - 96)) | (1 << (SQLiteParser.RAISE - 96)) | (1 << (SQLiteParser.RECURSIVE - 96)) | (1 << (SQLiteParser.REFERENCES - 96)) | (1 << (SQLiteParser.REGEXP - 96)) | (1 << (SQLiteParser.REINDEX - 96)) | (1 << (SQLiteParser.RELEASE - 96)) | (1 << (SQLiteParser.RENAME - 96)) | (1 << (SQLiteParser.REPLACE - 96)) | (1 << (SQLiteParser.RESTRICT - 96)) | (1 << (SQLiteParser.RETURNING - 96)) | (1 << (SQLiteParser.RIGHT - 96)) | (1 << (SQLiteParser.ROLLBACK - 96)) | (1 << (SQLiteParser.ROW - 96)))) !== 0) || ((((_la - 128)) & ~0x1F) === 0 && ((1 << (_la - 128)) & ((1 << (SQLiteParser.ROWS - 128)) | (1 << (SQLiteParser.SAVEPOINT - 128)) | (1 << (SQLiteParser.SELECT - 128)) | (1 << (SQLiteParser.SET - 128)) | (1 << (SQLiteParser.TABLE - 128)) | (1 << (SQLiteParser.TEMP - 128)) | (1 << (SQLiteParser.TEMPORARY - 128)) | (1 << (SQLiteParser.THEN - 128)) | (1 << (SQLiteParser.TO - 128)) | (1 << (SQLiteParser.TRANSACTION - 128)) | (1 << (SQLiteParser.TRIGGER - 128)) | (1 << (SQLiteParser.UNION - 128)) | (1 << (SQLiteParser.UNIQUE - 128)) | (1 << (SQLiteParser.UPDATE - 128)) | (1 << (SQLiteParser.USING - 128)) | (1 << (SQLiteParser.VACUUM - 128)) | (1 << (SQLiteParser.VALUES - 128)) | (1 << (SQLiteParser.VIEW - 128)) | (1 << (SQLiteParser.VIRTUAL - 128)) | (1 << (SQLiteParser.WHEN - 128)) | (1 << (SQLiteParser.WHERE - 128)) | (1 << (SQLiteParser.WITH - 128)) | (1 << (SQLiteParser.WITHOUT - 128)) | (1 << (SQLiteParser.FIRST_VALUE - 128)) | (1 << (SQLiteParser.OVER - 128)) | (1 << (SQLiteParser.PARTITION - 128)) | (1 << (SQLiteParser.RANGE - 128)) | (1 << (SQLiteParser.PRECEDING - 128)) | (1 << (SQLiteParser.UNBOUNDED - 128)) | (1 << (SQLiteParser.CURRENT - 128)) | (1 << (SQLiteParser.FOLLOWING - 128)) | (1 << (SQLiteParser.CUME_DIST - 128)))) !== 0) || ((((_la - 160)) & ~0x1F) === 0 && ((1 << (_la - 160)) & ((1 << (SQLiteParser.DENSE_RANK - 160)) | (1 << (SQLiteParser.LAG - 160)) | (1 << (SQLiteParser.LAST_VALUE - 160)) | (1 << (SQLiteParser.LEAD - 160)) | (1 << (SQLiteParser.NTH_VALUE - 160)) | (1 << (SQLiteParser.NTILE - 160)) | (1 << (SQLiteParser.PERCENT_RANK - 160)) | (1 << (SQLiteParser.RANK - 160)) | (1 << (SQLiteParser.ROW_NUMBER - 160)) | (1 << (SQLiteParser.GENERATED - 160)) | (1 << (SQLiteParser.ALWAYS - 160)) | (1 << (SQLiteParser.STORED - 160)) | (1 << (SQLiteParser.TRUE - 160)) | (1 << (SQLiteParser.FALSE - 160)) | (1 << (SQLiteParser.WINDOW - 160)) | (1 << (SQLiteParser.NULLS - 160)) | (1 << (SQLiteParser.FIRST - 160)) | (1 << (SQLiteParser.LAST - 160)) | (1 << (SQLiteParser.FILTER - 160)) | (1 << (SQLiteParser.GROUPS - 160)) | (1 << (SQLiteParser.EXCLUDE - 160)) | (1 << (SQLiteParser.TIES - 160)) | (1 << (SQLiteParser.OTHERS - 160)) | (1 << (SQLiteParser.DO - 160)) | (1 << (SQLiteParser.NOTHING - 160)) | (1 << (SQLiteParser.IDENTIFIER - 160)) | (1 << (SQLiteParser.NUMERIC_LITERAL - 160)) | (1 << (SQLiteParser.BIND_PARAMETER - 160)) | (1 << (SQLiteParser.STRING_LITERAL - 160)) | (1 << (SQLiteParser.BLOB_LITERAL - 160)))) !== 0));
 			}
 		}
 		catch (re) {
@@ -8712,9 +8730,9 @@ export class SQLiteParser extends Parser {
 			this.enterOuterAlt(_localctx, 1);
 			{
 			this.state = 1972;
-			this.match(SQLiteParser.ORDER_);
+			this.match(SQLiteParser.ORDER);
 			this.state = 1973;
-			this.match(SQLiteParser.BY_);
+			this.match(SQLiteParser.BY);
 			this.state = 1974;
 			this.expr_asc_desc();
 			}
@@ -8746,7 +8764,7 @@ export class SQLiteParser extends Parser {
 			this.state = 1978;
 			this._errHandler.sync(this);
 			_la = this._input.LA(1);
-			if (_la === SQLiteParser.ASC_ || _la === SQLiteParser.DESC_) {
+			if (_la === SQLiteParser.ASC || _la === SQLiteParser.DESC) {
 				{
 				this.state = 1977;
 				this.asc_desc();
@@ -8766,7 +8784,7 @@ export class SQLiteParser extends Parser {
 				this.state = 1983;
 				this._errHandler.sync(this);
 				_la = this._input.LA(1);
-				if (_la === SQLiteParser.ASC_ || _la === SQLiteParser.DESC_) {
+				if (_la === SQLiteParser.ASC || _la === SQLiteParser.DESC) {
 					{
 					this.state = 1982;
 					this.asc_desc();
@@ -8855,7 +8873,7 @@ export class SQLiteParser extends Parser {
 			{
 			this.state = 1994;
 			_la = this._input.LA(1);
-			if (!((((_la) & ~0x1F) === 0 && ((1 << _la) & ((1 << SQLiteParser.PLUS) | (1 << SQLiteParser.MINUS) | (1 << SQLiteParser.TILDE))) !== 0) || _la === SQLiteParser.NOT_)) {
+			if (!((((_la) & ~0x1F) === 0 && ((1 << _la) & ((1 << SQLiteParser.PLUS) | (1 << SQLiteParser.MINUS) | (1 << SQLiteParser.TILDE))) !== 0) || _la === SQLiteParser.NOT)) {
 			this._errHandler.recoverInline(this);
 			} else {
 				if (this._input.LA(1) === Token.EOF) {
@@ -8991,7 +9009,7 @@ export class SQLiteParser extends Parser {
 			{
 			this.state = 2004;
 			_la = this._input.LA(1);
-			if (!(((((_la - 25)) & ~0x1F) === 0 && ((1 << (_la - 25)) & ((1 << (SQLiteParser.ABORT_ - 25)) | (1 << (SQLiteParser.ACTION_ - 25)) | (1 << (SQLiteParser.ADD_ - 25)) | (1 << (SQLiteParser.AFTER_ - 25)) | (1 << (SQLiteParser.ALL_ - 25)) | (1 << (SQLiteParser.ALTER_ - 25)) | (1 << (SQLiteParser.ANALYZE_ - 25)) | (1 << (SQLiteParser.AND_ - 25)) | (1 << (SQLiteParser.AS_ - 25)) | (1 << (SQLiteParser.ASC_ - 25)) | (1 << (SQLiteParser.ATTACH_ - 25)) | (1 << (SQLiteParser.AUTOINCREMENT_ - 25)) | (1 << (SQLiteParser.BEFORE_ - 25)) | (1 << (SQLiteParser.BEGIN_ - 25)) | (1 << (SQLiteParser.BETWEEN_ - 25)) | (1 << (SQLiteParser.BY_ - 25)) | (1 << (SQLiteParser.CASCADE_ - 25)) | (1 << (SQLiteParser.CASE_ - 25)) | (1 << (SQLiteParser.CAST_ - 25)) | (1 << (SQLiteParser.CHECK_ - 25)) | (1 << (SQLiteParser.COLLATE_ - 25)) | (1 << (SQLiteParser.COLUMN_ - 25)) | (1 << (SQLiteParser.COMMIT_ - 25)) | (1 << (SQLiteParser.CONFLICT_ - 25)) | (1 << (SQLiteParser.CONSTRAINT_ - 25)) | (1 << (SQLiteParser.CREATE_ - 25)) | (1 << (SQLiteParser.CROSS_ - 25)) | (1 << (SQLiteParser.CURRENT_DATE_ - 25)) | (1 << (SQLiteParser.CURRENT_TIME_ - 25)) | (1 << (SQLiteParser.CURRENT_TIMESTAMP_ - 25)) | (1 << (SQLiteParser.DATABASE_ - 25)) | (1 << (SQLiteParser.DEFAULT_ - 25)))) !== 0) || ((((_la - 57)) & ~0x1F) === 0 && ((1 << (_la - 57)) & ((1 << (SQLiteParser.DEFERRABLE_ - 57)) | (1 << (SQLiteParser.DEFERRED_ - 57)) | (1 << (SQLiteParser.DELETE_ - 57)) | (1 << (SQLiteParser.DESC_ - 57)) | (1 << (SQLiteParser.DETACH_ - 57)) | (1 << (SQLiteParser.DISTINCT_ - 57)) | (1 << (SQLiteParser.DROP_ - 57)) | (1 << (SQLiteParser.EACH_ - 57)) | (1 << (SQLiteParser.ELSE_ - 57)) | (1 << (SQLiteParser.END_ - 57)) | (1 << (SQLiteParser.ESCAPE_ - 57)) | (1 << (SQLiteParser.EXCEPT_ - 57)) | (1 << (SQLiteParser.EXCLUSIVE_ - 57)) | (1 << (SQLiteParser.EXISTS_ - 57)) | (1 << (SQLiteParser.EXPLAIN_ - 57)) | (1 << (SQLiteParser.FAIL_ - 57)) | (1 << (SQLiteParser.FOR_ - 57)) | (1 << (SQLiteParser.FOREIGN_ - 57)) | (1 << (SQLiteParser.FROM_ - 57)) | (1 << (SQLiteParser.FULL_ - 57)) | (1 << (SQLiteParser.GLOB_ - 57)) | (1 << (SQLiteParser.GROUP_ - 57)) | (1 << (SQLiteParser.HAVING_ - 57)) | (1 << (SQLiteParser.IF_ - 57)) | (1 << (SQLiteParser.IGNORE_ - 57)) | (1 << (SQLiteParser.IMMEDIATE_ - 57)) | (1 << (SQLiteParser.IN_ - 57)) | (1 << (SQLiteParser.INDEX_ - 57)) | (1 << (SQLiteParser.INDEXED_ - 57)) | (1 << (SQLiteParser.INITIALLY_ - 57)) | (1 << (SQLiteParser.INNER_ - 57)) | (1 << (SQLiteParser.INSERT_ - 57)))) !== 0) || ((((_la - 89)) & ~0x1F) === 0 && ((1 << (_la - 89)) & ((1 << (SQLiteParser.INSTEAD_ - 89)) | (1 << (SQLiteParser.INTERSECT_ - 89)) | (1 << (SQLiteParser.INTO_ - 89)) | (1 << (SQLiteParser.IS_ - 89)) | (1 << (SQLiteParser.ISNULL_ - 89)) | (1 << (SQLiteParser.JOIN_ - 89)) | (1 << (SQLiteParser.KEY_ - 89)) | (1 << (SQLiteParser.LEFT_ - 89)) | (1 << (SQLiteParser.LIKE_ - 89)) | (1 << (SQLiteParser.LIMIT_ - 89)) | (1 << (SQLiteParser.MATCH_ - 89)) | (1 << (SQLiteParser.NATURAL_ - 89)) | (1 << (SQLiteParser.NO_ - 89)) | (1 << (SQLiteParser.NOT_ - 89)) | (1 << (SQLiteParser.NOTNULL_ - 89)) | (1 << (SQLiteParser.NULL_ - 89)) | (1 << (SQLiteParser.OF_ - 89)) | (1 << (SQLiteParser.OFFSET_ - 89)) | (1 << (SQLiteParser.ON_ - 89)) | (1 << (SQLiteParser.OR_ - 89)) | (1 << (SQLiteParser.ORDER_ - 89)) | (1 << (SQLiteParser.OUTER_ - 89)) | (1 << (SQLiteParser.PLAN_ - 89)) | (1 << (SQLiteParser.PRAGMA_ - 89)) | (1 << (SQLiteParser.PRIMARY_ - 89)) | (1 << (SQLiteParser.QUERY_ - 89)) | (1 << (SQLiteParser.RAISE_ - 89)) | (1 << (SQLiteParser.RECURSIVE_ - 89)) | (1 << (SQLiteParser.REFERENCES_ - 89)) | (1 << (SQLiteParser.REGEXP_ - 89)) | (1 << (SQLiteParser.REINDEX_ - 89)) | (1 << (SQLiteParser.RELEASE_ - 89)))) !== 0) || ((((_la - 121)) & ~0x1F) === 0 && ((1 << (_la - 121)) & ((1 << (SQLiteParser.RENAME_ - 121)) | (1 << (SQLiteParser.REPLACE_ - 121)) | (1 << (SQLiteParser.RESTRICT_ - 121)) | (1 << (SQLiteParser.RIGHT_ - 121)) | (1 << (SQLiteParser.ROLLBACK_ - 121)) | (1 << (SQLiteParser.ROW_ - 121)) | (1 << (SQLiteParser.ROWS_ - 121)) | (1 << (SQLiteParser.SAVEPOINT_ - 121)) | (1 << (SQLiteParser.SELECT_ - 121)) | (1 << (SQLiteParser.SET_ - 121)) | (1 << (SQLiteParser.TABLE_ - 121)) | (1 << (SQLiteParser.TEMP_ - 121)) | (1 << (SQLiteParser.TEMPORARY_ - 121)) | (1 << (SQLiteParser.THEN_ - 121)) | (1 << (SQLiteParser.TO_ - 121)) | (1 << (SQLiteParser.TRANSACTION_ - 121)) | (1 << (SQLiteParser.TRIGGER_ - 121)) | (1 << (SQLiteParser.UNION_ - 121)) | (1 << (SQLiteParser.UNIQUE_ - 121)) | (1 << (SQLiteParser.UPDATE_ - 121)) | (1 << (SQLiteParser.USING_ - 121)) | (1 << (SQLiteParser.VACUUM_ - 121)) | (1 << (SQLiteParser.VALUES_ - 121)) | (1 << (SQLiteParser.VIEW_ - 121)) | (1 << (SQLiteParser.VIRTUAL_ - 121)) | (1 << (SQLiteParser.WHEN_ - 121)) | (1 << (SQLiteParser.WHERE_ - 121)) | (1 << (SQLiteParser.WITH_ - 121)) | (1 << (SQLiteParser.WITHOUT_ - 121)) | (1 << (SQLiteParser.FIRST_VALUE_ - 121)) | (1 << (SQLiteParser.OVER_ - 121)))) !== 0) || ((((_la - 153)) & ~0x1F) === 0 && ((1 << (_la - 153)) & ((1 << (SQLiteParser.PARTITION_ - 153)) | (1 << (SQLiteParser.RANGE_ - 153)) | (1 << (SQLiteParser.PRECEDING_ - 153)) | (1 << (SQLiteParser.UNBOUNDED_ - 153)) | (1 << (SQLiteParser.CURRENT_ - 153)) | (1 << (SQLiteParser.FOLLOWING_ - 153)) | (1 << (SQLiteParser.CUME_DIST_ - 153)) | (1 << (SQLiteParser.DENSE_RANK_ - 153)) | (1 << (SQLiteParser.LAG_ - 153)) | (1 << (SQLiteParser.LAST_VALUE_ - 153)) | (1 << (SQLiteParser.LEAD_ - 153)) | (1 << (SQLiteParser.NTH_VALUE_ - 153)) | (1 << (SQLiteParser.NTILE_ - 153)) | (1 << (SQLiteParser.PERCENT_RANK_ - 153)) | (1 << (SQLiteParser.RANK_ - 153)) | (1 << (SQLiteParser.ROW_NUMBER_ - 153)) | (1 << (SQLiteParser.GENERATED_ - 153)) | (1 << (SQLiteParser.ALWAYS_ - 153)) | (1 << (SQLiteParser.STORED_ - 153)) | (1 << (SQLiteParser.TRUE_ - 153)) | (1 << (SQLiteParser.FALSE_ - 153)) | (1 << (SQLiteParser.WINDOW_ - 153)) | (1 << (SQLiteParser.NULLS_ - 153)) | (1 << (SQLiteParser.FIRST_ - 153)) | (1 << (SQLiteParser.LAST_ - 153)) | (1 << (SQLiteParser.FILTER_ - 153)) | (1 << (SQLiteParser.GROUPS_ - 153)) | (1 << (SQLiteParser.EXCLUDE_ - 153)))) !== 0))) {
+			if (!(((((_la - 25)) & ~0x1F) === 0 && ((1 << (_la - 25)) & ((1 << (SQLiteParser.ABORT - 25)) | (1 << (SQLiteParser.ACTION - 25)) | (1 << (SQLiteParser.ADD - 25)) | (1 << (SQLiteParser.AFTER - 25)) | (1 << (SQLiteParser.ALL - 25)) | (1 << (SQLiteParser.ALTER - 25)) | (1 << (SQLiteParser.ANALYZE - 25)) | (1 << (SQLiteParser.AND - 25)) | (1 << (SQLiteParser.AS - 25)) | (1 << (SQLiteParser.ASC - 25)) | (1 << (SQLiteParser.ATTACH - 25)) | (1 << (SQLiteParser.AUTOINCREMENT - 25)) | (1 << (SQLiteParser.BEFORE - 25)) | (1 << (SQLiteParser.BEGIN - 25)) | (1 << (SQLiteParser.BETWEEN - 25)) | (1 << (SQLiteParser.BY - 25)) | (1 << (SQLiteParser.CASCADE - 25)) | (1 << (SQLiteParser.CASE - 25)) | (1 << (SQLiteParser.CAST - 25)) | (1 << (SQLiteParser.CHECK - 25)) | (1 << (SQLiteParser.COLLATE - 25)) | (1 << (SQLiteParser.COLUMN - 25)) | (1 << (SQLiteParser.COMMIT - 25)) | (1 << (SQLiteParser.CONFLICT - 25)) | (1 << (SQLiteParser.CONSTRAINT - 25)) | (1 << (SQLiteParser.CREATE - 25)) | (1 << (SQLiteParser.CROSS - 25)) | (1 << (SQLiteParser.CURRENT_DATE - 25)) | (1 << (SQLiteParser.CURRENT_TIME - 25)) | (1 << (SQLiteParser.CURRENT_TIMESTAMP - 25)) | (1 << (SQLiteParser.DATABASE - 25)) | (1 << (SQLiteParser.DEFAULT - 25)))) !== 0) || ((((_la - 57)) & ~0x1F) === 0 && ((1 << (_la - 57)) & ((1 << (SQLiteParser.DEFERRABLE - 57)) | (1 << (SQLiteParser.DEFERRED - 57)) | (1 << (SQLiteParser.DELETE - 57)) | (1 << (SQLiteParser.DESC - 57)) | (1 << (SQLiteParser.DETACH - 57)) | (1 << (SQLiteParser.DISTINCT - 57)) | (1 << (SQLiteParser.DROP - 57)) | (1 << (SQLiteParser.EACH - 57)) | (1 << (SQLiteParser.ELSE - 57)) | (1 << (SQLiteParser.END - 57)) | (1 << (SQLiteParser.ESCAPE - 57)) | (1 << (SQLiteParser.EXCEPT - 57)) | (1 << (SQLiteParser.EXCLUSIVE - 57)) | (1 << (SQLiteParser.EXISTS - 57)) | (1 << (SQLiteParser.EXPLAIN - 57)) | (1 << (SQLiteParser.FAIL - 57)) | (1 << (SQLiteParser.FOR - 57)) | (1 << (SQLiteParser.FOREIGN - 57)) | (1 << (SQLiteParser.FROM - 57)) | (1 << (SQLiteParser.FULL - 57)) | (1 << (SQLiteParser.GLOB - 57)) | (1 << (SQLiteParser.GROUP - 57)) | (1 << (SQLiteParser.HAVING - 57)) | (1 << (SQLiteParser.IF - 57)) | (1 << (SQLiteParser.IGNORE - 57)) | (1 << (SQLiteParser.IMMEDIATE - 57)) | (1 << (SQLiteParser.IN - 57)) | (1 << (SQLiteParser.INDEX - 57)) | (1 << (SQLiteParser.INDEXED - 57)) | (1 << (SQLiteParser.INITIALLY - 57)) | (1 << (SQLiteParser.INNER - 57)) | (1 << (SQLiteParser.INSERT - 57)))) !== 0) || ((((_la - 89)) & ~0x1F) === 0 && ((1 << (_la - 89)) & ((1 << (SQLiteParser.INSTEAD - 89)) | (1 << (SQLiteParser.INTERSECT - 89)) | (1 << (SQLiteParser.INTO - 89)) | (1 << (SQLiteParser.IS - 89)) | (1 << (SQLiteParser.ISNULL - 89)) | (1 << (SQLiteParser.JOIN - 89)) | (1 << (SQLiteParser.KEY - 89)) | (1 << (SQLiteParser.LEFT - 89)) | (1 << (SQLiteParser.LIKE - 89)) | (1 << (SQLiteParser.LIMIT - 89)) | (1 << (SQLiteParser.MATCH - 89)) | (1 << (SQLiteParser.NATURAL - 89)) | (1 << (SQLiteParser.NO - 89)) | (1 << (SQLiteParser.NOT - 89)) | (1 << (SQLiteParser.NOTNULL - 89)) | (1 << (SQLiteParser.NULL - 89)) | (1 << (SQLiteParser.OF - 89)) | (1 << (SQLiteParser.OFFSET - 89)) | (1 << (SQLiteParser.ON - 89)) | (1 << (SQLiteParser.OR - 89)) | (1 << (SQLiteParser.ORDER - 89)) | (1 << (SQLiteParser.OUTER - 89)) | (1 << (SQLiteParser.PLAN - 89)) | (1 << (SQLiteParser.PRAGMA - 89)) | (1 << (SQLiteParser.PRIMARY - 89)) | (1 << (SQLiteParser.QUERY - 89)) | (1 << (SQLiteParser.RAISE - 89)) | (1 << (SQLiteParser.RECURSIVE - 89)) | (1 << (SQLiteParser.REFERENCES - 89)) | (1 << (SQLiteParser.REGEXP - 89)) | (1 << (SQLiteParser.REINDEX - 89)) | (1 << (SQLiteParser.RELEASE - 89)))) !== 0) || ((((_la - 121)) & ~0x1F) === 0 && ((1 << (_la - 121)) & ((1 << (SQLiteParser.RENAME - 121)) | (1 << (SQLiteParser.REPLACE - 121)) | (1 << (SQLiteParser.RESTRICT - 121)) | (1 << (SQLiteParser.RETURNING - 121)) | (1 << (SQLiteParser.RIGHT - 121)) | (1 << (SQLiteParser.ROLLBACK - 121)) | (1 << (SQLiteParser.ROW - 121)) | (1 << (SQLiteParser.ROWS - 121)) | (1 << (SQLiteParser.SAVEPOINT - 121)) | (1 << (SQLiteParser.SELECT - 121)) | (1 << (SQLiteParser.SET - 121)) | (1 << (SQLiteParser.TABLE - 121)) | (1 << (SQLiteParser.TEMP - 121)) | (1 << (SQLiteParser.TEMPORARY - 121)) | (1 << (SQLiteParser.THEN - 121)) | (1 << (SQLiteParser.TO - 121)) | (1 << (SQLiteParser.TRANSACTION - 121)) | (1 << (SQLiteParser.TRIGGER - 121)) | (1 << (SQLiteParser.UNION - 121)) | (1 << (SQLiteParser.UNIQUE - 121)) | (1 << (SQLiteParser.UPDATE - 121)) | (1 << (SQLiteParser.USING - 121)) | (1 << (SQLiteParser.VACUUM - 121)) | (1 << (SQLiteParser.VALUES - 121)) | (1 << (SQLiteParser.VIEW - 121)) | (1 << (SQLiteParser.VIRTUAL - 121)) | (1 << (SQLiteParser.WHEN - 121)) | (1 << (SQLiteParser.WHERE - 121)) | (1 << (SQLiteParser.WITH - 121)) | (1 << (SQLiteParser.WITHOUT - 121)) | (1 << (SQLiteParser.FIRST_VALUE - 121)) | (1 << (SQLiteParser.OVER - 121)))) !== 0) || ((((_la - 153)) & ~0x1F) === 0 && ((1 << (_la - 153)) & ((1 << (SQLiteParser.PARTITION - 153)) | (1 << (SQLiteParser.RANGE - 153)) | (1 << (SQLiteParser.PRECEDING - 153)) | (1 << (SQLiteParser.UNBOUNDED - 153)) | (1 << (SQLiteParser.CURRENT - 153)) | (1 << (SQLiteParser.FOLLOWING - 153)) | (1 << (SQLiteParser.CUME_DIST - 153)) | (1 << (SQLiteParser.DENSE_RANK - 153)) | (1 << (SQLiteParser.LAG - 153)) | (1 << (SQLiteParser.LAST_VALUE - 153)) | (1 << (SQLiteParser.LEAD - 153)) | (1 << (SQLiteParser.NTH_VALUE - 153)) | (1 << (SQLiteParser.NTILE - 153)) | (1 << (SQLiteParser.PERCENT_RANK - 153)) | (1 << (SQLiteParser.RANK - 153)) | (1 << (SQLiteParser.ROW_NUMBER - 153)) | (1 << (SQLiteParser.GENERATED - 153)) | (1 << (SQLiteParser.ALWAYS - 153)) | (1 << (SQLiteParser.STORED - 153)) | (1 << (SQLiteParser.TRUE - 153)) | (1 << (SQLiteParser.FALSE - 153)) | (1 << (SQLiteParser.WINDOW - 153)) | (1 << (SQLiteParser.NULLS - 153)) | (1 << (SQLiteParser.FIRST - 153)) | (1 << (SQLiteParser.LAST - 153)) | (1 << (SQLiteParser.FILTER - 153)) | (1 << (SQLiteParser.GROUPS - 153)) | (1 << (SQLiteParser.EXCLUDE - 153)) | (1 << (SQLiteParser.TIES - 153)) | (1 << (SQLiteParser.OTHERS - 153)) | (1 << (SQLiteParser.DO - 153)) | (1 << (SQLiteParser.NOTHING - 153)))) !== 0))) {
 			this._errHandler.recoverInline(this);
 			} else {
 				if (this._input.LA(1) === Token.EOF) {
@@ -9607,161 +9625,166 @@ export class SQLiteParser extends Parser {
 				this.match(SQLiteParser.IDENTIFIER);
 				}
 				break;
-			case SQLiteParser.ABORT_:
-			case SQLiteParser.ACTION_:
-			case SQLiteParser.ADD_:
-			case SQLiteParser.AFTER_:
-			case SQLiteParser.ALL_:
-			case SQLiteParser.ALTER_:
-			case SQLiteParser.ANALYZE_:
-			case SQLiteParser.AND_:
-			case SQLiteParser.AS_:
-			case SQLiteParser.ASC_:
-			case SQLiteParser.ATTACH_:
-			case SQLiteParser.AUTOINCREMENT_:
-			case SQLiteParser.BEFORE_:
-			case SQLiteParser.BEGIN_:
-			case SQLiteParser.BETWEEN_:
-			case SQLiteParser.BY_:
-			case SQLiteParser.CASCADE_:
-			case SQLiteParser.CASE_:
-			case SQLiteParser.CAST_:
-			case SQLiteParser.CHECK_:
-			case SQLiteParser.COLLATE_:
-			case SQLiteParser.COLUMN_:
-			case SQLiteParser.COMMIT_:
-			case SQLiteParser.CONFLICT_:
-			case SQLiteParser.CONSTRAINT_:
-			case SQLiteParser.CREATE_:
-			case SQLiteParser.CROSS_:
-			case SQLiteParser.CURRENT_DATE_:
-			case SQLiteParser.CURRENT_TIME_:
-			case SQLiteParser.CURRENT_TIMESTAMP_:
-			case SQLiteParser.DATABASE_:
-			case SQLiteParser.DEFAULT_:
-			case SQLiteParser.DEFERRABLE_:
-			case SQLiteParser.DEFERRED_:
-			case SQLiteParser.DELETE_:
-			case SQLiteParser.DESC_:
-			case SQLiteParser.DETACH_:
-			case SQLiteParser.DISTINCT_:
-			case SQLiteParser.DROP_:
-			case SQLiteParser.EACH_:
-			case SQLiteParser.ELSE_:
-			case SQLiteParser.END_:
-			case SQLiteParser.ESCAPE_:
-			case SQLiteParser.EXCEPT_:
-			case SQLiteParser.EXCLUSIVE_:
-			case SQLiteParser.EXISTS_:
-			case SQLiteParser.EXPLAIN_:
-			case SQLiteParser.FAIL_:
-			case SQLiteParser.FOR_:
-			case SQLiteParser.FOREIGN_:
-			case SQLiteParser.FROM_:
-			case SQLiteParser.FULL_:
-			case SQLiteParser.GLOB_:
-			case SQLiteParser.GROUP_:
-			case SQLiteParser.HAVING_:
-			case SQLiteParser.IF_:
-			case SQLiteParser.IGNORE_:
-			case SQLiteParser.IMMEDIATE_:
-			case SQLiteParser.IN_:
-			case SQLiteParser.INDEX_:
-			case SQLiteParser.INDEXED_:
-			case SQLiteParser.INITIALLY_:
-			case SQLiteParser.INNER_:
-			case SQLiteParser.INSERT_:
-			case SQLiteParser.INSTEAD_:
-			case SQLiteParser.INTERSECT_:
-			case SQLiteParser.INTO_:
-			case SQLiteParser.IS_:
-			case SQLiteParser.ISNULL_:
-			case SQLiteParser.JOIN_:
-			case SQLiteParser.KEY_:
-			case SQLiteParser.LEFT_:
-			case SQLiteParser.LIKE_:
-			case SQLiteParser.LIMIT_:
-			case SQLiteParser.MATCH_:
-			case SQLiteParser.NATURAL_:
-			case SQLiteParser.NO_:
-			case SQLiteParser.NOT_:
-			case SQLiteParser.NOTNULL_:
-			case SQLiteParser.NULL_:
-			case SQLiteParser.OF_:
-			case SQLiteParser.OFFSET_:
-			case SQLiteParser.ON_:
-			case SQLiteParser.OR_:
-			case SQLiteParser.ORDER_:
-			case SQLiteParser.OUTER_:
-			case SQLiteParser.PLAN_:
-			case SQLiteParser.PRAGMA_:
-			case SQLiteParser.PRIMARY_:
-			case SQLiteParser.QUERY_:
-			case SQLiteParser.RAISE_:
-			case SQLiteParser.RECURSIVE_:
-			case SQLiteParser.REFERENCES_:
-			case SQLiteParser.REGEXP_:
-			case SQLiteParser.REINDEX_:
-			case SQLiteParser.RELEASE_:
-			case SQLiteParser.RENAME_:
-			case SQLiteParser.REPLACE_:
-			case SQLiteParser.RESTRICT_:
-			case SQLiteParser.RIGHT_:
-			case SQLiteParser.ROLLBACK_:
-			case SQLiteParser.ROW_:
-			case SQLiteParser.ROWS_:
-			case SQLiteParser.SAVEPOINT_:
-			case SQLiteParser.SELECT_:
-			case SQLiteParser.SET_:
-			case SQLiteParser.TABLE_:
-			case SQLiteParser.TEMP_:
-			case SQLiteParser.TEMPORARY_:
-			case SQLiteParser.THEN_:
-			case SQLiteParser.TO_:
-			case SQLiteParser.TRANSACTION_:
-			case SQLiteParser.TRIGGER_:
-			case SQLiteParser.UNION_:
-			case SQLiteParser.UNIQUE_:
-			case SQLiteParser.UPDATE_:
-			case SQLiteParser.USING_:
-			case SQLiteParser.VACUUM_:
-			case SQLiteParser.VALUES_:
-			case SQLiteParser.VIEW_:
-			case SQLiteParser.VIRTUAL_:
-			case SQLiteParser.WHEN_:
-			case SQLiteParser.WHERE_:
-			case SQLiteParser.WITH_:
-			case SQLiteParser.WITHOUT_:
-			case SQLiteParser.FIRST_VALUE_:
-			case SQLiteParser.OVER_:
-			case SQLiteParser.PARTITION_:
-			case SQLiteParser.RANGE_:
-			case SQLiteParser.PRECEDING_:
-			case SQLiteParser.UNBOUNDED_:
-			case SQLiteParser.CURRENT_:
-			case SQLiteParser.FOLLOWING_:
-			case SQLiteParser.CUME_DIST_:
-			case SQLiteParser.DENSE_RANK_:
-			case SQLiteParser.LAG_:
-			case SQLiteParser.LAST_VALUE_:
-			case SQLiteParser.LEAD_:
-			case SQLiteParser.NTH_VALUE_:
-			case SQLiteParser.NTILE_:
-			case SQLiteParser.PERCENT_RANK_:
-			case SQLiteParser.RANK_:
-			case SQLiteParser.ROW_NUMBER_:
-			case SQLiteParser.GENERATED_:
-			case SQLiteParser.ALWAYS_:
-			case SQLiteParser.STORED_:
-			case SQLiteParser.TRUE_:
-			case SQLiteParser.FALSE_:
-			case SQLiteParser.WINDOW_:
-			case SQLiteParser.NULLS_:
-			case SQLiteParser.FIRST_:
-			case SQLiteParser.LAST_:
-			case SQLiteParser.FILTER_:
-			case SQLiteParser.GROUPS_:
-			case SQLiteParser.EXCLUDE_:
+			case SQLiteParser.ABORT:
+			case SQLiteParser.ACTION:
+			case SQLiteParser.ADD:
+			case SQLiteParser.AFTER:
+			case SQLiteParser.ALL:
+			case SQLiteParser.ALTER:
+			case SQLiteParser.ANALYZE:
+			case SQLiteParser.AND:
+			case SQLiteParser.AS:
+			case SQLiteParser.ASC:
+			case SQLiteParser.ATTACH:
+			case SQLiteParser.AUTOINCREMENT:
+			case SQLiteParser.BEFORE:
+			case SQLiteParser.BEGIN:
+			case SQLiteParser.BETWEEN:
+			case SQLiteParser.BY:
+			case SQLiteParser.CASCADE:
+			case SQLiteParser.CASE:
+			case SQLiteParser.CAST:
+			case SQLiteParser.CHECK:
+			case SQLiteParser.COLLATE:
+			case SQLiteParser.COLUMN:
+			case SQLiteParser.COMMIT:
+			case SQLiteParser.CONFLICT:
+			case SQLiteParser.CONSTRAINT:
+			case SQLiteParser.CREATE:
+			case SQLiteParser.CROSS:
+			case SQLiteParser.CURRENT_DATE:
+			case SQLiteParser.CURRENT_TIME:
+			case SQLiteParser.CURRENT_TIMESTAMP:
+			case SQLiteParser.DATABASE:
+			case SQLiteParser.DEFAULT:
+			case SQLiteParser.DEFERRABLE:
+			case SQLiteParser.DEFERRED:
+			case SQLiteParser.DELETE:
+			case SQLiteParser.DESC:
+			case SQLiteParser.DETACH:
+			case SQLiteParser.DISTINCT:
+			case SQLiteParser.DROP:
+			case SQLiteParser.EACH:
+			case SQLiteParser.ELSE:
+			case SQLiteParser.END:
+			case SQLiteParser.ESCAPE:
+			case SQLiteParser.EXCEPT:
+			case SQLiteParser.EXCLUSIVE:
+			case SQLiteParser.EXISTS:
+			case SQLiteParser.EXPLAIN:
+			case SQLiteParser.FAIL:
+			case SQLiteParser.FOR:
+			case SQLiteParser.FOREIGN:
+			case SQLiteParser.FROM:
+			case SQLiteParser.FULL:
+			case SQLiteParser.GLOB:
+			case SQLiteParser.GROUP:
+			case SQLiteParser.HAVING:
+			case SQLiteParser.IF:
+			case SQLiteParser.IGNORE:
+			case SQLiteParser.IMMEDIATE:
+			case SQLiteParser.IN:
+			case SQLiteParser.INDEX:
+			case SQLiteParser.INDEXED:
+			case SQLiteParser.INITIALLY:
+			case SQLiteParser.INNER:
+			case SQLiteParser.INSERT:
+			case SQLiteParser.INSTEAD:
+			case SQLiteParser.INTERSECT:
+			case SQLiteParser.INTO:
+			case SQLiteParser.IS:
+			case SQLiteParser.ISNULL:
+			case SQLiteParser.JOIN:
+			case SQLiteParser.KEY:
+			case SQLiteParser.LEFT:
+			case SQLiteParser.LIKE:
+			case SQLiteParser.LIMIT:
+			case SQLiteParser.MATCH:
+			case SQLiteParser.NATURAL:
+			case SQLiteParser.NO:
+			case SQLiteParser.NOT:
+			case SQLiteParser.NOTNULL:
+			case SQLiteParser.NULL:
+			case SQLiteParser.OF:
+			case SQLiteParser.OFFSET:
+			case SQLiteParser.ON:
+			case SQLiteParser.OR:
+			case SQLiteParser.ORDER:
+			case SQLiteParser.OUTER:
+			case SQLiteParser.PLAN:
+			case SQLiteParser.PRAGMA:
+			case SQLiteParser.PRIMARY:
+			case SQLiteParser.QUERY:
+			case SQLiteParser.RAISE:
+			case SQLiteParser.RECURSIVE:
+			case SQLiteParser.REFERENCES:
+			case SQLiteParser.REGEXP:
+			case SQLiteParser.REINDEX:
+			case SQLiteParser.RELEASE:
+			case SQLiteParser.RENAME:
+			case SQLiteParser.REPLACE:
+			case SQLiteParser.RESTRICT:
+			case SQLiteParser.RETURNING:
+			case SQLiteParser.RIGHT:
+			case SQLiteParser.ROLLBACK:
+			case SQLiteParser.ROW:
+			case SQLiteParser.ROWS:
+			case SQLiteParser.SAVEPOINT:
+			case SQLiteParser.SELECT:
+			case SQLiteParser.SET:
+			case SQLiteParser.TABLE:
+			case SQLiteParser.TEMP:
+			case SQLiteParser.TEMPORARY:
+			case SQLiteParser.THEN:
+			case SQLiteParser.TO:
+			case SQLiteParser.TRANSACTION:
+			case SQLiteParser.TRIGGER:
+			case SQLiteParser.UNION:
+			case SQLiteParser.UNIQUE:
+			case SQLiteParser.UPDATE:
+			case SQLiteParser.USING:
+			case SQLiteParser.VACUUM:
+			case SQLiteParser.VALUES:
+			case SQLiteParser.VIEW:
+			case SQLiteParser.VIRTUAL:
+			case SQLiteParser.WHEN:
+			case SQLiteParser.WHERE:
+			case SQLiteParser.WITH:
+			case SQLiteParser.WITHOUT:
+			case SQLiteParser.FIRST_VALUE:
+			case SQLiteParser.OVER:
+			case SQLiteParser.PARTITION:
+			case SQLiteParser.RANGE:
+			case SQLiteParser.PRECEDING:
+			case SQLiteParser.UNBOUNDED:
+			case SQLiteParser.CURRENT:
+			case SQLiteParser.FOLLOWING:
+			case SQLiteParser.CUME_DIST:
+			case SQLiteParser.DENSE_RANK:
+			case SQLiteParser.LAG:
+			case SQLiteParser.LAST_VALUE:
+			case SQLiteParser.LEAD:
+			case SQLiteParser.NTH_VALUE:
+			case SQLiteParser.NTILE:
+			case SQLiteParser.PERCENT_RANK:
+			case SQLiteParser.RANK:
+			case SQLiteParser.ROW_NUMBER:
+			case SQLiteParser.GENERATED:
+			case SQLiteParser.ALWAYS:
+			case SQLiteParser.STORED:
+			case SQLiteParser.TRUE:
+			case SQLiteParser.FALSE:
+			case SQLiteParser.WINDOW:
+			case SQLiteParser.NULLS:
+			case SQLiteParser.FIRST:
+			case SQLiteParser.LAST:
+			case SQLiteParser.FILTER:
+			case SQLiteParser.GROUPS:
+			case SQLiteParser.EXCLUDE:
+			case SQLiteParser.TIES:
+			case SQLiteParser.OTHERS:
+			case SQLiteParser.DO:
+			case SQLiteParser.NOTHING:
 				this.enterOuterAlt(_localctx, 2);
 				{
 				this.state = 2053;
@@ -10072,498 +10095,497 @@ export class SQLiteParser extends Parser {
 		"j\xAE\xAF\xBC\xBC\xBE\xBF\x04\x02\x1F\x1F@@\x05\x02NNbb\x7F\x7F\x05\x02" +
 		"\x82\x82\x9C\x9C\xB5\xB5\x04\x02\x07\x07ll\x03\x02\xB2\xB3\x04\x02$$>" +
 		">\x04\x02\x99\x99\xA4\xA4\x04\x02\xA1\xA1\xA8\xA8\x04\x02\xA2\xA2\xA9" +
-		"\xAA\x04\x02\xA3\xA3\xA5\xA5\x04\x02\n\fhh\x04\x02\xBB\xBB\xBE\xBE\x04" +
-		"\x02\x1B}\x7F\xB6\x02\u092C\x02\xE7\x03\x02\x02\x02\x04\xEF\x03\x02\x02" +
-		"\x02\x06\u0109\x03\x02\x02\x02\b\u0125\x03\x02\x02\x02\n\u0145\x03\x02" +
-		"\x02\x02\f\u014F\x03\x02\x02\x02\x0E\u0157\x03\x02\x02\x02\x10\u0161\x03" +
-		"\x02\x02\x02\x12\u0165\x03\x02\x02\x02\x14\u0170\x03\x02\x02\x02\x16\u0173" +
+		"\xAA\x04\x02\xA3\xA3\xA5\xA5\x04\x02\n\fhh\x04\x02\xBB\xBB\xBE\xBE\x03" +
+		"\x02\x1B\xBA\x02\u092C\x02\xE7\x03\x02\x02\x02\x04\xEF\x03\x02\x02\x02" +
+		"\x06\u0109\x03\x02\x02\x02\b\u0125\x03\x02\x02\x02\n\u0145\x03\x02\x02" +
+		"\x02\f\u014F\x03\x02\x02\x02\x0E\u0157\x03\x02\x02\x02\x10\u0161\x03\x02" +
+		"\x02\x02\x12\u0165\x03\x02\x02\x02\x14\u0170\x03\x02\x02\x02\x16\u0173" +
 		"\x03\x02\x02\x02\x18\u0179\x03\x02\x02\x02\x1A\u019B\x03\x02\x02\x02\x1C" +
-		"\u01A4\x03";
+		"\u01A4\x03\x02\x02";
 	private static readonly _serializedATNSegment1: string =
-		"\x02\x02\x02\x1E\u01CD\x03\x02\x02\x02 \u01D8\x03\x02\x02\x02\"\u01EA" +
-		"\x03\x02\x02\x02$\u0220\x03\x02\x02\x02&\u0226\x03\x02\x02\x02(\u024F" +
-		"\x03\x02\x02\x02*\u0279\x03\x02\x02\x02,\u027D\x03\x02\x02\x02.\u02BD" +
-		"\x03\x02\x02\x020\u02DD\x03\x02\x02\x022\u02FA\x03\x02\x02\x024\u030F" +
-		"\x03\x02\x02\x026\u031D\x03\x02\x02\x028\u0328\x03\x02\x02\x02:\u033C" +
-		"\x03\x02\x02\x02<\u0349\x03\x02\x02\x02>\u035B\x03\x02\x02\x02@\u0361" +
-		"\x03\x02\x02\x02B\u03C6\x03\x02\x02\x02D\u0448\x03\x02\x02\x02F\u0452" +
-		"\x03\x02\x02\x02H\u0454\x03\x02\x02\x02J\u045F\x03\x02\x02\x02L\u0469" +
-		"\x03\x02\x02\x02N\u0498\x03\x02\x02\x02P\u04A1\x03\x02\x02\x02R\u04D0" +
-		"\x03\x02\x02\x02T\u04E2\x03\x02\x02\x02V\u04E4\x03\x02\x02\x02X\u04F2" +
-		"\x03\x02\x02\x02Z\u0503\x03\x02\x02\x02\\\u054D\x03\x02\x02\x02^\u054F" +
-		"\x03\x02\x02\x02`\u0552\x03\x02\x02\x02b\u055C\x03\x02\x02\x02d\u05B2" +
-		"\x03\x02\x02\x02f\u05C0\x03\x02\x02\x02h\u05CF\x03\x02\x02\x02j\u05DF" +
-		"\x03\x02\x02\x02l\u05E7\x03\x02\x02\x02n\u05EA\x03\x02\x02\x02p\u061B" +
-		"\x03\x02\x02\x02r\u0627\x03\x02\x02\x02t\u0653\x03\x02\x02\x02v\u0661" +
-		"\x03\x02\x02\x02x\u0669\x03\x02\x02\x02z\u066F\x03\x02\x02\x02|\u068E" +
-		"\x03\x02\x02\x02~\u06B2\x03\x02\x02\x02\x80\u06BE\x03\x02\x02\x02\x82" +
-		"\u06C7\x03\x02\x02\x02\x84\u06D6\x03\x02\x02\x02\x86\u06EA\x03\x02\x02" +
-		"\x02\x88\u0700\x03\x02\x02\x02\x8A\u070C\x03\x02\x02\x02\x8C\u0716\x03" +
-		"\x02\x02\x02\x8E\u071C\x03\x02\x02\x02\x90\u0728\x03\x02\x02\x02\x92\u0734" +
-		"\x03\x02\x02\x02\x94\u0740\x03\x02\x02\x02\x96\u0749\x03\x02\x02\x02\x98" +
-		"\u07A0\x03\x02\x02\x02\x9A\u07A2\x03\x02\x02\x02\x9C\u07A5\x03\x02\x02" +
-		"\x02\x9E\u07A8\x03\x02\x02\x02\xA0\u07AF\x03\x02\x02\x02\xA2\u07B6\x03" +
-		"\x02\x02\x02\xA4\u07BA\x03\x02\x02\x02\xA6\u07C8\x03\x02\x02\x02\xA8\u07CA" +
-		"\x03\x02\x02\x02\xAA\u07CC\x03\x02\x02\x02\xAC\u07CE\x03\x02\x02\x02\xAE" +
-		"\u07D2\x03\x02\x02\x02\xB0\u07D4\x03\x02\x02\x02\xB2\u07D6\x03\x02\x02" +
-		"\x02\xB4\u07D8\x03\x02\x02\x02\xB6\u07DA\x03\x02\x02\x02\xB8\u07DC\x03" +
-		"\x02\x02\x02\xBA\u07DE\x03\x02\x02\x02\xBC\u07E0\x03\x02\x02\x02\xBE\u07E2" +
-		"\x03\x02\x02\x02\xC0\u07E4\x03\x02\x02\x02\xC2\u07E6\x03\x02\x02\x02\xC4" +
-		"\u07E8\x03\x02\x02\x02\xC6\u07EA\x03\x02\x02\x02\xC8\u07EC\x03\x02\x02" +
-		"\x02\xCA\u07EE\x03\x02\x02\x02\xCC\u07F0\x03\x02\x02\x02\xCE\u07F2\x03" +
-		"\x02\x02\x02\xD0\u07F4\x03\x02\x02\x02\xD2\u07F6\x03\x02\x02\x02\xD4\u07F8" +
-		"\x03\x02\x02\x02\xD6\u07FA\x03\x02\x02\x02\xD8\u07FC\x03\x02\x02\x02\xDA" +
-		"\u07FE\x03\x02\x02\x02\xDC\u0800\x03\x02\x02\x02\xDE\u0802\x03\x02\x02" +
-		"\x02\xE0\u0804\x03\x02\x02\x02\xE2\u080D\x03\x02\x02\x02\xE4\xE6\x05\x04" +
-		"\x03\x02\xE5\xE4\x03\x02\x02\x02\xE6\xE9\x03\x02\x02\x02\xE7\xE5\x03\x02" +
-		"\x02\x02\xE7\xE8\x03\x02\x02\x02\xE8\xEA\x03\x02\x02\x02\xE9\xE7\x03\x02" +
-		"\x02\x02\xEA\xEB\x07\x02\x02\x03\xEB\x03\x03\x02\x02\x02\xEC\xEE\x07\x03" +
-		"\x02\x02\xED\xEC\x03\x02\x02\x02\xEE\xF1\x03\x02\x02\x02\xEF\xED\x03\x02" +
-		"\x02\x02\xEF\xF0\x03\x02\x02\x02\xF0\xF2\x03\x02\x02\x02\xF1\xEF\x03\x02" +
-		"\x02\x02\xF2\xFB\x05\x06\x04\x02\xF3\xF5\x07\x03\x02\x02\xF4\xF3\x03\x02" +
-		"\x02\x02\xF5\xF6\x03\x02\x02\x02\xF6\xF4\x03\x02\x02\x02\xF6\xF7\x03\x02" +
-		"\x02\x02\xF7\xF8\x03\x02\x02\x02\xF8\xFA\x05\x06\x04\x02\xF9\xF4\x03\x02" +
-		"\x02\x02\xFA\xFD\x03\x02\x02\x02\xFB\xF9\x03\x02\x02\x02\xFB\xFC\x03\x02" +
-		"\x02\x02\xFC\u0101\x03\x02\x02\x02\xFD\xFB\x03\x02\x02\x02\xFE\u0100\x07" +
-		"\x03\x02\x02\xFF\xFE\x03\x02\x02\x02\u0100\u0103\x03\x02\x02\x02\u0101" +
-		"\xFF\x03\x02\x02\x02\u0101\u0102\x03\x02\x02\x02\u0102\x05\x03\x02\x02" +
-		"\x02\u0103\u0101\x03\x02\x02\x02\u0104\u0107\x07I\x02\x02\u0105\u0106" +
-		"\x07t\x02\x02\u0106\u0108\x07q\x02\x02\u0107\u0105\x03\x02\x02\x02\u0107" +
-		"\u0108\x03\x02\x02\x02\u0108\u010A\x03\x02\x02\x02\u0109\u0104\x03\x02" +
-		"\x02\x02\u0109\u010A\x03\x02\x02\x02\u010A\u0123\x03\x02\x02\x02\u010B" +
-		"\u0124\x05\b\x05\x02\u010C\u0124\x05\n\x06\x02\u010D\u0124\x05\f\x07\x02" +
-		"\u010E\u0124\x05\x0E\b\x02\u010F\u0124\x05\x10\t\x02\u0110\u0124\x05\x18" +
-		"\r\x02\u0111\u0124\x05\x1C\x0F\x02\u0112\u0124\x05,\x17\x02\u0113\u0124" +
-		"\x05.\x18\x02\u0114\u0124\x050\x19\x02\u0115\u0124\x05:\x1E\x02\u0116" +
-		"\u0124\x05<\x1F\x02\u0117\u0124\x05> \x02\u0118\u0124\x05@!\x02\u0119" +
-		"\u0124\x05L\'\x02\u011A\u0124\x05R*\x02\u011B\u0124\x05V,\x02\u011C\u0124" +
-		"\x05\x16\f\x02\u011D\u0124\x05\x12\n\x02\u011E\u0124\x05\x14\v\x02\u011F" +
-		"\u0124\x05X-\x02\u0120\u0124\x05n8\x02\u0121\u0124\x05r:\x02\u0122\u0124" +
-		"\x05v<\x02\u0123\u010B\x03\x02\x02\x02\u0123\u010C\x03\x02\x02\x02\u0123" +
-		"\u010D\x03\x02\x02\x02\u0123\u010E\x03\x02\x02\x02\u0123\u010F\x03\x02" +
-		"\x02\x02\u0123\u0110\x03\x02\x02\x02\u0123\u0111\x03\x02\x02\x02\u0123" +
-		"\u0112\x03\x02\x02\x02\u0123\u0113\x03\x02\x02\x02\u0123\u0114\x03\x02" +
-		"\x02\x02\u0123\u0115\x03\x02\x02\x02\u0123\u0116\x03\x02\x02\x02\u0123" +
-		"\u0117\x03\x02\x02\x02\u0123\u0118\x03\x02\x02\x02\u0123\u0119\x03\x02" +
-		"\x02\x02\u0123\u011A\x03\x02\x02\x02\u0123\u011B\x03\x02\x02\x02\u0123" +
-		"\u011C\x03\x02\x02\x02\u0123\u011D\x03\x02\x02\x02\u0123\u011E\x03\x02" +
-		"\x02\x02\u0123\u011F\x03\x02\x02\x02\u0123\u0120\x03\x02\x02\x02\u0123" +
-		"\u0121\x03\x02\x02\x02\u0123\u0122\x03\x02\x02\x02\u0124\x07\x03\x02\x02" +
-		"\x02\u0125\u0126\x07 \x02\x02\u0126\u012A\x07\x86\x02\x02\u0127\u0128" +
-		"\x05\xB8]\x02\u0128\u0129\x07\x04\x02\x02\u0129\u012B\x03\x02\x02\x02" +
-		"\u012A\u0127\x03\x02\x02\x02\u012A\u012B\x03\x02\x02\x02\u012B\u012C\x03" +
-		"\x02\x02\x02\u012C\u0143\x05\xBA^\x02\u012D\u0137\x07{\x02\x02\u012E\u012F" +
-		"\x07\x8A\x02\x02\u012F\u0138\x05\xBA^\x02\u0130\u0132\x070\x02\x02\u0131" +
-		"\u0130\x03\x02\x02\x02\u0131\u0132\x03\x02\x02\x02\u0132\u0133\x03\x02" +
-		"\x02\x02\u0133\u0134\x05\xBE`\x02\u0134\u0135\x07\x8A\x02\x02\u0135\u0136" +
-		"\x05\xBE`\x02\u0136\u0138\x03\x02\x02\x02\u0137\u012E\x03\x02\x02\x02" +
-		"\u0137\u0131\x03\x02\x02\x02\u0138\u0144\x03\x02\x02\x02\u0139\u013B\x07" +
-		"\x1D\x02\x02\u013A\u013C\x070\x02\x02\u013B\u013A\x03\x02\x02\x02\u013B" +
-		"\u013C\x03\x02\x02\x02\u013C\u013D\x03\x02\x02\x02\u013D\u0144\x05\x1E" +
-		"\x10\x02\u013E\u0140\x07A\x02\x02\u013F\u0141\x070\x02\x02\u0140\u013F" +
-		"\x03\x02\x02\x02\u0140\u0141\x03\x02\x02\x02\u0141\u0142\x03\x02\x02\x02" +
-		"\u0142\u0144\x05\xBE`\x02\u0143\u012D\x03\x02\x02\x02\u0143\u0139\x03" +
-		"\x02\x02\x02\u0143\u013E\x03\x02\x02\x02\u0144\t\x03\x02\x02\x02\u0145" +
-		"\u014D\x07!\x02\x02\u0146\u014E\x05\xB8]\x02\u0147\u0148\x05\xB8]\x02" +
-		"\u0148\u0149\x07\x04\x02\x02\u0149\u014B\x03\x02\x02\x02\u014A\u0147\x03" +
-		"\x02\x02\x02\u014A\u014B\x03\x02\x02\x02\u014B\u014C\x03\x02\x02\x02\u014C" +
-		"\u014E\x05\xBC_\x02\u014D\u0146\x03\x02\x02\x02\u014D\u014A\x03\x02\x02" +
-		"\x02\u014D\u014E\x03\x02\x02\x02\u014E\v\x03\x02\x02\x02\u014F\u0151\x07" +
-		"%\x02\x02\u0150\u0152\x079\x02\x02\u0151\u0150\x03\x02\x02\x02\u0151\u0152" +
-		"\x03\x02\x02\x02\u0152\u0153\x03\x02\x02\x02\u0153\u0154\x05B\"\x02\u0154" +
-		"\u0155\x07#\x02\x02\u0155\u0156\x05\xB8]\x02\u0156\r\x03\x02\x02\x02\u0157" +
-		"\u0159\x07(\x02\x02\u0158\u015A\t\x02\x02\x02\u0159\u0158\x03\x02\x02" +
-		"\x02\u0159\u015A\x03\x02\x02\x02\u015A\u015F\x03\x02\x02\x02\u015B\u015D" +
-		"\x07\x8B\x02\x02\u015C\u015E\x05\xD2j\x02\u015D\u015C\x03\x02\x02\x02" +
-		"\u015D\u015E\x03\x02\x02\x02\u015E\u0160\x03\x02\x02\x02\u015F\u015B\x03" +
-		"\x02\x02\x02\u015F\u0160\x03\x02\x02\x02\u0160\x0F\x03\x02\x02\x02\u0161" +
-		"\u0163\t\x03\x02\x02\u0162\u0164\x07\x8B\x02\x02\u0163\u0162\x03\x02\x02" +
-		"\x02\u0163\u0164\x03\x02\x02\x02\u0164\x11\x03\x02\x02\x02\u0165\u0167" +
-		"\x07\x80\x02\x02\u0166\u0168\x07\x8B\x02\x02\u0167\u0166\x03\x02\x02\x02" +
-		"\u0167\u0168\x03\x02\x02\x02\u0168\u016E\x03\x02\x02\x02\u0169\u016B\x07" +
-		"\x8A\x02\x02\u016A\u016C\x07\x83\x02\x02\u016B\u016A\x03\x02\x02\x02\u016B" +
-		"\u016C\x03\x02\x02\x02\u016C\u016D\x03\x02\x02\x02\u016D\u016F\x05\xCE" +
-		"h\x02\u016E\u0169\x03\x02\x02\x02\u016E\u016F\x03\x02\x02\x02\u016F\x13" +
-		"\x03\x02\x02\x02\u0170\u0171\x07\x83\x02\x02\u0171\u0172\x05\xCEh\x02" +
-		"\u0172\x15\x03\x02\x02\x02\u0173\u0175\x07z\x02\x02\u0174\u0176\x07\x83" +
-		"\x02\x02\u0175\u0174\x03\x02\x02\x02\u0175\u0176\x03\x02\x02\x02\u0176" +
-		"\u0177\x03\x02\x02\x02\u0177\u0178\x05\xCEh\x02\u0178\x17\x03\x02\x02" +
-		"\x02\u0179\u017B\x074\x02\x02\u017A\u017C\x07\x8E\x02\x02\u017B\u017A" +
-		"\x03\x02\x02\x02\u017B\u017C\x03\x02\x02\x02\u017C\u017D\x03\x02\x02\x02" +
-		"\u017D\u0181\x07V\x02\x02\u017E\u017F\x07R\x02\x02\u017F\u0180\x07h\x02" +
-		"\x02\u0180\u0182\x07H\x02\x02\u0181\u017E\x03\x02\x02\x02\u0181\u0182" +
-		"\x03\x02\x02\x02\u0182\u0186\x03\x02\x02\x02\u0183\u0184\x05\xB8]\x02" +
-		"\u0184\u0185\x07\x04\x02\x02\u0185\u0187\x03\x02\x02\x02\u0186\u0183\x03" +
-		"\x02\x02\x02\u0186\u0187\x03\x02\x02\x02\u0187\u0188\x03\x02\x02\x02\u0188" +
-		"\u0189\x05\xC4c\x02\u0189\u018A\x07m\x02\x02\u018A\u018B\x05\xBA^\x02" +
-		"\u018B\u018C\x07\x05\x02\x02\u018C\u0191\x05\x1A\x0E\x02\u018D\u018E\x07" +
-		"\x07\x02\x02\u018E\u0190\x05\x1A\x0E\x02\u018F\u018D\x03\x02\x02\x02\u0190" +
-		"\u0193\x03\x02\x02\x02\u0191\u018F\x03\x02\x02\x02\u0191\u0192\x03\x02" +
-		"\x02\x02\u0192\u0194\x03\x02\x02\x02\u0193\u0191\x03\x02\x02\x02\u0194" +
-		"\u0197\x07\x06\x02\x02\u0195\u0196\x07\x96\x02\x02\u0196\u0198\x05B\"" +
-		"\x02\u0197\u0195\x03\x02\x02\x02\u0197\u0198\x03\x02\x02\x02\u0198\x19" +
-		"\x03\x02\x02\x02\u0199\u019C\x05\xBE`\x02\u019A\u019C\x05B\"\x02\u019B" +
-		"\u0199\x03\x02\x02\x02\u019B\u019A\x03\x02\x02\x02\u019C\u019F\x03\x02" +
-		"\x02\x02\u019D\u019E\x07/\x02\x02\u019E\u01A0\x05\xC0a\x02\u019F\u019D" +
-		"\x03\x02\x02\x02\u019F\u01A0\x03\x02\x02\x02\u01A0\u01A2\x03\x02\x02\x02" +
-		"\u01A1\u01A3\x05\x90I\x02\u01A2\u01A1\x03\x02\x02\x02\u01A2\u01A3\x03" +
-		"\x02\x02\x02\u01A3\x1B\x03\x02\x02\x02\u01A4\u01A6\x074\x02\x02\u01A5" +
-		"\u01A7\t\x04\x02\x02\u01A6\u01A5\x03\x02\x02\x02\u01A6\u01A7\x03\x02\x02" +
-		"\x02\u01A7\u01A8\x03\x02\x02\x02\u01A8\u01AC\x07\x86\x02\x02\u01A9\u01AA" +
-		"\x07R\x02\x02\u01AA\u01AB\x07h\x02\x02\u01AB\u01AD\x07H\x02\x02\u01AC" +
-		"\u01A9\x03\x02\x02\x02\u01AC\u01AD\x03\x02\x02\x02\u01AD\u01B1\x03\x02" +
-		"\x02\x02\u01AE\u01AF\x05\xB8]\x02\u01AF\u01B0\x07\x04\x02\x02\u01B0\u01B2" +
-		"\x03\x02\x02\x02\u01B1\u01AE\x03\x02\x02\x02\u01B1\u01B2\x03\x02\x02\x02" +
-		"\u01B2\u01B3\x03\x02\x02\x02\u01B3\u01CB\x05\xBA^\x02\u01B4\u01B5\x07" +
-		"\x05\x02\x02\u01B5\u01BA\x05\x1E\x10\x02\u01B6\u01B7\x07\x07\x02\x02\u01B7" +
-		"\u01B9\x05\x1E\x10\x02\u01B8\u01B6\x03\x02\x02\x02\u01B9\u01BC\x03\x02" +
-		"\x02\x02\u01BA\u01BB\x03\x02\x02\x02\u01BA\u01B8\x03\x02\x02\x02\u01BB" +
-		"\u01C1\x03\x02\x02\x02\u01BC\u01BA\x03\x02\x02\x02\u01BD\u01BE\x07\x07" +
-		"\x02\x02\u01BE\u01C0\x05&\x14\x02\u01BF\u01BD\x03\x02\x02\x02\u01C0\u01C3" +
-		"\x03\x02\x02\x02\u01C1\u01BF\x03\x02\x02\x02\u01C1\u01C2\x03\x02\x02\x02" +
-		"\u01C2\u01C4\x03\x02\x02\x02\u01C3\u01C1\x03\x02\x02\x02\u01C4\u01C7\x07" +
-		"\x06\x02\x02\u01C5\u01C6\x07\x98\x02\x02\u01C6\u01C8\x07\xBB\x02\x02\u01C7" +
-		"\u01C5\x03\x02\x02\x02\u01C7\u01C8\x03\x02\x02\x02\u01C8\u01CC\x03\x02" +
-		"\x02\x02\u01C9\u01CA\x07#\x02\x02\u01CA\u01CC\x05X-\x02\u01CB\u01B4\x03" +
-		"\x02\x02\x02\u01CB\u01C9\x03\x02\x02\x02\u01CC\x1D\x03\x02\x02\x02\u01CD" +
-		"\u01CF\x05\xBE`\x02\u01CE\u01D0\x05 \x11\x02\u01CF\u01CE\x03\x02\x02\x02" +
-		"\u01CF\u01D0\x03\x02\x02\x02\u01D0\u01D4\x03\x02\x02\x02\u01D1\u01D3\x05" +
-		"\"\x12\x02\u01D2\u01D1\x03\x02\x02\x02\u01D3\u01D6\x03\x02\x02\x02\u01D4" +
-		"\u01D2\x03\x02\x02\x02\u01D4\u01D5\x03\x02\x02\x02\u01D5\x1F\x03\x02\x02" +
-		"\x02\u01D6\u01D4\x03\x02\x02\x02\u01D7\u01D9\x05\xB4[\x02\u01D8\u01D7" +
-		"\x03\x02\x02\x02\u01D9\u01DA\x03\x02\x02\x02\u01DA\u01DB\x03\x02\x02\x02" +
-		"\u01DA\u01D8\x03\x02\x02\x02\u01DB\u01E6\x03\x02\x02\x02\u01DC\u01DD\x07" +
-		"\x05\x02\x02\u01DD\u01DE\x05$\x13\x02\u01DE\u01DF\x07\x06\x02\x02\u01DF" +
-		"\u01E7\x03\x02\x02\x02\u01E0\u01E1\x07\x05\x02\x02\u01E1\u01E2\x05$\x13" +
-		"\x02\u01E2\u01E3\x07\x07\x02\x02\u01E3\u01E4\x05$\x13\x02\u01E4\u01E5" +
-		"\x07\x06\x02\x02\u01E5\u01E7\x03\x02\x02\x02\u01E6\u01DC\x03\x02\x02\x02" +
-		"\u01E6\u01E0\x03\x02\x02\x02\u01E6\u01E7\x03\x02\x02\x02\u01E7!\x03\x02" +
-		"\x02\x02\u01E8\u01E9\x073\x02\x02\u01E9\u01EB\x05\xB4[\x02\u01EA\u01E8" +
-		"\x03\x02\x02\x02\u01EA\u01EB\x03\x02\x02\x02\u01EB\u021D\x03\x02\x02\x02" +
-		"\u01EC\u01ED\x07s\x02\x02\u01ED\u01EF\x07a\x02\x02\u01EE\u01F0\x05\x90" +
-		"I\x02\u01EF\u01EE\x03\x02\x02\x02\u01EF\u01F0\x03\x02\x02\x02\u01F0\u01F2" +
-		"\x03\x02\x02\x02\u01F1\u01F3\x05*\x16\x02\u01F2\u01F1\x03\x02\x02\x02" +
-		"\u01F2\u01F3\x03\x02\x02\x02\u01F3\u01F5\x03\x02\x02\x02\u01F4\u01F6\x07" +
-		"&\x02\x02\u01F5\u01F4\x03\x02\x02\x02\u01F5\u01F6\x03\x02\x02\x02\u01F6" +
-		"\u021E\x03\x02\x02\x02\u01F7\u01F9\x07h\x02\x02\u01F8\u01F7\x03\x02\x02" +
-		"\x02\u01F8\u01F9\x03\x02\x02\x02\u01F9\u01FA\x03\x02\x02\x02\u01FA\u01FD" +
-		"\x07j\x02\x02\u01FB\u01FD\x07\x8E\x02\x02\u01FC\u01F8\x03\x02\x02\x02" +
-		"\u01FC\u01FB\x03\x02\x02\x02\u01FD\u01FF\x03\x02\x02\x02\u01FE\u0200\x05" +
-		"*\x16\x02\u01FF\u01FE\x03\x02\x02\x02\u01FF\u0200\x03\x02\x02\x02\u0200" +
-		"\u021E\x03\x02\x02\x02\u0201\u0202\x07.\x02\x02\u0202\u0203\x07\x05\x02" +
-		"\x02\u0203\u0204\x05B\"\x02\u0204\u0205\x07\x06\x02\x02\u0205\u021E\x03" +
-		"\x02\x02\x02\u0206\u020D\x07:\x02\x02\u0207\u020E\x05$\x13\x02\u0208\u020E" +
-		"\x05F$\x02\u0209\u020A\x07\x05\x02\x02\u020A\u020B\x05B\"\x02\u020B\u020C" +
-		"\x07\x06\x02\x02\u020C\u020E\x03\x02\x02\x02\u020D\u0207\x03\x02\x02\x02" +
-		"\u020D\u0208\x03\x02\x02\x02\u020D\u0209\x03\x02\x02\x02\u020E\u021E\x03" +
-		"\x02\x02\x02\u020F\u0210\x07/\x02\x02\u0210\u021E\x05\xC0a\x02\u0211\u021E" +
-		"\x05(\x15\x02\u0212\u0213\x07\xAB\x02\x02\u0213\u0215\x07\xAC\x02\x02" +
-		"\u0214\u0212\x03\x02\x02\x02\u0214\u0215\x03\x02\x02\x02\u0215\u0216\x03" +
-		"\x02\x02\x02\u0216\u0217\x07#\x02\x02\u0217\u0218\x07\x05\x02\x02\u0218" +
-		"\u0219\x05B\"\x02\u0219\u021B\x07\x06\x02\x02\u021A\u021C\t\x05\x02\x02" +
-		"\u021B\u021A\x03\x02\x02\x02\u021B\u021C\x03\x02\x02\x02\u021C\u021E\x03" +
-		"\x02\x02\x02\u021D\u01EC\x03\x02\x02\x02\u021D\u01FC\x03\x02\x02\x02\u021D" +
-		"\u0201\x03\x02\x02\x02\u021D\u0206\x03\x02\x02\x02\u021D\u020F\x03\x02" +
-		"\x02\x02\u021D\u0211\x03\x02\x02\x02\u021D\u0214\x03\x02\x02\x02\u021E" +
-		"#\x03\x02\x02\x02\u021F\u0221\t\x06\x02\x02\u0220\u021F\x03\x02\x02\x02" +
-		"\u0220\u0221\x03\x02\x02\x02\u0221\u0222\x03\x02\x02\x02\u0222\u0223\x07" +
-		"\xBC\x02\x02\u0223%\x03\x02\x02\x02\u0224\u0225\x073\x02\x02\u0225\u0227" +
-		"\x05\xB4[\x02\u0226\u0224\x03\x02\x02\x02\u0226\u0227\x03\x02\x02\x02" +
-		"\u0227\u024D\x03\x02\x02\x02\u0228\u0229\x07s\x02\x02\u0229\u022C\x07" +
-		"a\x02\x02\u022A\u022C\x07\x8E\x02\x02\u022B\u0228\x03\x02\x02\x02\u022B" +
-		"\u022A\x03\x02\x02\x02\u022C\u022D\x03\x02\x02\x02\u022D\u022E\x07\x05" +
-		"\x02\x02\u022E\u0233\x05\x1A\x0E\x02\u022F\u0230\x07\x07\x02\x02\u0230" +
-		"\u0232\x05\x1A\x0E\x02\u0231\u022F\x03\x02\x02\x02\u0232\u0235\x03\x02" +
-		"\x02\x02\u0233\u0231\x03\x02\x02\x02\u0233\u0234\x03\x02\x02\x02\u0234" +
-		"\u0236\x03\x02\x02\x02\u0235\u0233\x03\x02\x02\x02\u0236\u0238\x07\x06" +
-		"\x02\x02\u0237\u0239\x05*\x16\x02\u0238\u0237\x03\x02\x02\x02\u0238\u0239" +
-		"\x03\x02\x02\x02\u0239\u024E\x03\x02\x02\x02\u023A\u023B\x07.\x02\x02" +
-		"\u023B\u023C\x07\x05\x02\x02\u023C\u023D\x05B\"\x02\u023D\u023E\x07\x06" +
-		"\x02\x02\u023E\u024E\x03\x02\x02\x02\u023F\u0240\x07L\x02\x02\u0240\u0241" +
-		"\x07a\x02\x02\u0241\u0242\x07\x05\x02\x02\u0242\u0247\x05\xBE`\x02\u0243" +
-		"\u0244\x07\x07\x02\x02\u0244\u0246\x05\xBE`\x02\u0245\u0243\x03\x02\x02" +
-		"\x02\u0246\u0249\x03\x02\x02\x02\u0247\u0245\x03\x02\x02\x02\u0247\u0248" +
-		"\x03\x02\x02\x02\u0248\u024A\x03\x02\x02\x02\u0249\u0247\x03\x02\x02\x02" +
-		"\u024A\u024B\x07\x06\x02\x02\u024B\u024C\x05(\x15\x02\u024C\u024E\x03" +
-		"\x02\x02\x02\u024D\u022B\x03\x02\x02\x02\u024D\u023A\x03\x02\x02\x02\u024D" +
-		"\u023F\x03\x02\x02\x02\u024E\'\x03\x02\x02\x02\u024F\u0250\x07w\x02\x02" +
-		"\u0250\u025C\x05\xC2b\x02\u0251\u0252\x07\x05\x02\x02\u0252\u0257\x05" +
-		"\xBE`\x02\u0253\u0254\x07\x07\x02\x02\u0254\u0256\x05\xBE`\x02\u0255\u0253" +
-		"\x03\x02\x02\x02\u0256\u0259\x03\x02\x02\x02\u0257\u0255\x03\x02\x02\x02" +
-		"\u0257\u0258\x03\x02\x02\x02\u0258\u025A\x03\x02\x02\x02\u0259\u0257\x03" +
-		"\x02\x02\x02\u025A\u025B\x07\x06\x02\x02\u025B\u025D\x03\x02\x02\x02\u025C" +
-		"\u0251\x03\x02\x02\x02\u025C\u025D\x03\x02\x02\x02\u025D\u026C\x03\x02" +
-		"\x02\x02\u025E\u025F\x07m\x02\x02\u025F\u0266\t\x07\x02\x02\u0260\u0261" +
-		"\x07\x85\x02\x02\u0261\u0267\t\b\x02\x02\u0262\u0267\x07+\x02\x02\u0263" +
-		"\u0267\x07}\x02\x02\u0264\u0265\x07g\x02\x02\u0265\u0267\x07\x1C\x02\x02" +
-		"\u0266\u0260\x03\x02\x02\x02\u0266\u0262\x03\x02\x02\x02\u0266\u0263\x03" +
-		"\x02\x02\x02\u0266\u0264\x03\x02\x02\x02\u0267\u026B\x03\x02\x02\x02\u0268" +
-		"\u0269\x07e\x02\x02\u0269\u026B\x05\xB4[\x02\u026A\u025E\x03\x02\x02\x02" +
-		"\u026A\u0268\x03\x02\x02\x02\u026B\u026E\x03\x02\x02\x02\u026C\u026A\x03" +
-		"\x02\x02\x02\u026C\u026D\x03\x02\x02\x02\u026D\u0277\x03\x02\x02\x02\u026E" +
-		"\u026C\x03\x02\x02\x02\u026F\u0271\x07h\x02\x02\u0270\u026F\x03\x02\x02" +
-		"\x02\u0270\u0271\x03\x02\x02\x02\u0271\u0272\x03\x02\x02\x02\u0272\u0275" +
-		"\x07;\x02\x02\u0273\u0274\x07X\x02\x02\u0274\u0276\t\t\x02\x02\u0275\u0273" +
-		"\x03\x02\x02\x02\u0275\u0276\x03\x02\x02\x02\u0276\u0278\x03\x02\x02\x02" +
-		"\u0277\u0270\x03\x02\x02\x02\u0277\u0278\x03\x02\x02\x02\u0278)\x03\x02" +
-		"\x02\x02\u0279\u027A\x07m\x02\x02\u027A\u027B\x072\x02\x02\u027B\u027C" +
-		"\t\n\x02\x02\u027C+\x03\x02\x02\x02\u027D\u027F\x074\x02\x02\u027E\u0280" +
-		"\t\x04\x02\x02\u027F\u027E\x03\x02\x02\x02\u027F\u0280\x03\x02\x02\x02" +
-		"\u0280\u0281\x03\x02\x02\x02\u0281\u0285\x07\x8C\x02\x02\u0282\u0283\x07" +
-		"R\x02\x02\u0283\u0284\x07h\x02\x02\u0284\u0286\x07H\x02\x02\u0285\u0282" +
-		"\x03\x02\x02\x02\u0285\u0286\x03\x02\x02\x02\u0286\u028A\x03\x02\x02\x02" +
-		"\u0287\u0288\x05\xB8]\x02\u0288\u0289\x07\x04\x02\x02\u0289\u028B\x03" +
-		"\x02\x02\x02\u028A\u0287\x03\x02\x02\x02\u028A\u028B\x03\x02\x02\x02\u028B" +
-		"\u028C\x03\x02\x02\x02\u028C\u0291\x05\xC6d\x02\u028D\u0292\x07\'\x02" +
-		"\x02\u028E\u0292\x07\x1E\x02\x02\u028F\u0290\x07[\x02\x02\u0290\u0292" +
-		"\x07k\x02\x02\u0291\u028D\x03\x02\x02\x02\u0291\u028E\x03\x02\x02\x02" +
-		"\u0291\u028F\x03\x02\x02\x02\u0291\u0292\x03\x02\x02\x02\u0292\u02A1\x03" +
-		"\x02\x02\x02\u0293\u02A2\x07=\x02\x02\u0294\u02A2\x07Z\x02\x02\u0295\u029F" +
-		"\x07\x8F\x02\x02\u0296\u0297\x07k\x02\x02\u0297\u029C\x05\xBE`\x02\u0298" +
-		"\u0299\x07\x07\x02\x02\u0299\u029B\x05\xBE`\x02\u029A\u0298\x03\x02\x02" +
-		"\x02\u029B\u029E\x03\x02\x02\x02\u029C\u029A\x03\x02\x02\x02\u029C\u029D" +
-		"\x03\x02\x02\x02\u029D\u02A0\x03\x02\x02\x02\u029E\u029C\x03\x02\x02\x02" +
-		"\u029F\u0296\x03\x02\x02\x02\u029F\u02A0\x03\x02\x02\x02\u02A0\u02A2\x03" +
-		"\x02\x02\x02\u02A1\u0293\x03\x02\x02\x02\u02A1\u0294\x03\x02\x02\x02\u02A1" +
-		"\u0295\x03\x02\x02\x02\u02A2\u02A3\x03\x02\x02\x02\u02A3\u02A4\x07m\x02" +
-		"\x02\u02A4\u02A8\x05\xBA^\x02\u02A5\u02A6\x07K\x02\x02\u02A6\u02A7\x07" +
-		"B\x02\x02\u02A7\u02A9\x07\x81\x02\x02\u02A8\u02A5\x03\x02\x02\x02\u02A8" +
-		"\u02A9\x03\x02\x02\x02\u02A9\u02AC\x03\x02\x02\x02\u02AA\u02AB\x07\x95" +
-		"\x02\x02\u02AB\u02AD\x05B\"\x02\u02AC\u02AA\x03\x02\x02\x02\u02AC\u02AD" +
-		"\x03\x02\x02\x02\u02AD\u02AE\x03\x02\x02\x02\u02AE\u02B7\x07(\x02\x02" +
-		"\u02AF\u02B4\x05n8\x02\u02B0\u02B4\x05L\'\x02\u02B1\u02B4\x05:\x1E\x02" +
-		"\u02B2\u02B4\x05X-\x02\u02B3\u02AF\x03\x02\x02\x02\u02B3\u02B0\x03\x02" +
-		"\x02\x02\u02B3\u02B1\x03\x02\x02\x02\u02B3\u02B2\x03\x02\x02\x02\u02B4" +
-		"\u02B5\x03\x02\x02\x02\u02B5\u02B6\x07\x03\x02\x02\u02B6\u02B8\x03\x02" +
-		"\x02\x02\u02B7\u02B3\x03\x02\x02\x02\u02B8\u02B9\x03\x02\x02\x02\u02B9" +
-		"\u02B7\x03\x02\x02\x02\u02B9\u02BA\x03\x02\x02\x02\u02BA\u02BB\x03\x02" +
-		"\x02\x02\u02BB\u02BC\x07D\x02\x02\u02BC-\x03\x02\x02\x02\u02BD\u02BF\x07" +
-		"4\x02\x02\u02BE\u02C0\t\x04\x02\x02\u02BF\u02BE\x03\x02\x02\x02\u02BF" +
-		"\u02C0\x03\x02\x02\x02\u02C0\u02C1\x03\x02\x02\x02\u02C1\u02C5\x07\x93" +
-		"\x02\x02\u02C2\u02C3\x07R\x02\x02\u02C3\u02C4\x07h\x02\x02\u02C4\u02C6" +
-		"\x07H\x02\x02\u02C5\u02C2\x03\x02\x02\x02\u02C5\u02C6\x03\x02\x02\x02" +
-		"\u02C6\u02CA\x03\x02\x02\x02\u02C7\u02C8\x05\xB8]\x02\u02C8\u02C9\x07" +
-		"\x04\x02\x02\u02C9\u02CB\x03\x02\x02\x02\u02CA\u02C7\x03\x02\x02\x02\u02CA" +
-		"\u02CB\x03\x02\x02\x02\u02CB\u02CC\x03\x02\x02\x02\u02CC\u02D8\x05\xC8" +
-		"e\x02\u02CD\u02CE\x07\x05\x02\x02\u02CE\u02D3\x05\xBE`\x02\u02CF\u02D0" +
-		"\x07\x07\x02\x02\u02D0\u02D2\x05\xBE`\x02\u02D1\u02CF\x03\x02\x02\x02" +
-		"\u02D2\u02D5\x03\x02\x02\x02\u02D3\u02D1\x03\x02\x02\x02\u02D3\u02D4\x03" +
-		"\x02\x02\x02\u02D4\u02D6\x03\x02\x02\x02\u02D5\u02D3\x03\x02\x02\x02\u02D6" +
-		"\u02D7\x07\x06\x02\x02\u02D7\u02D9\x03\x02\x02\x02\u02D8\u02CD\x03\x02" +
-		"\x02\x02\u02D8\u02D9\x03\x02\x02\x02\u02D9\u02DA\x03\x02\x02\x02\u02DA" +
-		"\u02DB\x07#\x02\x02\u02DB\u02DC\x05X-\x02\u02DC/\x03\x02\x02\x02\u02DD" +
-		"\u02DE\x074\x02\x02\u02DE\u02DF\x07\x94\x02\x02\u02DF\u02E3\x07\x86\x02" +
-		"\x02\u02E0\u02E1\x07R\x02\x02\u02E1\u02E2\x07h\x02\x02\u02E2\u02E4\x07" +
-		"H\x02\x02\u02E3\u02E0\x03\x02\x02\x02\u02E3\u02E4\x03\x02\x02\x02\u02E4" +
-		"\u02E8\x03\x02\x02\x02\u02E5\u02E6\x05\xB8]\x02\u02E6\u02E7\x07\x04\x02" +
-		"\x02\u02E7\u02E9\x03\x02\x02\x02\u02E8\u02E5\x03\x02\x02\x02\u02E8\u02E9" +
-		"\x03\x02\x02\x02\u02E9\u02EA\x03\x02\x02\x02\u02EA\u02EB\x05\xBA^\x02" +
-		"\u02EB\u02EC\x07\x90\x02\x02\u02EC\u02F8\x05\xCAf\x02\u02ED\u02EE\x07" +
-		"\x05\x02\x02\u02EE\u02F3\x05\xAEX\x02\u02EF\u02F0\x07\x07\x02\x02\u02F0" +
-		"\u02F2\x05\xAEX\x02\u02F1\u02EF\x03\x02\x02\x02\u02F2\u02F5\x03\x02\x02" +
-		"\x02\u02F3\u02F1\x03\x02\x02\x02\u02F3\u02F4\x03\x02\x02\x02\u02F4\u02F6" +
-		"\x03\x02\x02\x02\u02F5\u02F3\x03\x02\x02\x02\u02F6\u02F7\x07\x06\x02\x02" +
-		"\u02F7\u02F9\x03\x02\x02\x02\u02F8\u02ED\x03\x02\x02\x02\u02F8\u02F9\x03" +
-		"\x02\x02\x02\u02F91\x03\x02\x02\x02\u02FA\u02FC\x07\x97\x02\x02\u02FB" +
-		"\u02FD\x07v\x02\x02\u02FC\u02FB\x03\x02\x02\x02\u02FC\u02FD\x03\x02\x02" +
-		"\x02\u02FD\u02FE\x03\x02\x02\x02\u02FE\u02FF\x054\x1B\x02\u02FF\u0300" +
-		"\x07#\x02\x02\u0300\u0301\x07\x05\x02\x02\u0301\u0302\x05X-\x02\u0302" +
-		"\u030C\x07\x06\x02\x02\u0303\u0304\x07\x07\x02\x02\u0304\u0305\x054\x1B" +
-		"\x02\u0305\u0306\x07#\x02\x02\u0306\u0307\x07\x05\x02\x02\u0307\u0308" +
-		"\x05X-\x02\u0308\u0309\x07\x06\x02\x02\u0309\u030B\x03\x02\x02\x02\u030A" +
-		"\u0303\x03\x02\x02\x02\u030B\u030E\x03\x02\x02\x02\u030C\u030A\x03\x02" +
-		"\x02\x02\u030C\u030D\x03\x02\x02\x02\u030D3\x03\x02\x02\x02\u030E\u030C" +
-		"\x03\x02\x02\x02\u030F\u031B\x05\xBA^\x02\u0310\u0311\x07\x05\x02\x02" +
-		"\u0311\u0316\x05\xBE`\x02\u0312\u0313\x07\x07\x02\x02\u0313\u0315\x05" +
-		"\xBE`\x02\u0314\u0312\x03\x02\x02\x02\u0315\u0318\x03\x02\x02\x02\u0316" +
-		"\u0314\x03\x02\x02\x02\u0316\u0317\x03\x02\x02\x02\u0317\u0319\x03\x02" +
-		"\x02\x02\u0318\u0316\x03\x02\x02\x02\u0319\u031A\x07\x06\x02\x02\u031A" +
-		"\u031C\x03\x02\x02\x02\u031B\u0310\x03\x02\x02\x02\u031B\u031C\x03\x02" +
-		"\x02\x02\u031C5\x03\x02\x02\x02\u031D\u031E\x054\x1B\x02\u031E\u031F\x07" +
-		"#\x02\x02\u031F\u0320\x07\x05\x02\x02\u0320\u0321\x05\xA6T\x02\u0321\u0323" +
-		"\x07\x8D\x02\x02\u0322\u0324\x07\x1F\x02\x02\u0323\u0322\x03\x02\x02\x02" +
-		"\u0323\u0324\x03\x02\x02\x02\u0324\u0325\x03\x02\x02\x02\u0325\u0326\x05" +
-		"\xA8U\x02\u0326\u0327\x07\x06\x02\x02\u03277\x03\x02\x02\x02\u0328\u0334" +
-		"\x05\xBA^\x02\u0329\u032A\x07\x05\x02\x02\u032A\u032F\x05\xBE`\x02\u032B" +
-		"\u032C\x07\x07\x02\x02\u032C\u032E\x05\xBE`\x02\u032D\u032B\x03\x02\x02" +
-		"\x02\u032E\u0331\x03\x02\x02\x02\u032F\u032D\x03\x02\x02\x02\u032F\u0330" +
-		"\x03\x02\x02\x02\u0330\u0332\x03\x02\x02\x02\u0331\u032F\x03\x02\x02\x02" +
-		"\u0332\u0333\x07\x06\x02\x02\u0333\u0335\x03\x02\x02\x02\u0334\u0329\x03" +
-		"\x02\x02\x02\u0334\u0335\x03\x02\x02\x02\u0335\u0336\x03\x02\x02\x02\u0336" +
-		"\u0337\x07#\x02\x02\u0337\u0338\x07\x05\x02\x02\u0338\u0339\x05X-\x02" +
-		"\u0339\u033A\x07\x06\x02";
+		"\x02\x1E\u01CD\x03\x02\x02\x02 \u01D8\x03\x02\x02\x02\"\u01EA\x03\x02" +
+		"\x02\x02$\u0220\x03\x02\x02\x02&\u0226\x03\x02\x02\x02(\u024F\x03\x02" +
+		"\x02\x02*\u0279\x03\x02\x02\x02,\u027D\x03\x02\x02\x02.\u02BD\x03\x02" +
+		"\x02\x020\u02DD\x03\x02\x02\x022\u02FA\x03\x02\x02\x024\u030F\x03\x02" +
+		"\x02\x026\u031D\x03\x02\x02\x028\u0328\x03\x02\x02\x02:\u033C\x03\x02" +
+		"\x02\x02<\u0349\x03\x02\x02\x02>\u035B\x03\x02\x02\x02@\u0361\x03\x02" +
+		"\x02\x02B\u03C6\x03\x02\x02\x02D\u0448\x03\x02\x02\x02F\u0452\x03\x02" +
+		"\x02\x02H\u0454\x03\x02\x02\x02J\u045F\x03\x02\x02\x02L\u0469\x03\x02" +
+		"\x02\x02N\u0498\x03\x02\x02\x02P\u04A1\x03\x02\x02\x02R\u04D0\x03\x02" +
+		"\x02\x02T\u04E2\x03\x02\x02\x02V\u04E4\x03\x02\x02\x02X\u04F2\x03\x02" +
+		"\x02\x02Z\u0503\x03\x02\x02\x02\\\u054D\x03\x02\x02\x02^\u054F\x03\x02" +
+		"\x02\x02`\u0552\x03\x02\x02\x02b\u055C\x03\x02\x02\x02d\u05B2\x03\x02" +
+		"\x02\x02f\u05C0\x03\x02\x02\x02h\u05CF\x03\x02\x02\x02j\u05DF\x03\x02" +
+		"\x02\x02l\u05E7\x03\x02\x02\x02n\u05EA\x03\x02\x02\x02p\u061B\x03\x02" +
+		"\x02\x02r\u0627\x03\x02\x02\x02t\u0653\x03\x02\x02\x02v\u0661\x03\x02" +
+		"\x02\x02x\u0669\x03\x02\x02\x02z\u066F\x03\x02\x02\x02|\u068E\x03\x02" +
+		"\x02\x02~\u06B2\x03\x02\x02\x02\x80\u06BE\x03\x02\x02\x02\x82\u06C7\x03" +
+		"\x02\x02\x02\x84\u06D6\x03\x02\x02\x02\x86\u06EA\x03\x02\x02\x02\x88\u0700" +
+		"\x03\x02\x02\x02\x8A\u070C\x03\x02\x02\x02\x8C\u0716\x03\x02\x02\x02\x8E" +
+		"\u071C\x03\x02\x02\x02\x90\u0728\x03\x02\x02\x02\x92\u0734\x03\x02\x02" +
+		"\x02\x94\u0740\x03\x02\x02\x02\x96\u0749\x03\x02\x02\x02\x98\u07A0\x03" +
+		"\x02\x02\x02\x9A\u07A2\x03\x02\x02\x02\x9C\u07A5\x03\x02\x02\x02\x9E\u07A8" +
+		"\x03\x02\x02\x02\xA0\u07AF\x03\x02\x02\x02\xA2\u07B6\x03\x02\x02\x02\xA4" +
+		"\u07BA\x03\x02\x02\x02\xA6\u07C8\x03\x02\x02\x02\xA8\u07CA\x03\x02\x02" +
+		"\x02\xAA\u07CC\x03\x02\x02\x02\xAC\u07CE\x03\x02\x02\x02\xAE\u07D2\x03" +
+		"\x02\x02\x02\xB0\u07D4\x03\x02\x02\x02\xB2\u07D6\x03\x02\x02\x02\xB4\u07D8" +
+		"\x03\x02\x02\x02\xB6\u07DA\x03\x02\x02\x02\xB8\u07DC\x03\x02\x02\x02\xBA" +
+		"\u07DE\x03\x02\x02\x02\xBC\u07E0\x03\x02\x02\x02\xBE\u07E2\x03\x02\x02" +
+		"\x02\xC0\u07E4\x03\x02\x02\x02\xC2\u07E6\x03\x02\x02\x02\xC4\u07E8\x03" +
+		"\x02\x02\x02\xC6\u07EA\x03\x02\x02\x02\xC8\u07EC\x03\x02\x02\x02\xCA\u07EE" +
+		"\x03\x02\x02\x02\xCC\u07F0\x03\x02\x02\x02\xCE\u07F2\x03\x02\x02\x02\xD0" +
+		"\u07F4\x03\x02\x02\x02\xD2\u07F6\x03\x02\x02\x02\xD4\u07F8\x03\x02\x02" +
+		"\x02\xD6\u07FA\x03\x02\x02\x02\xD8\u07FC\x03\x02\x02\x02\xDA\u07FE\x03" +
+		"\x02\x02\x02\xDC\u0800\x03\x02\x02\x02\xDE\u0802\x03\x02\x02\x02\xE0\u0804" +
+		"\x03\x02\x02\x02\xE2\u080D\x03\x02\x02\x02\xE4\xE6\x05\x04\x03\x02\xE5" +
+		"\xE4\x03\x02\x02\x02\xE6\xE9\x03\x02\x02\x02\xE7\xE5\x03\x02\x02\x02\xE7" +
+		"\xE8\x03\x02\x02\x02\xE8\xEA\x03\x02\x02\x02\xE9\xE7\x03\x02\x02\x02\xEA" +
+		"\xEB\x07\x02\x02\x03\xEB\x03\x03\x02\x02\x02\xEC\xEE\x07\x03\x02\x02\xED" +
+		"\xEC\x03\x02\x02\x02\xEE\xF1\x03\x02\x02\x02\xEF\xED\x03\x02\x02\x02\xEF" +
+		"\xF0\x03\x02\x02\x02\xF0\xF2\x03\x02\x02\x02\xF1\xEF\x03\x02\x02\x02\xF2" +
+		"\xFB\x05\x06\x04\x02\xF3\xF5\x07\x03\x02\x02\xF4\xF3\x03\x02\x02\x02\xF5" +
+		"\xF6\x03\x02\x02\x02\xF6\xF4\x03\x02\x02\x02\xF6\xF7\x03\x02\x02\x02\xF7" +
+		"\xF8\x03\x02\x02\x02\xF8\xFA\x05\x06\x04\x02\xF9\xF4\x03\x02\x02\x02\xFA" +
+		"\xFD\x03\x02\x02\x02\xFB\xF9\x03\x02\x02\x02\xFB\xFC\x03\x02\x02\x02\xFC" +
+		"\u0101\x03\x02\x02\x02\xFD\xFB\x03\x02\x02\x02\xFE\u0100\x07\x03\x02\x02" +
+		"\xFF\xFE\x03\x02\x02\x02\u0100\u0103\x03\x02\x02\x02\u0101\xFF\x03\x02" +
+		"\x02\x02\u0101\u0102\x03\x02\x02\x02\u0102\x05\x03\x02\x02\x02\u0103\u0101" +
+		"\x03\x02\x02\x02\u0104\u0107\x07I\x02\x02\u0105\u0106\x07t\x02\x02\u0106" +
+		"\u0108\x07q\x02\x02\u0107\u0105\x03\x02\x02\x02\u0107\u0108\x03\x02\x02" +
+		"\x02\u0108\u010A\x03\x02\x02\x02\u0109\u0104\x03\x02\x02\x02\u0109\u010A" +
+		"\x03\x02\x02\x02\u010A\u0123\x03\x02\x02\x02\u010B\u0124\x05\b\x05\x02" +
+		"\u010C\u0124\x05\n\x06\x02\u010D\u0124\x05\f\x07\x02\u010E\u0124\x05\x0E" +
+		"\b\x02\u010F\u0124\x05\x10\t\x02\u0110\u0124\x05\x18\r\x02\u0111\u0124" +
+		"\x05\x1C\x0F\x02\u0112\u0124\x05,\x17\x02\u0113\u0124\x05.\x18\x02\u0114" +
+		"\u0124\x050\x19\x02\u0115\u0124\x05:\x1E\x02\u0116\u0124\x05<\x1F\x02" +
+		"\u0117\u0124\x05> \x02\u0118\u0124\x05@!\x02\u0119\u0124\x05L\'\x02\u011A" +
+		"\u0124\x05R*\x02\u011B\u0124\x05V,\x02\u011C\u0124\x05\x16\f\x02\u011D" +
+		"\u0124\x05\x12\n\x02\u011E\u0124\x05\x14\v\x02\u011F\u0124\x05X-\x02\u0120" +
+		"\u0124\x05n8\x02\u0121\u0124\x05r:\x02\u0122\u0124\x05v<\x02\u0123\u010B" +
+		"\x03\x02\x02\x02\u0123\u010C\x03\x02\x02\x02\u0123\u010D\x03\x02\x02\x02" +
+		"\u0123\u010E\x03\x02\x02\x02\u0123\u010F\x03\x02\x02\x02\u0123\u0110\x03" +
+		"\x02\x02\x02\u0123\u0111\x03\x02\x02\x02\u0123\u0112\x03\x02\x02\x02\u0123" +
+		"\u0113\x03\x02\x02\x02\u0123\u0114\x03\x02\x02\x02\u0123\u0115\x03\x02" +
+		"\x02\x02\u0123\u0116\x03\x02\x02\x02\u0123\u0117\x03\x02\x02\x02\u0123" +
+		"\u0118\x03\x02\x02\x02\u0123\u0119\x03\x02\x02\x02\u0123\u011A\x03\x02" +
+		"\x02\x02\u0123\u011B\x03\x02\x02\x02\u0123\u011C\x03\x02\x02\x02\u0123" +
+		"\u011D\x03\x02\x02\x02\u0123\u011E\x03\x02\x02\x02\u0123\u011F\x03\x02" +
+		"\x02\x02\u0123\u0120\x03\x02\x02\x02\u0123\u0121\x03\x02\x02\x02\u0123" +
+		"\u0122\x03\x02\x02\x02\u0124\x07\x03\x02\x02\x02\u0125\u0126\x07 \x02" +
+		"\x02\u0126\u012A\x07\x86\x02\x02\u0127\u0128\x05\xB8]\x02\u0128\u0129" +
+		"\x07\x04\x02\x02\u0129\u012B\x03\x02\x02\x02\u012A\u0127\x03\x02\x02\x02" +
+		"\u012A\u012B\x03\x02\x02\x02\u012B\u012C\x03\x02\x02\x02\u012C\u0143\x05" +
+		"\xBA^\x02\u012D\u0137\x07{\x02\x02\u012E\u012F\x07\x8A\x02\x02\u012F\u0138" +
+		"\x05\xBA^\x02\u0130\u0132\x070\x02\x02\u0131\u0130\x03\x02\x02\x02\u0131" +
+		"\u0132\x03\x02\x02\x02\u0132\u0133\x03\x02\x02\x02\u0133\u0134\x05\xBE" +
+		"`\x02\u0134\u0135\x07\x8A\x02\x02\u0135\u0136\x05\xBE`\x02\u0136\u0138" +
+		"\x03\x02\x02\x02\u0137\u012E\x03\x02\x02\x02\u0137\u0131\x03\x02\x02\x02" +
+		"\u0138\u0144\x03\x02\x02\x02\u0139\u013B\x07\x1D\x02\x02\u013A\u013C\x07" +
+		"0\x02\x02\u013B\u013A\x03\x02\x02\x02\u013B\u013C\x03\x02\x02\x02\u013C" +
+		"\u013D\x03\x02\x02\x02\u013D\u0144\x05\x1E\x10\x02\u013E\u0140\x07A\x02" +
+		"\x02\u013F\u0141\x070\x02\x02\u0140\u013F\x03\x02\x02\x02\u0140\u0141" +
+		"\x03\x02\x02\x02\u0141\u0142\x03\x02\x02\x02\u0142\u0144\x05\xBE`\x02" +
+		"\u0143\u012D\x03\x02\x02\x02\u0143\u0139\x03\x02\x02\x02\u0143\u013E\x03" +
+		"\x02\x02\x02\u0144\t\x03\x02\x02\x02\u0145\u014D\x07!\x02\x02\u0146\u014E" +
+		"\x05\xB8]\x02\u0147\u0148\x05\xB8]\x02\u0148\u0149\x07\x04\x02\x02\u0149" +
+		"\u014B\x03\x02\x02\x02\u014A\u0147\x03\x02\x02\x02\u014A\u014B\x03\x02" +
+		"\x02\x02\u014B\u014C\x03\x02\x02\x02\u014C\u014E\x05\xBC_\x02\u014D\u0146" +
+		"\x03\x02\x02\x02\u014D\u014A\x03\x02\x02\x02\u014D\u014E\x03\x02\x02\x02" +
+		"\u014E\v\x03\x02\x02\x02\u014F\u0151\x07%\x02\x02\u0150\u0152\x079\x02" +
+		"\x02\u0151\u0150\x03\x02\x02\x02\u0151\u0152\x03\x02\x02\x02\u0152\u0153" +
+		"\x03\x02\x02\x02\u0153\u0154\x05B\"\x02\u0154\u0155\x07#\x02\x02\u0155" +
+		"\u0156\x05\xB8]\x02\u0156\r\x03\x02\x02\x02\u0157\u0159\x07(\x02\x02\u0158" +
+		"\u015A\t\x02\x02\x02\u0159\u0158\x03\x02\x02\x02\u0159\u015A\x03\x02\x02" +
+		"\x02\u015A\u015F\x03\x02\x02\x02\u015B\u015D\x07\x8B\x02\x02\u015C\u015E" +
+		"\x05\xD2j\x02\u015D\u015C\x03\x02\x02\x02\u015D\u015E\x03\x02\x02\x02" +
+		"\u015E\u0160\x03\x02\x02\x02\u015F\u015B\x03\x02\x02\x02\u015F\u0160\x03" +
+		"\x02\x02\x02\u0160\x0F\x03\x02\x02\x02\u0161\u0163\t\x03\x02\x02\u0162" +
+		"\u0164\x07\x8B\x02\x02\u0163\u0162\x03\x02\x02\x02\u0163\u0164\x03\x02" +
+		"\x02\x02\u0164\x11\x03\x02\x02\x02\u0165\u0167\x07\x80\x02\x02\u0166\u0168" +
+		"\x07\x8B\x02\x02\u0167\u0166\x03\x02\x02\x02\u0167\u0168\x03\x02\x02\x02" +
+		"\u0168\u016E\x03\x02\x02\x02\u0169\u016B\x07\x8A\x02\x02\u016A\u016C\x07" +
+		"\x83\x02\x02\u016B\u016A\x03\x02\x02\x02\u016B\u016C\x03\x02\x02\x02\u016C" +
+		"\u016D\x03\x02\x02\x02\u016D\u016F\x05\xCEh\x02\u016E\u0169\x03\x02\x02" +
+		"\x02\u016E\u016F\x03\x02\x02\x02\u016F\x13\x03\x02\x02\x02\u0170\u0171" +
+		"\x07\x83\x02\x02\u0171\u0172\x05\xCEh\x02\u0172\x15\x03\x02\x02\x02\u0173" +
+		"\u0175\x07z\x02\x02\u0174\u0176\x07\x83\x02\x02\u0175\u0174\x03\x02\x02" +
+		"\x02\u0175\u0176\x03\x02\x02\x02\u0176\u0177\x03\x02\x02\x02\u0177\u0178" +
+		"\x05\xCEh\x02\u0178\x17\x03\x02\x02\x02\u0179\u017B\x074\x02\x02\u017A" +
+		"\u017C\x07\x8E\x02\x02\u017B\u017A\x03\x02\x02\x02\u017B\u017C\x03\x02" +
+		"\x02\x02\u017C\u017D\x03\x02\x02\x02\u017D\u0181\x07V\x02\x02\u017E\u017F" +
+		"\x07R\x02\x02\u017F\u0180\x07h\x02\x02\u0180\u0182\x07H\x02\x02\u0181" +
+		"\u017E\x03\x02\x02\x02\u0181\u0182\x03\x02\x02\x02\u0182\u0186\x03\x02" +
+		"\x02\x02\u0183\u0184\x05\xB8]\x02\u0184\u0185\x07\x04\x02\x02\u0185\u0187" +
+		"\x03\x02\x02\x02\u0186\u0183\x03\x02\x02\x02\u0186\u0187\x03\x02\x02\x02" +
+		"\u0187\u0188\x03\x02\x02\x02\u0188\u0189\x05\xC4c\x02\u0189\u018A\x07" +
+		"m\x02\x02\u018A\u018B\x05\xBA^\x02\u018B\u018C\x07\x05\x02\x02\u018C\u0191" +
+		"\x05\x1A\x0E\x02\u018D\u018E\x07\x07\x02\x02\u018E\u0190\x05\x1A\x0E\x02" +
+		"\u018F\u018D\x03\x02\x02\x02\u0190\u0193\x03\x02\x02\x02\u0191\u018F\x03" +
+		"\x02\x02\x02\u0191\u0192\x03\x02\x02\x02\u0192\u0194\x03\x02\x02\x02\u0193" +
+		"\u0191\x03\x02\x02\x02\u0194\u0197\x07\x06\x02\x02\u0195\u0196\x07\x96" +
+		"\x02\x02\u0196\u0198\x05B\"\x02\u0197\u0195\x03\x02\x02\x02\u0197\u0198" +
+		"\x03\x02\x02\x02\u0198\x19\x03\x02\x02\x02\u0199\u019C\x05\xBE`\x02\u019A" +
+		"\u019C\x05B\"\x02\u019B\u0199\x03\x02\x02\x02\u019B\u019A\x03\x02\x02" +
+		"\x02\u019C\u019F\x03\x02\x02\x02\u019D\u019E\x07/\x02\x02\u019E\u01A0" +
+		"\x05\xC0a\x02\u019F\u019D\x03\x02\x02\x02\u019F\u01A0\x03\x02\x02\x02" +
+		"\u01A0\u01A2\x03\x02\x02\x02\u01A1\u01A3\x05\x90I\x02\u01A2\u01A1\x03" +
+		"\x02\x02\x02\u01A2\u01A3\x03\x02\x02\x02\u01A3\x1B\x03\x02\x02\x02\u01A4" +
+		"\u01A6\x074\x02\x02\u01A5\u01A7\t\x04\x02\x02\u01A6\u01A5\x03\x02\x02" +
+		"\x02\u01A6\u01A7\x03\x02\x02\x02\u01A7\u01A8\x03\x02\x02\x02\u01A8\u01AC" +
+		"\x07\x86\x02\x02\u01A9\u01AA\x07R\x02\x02\u01AA\u01AB\x07h\x02\x02\u01AB" +
+		"\u01AD\x07H\x02\x02\u01AC\u01A9\x03\x02\x02\x02\u01AC\u01AD\x03\x02\x02" +
+		"\x02\u01AD\u01B1\x03\x02\x02\x02\u01AE\u01AF\x05\xB8]\x02\u01AF\u01B0" +
+		"\x07\x04\x02\x02\u01B0\u01B2\x03\x02\x02\x02\u01B1\u01AE\x03\x02\x02\x02" +
+		"\u01B1\u01B2\x03\x02\x02\x02\u01B2\u01B3\x03\x02\x02\x02\u01B3\u01CB\x05" +
+		"\xBA^\x02\u01B4\u01B5\x07\x05\x02\x02\u01B5\u01BA\x05\x1E\x10\x02\u01B6" +
+		"\u01B7\x07\x07\x02\x02\u01B7\u01B9\x05\x1E\x10\x02\u01B8\u01B6\x03\x02" +
+		"\x02\x02\u01B9\u01BC\x03\x02\x02\x02\u01BA\u01BB\x03\x02\x02\x02\u01BA" +
+		"\u01B8\x03\x02\x02\x02\u01BB\u01C1\x03\x02\x02\x02\u01BC\u01BA\x03\x02" +
+		"\x02\x02\u01BD\u01BE\x07\x07\x02\x02\u01BE\u01C0\x05&\x14\x02\u01BF\u01BD" +
+		"\x03\x02\x02\x02\u01C0\u01C3\x03\x02\x02\x02\u01C1\u01BF\x03\x02\x02\x02" +
+		"\u01C1\u01C2\x03\x02\x02\x02\u01C2\u01C4\x03\x02\x02\x02\u01C3\u01C1\x03" +
+		"\x02\x02\x02\u01C4\u01C7\x07\x06\x02\x02\u01C5\u01C6\x07\x98\x02\x02\u01C6" +
+		"\u01C8\x07\xBB\x02\x02\u01C7\u01C5\x03\x02\x02\x02\u01C7\u01C8\x03\x02" +
+		"\x02\x02\u01C8\u01CC\x03\x02\x02\x02\u01C9\u01CA\x07#\x02\x02\u01CA\u01CC" +
+		"\x05X-\x02\u01CB\u01B4\x03\x02\x02\x02\u01CB\u01C9\x03\x02\x02\x02\u01CC" +
+		"\x1D\x03\x02\x02\x02\u01CD\u01CF\x05\xBE`\x02\u01CE\u01D0\x05 \x11\x02" +
+		"\u01CF\u01CE\x03\x02\x02\x02\u01CF\u01D0\x03\x02\x02\x02\u01D0\u01D4\x03" +
+		"\x02\x02\x02\u01D1\u01D3\x05\"\x12\x02\u01D2\u01D1\x03\x02\x02\x02\u01D3" +
+		"\u01D6\x03\x02\x02\x02\u01D4\u01D2\x03\x02\x02\x02\u01D4\u01D5\x03\x02" +
+		"\x02\x02\u01D5\x1F\x03\x02\x02\x02\u01D6\u01D4\x03\x02\x02\x02\u01D7\u01D9" +
+		"\x05\xB4[\x02\u01D8\u01D7\x03\x02\x02\x02\u01D9\u01DA\x03\x02\x02\x02" +
+		"\u01DA\u01DB\x03\x02\x02\x02\u01DA\u01D8\x03\x02\x02\x02\u01DB\u01E6\x03" +
+		"\x02\x02\x02\u01DC\u01DD\x07\x05\x02\x02\u01DD\u01DE\x05$\x13\x02\u01DE" +
+		"\u01DF\x07\x06\x02\x02\u01DF\u01E7\x03\x02\x02\x02\u01E0\u01E1\x07\x05" +
+		"\x02\x02\u01E1\u01E2\x05$\x13\x02\u01E2\u01E3\x07\x07\x02\x02\u01E3\u01E4" +
+		"\x05$\x13\x02\u01E4\u01E5\x07\x06\x02\x02\u01E5\u01E7\x03\x02\x02\x02" +
+		"\u01E6\u01DC\x03\x02\x02\x02\u01E6\u01E0\x03\x02\x02\x02\u01E6\u01E7\x03" +
+		"\x02\x02\x02\u01E7!\x03\x02\x02\x02\u01E8\u01E9\x073\x02\x02\u01E9\u01EB" +
+		"\x05\xB4[\x02\u01EA\u01E8\x03\x02\x02\x02\u01EA\u01EB\x03\x02\x02\x02" +
+		"\u01EB\u021D\x03\x02\x02\x02\u01EC\u01ED\x07s\x02\x02\u01ED\u01EF\x07" +
+		"a\x02\x02\u01EE\u01F0\x05\x90I\x02\u01EF\u01EE\x03\x02\x02\x02\u01EF\u01F0" +
+		"\x03\x02\x02\x02\u01F0\u01F2\x03\x02\x02\x02\u01F1\u01F3\x05*\x16\x02" +
+		"\u01F2\u01F1\x03\x02\x02\x02\u01F2\u01F3\x03\x02\x02\x02\u01F3\u01F5\x03" +
+		"\x02\x02\x02\u01F4\u01F6\x07&\x02\x02\u01F5\u01F4\x03\x02\x02\x02\u01F5" +
+		"\u01F6\x03\x02\x02\x02\u01F6\u021E\x03\x02\x02\x02\u01F7\u01F9\x07h\x02" +
+		"\x02\u01F8\u01F7\x03\x02\x02\x02\u01F8\u01F9\x03\x02\x02\x02\u01F9\u01FA" +
+		"\x03\x02\x02\x02\u01FA\u01FD\x07j\x02\x02\u01FB\u01FD\x07\x8E\x02\x02" +
+		"\u01FC\u01F8\x03\x02\x02\x02\u01FC\u01FB\x03\x02\x02\x02\u01FD\u01FF\x03" +
+		"\x02\x02\x02\u01FE\u0200\x05*\x16\x02\u01FF\u01FE\x03\x02\x02\x02\u01FF" +
+		"\u0200\x03\x02\x02\x02\u0200\u021E\x03\x02\x02\x02\u0201\u0202\x07.\x02" +
+		"\x02\u0202\u0203\x07\x05\x02\x02\u0203\u0204\x05B\"\x02\u0204\u0205\x07" +
+		"\x06\x02\x02\u0205\u021E\x03\x02\x02\x02\u0206\u020D\x07:\x02\x02\u0207" +
+		"\u020E\x05$\x13\x02\u0208\u020E\x05F$\x02\u0209\u020A\x07\x05\x02\x02" +
+		"\u020A\u020B\x05B\"\x02\u020B\u020C\x07\x06\x02\x02\u020C\u020E\x03\x02" +
+		"\x02\x02\u020D\u0207\x03\x02\x02\x02\u020D\u0208\x03\x02\x02\x02\u020D" +
+		"\u0209\x03\x02\x02\x02\u020E\u021E\x03\x02\x02\x02\u020F\u0210\x07/\x02" +
+		"\x02\u0210\u021E\x05\xC0a\x02\u0211\u021E\x05(\x15\x02\u0212\u0213\x07" +
+		"\xAB\x02\x02\u0213\u0215\x07\xAC\x02\x02\u0214\u0212\x03\x02\x02\x02\u0214" +
+		"\u0215\x03\x02\x02\x02\u0215\u0216\x03\x02\x02\x02\u0216\u0217\x07#\x02" +
+		"\x02\u0217\u0218\x07\x05\x02\x02\u0218\u0219\x05B\"\x02\u0219\u021B\x07" +
+		"\x06\x02\x02\u021A\u021C\t\x05\x02\x02\u021B\u021A\x03\x02\x02\x02\u021B" +
+		"\u021C\x03\x02\x02\x02\u021C\u021E\x03\x02\x02\x02\u021D\u01EC\x03\x02" +
+		"\x02\x02\u021D\u01FC\x03\x02\x02\x02\u021D\u0201\x03\x02\x02\x02\u021D" +
+		"\u0206\x03\x02\x02\x02\u021D\u020F\x03\x02\x02\x02\u021D\u0211\x03\x02" +
+		"\x02\x02\u021D\u0214\x03\x02\x02\x02\u021E#\x03\x02\x02\x02\u021F\u0221" +
+		"\t\x06\x02\x02\u0220\u021F\x03\x02\x02\x02\u0220\u0221\x03\x02\x02\x02" +
+		"\u0221\u0222\x03\x02\x02\x02\u0222\u0223\x07\xBC\x02\x02\u0223%\x03\x02" +
+		"\x02\x02\u0224\u0225\x073\x02\x02\u0225\u0227\x05\xB4[\x02\u0226\u0224" +
+		"\x03\x02\x02\x02\u0226\u0227\x03\x02\x02\x02\u0227\u024D\x03\x02\x02\x02" +
+		"\u0228\u0229\x07s\x02\x02\u0229\u022C\x07a\x02\x02\u022A\u022C\x07\x8E" +
+		"\x02\x02\u022B\u0228\x03\x02\x02\x02\u022B\u022A\x03\x02\x02\x02\u022C" +
+		"\u022D\x03\x02\x02\x02\u022D\u022E\x07\x05\x02\x02\u022E\u0233\x05\x1A" +
+		"\x0E\x02\u022F\u0230\x07\x07\x02\x02\u0230\u0232\x05\x1A\x0E\x02\u0231" +
+		"\u022F\x03\x02\x02\x02\u0232\u0235\x03\x02\x02\x02\u0233\u0231\x03\x02" +
+		"\x02\x02\u0233\u0234\x03\x02\x02\x02\u0234\u0236\x03\x02\x02\x02\u0235" +
+		"\u0233\x03\x02\x02\x02\u0236\u0238\x07\x06\x02\x02\u0237\u0239\x05*\x16" +
+		"\x02\u0238\u0237\x03\x02\x02\x02\u0238\u0239\x03\x02\x02\x02\u0239\u024E" +
+		"\x03\x02\x02\x02\u023A\u023B\x07.\x02\x02\u023B\u023C\x07\x05\x02\x02" +
+		"\u023C\u023D\x05B\"\x02\u023D\u023E\x07\x06\x02\x02\u023E\u024E\x03\x02" +
+		"\x02\x02\u023F\u0240\x07L\x02\x02\u0240\u0241\x07a\x02\x02\u0241\u0242" +
+		"\x07\x05\x02\x02\u0242\u0247\x05\xBE`\x02\u0243\u0244\x07\x07\x02\x02" +
+		"\u0244\u0246\x05\xBE`\x02\u0245\u0243\x03\x02\x02\x02\u0246\u0249\x03" +
+		"\x02\x02\x02\u0247\u0245\x03\x02\x02\x02\u0247\u0248\x03\x02\x02\x02\u0248" +
+		"\u024A\x03\x02\x02\x02\u0249\u0247\x03\x02\x02\x02\u024A\u024B\x07\x06" +
+		"\x02\x02\u024B\u024C\x05(\x15\x02\u024C\u024E\x03\x02\x02\x02\u024D\u022B" +
+		"\x03\x02\x02\x02\u024D\u023A\x03\x02\x02\x02\u024D\u023F\x03\x02\x02\x02" +
+		"\u024E\'\x03\x02\x02\x02\u024F\u0250\x07w\x02\x02\u0250\u025C\x05\xC2" +
+		"b\x02\u0251\u0252\x07\x05\x02\x02\u0252\u0257\x05\xBE`\x02\u0253\u0254" +
+		"\x07\x07\x02\x02\u0254\u0256\x05\xBE`\x02\u0255\u0253\x03\x02\x02\x02" +
+		"\u0256\u0259\x03\x02\x02\x02\u0257\u0255\x03\x02\x02\x02\u0257\u0258\x03" +
+		"\x02\x02\x02\u0258\u025A\x03\x02\x02\x02\u0259\u0257\x03\x02\x02\x02\u025A" +
+		"\u025B\x07\x06\x02\x02\u025B\u025D\x03\x02\x02\x02\u025C\u0251\x03\x02" +
+		"\x02\x02\u025C\u025D\x03\x02\x02\x02\u025D\u026C\x03\x02\x02\x02\u025E" +
+		"\u025F\x07m\x02\x02\u025F\u0266\t\x07\x02\x02\u0260\u0261\x07\x85\x02" +
+		"\x02\u0261\u0267\t\b\x02\x02\u0262\u0267\x07+\x02\x02\u0263\u0267\x07" +
+		"}\x02\x02\u0264\u0265\x07g\x02\x02\u0265\u0267\x07\x1C\x02\x02\u0266\u0260" +
+		"\x03\x02\x02\x02\u0266\u0262\x03\x02\x02\x02\u0266\u0263\x03\x02\x02\x02" +
+		"\u0266\u0264\x03\x02\x02\x02\u0267\u026B\x03\x02\x02\x02\u0268\u0269\x07" +
+		"e\x02\x02\u0269\u026B\x05\xB4[\x02\u026A\u025E\x03\x02\x02\x02\u026A\u0268" +
+		"\x03\x02\x02\x02\u026B\u026E\x03\x02\x02\x02\u026C\u026A\x03\x02\x02\x02" +
+		"\u026C\u026D\x03\x02\x02\x02\u026D\u0277\x03\x02\x02\x02\u026E\u026C\x03" +
+		"\x02\x02\x02\u026F\u0271\x07h\x02\x02\u0270\u026F\x03\x02\x02\x02\u0270" +
+		"\u0271\x03\x02\x02\x02\u0271\u0272\x03\x02\x02\x02\u0272\u0275\x07;\x02" +
+		"\x02\u0273\u0274\x07X\x02\x02\u0274\u0276\t\t\x02\x02\u0275\u0273\x03" +
+		"\x02\x02\x02\u0275\u0276\x03\x02\x02\x02\u0276\u0278\x03\x02\x02\x02\u0277" +
+		"\u0270\x03\x02\x02\x02\u0277\u0278\x03\x02\x02\x02\u0278)\x03\x02\x02" +
+		"\x02\u0279\u027A\x07m\x02\x02\u027A\u027B\x072\x02\x02\u027B\u027C\t\n" +
+		"\x02\x02\u027C+\x03\x02\x02\x02\u027D\u027F\x074\x02\x02\u027E\u0280\t" +
+		"\x04\x02\x02\u027F\u027E\x03\x02\x02\x02\u027F\u0280\x03\x02\x02\x02\u0280" +
+		"\u0281\x03\x02\x02\x02\u0281\u0285\x07\x8C\x02\x02\u0282\u0283\x07R\x02" +
+		"\x02\u0283\u0284\x07h\x02\x02\u0284\u0286\x07H\x02\x02\u0285\u0282\x03" +
+		"\x02\x02\x02\u0285\u0286\x03\x02\x02\x02\u0286\u028A\x03\x02\x02\x02\u0287" +
+		"\u0288\x05\xB8]\x02\u0288\u0289\x07\x04\x02\x02\u0289\u028B\x03\x02\x02" +
+		"\x02\u028A\u0287\x03\x02\x02\x02\u028A\u028B\x03\x02\x02\x02\u028B\u028C" +
+		"\x03\x02\x02\x02\u028C\u0291\x05\xC6d\x02\u028D\u0292\x07\'\x02\x02\u028E" +
+		"\u0292\x07\x1E\x02\x02\u028F\u0290\x07[\x02\x02\u0290\u0292\x07k\x02\x02" +
+		"\u0291\u028D\x03\x02\x02\x02\u0291\u028E\x03\x02\x02\x02\u0291\u028F\x03" +
+		"\x02\x02\x02\u0291\u0292\x03\x02\x02\x02\u0292\u02A1\x03\x02\x02\x02\u0293" +
+		"\u02A2\x07=\x02\x02\u0294\u02A2\x07Z\x02\x02\u0295\u029F\x07\x8F\x02\x02" +
+		"\u0296\u0297\x07k\x02\x02\u0297\u029C\x05\xBE`\x02\u0298\u0299\x07\x07" +
+		"\x02\x02\u0299\u029B\x05\xBE`\x02\u029A\u0298\x03\x02\x02\x02\u029B\u029E" +
+		"\x03\x02\x02\x02\u029C\u029A\x03\x02\x02\x02\u029C\u029D\x03\x02\x02\x02" +
+		"\u029D\u02A0\x03\x02\x02\x02\u029E\u029C\x03\x02\x02\x02\u029F\u0296\x03" +
+		"\x02\x02\x02\u029F\u02A0\x03\x02\x02\x02\u02A0\u02A2\x03\x02\x02\x02\u02A1" +
+		"\u0293\x03\x02\x02\x02\u02A1\u0294\x03\x02\x02\x02\u02A1\u0295\x03\x02" +
+		"\x02\x02\u02A2\u02A3\x03\x02\x02\x02\u02A3\u02A4\x07m\x02\x02\u02A4\u02A8" +
+		"\x05\xBA^\x02\u02A5\u02A6\x07K\x02\x02\u02A6\u02A7\x07B\x02\x02\u02A7" +
+		"\u02A9\x07\x81\x02\x02\u02A8\u02A5\x03\x02\x02\x02\u02A8\u02A9\x03\x02" +
+		"\x02\x02\u02A9\u02AC\x03\x02\x02\x02\u02AA\u02AB\x07\x95\x02\x02\u02AB" +
+		"\u02AD\x05B\"\x02\u02AC\u02AA\x03\x02\x02\x02\u02AC\u02AD\x03\x02\x02" +
+		"\x02\u02AD\u02AE\x03\x02\x02\x02\u02AE\u02B7\x07(\x02\x02\u02AF\u02B4" +
+		"\x05n8\x02\u02B0\u02B4\x05L\'\x02\u02B1\u02B4\x05:\x1E\x02\u02B2\u02B4" +
+		"\x05X-\x02\u02B3\u02AF\x03\x02\x02\x02\u02B3\u02B0\x03\x02\x02\x02\u02B3" +
+		"\u02B1\x03\x02\x02\x02\u02B3\u02B2\x03\x02\x02\x02\u02B4\u02B5\x03\x02" +
+		"\x02\x02\u02B5\u02B6\x07\x03\x02\x02\u02B6\u02B8\x03\x02\x02\x02\u02B7" +
+		"\u02B3\x03\x02\x02\x02\u02B8\u02B9\x03\x02\x02\x02\u02B9\u02B7\x03\x02" +
+		"\x02\x02\u02B9\u02BA\x03\x02\x02\x02\u02BA\u02BB\x03\x02\x02\x02\u02BB" +
+		"\u02BC\x07D\x02\x02\u02BC-\x03\x02\x02\x02\u02BD\u02BF\x074\x02\x02\u02BE" +
+		"\u02C0\t\x04\x02\x02\u02BF\u02BE\x03\x02\x02\x02\u02BF\u02C0\x03\x02\x02" +
+		"\x02\u02C0\u02C1\x03\x02\x02\x02\u02C1\u02C5\x07\x93\x02\x02\u02C2\u02C3" +
+		"\x07R\x02\x02\u02C3\u02C4\x07h\x02\x02\u02C4\u02C6\x07H\x02\x02\u02C5" +
+		"\u02C2\x03\x02\x02\x02\u02C5\u02C6\x03\x02\x02\x02\u02C6\u02CA\x03\x02" +
+		"\x02\x02\u02C7\u02C8\x05\xB8]\x02\u02C8\u02C9\x07\x04\x02\x02\u02C9\u02CB" +
+		"\x03\x02\x02\x02\u02CA\u02C7\x03\x02\x02\x02\u02CA\u02CB\x03\x02\x02\x02" +
+		"\u02CB\u02CC\x03\x02\x02\x02\u02CC\u02D8\x05\xC8e\x02\u02CD\u02CE\x07" +
+		"\x05\x02\x02\u02CE\u02D3\x05\xBE`\x02\u02CF\u02D0\x07\x07\x02\x02\u02D0" +
+		"\u02D2\x05\xBE`\x02\u02D1\u02CF\x03\x02\x02\x02\u02D2\u02D5\x03\x02\x02" +
+		"\x02\u02D3\u02D1\x03\x02\x02\x02\u02D3\u02D4\x03\x02\x02\x02\u02D4\u02D6" +
+		"\x03\x02\x02\x02\u02D5\u02D3\x03\x02\x02\x02\u02D6\u02D7\x07\x06\x02\x02" +
+		"\u02D7\u02D9\x03\x02\x02\x02\u02D8\u02CD\x03\x02\x02\x02\u02D8\u02D9\x03" +
+		"\x02\x02\x02\u02D9\u02DA\x03\x02\x02\x02\u02DA\u02DB\x07#\x02\x02\u02DB" +
+		"\u02DC\x05X-\x02\u02DC/\x03\x02\x02\x02\u02DD\u02DE\x074\x02\x02\u02DE" +
+		"\u02DF\x07\x94\x02\x02\u02DF\u02E3\x07\x86\x02\x02\u02E0\u02E1\x07R\x02" +
+		"\x02\u02E1\u02E2\x07h\x02\x02\u02E2\u02E4\x07H\x02\x02\u02E3\u02E0\x03" +
+		"\x02\x02\x02\u02E3\u02E4\x03\x02\x02\x02\u02E4\u02E8\x03\x02\x02\x02\u02E5" +
+		"\u02E6\x05\xB8]\x02\u02E6\u02E7\x07\x04\x02\x02\u02E7\u02E9\x03\x02\x02" +
+		"\x02\u02E8\u02E5\x03\x02\x02\x02\u02E8\u02E9\x03\x02\x02\x02\u02E9\u02EA" +
+		"\x03\x02\x02\x02\u02EA\u02EB\x05\xBA^\x02\u02EB\u02EC\x07\x90\x02\x02" +
+		"\u02EC\u02F8\x05\xCAf\x02\u02ED\u02EE\x07\x05\x02\x02\u02EE\u02F3\x05" +
+		"\xAEX\x02\u02EF\u02F0\x07\x07\x02\x02\u02F0\u02F2\x05\xAEX\x02\u02F1\u02EF" +
+		"\x03\x02\x02\x02\u02F2\u02F5\x03\x02\x02\x02\u02F3\u02F1\x03\x02\x02\x02" +
+		"\u02F3\u02F4\x03\x02\x02\x02\u02F4\u02F6\x03\x02\x02\x02\u02F5\u02F3\x03" +
+		"\x02\x02\x02\u02F6\u02F7\x07\x06\x02\x02\u02F7\u02F9\x03\x02\x02\x02\u02F8" +
+		"\u02ED\x03\x02\x02\x02\u02F8\u02F9\x03\x02\x02\x02\u02F91\x03\x02\x02" +
+		"\x02\u02FA\u02FC\x07\x97\x02\x02\u02FB\u02FD\x07v\x02\x02\u02FC\u02FB" +
+		"\x03\x02\x02\x02\u02FC\u02FD\x03\x02\x02\x02\u02FD\u02FE\x03\x02\x02\x02" +
+		"\u02FE\u02FF\x054\x1B\x02\u02FF\u0300\x07#\x02\x02\u0300\u0301\x07\x05" +
+		"\x02\x02\u0301\u0302\x05X-\x02\u0302\u030C\x07\x06\x02\x02\u0303\u0304" +
+		"\x07\x07\x02\x02\u0304\u0305\x054\x1B\x02\u0305\u0306\x07#\x02\x02\u0306" +
+		"\u0307\x07\x05\x02\x02\u0307\u0308\x05X-\x02\u0308\u0309\x07\x06\x02\x02" +
+		"\u0309\u030B\x03\x02\x02\x02\u030A\u0303\x03\x02\x02\x02\u030B\u030E\x03" +
+		"\x02\x02\x02\u030C\u030A\x03\x02\x02\x02\u030C\u030D\x03\x02\x02\x02\u030D" +
+		"3\x03\x02\x02\x02\u030E\u030C\x03\x02\x02\x02\u030F\u031B\x05\xBA^\x02" +
+		"\u0310\u0311\x07\x05\x02\x02\u0311\u0316\x05\xBE`\x02\u0312\u0313\x07" +
+		"\x07\x02\x02\u0313\u0315\x05\xBE`\x02\u0314\u0312\x03\x02\x02\x02\u0315" +
+		"\u0318\x03\x02\x02\x02\u0316\u0314\x03\x02\x02\x02\u0316\u0317\x03\x02" +
+		"\x02\x02\u0317\u0319\x03\x02\x02\x02\u0318\u0316\x03\x02\x02\x02\u0319" +
+		"\u031A\x07\x06\x02\x02\u031A\u031C\x03\x02\x02\x02\u031B\u0310\x03\x02" +
+		"\x02\x02\u031B\u031C\x03\x02\x02\x02\u031C5\x03\x02\x02\x02\u031D\u031E" +
+		"\x054\x1B\x02\u031E\u031F\x07#\x02\x02\u031F\u0320\x07\x05\x02\x02\u0320" +
+		"\u0321\x05\xA6T\x02\u0321\u0323\x07\x8D\x02\x02\u0322\u0324\x07\x1F\x02" +
+		"\x02\u0323\u0322\x03\x02\x02\x02\u0323\u0324\x03\x02\x02\x02\u0324\u0325" +
+		"\x03\x02\x02\x02\u0325\u0326\x05\xA8U\x02\u0326\u0327\x07\x06\x02\x02" +
+		"\u03277\x03\x02\x02\x02\u0328\u0334\x05\xBA^\x02\u0329\u032A\x07\x05\x02" +
+		"\x02\u032A\u032F\x05\xBE`\x02\u032B\u032C\x07\x07\x02\x02\u032C\u032E" +
+		"\x05\xBE`\x02\u032D\u032B\x03\x02\x02\x02\u032E\u0331\x03\x02\x02\x02" +
+		"\u032F\u032D\x03\x02\x02\x02\u032F\u0330\x03\x02\x02\x02\u0330\u0332\x03" +
+		"\x02\x02\x02\u0331\u032F\x03\x02\x02\x02\u0332\u0333\x07\x06\x02\x02\u0333" +
+		"\u0335\x03\x02\x02\x02\u0334\u0329\x03\x02\x02\x02\u0334\u0335\x03\x02" +
+		"\x02\x02\u0335\u0336\x03\x02\x02\x02\u0336\u0337\x07#\x02\x02\u0337\u0338" +
+		"\x07\x05\x02\x02\u0338\u0339\x05X-\x02\u0339\u033A\x07\x06\x02\x02\u033A";
 	private static readonly _serializedATNSegment2: string =
-		"\x02\u033A9\x03\x02\x02\x02\u033B\u033D\x052\x1A\x02\u033C\u033B\x03\x02" +
-		"\x02\x02\u033C\u033D\x03\x02\x02\x02\u033D\u033E\x03\x02\x02\x02\u033E" +
-		"\u033F\x07=\x02\x02\u033F\u0340\x07M\x02\x02\u0340\u0343\x05t;\x02\u0341" +
-		"\u0342\x07\x96\x02\x02\u0342\u0344\x05B\"\x02\u0343\u0341\x03\x02\x02" +
-		"\x02\u0343\u0344\x03\x02\x02\x02\u0344\u0346\x03\x02\x02\x02\u0345\u0347" +
-		"\x05N(\x02\u0346\u0345\x03\x02\x02\x02\u0346\u0347\x03\x02\x02\x02\u0347" +
-		";\x03\x02\x02\x02\u0348\u034A\x052\x1A\x02\u0349\u0348\x03\x02\x02\x02" +
-		"\u0349\u034A\x03\x02\x02\x02\u034A\u034B\x03\x02\x02\x02\u034B\u034C\x07" +
-		"=\x02\x02\u034C\u034D\x07M\x02\x02\u034D\u0350\x05t;\x02\u034E\u034F\x07" +
-		"\x96\x02\x02\u034F\u0351\x05B\"\x02\u0350\u034E\x03\x02\x02\x02\u0350" +
-		"\u0351\x03\x02\x02\x02\u0351\u0353\x03\x02\x02\x02\u0352\u0354\x05N(\x02" +
-		"\u0353\u0352\x03\x02\x02\x02\u0353\u0354\x03\x02\x02\x02\u0354\u0359\x03" +
-		"\x02\x02\x02\u0355\u0357\x05\x8AF\x02\u0356\u0355\x03\x02\x02\x02\u0356" +
-		"\u0357\x03\x02\x02\x02\u0357\u0358\x03\x02\x02\x02\u0358\u035A\x05\x8C" +
-		"G\x02\u0359\u0356\x03\x02\x02\x02\u0359\u035A\x03\x02\x02\x02\u035A=\x03" +
-		"\x02\x02\x02\u035B\u035D\x07?\x02\x02\u035C\u035E\x079\x02\x02\u035D\u035C" +
-		"\x03\x02\x02\x02\u035D\u035E\x03\x02\x02\x02\u035E\u035F\x03\x02\x02\x02" +
-		"\u035F\u0360\x05\xB8]\x02\u0360?\x03\x02\x02\x02\u0361\u0362\x07A\x02" +
-		"\x02\u0362\u0365\t\v\x02\x02\u0363\u0364\x07R\x02\x02\u0364\u0366\x07" +
-		"H\x02\x02\u0365\u0363\x03\x02\x02\x02\u0365\u0366\x03\x02\x02\x02\u0366" +
-		"\u036A\x03\x02\x02\x02\u0367\u0368\x05\xB8]\x02\u0368\u0369\x07\x04\x02" +
-		"\x02\u0369\u036B\x03\x02\x02\x02\u036A\u0367\x03\x02\x02\x02\u036A\u036B" +
-		"\x03\x02\x02\x02\u036B\u036C\x03\x02\x02\x02\u036C\u036D\x05\xE2r\x02" +
-		"\u036DA\x03\x02\x02\x02\u036E\u036F\b\"\x01\x02\u036F\u03C7\x05F$\x02" +
-		"\u0370\u03C7\x07\xBD\x02\x02\u0371\u0372\x05\xB8]\x02\u0372\u0373\x07" +
-		"\x04\x02\x02\u0373\u0375\x03\x02\x02\x02\u0374\u0371\x03\x02\x02\x02\u0374" +
-		"\u0375\x03\x02\x02\x02\u0375\u0376\x03\x02\x02\x02\u0376\u0377\x05\xBA" +
-		"^\x02\u0377\u0378\x07\x04\x02\x02\u0378\u037A\x03\x02\x02\x02\u0379\u0374" +
-		"\x03\x02\x02\x02\u0379\u037A\x03\x02\x02\x02\u037A\u037B\x03\x02\x02\x02" +
-		"\u037B\u03C7\x05\xBE`\x02\u037C\u037D\x05\xAAV\x02\u037D\u037E\x05B\"" +
-		"\x17\u037E\u03C7\x03\x02\x02\x02\u037F\u0380\x05\xB6\\\x02\u0380\u038D" +
-		"\x07\x05\x02\x02\u0381\u0383\x07@\x02\x02\u0382\u0381\x03\x02\x02\x02" +
-		"\u0382\u0383\x03\x02\x02\x02\u0383\u0384\x03\x02\x02\x02\u0384\u0389\x05" +
-		"B\"\x02\u0385\u0386\x07\x07\x02\x02\u0386\u0388\x05B\"\x02\u0387\u0385" +
-		"\x03\x02\x02\x02\u0388\u038B\x03\x02\x02\x02\u0389\u0387\x03\x02\x02\x02" +
-		"\u0389\u038A\x03\x02\x02\x02\u038A\u038E\x03\x02\x02\x02\u038B\u0389\x03" +
-		"\x02\x02\x02\u038C\u038E\x07\t\x02\x02\u038D\u0382\x03\x02\x02\x02\u038D" +
-		"\u038C\x03\x02\x02\x02\u038D\u038E\x03\x02\x02\x02\u038E\u038F\x03\x02" +
-		"\x02\x02\u038F\u0391\x07\x06\x02\x02\u0390\u0392\x05x=\x02\u0391\u0390" +
-		"\x03\x02\x02\x02\u0391\u0392\x03\x02\x02\x02\u0392\u0394\x03\x02\x02\x02" +
-		"\u0393\u0395\x05|?\x02\u0394\u0393\x03\x02\x02\x02\u0394\u0395\x03\x02" +
-		"\x02\x02\u0395\u03C7\x03\x02\x02\x02\u0396\u0397\x07\x05\x02\x02\u0397" +
-		"\u039C\x05B\"\x02\u0398\u0399\x07\x07\x02\x02\u0399\u039B\x05B\"\x02\u039A" +
-		"\u0398\x03\x02\x02\x02\u039B\u039E\x03\x02\x02\x02\u039C\u039A\x03\x02" +
-		"\x02\x02\u039C\u039D\x03\x02\x02\x02\u039D\u039F\x03\x02\x02\x02\u039E" +
-		"\u039C\x03\x02\x02\x02\u039F\u03A0\x07\x06\x02\x02\u03A0\u03C7\x03\x02" +
-		"\x02\x02\u03A1\u03A2\x07-\x02\x02\u03A2\u03A3\x07\x05\x02\x02\u03A3\u03A4" +
-		"\x05B\"\x02\u03A4\u03A5\x07#\x02\x02\u03A5\u03A6\x05 \x11\x02\u03A6\u03A7" +
-		"\x07\x06\x02\x02\u03A7\u03C7\x03\x02\x02\x02\u03A8\u03AA\x07h\x02\x02" +
-		"\u03A9\u03A8\x03\x02\x02\x02\u03A9\u03AA\x03\x02\x02\x02\u03AA\u03AB\x03" +
-		"\x02\x02\x02\u03AB\u03AD\x07H\x02\x02\u03AC\u03A9\x03\x02\x02\x02\u03AC" +
-		"\u03AD\x03\x02\x02\x02\u03AD\u03AE\x03\x02\x02\x02\u03AE\u03AF\x07\x05" +
-		"\x02\x02\u03AF\u03B0\x05X-\x02\u03B0\u03B1\x07\x06\x02\x02\u03B1\u03C7" +
-		"\x03\x02\x02\x02\u03B2\u03B4\x07,\x02\x02\u03B3\u03B5\x05B\"\x02\u03B4" +
-		"\u03B3\x03\x02\x02\x02\u03B4\u03B5\x03\x02\x02\x02\u03B5\u03BB\x03\x02" +
-		"\x02\x02\u03B6\u03B7\x07\x95\x02\x02\u03B7\u03B8\x05B\"\x02\u03B8\u03B9" +
-		"\x07\x89\x02\x02\u03B9\u03BA\x05B\"\x02\u03BA\u03BC\x03\x02\x02\x02\u03BB" +
-		"\u03B6\x03\x02\x02\x02\u03BC\u03BD\x03\x02\x02\x02\u03BD\u03BB\x03\x02" +
-		"\x02\x02\u03BD\u03BE\x03\x02\x02\x02\u03BE\u03C1\x03\x02\x02\x02\u03BF" +
-		"\u03C0\x07C\x02\x02\u03C0\u03C2\x05B\"\x02\u03C1\u03BF\x03\x02\x02\x02" +
-		"\u03C1\u03C2\x03\x02\x02\x02\u03C2\u03C3\x03\x02\x02\x02\u03C3\u03C4\x07" +
-		"D\x02\x02\u03C4\u03C7\x03\x02\x02\x02\u03C5\u03C7\x05D#\x02\u03C6\u036E" +
-		"\x03\x02\x02\x02\u03C6\u0370\x03\x02\x02\x02\u03C6\u0379\x03\x02\x02\x02" +
-		"\u03C6\u037C\x03\x02\x02\x02\u03C6\u037F\x03\x02\x02\x02\u03C6\u0396\x03" +
-		"\x02\x02\x02\u03C6\u03A1\x03\x02\x02\x02\u03C6\u03AC\x03\x02\x02\x02\u03C6" +
-		"\u03B2\x03\x02\x02\x02\u03C6\u03C5\x03\x02\x02\x02\u03C7\u0445\x03\x02" +
-		"\x02\x02\u03C8\u03C9\f\x16\x02\x02\u03C9\u03CA\x07\r\x02\x02\u03CA\u0444" +
-		"\x05B\"\x17\u03CB\u03CC\f\x15\x02\x02\u03CC\u03CD\t\f\x02\x02\u03CD\u0444" +
-		"\x05B\"\x16\u03CE\u03CF\f\x14\x02\x02\u03CF\u03D0\t\x06\x02\x02\u03D0" +
-		"\u0444\x05B\"\x15\u03D1\u03D2\f\x13\x02\x02\u03D2\u03D3\t\r\x02\x02\u03D3" +
-		"\u0444\x05B\"\x14\u03D4\u03D5\f\x12\x02\x02\u03D5\u03D6\t\x0E\x02\x02" +
-		"\u03D6\u0444\x05B\"\x13\u03D7\u03EA\f\x11\x02\x02\u03D8\u03EB\x07\b\x02" +
-		"\x02\u03D9\u03EB\x07\x18\x02\x02\u03DA\u03EB\x07\x19\x02\x02\u03DB\u03EB" +
-		"\x07\x1A\x02\x02\u03DC\u03EB\x07^\x02\x02\u03DD\u03DE\x07^\x02\x02\u03DE" +
-		"\u03EB\x07h\x02\x02\u03DF\u03E1\x07^\x02\x02\u03E0\u03E2\x07h\x02\x02" +
-		"\u03E1\u03E0\x03\x02\x02\x02\u03E1\u03E2\x03\x02\x02\x02\u03E2\u03E3\x03" +
-		"\x02\x02\x02\u03E3\u03E4\x07@\x02\x02\u03E4\u03EB\x07M\x02\x02\u03E5\u03EB" +
-		"\x07U\x02\x02\u03E6\u03EB\x07c\x02\x02\u03E7\u03EB\x07O\x02\x02\u03E8" +
-		"\u03EB\x07e\x02\x02\u03E9\u03EB\x07x\x02\x02\u03EA\u03D8\x03\x02\x02\x02" +
-		"\u03EA\u03D9\x03\x02\x02\x02\u03EA\u03DA\x03\x02\x02\x02\u03EA\u03DB\x03" +
-		"\x02\x02\x02\u03EA\u03DC\x03\x02\x02\x02\u03EA\u03DD\x03\x02\x02\x02\u03EA" +
-		"\u03DF\x03\x02\x02\x02\u03EA\u03E5\x03\x02\x02\x02\u03EA\u03E6\x03\x02" +
-		"\x02\x02\u03EA\u03E7\x03\x02\x02\x02\u03EA\u03E8\x03\x02\x02\x02\u03EA" +
-		"\u03E9\x03\x02\x02\x02\u03EB\u03EC\x03\x02\x02\x02\u03EC\u0444\x05B\"" +
-		"\x12\u03ED\u03EE\f\x10\x02\x02\u03EE\u03EF\x07\"\x02\x02\u03EF\u0444\x05" +
-		"B\"\x11\u03F0\u03F1\f\x0F\x02\x02\u03F1\u03F2\x07n\x02\x02\u03F2\u0444" +
-		"\x05B\"\x10\u03F3\u03F4\f\b\x02\x02\u03F4\u03F6\x07^\x02\x02\u03F5\u03F7" +
-		"\x07h\x02\x02\u03F6\u03F5\x03\x02\x02\x02\u03F6\u03F7\x03\x02\x02\x02" +
-		"\u03F7\u03F8\x03\x02\x02\x02\u03F8\u0444\x05B\"\t\u03F9\u03FB\f\x07\x02" +
-		"\x02\u03FA\u03FC\x07h\x02\x02\u03FB\u03FA\x03\x02\x02\x02\u03FB\u03FC" +
-		"\x03\x02\x02\x02\u03FC\u03FD\x03\x02\x02\x02\u03FD\u03FE\x07)\x02\x02" +
-		"\u03FE\u03FF\x05B\"\x02\u03FF\u0400\x07\"\x02\x02\u0400\u0401\x05B\"\b" +
-		"\u0401\u0444\x03\x02\x02\x02\u0402\u0403\f\v\x02\x02\u0403\u0404\x07/" +
-		"\x02\x02\u0404\u0444\x05\xC0a\x02\u0405\u0407\f\n\x02\x02\u0406\u0408" +
-		"\x07h\x02\x02\u0407\u0406\x03\x02\x02\x02\u0407\u0408\x03\x02\x02\x02" +
-		"\u0408\u0409\x03\x02\x02\x02\u0409\u040A\t\x0F\x02\x02\u040A\u040D\x05" +
-		"B\"\x02\u040B\u040C\x07E\x02\x02\u040C\u040E\x05B\"\x02\u040D\u040B\x03" +
-		"\x02\x02\x02\u040D\u040E\x03\x02\x02\x02\u040E\u0444\x03\x02\x02\x02\u040F" +
-		"\u0414\f\t\x02\x02\u0410\u0415\x07_\x02\x02\u0411\u0415\x07i\x02\x02\u0412" +
-		"\u0413\x07h\x02\x02\u0413\u0415\x07j\x02\x02\u0414\u0410\x03\x02\x02\x02" +
-		"\u0414\u0411\x03\x02\x02\x02\u0414\u0412\x03\x02\x02\x02\u0415\u0444\x03" +
-		"\x02\x02\x02\u0416\u0418\f\x06\x02\x02\u0417\u0419\x07h\x02\x02\u0418" +
-		"\u0417\x03\x02\x02\x02\u0418\u0419\x03\x02\x02\x02\u0419\u041A\x03\x02" +
-		"\x02\x02\u041A\u0441\x07U\x02\x02\u041B\u0425\x07\x05\x02\x02\u041C\u0426" +
-		"\x05X-\x02\u041D\u0422\x05B\"\x02\u041E\u041F\x07\x07\x02\x02\u041F\u0421" +
-		"\x05B\"\x02\u0420\u041E\x03\x02\x02\x02\u0421\u0424\x03\x02\x02\x02\u0422" +
-		"\u0420\x03\x02\x02\x02\u0422\u0423\x03\x02\x02\x02\u0423\u0426\x03\x02" +
-		"\x02\x02\u0424\u0422\x03\x02\x02\x02\u0425\u041C\x03\x02\x02\x02\u0425" +
-		"\u041D\x03\x02\x02\x02\u0425\u0426\x03\x02\x02\x02\u0426\u0427\x03\x02" +
-		"\x02\x02\u0427\u0442\x07\x06\x02\x02\u0428\u0429\x05\xB8]\x02\u0429\u042A" +
-		"\x07\x04\x02\x02\u042A\u042C\x03\x02\x02\x02\u042B\u0428\x03\x02\x02\x02" +
-		"\u042B\u042C\x03\x02\x02\x02\u042C\u042D\x03\x02\x02\x02\u042D\u0442\x05" +
-		"\xBA^\x02\u042E\u042F\x05\xB8]\x02\u042F\u0430\x07\x04\x02\x02\u0430\u0432" +
-		"\x03\x02\x02\x02\u0431\u042E\x03\x02\x02\x02\u0431\u0432\x03\x02\x02\x02" +
-		"\u0432\u0433\x03\x02\x02\x02\u0433\u0434\x05\xE0q\x02\u0434\u043D\x07" +
-		"\x05\x02\x02\u0435\u043A\x05B\"\x02\u0436\u0437\x07\x07\x02\x02\u0437" +
-		"\u0439\x05B\"\x02\u0438\u0436\x03\x02\x02\x02\u0439\u043C\x03\x02\x02" +
-		"\x02\u043A\u0438\x03\x02\x02\x02\u043A\u043B\x03\x02\x02\x02\u043B\u043E" +
-		"\x03\x02\x02\x02\u043C\u043A\x03\x02\x02\x02\u043D\u0435\x03\x02\x02\x02" +
-		"\u043D\u043E\x03\x02\x02\x02\u043E\u043F\x03\x02\x02\x02\u043F\u0440\x07" +
-		"\x06\x02\x02\u0440\u0442\x03\x02\x02\x02\u0441\u041B\x03\x02\x02\x02\u0441" +
-		"\u042B\x03\x02\x02\x02\u0441\u0431\x03\x02\x02\x02\u0442\u0444\x03\x02" +
-		"\x02\x02\u0443\u03C8\x03\x02\x02\x02\u0443\u03CB\x03\x02\x02\x02\u0443" +
-		"\u03CE\x03\x02\x02\x02\u0443\u03D1\x03\x02\x02\x02\u0443\u03D4\x03\x02" +
-		"\x02\x02\u0443\u03D7\x03\x02\x02\x02\u0443\u03ED\x03\x02\x02\x02\u0443" +
-		"\u03F0\x03\x02\x02\x02\u0443\u03F3\x03\x02\x02\x02\u0443\u03F9\x03\x02" +
-		"\x02\x02\u0443\u0402\x03\x02\x02\x02\u0443\u0405\x03\x02\x02\x02\u0443" +
-		"\u040F\x03\x02\x02\x02\u0443\u0416\x03\x02\x02\x02\u0444\u0447\x03\x02" +
-		"\x02\x02\u0445\u0443\x03\x02\x02\x02\u0445\u0446\x03\x02\x02\x02\u0446" +
-		"C\x03\x02\x02\x02\u0447\u0445\x03\x02\x02\x02\u0448\u0449\x07u\x02\x02" +
-		"\u0449\u044E\x07\x05\x02\x02\u044A\u044F\x07S\x02\x02\u044B\u044C\t\x10" +
-		"\x02\x02\u044C\u044D\x07\x07\x02\x02\u044D\u044F\x05\xACW\x02\u044E\u044A" +
-		"\x03\x02\x02\x02\u044E\u044B\x03\x02\x02\x02\u044F\u0450\x03\x02\x02\x02" +
-		"\u0450\u0451\x07\x06\x02\x02\u0451E\x03\x02\x02\x02\u0452\u0453\t\x11" +
-		"\x02\x02\u0453G\x03\x02\x02\x02\u0454\u0455\x07\x05\x02\x02\u0455\u045A" +
-		"\x05B\"\x02\u0456\u0457\x07\x07\x02\x02\u0457\u0459\x05B\"\x02\u0458\u0456" +
-		"\x03\x02\x02\x02\u0459\u045C\x03\x02\x02\x02\u045A\u0458\x03\x02\x02\x02" +
-		"\u045A\u045B\x03\x02\x02\x02\u045B\u045D\x03\x02\x02\x02\u045C\u045A\x03" +
-		"\x02\x02\x02\u045D\u045E\x07\x06\x02\x02\u045EI\x03\x02\x02\x02\u045F" +
-		"\u0460\x07\x92\x02\x02\u0460\u0465\x05H%\x02\u0461\u0462\x07\x07\x02\x02" +
-		"\u0462\u0464\x05H%\x02\u0463\u0461\x03\x02\x02\x02\u0464\u0467\x03\x02" +
-		"\x02\x02\u0465\u0463\x03\x02\x02\x02\u0465\u0466\x03\x02\x02\x02\u0466" +
-		"K\x03\x02\x02\x02\u0467\u0465\x03\x02\x02\x02\u0468\u046A\x052\x1A\x02" +
-		"\u0469\u0468\x03\x02\x02\x02\u0469\u046A\x03\x02\x02\x02\u046A\u0470\x03" +
-		"\x02\x02\x02\u046B\u0471\x07Z\x02\x02\u046C\u0471\x07|\x02\x02\u046D\u046E" +
-		"\x07Z\x02\x02\u046E\u046F\x07n\x02\x02\u046F\u0471\t\n\x02\x02\u0470\u046B" +
-		"\x03\x02\x02\x02\u0470\u046C\x03\x02\x02\x02\u0470\u046D\x03\x02\x02\x02" +
-		"\u0471\u0472\x03\x02\x02\x02\u0472\u0476\x07]\x02\x02\u0473\u0474\x05" +
-		"\xB8]\x02\u0474\u0475\x07\x04\x02\x02\u0475\u0477\x03\x02\x02\x02\u0476" +
-		"\u0473\x03\x02\x02\x02\u0476\u0477\x03\x02\x02\x02\u0477\u0478\x03\x02" +
-		"\x02\x02\u0478\u047B\x05\xBA^\x02\u0479\u047A\x07#\x02\x02\u047A\u047C" +
-		"\x05\xD0i\x02\u047B\u0479\x03\x02\x02\x02\u047B\u047C\x03\x02\x02\x02" +
-		"\u047C\u0488\x03\x02\x02\x02\u047D\u047E\x07\x05\x02\x02\u047E\u0483\x05" +
-		"\xBE`\x02\u047F\u0480\x07\x07\x02\x02\u0480\u0482\x05\xBE`\x02\u0481\u047F" +
-		"\x03\x02\x02\x02\u0482\u0485\x03\x02\x02\x02\u0483\u0481\x03\x02\x02\x02" +
-		"\u0483\u0484\x03\x02\x02\x02\u0484\u0486\x03\x02\x02\x02\u0485\u0483\x03" +
-		"\x02\x02\x02\u0486\u0487\x07\x06\x02\x02\u0487\u0489\x03\x02\x02\x02\u0488" +
-		"\u047D\x03\x02\x02\x02\u0488\u0489\x03\x02\x02\x02\u0489\u0493\x03\x02" +
-		"\x02\x02\u048A\u048D\x05J&\x02\u048B\u048D\x05X-\x02\u048C\u048A\x03\x02" +
-		"\x02\x02\u048C\u048B\x03\x02\x02\x02\u048D\u048F\x03\x02\x02\x02\u048E" +
-		"\u0490\x05P)\x02\u048F\u048E\x03\x02\x02\x02\u048F\u0490\x03\x02\x02\x02" +
-		"\u0490\u0494\x03\x02\x02\x02\u0491\u0492\x07:\x02\x02\u0492\u0494\x07" +
-		"\x92\x02\x02\u0493\u048C\x03\x02\x02\x02\u0493\u0491\x03\x02\x02\x02\u0494" +
-		"\u0496\x03\x02\x02\x02\u0495\u0497\x05N(\x02\u0496\u0495\x03\x02\x02\x02" +
-		"\u0496\u0497\x03\x02\x02\x02\u0497M\x03\x02\x02\x02\u0498\u0499\x07~\x02" +
-		"\x02\u0499\u049E\x05f4\x02\u049A\u049B\x07\x07\x02\x02\u049B\u049D\x05" +
-		"f4\x02\u049C\u049A\x03\x02\x02\x02\u049D\u04A0\x03\x02\x02\x02\u049E\u049C" +
-		"\x03\x02\x02\x02\u049E\u049F\x03\x02\x02\x02\u049FO\x03\x02\x02\x02\u04A0" +
-		"\u049E\x03\x02\x02\x02\u04A1\u04A2\x07m\x02\x02\u04A2\u04B1\x072\x02\x02" +
-		"\u04A3\u04A4\x07\x05\x02\x02\u04A4\u04A9\x05\x1A\x0E\x02\u04A5\u04A6\x07" +
-		"\x07\x02\x02\u04A6\u04A8\x05\x1A\x0E\x02\u04A7\u04A5\x03\x02\x02\x02\u04A8" +
+		"9\x03\x02\x02\x02\u033B\u033D\x052\x1A\x02\u033C\u033B\x03\x02\x02\x02" +
+		"\u033C\u033D\x03\x02\x02\x02\u033D\u033E\x03\x02\x02\x02\u033E\u033F\x07" +
+		"=\x02\x02\u033F\u0340\x07M\x02\x02\u0340\u0343\x05t;\x02\u0341\u0342\x07" +
+		"\x96\x02\x02\u0342\u0344\x05B\"\x02\u0343\u0341\x03\x02\x02\x02\u0343" +
+		"\u0344\x03\x02\x02\x02\u0344\u0346\x03\x02\x02\x02\u0345\u0347\x05N(\x02" +
+		"\u0346\u0345\x03\x02\x02\x02\u0346\u0347\x03\x02\x02\x02\u0347;\x03\x02" +
+		"\x02\x02\u0348\u034A\x052\x1A\x02\u0349\u0348\x03\x02\x02\x02\u0349\u034A" +
+		"\x03\x02\x02\x02\u034A\u034B\x03\x02\x02\x02\u034B\u034C\x07=\x02\x02" +
+		"\u034C\u034D\x07M\x02\x02\u034D\u0350\x05t;\x02\u034E\u034F\x07\x96\x02" +
+		"\x02\u034F\u0351\x05B\"\x02\u0350\u034E\x03\x02\x02\x02\u0350\u0351\x03" +
+		"\x02\x02\x02\u0351\u0353\x03\x02\x02\x02\u0352\u0354\x05N(\x02\u0353\u0352" +
+		"\x03\x02\x02\x02\u0353\u0354\x03\x02\x02\x02\u0354\u0359\x03\x02\x02\x02" +
+		"\u0355\u0357\x05\x8AF\x02\u0356\u0355\x03\x02\x02\x02\u0356\u0357\x03" +
+		"\x02\x02\x02\u0357\u0358\x03\x02\x02\x02\u0358\u035A\x05\x8CG\x02\u0359" +
+		"\u0356\x03\x02\x02\x02\u0359\u035A\x03\x02\x02\x02\u035A=\x03\x02\x02" +
+		"\x02\u035B\u035D\x07?\x02\x02\u035C\u035E\x079\x02\x02\u035D\u035C\x03" +
+		"\x02\x02\x02\u035D\u035E\x03\x02\x02\x02\u035E\u035F\x03\x02\x02\x02\u035F" +
+		"\u0360\x05\xB8]\x02\u0360?\x03\x02\x02\x02\u0361\u0362\x07A\x02\x02\u0362" +
+		"\u0365\t\v\x02\x02\u0363\u0364\x07R\x02\x02\u0364\u0366\x07H\x02\x02\u0365" +
+		"\u0363\x03\x02\x02\x02\u0365\u0366\x03\x02\x02\x02\u0366\u036A\x03\x02" +
+		"\x02\x02\u0367\u0368\x05\xB8]\x02\u0368\u0369\x07\x04\x02\x02\u0369\u036B" +
+		"\x03\x02\x02\x02\u036A\u0367\x03\x02\x02\x02\u036A\u036B\x03\x02\x02\x02" +
+		"\u036B\u036C\x03\x02\x02\x02\u036C\u036D\x05\xE2r\x02\u036DA\x03\x02\x02" +
+		"\x02\u036E\u036F\b\"\x01\x02\u036F\u03C7\x05F$\x02\u0370\u03C7\x07\xBD" +
+		"\x02\x02\u0371\u0372\x05\xB8]\x02\u0372\u0373\x07\x04\x02\x02\u0373\u0375" +
+		"\x03\x02\x02\x02\u0374\u0371\x03\x02\x02\x02\u0374\u0375\x03\x02\x02\x02" +
+		"\u0375\u0376\x03\x02\x02\x02\u0376\u0377\x05\xBA^\x02\u0377\u0378\x07" +
+		"\x04\x02\x02\u0378\u037A\x03\x02\x02\x02\u0379\u0374\x03\x02\x02\x02\u0379" +
+		"\u037A\x03\x02\x02\x02\u037A\u037B\x03\x02\x02\x02\u037B\u03C7\x05\xBE" +
+		"`\x02\u037C\u037D\x05\xAAV\x02\u037D\u037E\x05B\"\x17\u037E\u03C7\x03" +
+		"\x02\x02\x02\u037F\u0380\x05\xB6\\\x02\u0380\u038D\x07\x05\x02\x02\u0381" +
+		"\u0383\x07@\x02\x02\u0382\u0381\x03\x02\x02\x02\u0382\u0383\x03\x02\x02" +
+		"\x02\u0383\u0384\x03\x02\x02\x02\u0384\u0389\x05B\"\x02\u0385\u0386\x07" +
+		"\x07\x02\x02\u0386\u0388\x05B\"\x02\u0387\u0385\x03\x02\x02\x02\u0388" +
+		"\u038B\x03\x02\x02\x02\u0389\u0387\x03\x02\x02\x02\u0389\u038A\x03\x02" +
+		"\x02\x02\u038A\u038E\x03\x02\x02\x02\u038B\u0389\x03\x02\x02\x02\u038C" +
+		"\u038E\x07\t\x02\x02\u038D\u0382\x03\x02\x02\x02\u038D\u038C\x03\x02\x02" +
+		"\x02\u038D\u038E\x03\x02\x02\x02\u038E\u038F\x03\x02\x02\x02\u038F\u0391" +
+		"\x07\x06\x02\x02\u0390\u0392\x05x=\x02\u0391\u0390\x03\x02\x02\x02\u0391" +
+		"\u0392\x03\x02\x02\x02\u0392\u0394\x03\x02\x02\x02\u0393\u0395\x05|?\x02" +
+		"\u0394\u0393\x03\x02\x02\x02\u0394\u0395\x03\x02\x02\x02\u0395\u03C7\x03" +
+		"\x02\x02\x02\u0396\u0397\x07\x05\x02\x02\u0397\u039C\x05B\"\x02\u0398" +
+		"\u0399\x07\x07\x02\x02\u0399\u039B\x05B\"\x02\u039A\u0398\x03\x02\x02" +
+		"\x02\u039B\u039E\x03\x02\x02\x02\u039C\u039A\x03\x02\x02\x02\u039C\u039D" +
+		"\x03\x02\x02\x02\u039D\u039F\x03\x02\x02\x02\u039E\u039C\x03\x02\x02\x02" +
+		"\u039F\u03A0\x07\x06\x02\x02\u03A0\u03C7\x03\x02\x02\x02\u03A1\u03A2\x07" +
+		"-\x02\x02\u03A2\u03A3\x07\x05\x02\x02\u03A3\u03A4\x05B\"\x02\u03A4\u03A5" +
+		"\x07#\x02\x02\u03A5\u03A6\x05 \x11\x02\u03A6\u03A7\x07\x06\x02\x02\u03A7" +
+		"\u03C7\x03\x02\x02\x02\u03A8\u03AA\x07h\x02\x02\u03A9\u03A8\x03\x02\x02" +
+		"\x02\u03A9\u03AA\x03\x02\x02\x02\u03AA\u03AB\x03\x02\x02\x02\u03AB\u03AD" +
+		"\x07H\x02\x02\u03AC\u03A9\x03\x02\x02\x02\u03AC\u03AD\x03\x02\x02\x02" +
+		"\u03AD\u03AE\x03\x02\x02\x02\u03AE\u03AF\x07\x05\x02\x02\u03AF\u03B0\x05" +
+		"X-\x02\u03B0\u03B1\x07\x06\x02\x02\u03B1\u03C7\x03\x02\x02\x02\u03B2\u03B4" +
+		"\x07,\x02\x02\u03B3\u03B5\x05B\"\x02\u03B4\u03B3\x03\x02\x02\x02\u03B4" +
+		"\u03B5\x03\x02\x02\x02\u03B5\u03BB\x03\x02\x02\x02\u03B6\u03B7\x07\x95" +
+		"\x02\x02\u03B7\u03B8\x05B\"\x02\u03B8\u03B9\x07\x89\x02\x02\u03B9\u03BA" +
+		"\x05B\"\x02\u03BA\u03BC\x03\x02\x02\x02\u03BB\u03B6\x03\x02\x02\x02\u03BC" +
+		"\u03BD\x03\x02\x02\x02\u03BD\u03BB\x03\x02\x02\x02\u03BD\u03BE\x03\x02" +
+		"\x02\x02\u03BE\u03C1\x03\x02\x02\x02\u03BF\u03C0\x07C\x02\x02\u03C0\u03C2" +
+		"\x05B\"\x02\u03C1\u03BF\x03\x02\x02\x02\u03C1\u03C2\x03\x02\x02\x02\u03C2" +
+		"\u03C3\x03\x02\x02\x02\u03C3\u03C4\x07D\x02\x02\u03C4\u03C7\x03\x02\x02" +
+		"\x02\u03C5\u03C7\x05D#\x02\u03C6\u036E\x03\x02\x02\x02\u03C6\u0370\x03" +
+		"\x02\x02\x02\u03C6\u0379\x03\x02\x02\x02\u03C6\u037C\x03\x02\x02\x02\u03C6" +
+		"\u037F\x03\x02\x02\x02\u03C6\u0396\x03\x02\x02\x02\u03C6\u03A1\x03\x02" +
+		"\x02\x02\u03C6\u03AC\x03\x02\x02\x02\u03C6\u03B2\x03\x02\x02\x02\u03C6" +
+		"\u03C5\x03\x02\x02\x02\u03C7\u0445\x03\x02\x02\x02\u03C8\u03C9\f\x16\x02" +
+		"\x02\u03C9\u03CA\x07\r\x02\x02\u03CA\u0444\x05B\"\x17\u03CB\u03CC\f\x15" +
+		"\x02\x02\u03CC\u03CD\t\f\x02\x02\u03CD\u0444\x05B\"\x16\u03CE\u03CF\f" +
+		"\x14\x02\x02\u03CF\u03D0\t\x06\x02\x02\u03D0\u0444\x05B\"\x15\u03D1\u03D2" +
+		"\f\x13\x02\x02\u03D2\u03D3\t\r\x02\x02\u03D3\u0444\x05B\"\x14\u03D4\u03D5" +
+		"\f\x12\x02\x02\u03D5\u03D6\t\x0E\x02\x02\u03D6\u0444\x05B\"\x13\u03D7" +
+		"\u03EA\f\x11\x02\x02\u03D8\u03EB\x07\b\x02\x02\u03D9\u03EB\x07\x18\x02" +
+		"\x02\u03DA\u03EB\x07\x19\x02\x02\u03DB\u03EB\x07\x1A\x02\x02\u03DC\u03EB" +
+		"\x07^\x02\x02\u03DD\u03DE\x07^\x02\x02\u03DE\u03EB\x07h\x02\x02\u03DF" +
+		"\u03E1\x07^\x02\x02\u03E0\u03E2\x07h\x02\x02\u03E1\u03E0\x03\x02\x02\x02" +
+		"\u03E1\u03E2\x03\x02\x02\x02\u03E2\u03E3\x03\x02\x02\x02\u03E3\u03E4\x07" +
+		"@\x02\x02\u03E4\u03EB\x07M\x02\x02\u03E5\u03EB\x07U\x02\x02\u03E6\u03EB" +
+		"\x07c\x02\x02\u03E7\u03EB\x07O\x02\x02\u03E8\u03EB\x07e\x02\x02\u03E9" +
+		"\u03EB\x07x\x02\x02\u03EA\u03D8\x03\x02\x02\x02\u03EA\u03D9\x03\x02\x02" +
+		"\x02\u03EA\u03DA\x03\x02\x02\x02\u03EA\u03DB\x03\x02\x02\x02\u03EA\u03DC" +
+		"\x03\x02\x02\x02\u03EA\u03DD\x03\x02\x02\x02\u03EA\u03DF\x03\x02\x02\x02" +
+		"\u03EA\u03E5\x03\x02\x02\x02\u03EA\u03E6\x03\x02\x02\x02\u03EA\u03E7\x03" +
+		"\x02\x02\x02\u03EA\u03E8\x03\x02\x02\x02\u03EA\u03E9\x03\x02\x02\x02\u03EB" +
+		"\u03EC\x03\x02\x02\x02\u03EC\u0444\x05B\"\x12\u03ED\u03EE\f\x10\x02\x02" +
+		"\u03EE\u03EF\x07\"\x02\x02\u03EF\u0444\x05B\"\x11\u03F0\u03F1\f\x0F\x02" +
+		"\x02\u03F1\u03F2\x07n\x02\x02\u03F2\u0444\x05B\"\x10\u03F3\u03F4\f\b\x02" +
+		"\x02\u03F4\u03F6\x07^\x02\x02\u03F5\u03F7\x07h\x02\x02\u03F6\u03F5\x03" +
+		"\x02\x02\x02\u03F6\u03F7\x03\x02\x02\x02\u03F7\u03F8\x03\x02\x02\x02\u03F8" +
+		"\u0444\x05B\"\t\u03F9\u03FB\f\x07\x02\x02\u03FA\u03FC\x07h\x02\x02\u03FB" +
+		"\u03FA\x03\x02\x02\x02\u03FB\u03FC\x03\x02\x02\x02\u03FC\u03FD\x03\x02" +
+		"\x02\x02\u03FD\u03FE\x07)\x02\x02\u03FE\u03FF\x05B\"\x02\u03FF\u0400\x07" +
+		"\"\x02\x02\u0400\u0401\x05B\"\b\u0401\u0444\x03\x02\x02\x02\u0402\u0403" +
+		"\f\v\x02\x02\u0403\u0404\x07/\x02\x02\u0404\u0444\x05\xC0a\x02\u0405\u0407" +
+		"\f\n\x02\x02\u0406\u0408\x07h\x02\x02\u0407\u0406\x03\x02\x02\x02\u0407" +
+		"\u0408\x03\x02\x02\x02\u0408\u0409\x03\x02\x02\x02\u0409\u040A\t\x0F\x02" +
+		"\x02\u040A\u040D\x05B\"\x02\u040B\u040C\x07E\x02\x02\u040C\u040E\x05B" +
+		"\"\x02\u040D\u040B\x03\x02\x02\x02\u040D\u040E\x03\x02\x02\x02\u040E\u0444" +
+		"\x03\x02\x02\x02\u040F\u0414\f\t\x02\x02\u0410\u0415\x07_\x02\x02\u0411" +
+		"\u0415\x07i\x02\x02\u0412\u0413\x07h\x02\x02\u0413\u0415\x07j\x02\x02" +
+		"\u0414\u0410\x03\x02\x02\x02\u0414\u0411\x03\x02\x02\x02\u0414\u0412\x03" +
+		"\x02\x02\x02\u0415\u0444\x03\x02\x02\x02\u0416\u0418\f\x06\x02\x02\u0417" +
+		"\u0419\x07h\x02\x02\u0418\u0417\x03\x02\x02\x02\u0418\u0419\x03\x02\x02" +
+		"\x02\u0419\u041A\x03\x02\x02\x02\u041A\u0441\x07U\x02\x02\u041B\u0425" +
+		"\x07\x05\x02\x02\u041C\u0426\x05X-\x02\u041D\u0422\x05B\"\x02\u041E\u041F" +
+		"\x07\x07\x02\x02\u041F\u0421\x05B\"\x02\u0420\u041E\x03\x02\x02\x02\u0421" +
+		"\u0424\x03\x02\x02\x02\u0422\u0420\x03\x02\x02\x02\u0422\u0423\x03\x02" +
+		"\x02\x02\u0423\u0426\x03\x02\x02\x02\u0424\u0422\x03\x02\x02\x02\u0425" +
+		"\u041C\x03\x02\x02\x02\u0425\u041D\x03\x02\x02\x02\u0425\u0426\x03\x02" +
+		"\x02\x02\u0426\u0427\x03\x02\x02\x02\u0427\u0442\x07\x06\x02\x02\u0428" +
+		"\u0429\x05\xB8]\x02\u0429\u042A\x07\x04\x02\x02\u042A\u042C\x03\x02\x02" +
+		"\x02\u042B\u0428\x03\x02\x02\x02\u042B\u042C\x03\x02\x02\x02\u042C\u042D" +
+		"\x03\x02\x02\x02\u042D\u0442\x05\xBA^\x02\u042E\u042F\x05\xB8]\x02\u042F" +
+		"\u0430\x07\x04\x02\x02\u0430\u0432\x03\x02\x02\x02\u0431\u042E\x03\x02" +
+		"\x02\x02\u0431\u0432\x03\x02\x02\x02\u0432\u0433\x03\x02\x02\x02\u0433" +
+		"\u0434\x05\xE0q\x02\u0434\u043D\x07\x05\x02\x02\u0435\u043A\x05B\"\x02" +
+		"\u0436\u0437\x07\x07\x02\x02\u0437\u0439\x05B\"\x02\u0438\u0436\x03\x02" +
+		"\x02\x02\u0439\u043C\x03\x02\x02\x02\u043A\u0438\x03\x02\x02\x02\u043A" +
+		"\u043B\x03\x02\x02\x02\u043B\u043E\x03\x02\x02\x02\u043C\u043A\x03\x02" +
+		"\x02\x02\u043D\u0435\x03\x02\x02\x02\u043D\u043E\x03\x02\x02\x02\u043E" +
+		"\u043F\x03\x02\x02\x02\u043F\u0440\x07\x06\x02\x02\u0440\u0442\x03\x02" +
+		"\x02\x02\u0441\u041B\x03\x02\x02\x02\u0441\u042B\x03\x02\x02\x02\u0441" +
+		"\u0431\x03\x02\x02\x02\u0442\u0444\x03\x02\x02\x02\u0443\u03C8\x03\x02" +
+		"\x02\x02\u0443\u03CB\x03\x02\x02\x02\u0443\u03CE\x03\x02\x02\x02\u0443" +
+		"\u03D1\x03\x02\x02\x02\u0443\u03D4\x03\x02\x02\x02\u0443\u03D7\x03\x02" +
+		"\x02\x02\u0443\u03ED\x03\x02\x02\x02\u0443\u03F0\x03\x02\x02\x02\u0443" +
+		"\u03F3\x03\x02\x02\x02\u0443\u03F9\x03\x02\x02\x02\u0443\u0402\x03\x02" +
+		"\x02\x02\u0443\u0405\x03\x02\x02\x02\u0443\u040F\x03\x02\x02\x02\u0443" +
+		"\u0416\x03\x02\x02\x02\u0444\u0447\x03\x02\x02\x02\u0445\u0443\x03\x02" +
+		"\x02\x02\u0445\u0446\x03\x02\x02\x02\u0446C\x03\x02\x02\x02\u0447\u0445" +
+		"\x03\x02\x02\x02\u0448\u0449\x07u\x02\x02\u0449\u044E\x07\x05\x02\x02" +
+		"\u044A\u044F\x07S\x02\x02\u044B\u044C\t\x10\x02\x02\u044C\u044D\x07\x07" +
+		"\x02\x02\u044D\u044F\x05\xACW\x02\u044E\u044A\x03\x02\x02\x02\u044E\u044B" +
+		"\x03\x02\x02\x02\u044F\u0450\x03\x02\x02\x02\u0450\u0451\x07\x06\x02\x02" +
+		"\u0451E\x03\x02\x02\x02\u0452\u0453\t\x11\x02\x02\u0453G\x03\x02\x02\x02" +
+		"\u0454\u0455\x07\x05\x02\x02\u0455\u045A\x05B\"\x02\u0456\u0457\x07\x07" +
+		"\x02\x02\u0457\u0459\x05B\"\x02\u0458\u0456\x03\x02\x02\x02\u0459\u045C" +
+		"\x03\x02\x02\x02\u045A\u0458\x03\x02\x02\x02\u045A\u045B\x03\x02\x02\x02" +
+		"\u045B\u045D\x03\x02\x02\x02\u045C\u045A\x03\x02\x02\x02\u045D\u045E\x07" +
+		"\x06\x02\x02\u045EI\x03\x02\x02\x02\u045F\u0460\x07\x92\x02\x02\u0460" +
+		"\u0465\x05H%\x02\u0461\u0462\x07\x07\x02\x02\u0462\u0464\x05H%\x02\u0463" +
+		"\u0461\x03\x02\x02\x02\u0464\u0467\x03\x02\x02\x02\u0465\u0463\x03\x02" +
+		"\x02\x02\u0465\u0466\x03\x02\x02\x02\u0466K\x03\x02\x02\x02\u0467\u0465" +
+		"\x03\x02\x02\x02\u0468\u046A\x052\x1A\x02\u0469\u0468\x03\x02\x02\x02" +
+		"\u0469\u046A\x03\x02\x02\x02\u046A\u0470\x03\x02\x02\x02\u046B\u0471\x07" +
+		"Z\x02\x02\u046C\u0471\x07|\x02\x02\u046D\u046E\x07Z\x02\x02\u046E\u046F" +
+		"\x07n\x02\x02\u046F\u0471\t\n\x02\x02\u0470\u046B\x03\x02\x02\x02\u0470" +
+		"\u046C\x03\x02\x02\x02\u0470\u046D\x03\x02\x02\x02\u0471\u0472\x03\x02" +
+		"\x02\x02\u0472\u0476\x07]\x02\x02\u0473\u0474\x05\xB8]\x02\u0474\u0475" +
+		"\x07\x04\x02\x02\u0475\u0477\x03\x02\x02\x02\u0476\u0473\x03\x02\x02\x02" +
+		"\u0476\u0477\x03\x02\x02\x02\u0477\u0478\x03\x02\x02\x02\u0478\u047B\x05" +
+		"\xBA^\x02\u0479\u047A\x07#\x02\x02\u047A\u047C\x05\xD0i\x02\u047B\u0479" +
+		"\x03\x02\x02\x02\u047B\u047C\x03\x02\x02\x02\u047C\u0488\x03\x02\x02\x02" +
+		"\u047D\u047E\x07\x05\x02\x02\u047E\u0483\x05\xBE`\x02\u047F\u0480\x07" +
+		"\x07\x02\x02\u0480\u0482\x05\xBE`\x02\u0481\u047F\x03\x02\x02\x02\u0482" +
+		"\u0485\x03\x02\x02\x02\u0483\u0481\x03\x02\x02\x02\u0483\u0484\x03\x02" +
+		"\x02\x02\u0484\u0486\x03\x02\x02\x02\u0485\u0483\x03\x02\x02\x02\u0486" +
+		"\u0487\x07\x06\x02\x02\u0487\u0489\x03\x02\x02\x02\u0488\u047D\x03\x02" +
+		"\x02\x02\u0488\u0489\x03\x02\x02\x02\u0489\u0493\x03\x02\x02\x02\u048A" +
+		"\u048D\x05J&\x02\u048B\u048D\x05X-\x02\u048C\u048A\x03\x02\x02\x02\u048C" +
+		"\u048B\x03\x02\x02\x02\u048D\u048F\x03\x02\x02\x02\u048E\u0490\x05P)\x02" +
+		"\u048F\u048E\x03\x02\x02\x02\u048F\u0490\x03\x02\x02\x02\u0490\u0494\x03" +
+		"\x02\x02\x02\u0491\u0492\x07:\x02\x02\u0492\u0494\x07\x92\x02\x02\u0493" +
+		"\u048C\x03\x02\x02\x02\u0493\u0491\x03\x02\x02\x02\u0494\u0496\x03\x02" +
+		"\x02\x02\u0495\u0497\x05N(\x02\u0496\u0495\x03\x02\x02\x02\u0496\u0497" +
+		"\x03\x02\x02\x02\u0497M\x03\x02\x02\x02\u0498\u0499\x07~\x02\x02\u0499" +
+		"\u049E\x05f4\x02\u049A\u049B\x07\x07\x02\x02\u049B\u049D\x05f4\x02\u049C" +
+		"\u049A\x03\x02\x02\x02\u049D\u04A0\x03\x02\x02\x02\u049E\u049C\x03\x02" +
+		"\x02\x02\u049E\u049F\x03\x02\x02\x02\u049FO\x03\x02\x02\x02\u04A0\u049E" +
+		"\x03\x02\x02\x02\u04A1\u04A2\x07m\x02\x02\u04A2\u04B1\x072\x02\x02\u04A3" +
+		"\u04A4\x07\x05\x02\x02\u04A4\u04A9\x05\x1A\x0E\x02\u04A5\u04A6\x07\x07" +
+		"\x02\x02\u04A6\u04A8\x05\x1A\x0E\x02\u04A7\u04A5\x03\x02\x02\x02\u04A8" +
 		"\u04AB\x03\x02\x02\x02\u04A9\u04A7\x03\x02\x02\x02\u04A9\u04AA\x03\x02" +
 		"\x02\x02\u04AA\u04AC\x03\x02\x02\x02\u04AB\u04A9\x03\x02\x02\x02\u04AC" +
 		"\u04AF\x07\x06\x02\x02\u04AD\u04AE\x07\x96\x02\x02\u04AE\u04B0\x05B\"" +
@@ -10705,285 +10727,284 @@ export class SQLiteParser extends Parser {
 		"\u05CF\u05C4\x03\x02\x02\x02\u05D0i\x03\x02\x02\x02\u05D1\u05D2\x07m\x02" +
 		"\x02\u05D2\u05E0\x05B\"\x02\u05D3\u05D4\x07\x90\x02\x02\u05D4\u05D5\x07" +
 		"\x05\x02\x02\u05D5\u05DA\x05\xBE`\x02\u05D6\u05D7\x07\x07\x02\x02\u05D7" +
-		"\u05D9\x05\xBE`\x02\u05D8\u05D6\x03\x02\x02\x02\u05D9";
+		"\u05D9\x05\xBE`\x02\u05D8\u05D6\x03\x02\x02\x02\u05D9\u05DC\x03";
 	private static readonly _serializedATNSegment3: string =
-		"\u05DC\x03\x02\x02\x02\u05DA\u05D8\x03\x02\x02\x02\u05DA\u05DB\x03\x02" +
-		"\x02\x02\u05DB\u05DD\x03\x02\x02\x02\u05DC\u05DA\x03\x02\x02\x02\u05DD" +
-		"\u05DE\x07\x06\x02\x02\u05DE\u05E0\x03\x02\x02\x02\u05DF\u05D1\x03\x02" +
-		"\x02\x02\u05DF\u05D3\x03\x02\x02\x02\u05E0k\x03\x02\x02\x02\u05E1\u05E3" +
-		"\x07\x8D\x02\x02\u05E2\u05E4\x07\x1F\x02\x02\u05E3\u05E2\x03\x02\x02\x02" +
-		"\u05E3\u05E4\x03\x02\x02\x02\u05E4\u05E8\x03\x02\x02\x02\u05E5\u05E8\x07" +
-		"\\\x02\x02\u05E6\u05E8\x07F\x02\x02\u05E7\u05E1\x03\x02\x02\x02\u05E7" +
-		"\u05E5\x03\x02\x02\x02\u05E7\u05E6\x03\x02\x02\x02\u05E8m\x03\x02\x02" +
-		"\x02\u05E9\u05EB\x052\x1A\x02\u05EA\u05E9\x03\x02\x02\x02\u05EA\u05EB" +
-		"\x03\x02\x02\x02\u05EB\u05EC\x03\x02\x02\x02\u05EC\u05EF\x07\x8F\x02\x02" +
-		"\u05ED\u05EE\x07n\x02\x02\u05EE\u05F0\t\n\x02\x02\u05EF\u05ED\x03\x02" +
-		"\x02\x02\u05EF\u05F0\x03\x02\x02\x02\u05F0\u05F1\x03\x02\x02\x02\u05F1" +
-		"\u05F2\x05t;\x02\u05F2\u05F5\x07\x85\x02\x02\u05F3\u05F6\x05\xBE`\x02" +
-		"\u05F4\u05F6\x05p9\x02\u05F5\u05F3\x03\x02\x02\x02\u05F5\u05F4\x03\x02" +
-		"\x02\x02\u05F6\u05F7\x03\x02\x02\x02\u05F7\u05F8\x07\b\x02\x02\u05F8\u0603" +
-		"\x05B\"\x02\u05F9\u05FC\x07\x07\x02\x02\u05FA\u05FD\x05\xBE`\x02\u05FB" +
-		"\u05FD\x05p9\x02\u05FC\u05FA\x03\x02\x02\x02\u05FC\u05FB\x03\x02\x02\x02" +
-		"\u05FD\u05FE\x03\x02\x02\x02\u05FE\u05FF\x07\b\x02\x02\u05FF\u0600\x05" +
-		"B\"\x02\u0600\u0602\x03\x02\x02\x02\u0601\u05F9\x03\x02\x02\x02\u0602" +
-		"\u0605\x03\x02\x02\x02\u0603\u0601\x03\x02\x02\x02\u0603\u0604\x03\x02" +
-		"\x02\x02\u0604\u0612\x03\x02\x02\x02\u0605\u0603\x03\x02\x02\x02\u0606" +
-		"\u0610\x07M\x02\x02\u0607\u060C\x05d3\x02\u0608\u0609\x07\x07\x02\x02" +
-		"\u0609\u060B\x05d3\x02\u060A\u0608\x03\x02\x02\x02\u060B\u060E\x03\x02" +
-		"\x02\x02\u060C\u060A\x03\x02\x02\x02\u060C\u060D\x03\x02\x02\x02\u060D" +
-		"\u0611\x03\x02\x02\x02\u060E\u060C\x03\x02\x02\x02\u060F\u0611\x05Z.\x02" +
-		"\u0610\u0607\x03\x02\x02\x02\u0610\u060F\x03\x02\x02\x02\u0611\u0613\x03" +
-		"\x02\x02\x02\u0612\u0606\x03\x02\x02\x02\u0612\u0613\x03\x02\x02\x02\u0613" +
-		"\u0616\x03\x02\x02\x02\u0614\u0615\x07\x96\x02\x02\u0615\u0617\x05B\"" +
-		"\x02\u0616\u0614\x03\x02\x02\x02\u0616\u0617\x03\x02\x02\x02\u0617\u0619" +
-		"\x03\x02\x02\x02\u0618\u061A\x05N(\x02\u0619\u0618\x03\x02\x02\x02\u0619" +
-		"\u061A\x03\x02\x02\x02\u061Ao\x03\x02\x02\x02\u061B\u061C\x07\x05\x02" +
-		"\x02\u061C\u0621\x05\xBE`\x02\u061D\u061E\x07\x07\x02\x02\u061E\u0620" +
-		"\x05\xBE`\x02\u061F\u061D\x03\x02\x02\x02\u0620\u0623\x03\x02\x02\x02" +
-		"\u0621\u061F\x03\x02\x02\x02\u0621\u0622\x03\x02\x02\x02\u0622\u0624\x03" +
-		"\x02\x02\x02\u0623\u0621\x03\x02\x02\x02\u0624\u0625\x07\x06\x02\x02\u0625" +
-		"q\x03\x02\x02\x02\u0626\u0628\x052\x1A\x02\u0627\u0626\x03\x02\x02\x02" +
-		"\u0627\u0628\x03\x02\x02\x02\u0628\u0629\x03\x02\x02\x02\u0629\u062C\x07" +
-		"\x8F\x02\x02\u062A\u062B\x07n\x02\x02\u062B\u062D\t\n\x02\x02\u062C\u062A" +
-		"\x03\x02\x02\x02\u062C\u062D\x03\x02\x02\x02\u062D\u062E\x03\x02\x02\x02" +
-		"\u062E\u062F\x05t;\x02\u062F\u0632\x07\x85\x02\x02\u0630\u0633\x05\xBE" +
-		"`\x02\u0631\u0633\x05p9\x02\u0632\u0630\x03\x02\x02\x02\u0632\u0631\x03" +
-		"\x02\x02\x02\u0633\u0634\x03\x02\x02\x02\u0634\u0635\x07\b\x02\x02\u0635" +
-		"\u0640\x05B\"\x02\u0636\u0639\x07\x07\x02\x02\u0637\u063A\x05\xBE`\x02" +
-		"\u0638\u063A\x05p9\x02\u0639\u0637\x03\x02\x02\x02\u0639\u0638\x03\x02" +
-		"\x02\x02\u063A\u063B\x03\x02\x02\x02\u063B\u063C\x07\b\x02\x02\u063C\u063D" +
-		"\x05B\"\x02\u063D\u063F\x03\x02\x02\x02\u063E\u0636\x03\x02\x02\x02\u063F" +
-		"\u0642\x03\x02\x02\x02\u0640\u063E\x03\x02\x02\x02\u0640\u0641\x03\x02" +
-		"\x02\x02\u0641\u0645\x03\x02\x02\x02\u0642\u0640\x03\x02\x02\x02\u0643" +
-		"\u0644\x07\x96\x02\x02\u0644\u0646\x05B\"\x02\u0645\u0643\x03\x02\x02" +
-		"\x02\u0645\u0646\x03\x02\x02\x02\u0646\u0648\x03\x02\x02\x02\u0647\u0649" +
-		"\x05N(\x02\u0648\u0647\x03\x02\x02\x02\u0648\u0649\x03\x02\x02\x02\u0649" +
-		"\u064E\x03\x02\x02\x02\u064A\u064C\x05\x8AF\x02\u064B\u064A\x03\x02\x02" +
-		"\x02\u064B\u064C\x03\x02\x02\x02\u064C\u064D\x03\x02\x02\x02\u064D\u064F" +
-		"\x05\x8CG\x02\u064E\u064B\x03\x02\x02\x02\u064E\u064F\x03\x02\x02\x02" +
-		"\u064Fs\x03\x02\x02\x02\u0650\u0651\x05\xB8]\x02\u0651\u0652\x07\x04\x02" +
-		"\x02\u0652\u0654\x03\x02\x02\x02\u0653\u0650\x03\x02\x02\x02\u0653\u0654" +
-		"\x03\x02\x02\x02\u0654\u0655\x03\x02\x02\x02\u0655\u0658\x05\xBA^\x02" +
-		"\u0656\u0657\x07#\x02\x02\u0657\u0659\x05\xD6l\x02\u0658\u0656\x03\x02" +
-		"\x02\x02\u0658\u0659\x03\x02\x02\x02\u0659\u065F\x03\x02\x02\x02\u065A" +
-		"\u065B\x07W\x02\x02\u065B\u065C\x07*\x02\x02\u065C\u0660\x05\xC4c\x02" +
-		"\u065D\u065E\x07h\x02\x02\u065E\u0660\x07W\x02\x02\u065F\u065A\x03\x02" +
-		"\x02\x02\u065F\u065D\x03\x02\x02\x02\u065F\u0660\x03\x02\x02\x02\u0660" +
-		"u\x03\x02\x02\x02\u0661\u0663\x07\x91\x02\x02\u0662\u0664\x05\xB8]\x02" +
-		"\u0663\u0662\x03\x02\x02\x02\u0663\u0664\x03\x02\x02\x02\u0664\u0667\x03" +
-		"\x02\x02\x02\u0665\u0666\x07]\x02\x02\u0666\u0668\x05\xD8m\x02\u0667\u0665" +
-		"\x03\x02\x02\x02\u0667\u0668\x03\x02\x02\x02\u0668w\x03\x02\x02\x02\u0669" +
-		"\u066A\x07\xB4\x02\x02\u066A\u066B\x07\x05\x02\x02\u066B\u066C\x07\x96" +
-		"\x02\x02\u066C\u066D\x05B\"\x02\u066D\u066E\x07\x06\x02\x02\u066Ey\x03" +
-		"\x02\x02\x02\u066F\u0671\x07\x05\x02\x02\u0670\u0672\x05\xDAn\x02\u0671" +
-		"\u0670\x03\x02\x02\x02\u0671\u0672\x03\x02\x02\x02\u0672\u067D\x03\x02" +
-		"\x02\x02\u0673\u0674\x07\x9B\x02\x02\u0674\u0675\x07*\x02\x02\u0675\u067A" +
-		"\x05B\"\x02\u0676\u0677\x07\x07\x02\x02\u0677\u0679\x05B\"\x02\u0678\u0676" +
-		"\x03\x02\x02\x02\u0679\u067C\x03\x02\x02\x02\u067A\u0678\x03\x02\x02\x02" +
-		"\u067A\u067B\x03\x02\x02\x02\u067B\u067E\x03\x02\x02\x02\u067C\u067A\x03" +
-		"\x02\x02\x02\u067D\u0673\x03\x02\x02\x02\u067D\u067E\x03\x02\x02\x02\u067E" +
-		"\u067F\x03\x02\x02\x02\u067F\u0680\x07o\x02\x02\u0680\u0681\x07*\x02\x02" +
-		"\u0681\u0686\x05\x8EH\x02\u0682\u0683\x07\x07\x02\x02\u0683\u0685\x05" +
-		"\x8EH\x02\u0684\u0682\x03\x02\x02\x02\u0685\u0688\x03\x02\x02\x02\u0686" +
-		"\u0684\x03\x02\x02\x02\u0686\u0687\x03\x02\x02\x02\u0687\u068A\x03\x02" +
-		"\x02\x02\u0688\u0686\x03\x02\x02\x02\u0689\u068B\x05~@\x02\u068A\u0689" +
-		"\x03\x02\x02\x02\u068A\u068B\x03\x02\x02\x02\u068B\u068C\x03\x02\x02\x02" +
-		"\u068C\u068D\x07\x06\x02\x02\u068D{\x03\x02\x02\x02\u068E\u06B0\x07\x9A" +
-		"\x02\x02\u068F\u06B1\x05\xD4k\x02\u0690\u0692\x07\x05\x02\x02\u0691\u0693" +
-		"\x05\xDAn\x02\u0692\u0691\x03\x02\x02\x02\u0692\u0693\x03\x02\x02\x02" +
-		"\u0693\u069E\x03\x02\x02\x02\u0694\u0695\x07\x9B\x02\x02\u0695\u0696\x07" +
-		"*\x02\x02\u0696\u069B\x05B\"\x02\u0697\u0698\x07\x07\x02\x02\u0698\u069A" +
-		"\x05B\"\x02\u0699\u0697\x03\x02\x02\x02\u069A\u069D\x03\x02\x02\x02\u069B" +
-		"\u0699\x03\x02\x02\x02\u069B\u069C\x03\x02\x02\x02\u069C\u069F\x03\x02" +
-		"\x02\x02\u069D\u069B\x03\x02\x02\x02\u069E\u0694\x03\x02\x02\x02\u069E" +
-		"\u069F\x03\x02\x02\x02\u069F\u06AA\x03\x02\x02\x02\u06A0\u06A1\x07o\x02" +
-		"\x02\u06A1\u06A2\x07*\x02\x02\u06A2\u06A7\x05\x8EH\x02\u06A3\u06A4\x07" +
-		"\x07\x02\x02\u06A4\u06A6\x05\x8EH\x02\u06A5\u06A3\x03\x02\x02\x02\u06A6" +
-		"\u06A9\x03\x02\x02\x02\u06A7\u06A5\x03\x02\x02\x02\u06A7\u06A8\x03\x02" +
-		"\x02\x02\u06A8\u06AB\x03\x02\x02\x02\u06A9\u06A7\x03\x02\x02\x02\u06AA" +
-		"\u06A0\x03\x02\x02\x02\u06AA\u06AB\x03\x02\x02\x02\u06AB\u06AD\x03\x02" +
-		"\x02\x02\u06AC\u06AE\x05~@\x02\u06AD\u06AC\x03\x02\x02\x02\u06AD\u06AE" +
-		"\x03\x02\x02\x02\u06AE\u06AF\x03\x02\x02\x02\u06AF\u06B1\x07\x06\x02\x02" +
-		"\u06B0\u068F\x03\x02\x02\x02\u06B0\u0690\x03\x02\x02\x02\u06B1}\x03\x02" +
-		"\x02\x02\u06B2\u06BC\x05\x80A\x02\u06B3\u06BA\x07\xB6\x02\x02\u06B4\u06B5" +
-		"\x07g\x02\x02\u06B5\u06BB\x07\xB8\x02\x02\u06B6\u06B7\x07\x9F\x02\x02" +
-		"\u06B7\u06BB\x07\x81\x02\x02\u06B8\u06BB\x07P\x02\x02\u06B9\u06BB\x07" +
-		"\xB7\x02\x02\u06BA\u06B4\x03\x02\x02\x02\u06BA\u06B6\x03\x02\x02\x02\u06BA" +
-		"\u06B8\x03\x02\x02\x02\u06BA\u06B9\x03\x02\x02\x02\u06BB\u06BD\x03\x02" +
-		"\x02\x02\u06BC\u06B3\x03\x02\x02\x02\u06BC\u06BD\x03\x02\x02\x02\u06BD" +
-		"\x7F\x03\x02\x02\x02\u06BE\u06C5\t\x14\x02\x02\u06BF\u06C6\x05\x96L\x02" +
-		"\u06C0\u06C1\x07)\x02\x02\u06C1\u06C2\x05\x92J\x02\u06C2\u06C3\x07\"\x02" +
-		"\x02\u06C3\u06C4\x05\x94K\x02\u06C4\u06C6\x03\x02\x02\x02\u06C5\u06BF" +
-		"\x03\x02\x02\x02\u06C5\u06C0\x03\x02\x02\x02\u06C6\x81\x03\x02\x02\x02" +
-		"\u06C7\u06C8\x05\xDCo\x02\u06C8\u06D2\x07\x05\x02\x02\u06C9\u06CE\x05" +
-		"B\"\x02\u06CA\u06CB\x07\x07\x02\x02\u06CB\u06CD\x05B\"\x02\u06CC\u06CA" +
-		"\x03\x02\x02\x02\u06CD\u06D0\x03\x02\x02\x02\u06CE\u06CC\x03\x02\x02\x02" +
-		"\u06CE\u06CF\x03\x02\x02\x02\u06CF\u06D3\x03\x02\x02\x02\u06D0\u06CE\x03" +
-		"\x02\x02\x02\u06D1\u06D3\x07\t\x02\x02\u06D2\u06C9\x03\x02\x02\x02\u06D2" +
-		"\u06D1\x03\x02\x02\x02\u06D3\u06D4\x03\x02\x02\x02\u06D4\u06D5\x07\x06" +
-		"\x02\x02\u06D5\x83\x03\x02\x02\x02\u06D6\u06D7\x05\xDEp\x02\u06D7\u06E4" +
-		"\x07\x05\x02\x02\u06D8\u06DA\x07@\x02\x02\u06D9\u06D8\x03\x02\x02\x02" +
-		"\u06D9\u06DA\x03\x02\x02\x02\u06DA\u06DB\x03\x02\x02\x02\u06DB\u06E0\x05" +
-		"B\"\x02\u06DC\u06DD\x07\x07\x02\x02\u06DD\u06DF\x05B\"\x02\u06DE\u06DC" +
-		"\x03\x02\x02\x02\u06DF\u06E2\x03\x02\x02\x02\u06E0\u06DE\x03\x02\x02\x02" +
-		"\u06E0\u06E1\x03\x02\x02\x02\u06E1\u06E5\x03\x02\x02\x02\u06E2\u06E0\x03" +
-		"\x02\x02\x02\u06E3\u06E5\x07\t\x02\x02\u06E4\u06D9\x03\x02\x02\x02\u06E4" +
-		"\u06E3\x03\x02\x02\x02\u06E4\u06E5\x03\x02\x02\x02\u06E5\u06E6\x03\x02" +
-		"\x02\x02\u06E6\u06E8\x07\x06\x02\x02\u06E7\u06E9\x05x=\x02\u06E8\u06E7" +
-		"\x03\x02\x02\x02\u06E8\u06E9\x03\x02\x02\x02\u06E9\x85\x03\x02\x02\x02" +
-		"\u06EA\u06EB\x05\x98M\x02\u06EB\u06F5\x07\x05\x02\x02\u06EC\u06F1\x05" +
-		"B\"\x02\u06ED\u06EE\x07\x07\x02\x02\u06EE\u06F0\x05B\"\x02\u06EF\u06ED" +
-		"\x03\x02\x02\x02\u06F0\u06F3\x03\x02\x02\x02\u06F1\u06EF\x03\x02\x02\x02" +
-		"\u06F1\u06F2\x03\x02\x02\x02\u06F2\u06F6\x03\x02\x02\x02\u06F3\u06F1\x03" +
-		"\x02\x02\x02\u06F4\u06F6\x07\t\x02\x02\u06F5\u06EC\x03\x02\x02\x02\u06F5" +
-		"\u06F4\x03\x02\x02\x02\u06F5\u06F6\x03\x02\x02\x02\u06F6\u06F7\x03\x02" +
-		"\x02\x02\u06F7\u06F9\x07\x06\x02\x02\u06F8\u06FA\x05x=\x02\u06F9\u06F8" +
-		"\x03\x02\x02\x02\u06F9\u06FA\x03\x02\x02\x02\u06FA\u06FB\x03\x02\x02\x02" +
-		"\u06FB\u06FE\x07\x9A\x02\x02\u06FC\u06FF\x05z>\x02\u06FD\u06FF\x05\xD4" +
-		"k\x02\u06FE\u06FC\x03\x02\x02\x02\u06FE\u06FD\x03\x02\x02\x02\u06FF\x87" +
-		"\x03\x02\x02\x02\u0700\u0702\x07\x97\x02\x02\u0701\u0703\x07v\x02\x02" +
-		"\u0702\u0701\x03\x02\x02\x02\u0702\u0703\x03\x02\x02\x02\u0703\u0704\x03" +
-		"\x02\x02\x02\u0704\u0709\x058\x1D\x02\u0705\u0706\x07\x07\x02\x02\u0706" +
-		"\u0708\x058\x1D\x02\u0707\u0705\x03\x02\x02\x02\u0708\u070B\x03\x02\x02" +
-		"\x02\u0709\u0707\x03\x02\x02\x02\u0709\u070A\x03\x02\x02\x02\u070A\x89" +
-		"\x03\x02\x02\x02\u070B\u0709\x03\x02\x02\x02\u070C\u070D\x07o\x02\x02" +
-		"\u070D\u070E\x07*\x02\x02\u070E\u0713\x05\x8EH\x02\u070F\u0710\x07\x07" +
-		"\x02\x02\u0710\u0712\x05\x8EH\x02\u0711\u070F\x03\x02\x02\x02\u0712\u0715" +
-		"\x03\x02\x02\x02\u0713\u0711\x03\x02\x02\x02\u0713\u0714\x03\x02\x02\x02" +
-		"\u0714\x8B\x03\x02\x02\x02\u0715\u0713\x03\x02\x02\x02\u0716\u0717\x07" +
-		"d\x02\x02\u0717\u071A\x05B\"\x02\u0718\u0719\t\x15\x02\x02\u0719\u071B" +
-		"\x05B\"\x02\u071A\u0718\x03\x02\x02\x02\u071A\u071B\x03\x02\x02\x02\u071B" +
-		"\x8D\x03\x02\x02\x02\u071C\u071F\x05B\"\x02\u071D\u071E\x07/\x02\x02\u071E" +
-		"\u0720\x05\xC0a\x02\u071F\u071D\x03\x02\x02\x02\u071F\u0720\x03\x02\x02" +
-		"\x02\u0720\u0722\x03\x02\x02\x02\u0721\u0723\x05\x90I\x02\u0722\u0721" +
-		"\x03\x02\x02\x02\u0722\u0723\x03\x02\x02\x02\u0723\u0726\x03\x02\x02\x02" +
-		"\u0724\u0725\x07\xB1\x02\x02\u0725\u0727\t\x16\x02\x02\u0726\u0724\x03" +
-		"\x02\x02\x02\u0726\u0727\x03\x02\x02\x02\u0727\x8F\x03\x02\x02\x02\u0728" +
-		"\u0729\t\x17\x02\x02\u0729\x91\x03\x02\x02\x02\u072A\u072B\x05B\"\x02" +
-		"\u072B\u072C\x07\x9D\x02\x02\u072C\u0735\x03\x02\x02\x02\u072D\u072E\x05" +
-		"B\"\x02\u072E\u072F\x07\xA0\x02\x02\u072F\u0735\x03\x02\x02\x02\u0730" +
-		"\u0731\x07\x9F\x02\x02\u0731\u0735\x07\x81\x02\x02\u0732\u0733\x07\x9E" +
-		"\x02\x02\u0733\u0735\x07\x9D\x02\x02\u0734\u072A\x03\x02\x02\x02\u0734" +
-		"\u072D\x03\x02\x02\x02\u0734\u0730\x03\x02\x02\x02\u0734\u0732\x03\x02" +
-		"\x02\x02\u0735\x93\x03\x02\x02\x02\u0736\u0737\x05B\"\x02\u0737\u0738" +
-		"\x07\x9D\x02\x02\u0738\u0741\x03\x02\x02\x02\u0739\u073A\x05B\"\x02\u073A" +
-		"\u073B\x07\xA0\x02\x02\u073B\u0741\x03\x02\x02\x02\u073C\u073D\x07\x9F" +
-		"\x02\x02\u073D\u0741\x07\x81\x02\x02\u073E\u073F\x07\x9E\x02\x02\u073F" +
-		"\u0741\x07\xA0\x02\x02\u0740\u0736\x03\x02\x02\x02\u0740\u0739\x03\x02" +
-		"\x02\x02\u0740\u073C\x03\x02\x02\x02\u0740\u073E\x03\x02\x02\x02\u0741" +
-		"\x95\x03\x02\x02\x02\u0742\u0743\x05B\"\x02\u0743\u0744\x07\x9D\x02\x02" +
-		"\u0744\u074A\x03\x02\x02\x02\u0745\u0746\x07\x9E\x02\x02\u0746\u074A\x07" +
-		"\x9D\x02\x02\u0747\u0748\x07\x9F\x02\x02\u0748\u074A\x07\x81\x02\x02\u0749" +
-		"\u0742\x03\x02\x02\x02\u0749\u0745\x03\x02\x02\x02\u0749\u0747\x03\x02" +
-		"\x02\x02\u074A\x97\x03\x02\x02\x02\u074B\u074C\t\x18\x02\x02\u074C\u074D" +
-		"\x07\x05\x02\x02\u074D\u074E\x05B\"\x02\u074E\u074F\x07\x06\x02\x02\u074F" +
-		"\u0750\x07\x9A\x02\x02\u0750\u0752\x07\x05\x02\x02\u0751\u0753\x05\x9E" +
-		"P\x02\u0752\u0751\x03\x02\x02\x02\u0752\u0753\x03\x02\x02\x02\u0753\u0754" +
-		"\x03\x02\x02\x02\u0754\u0756\x05\xA2R\x02\u0755\u0757\x05\x80A\x02\u0756" +
-		"\u0755\x03\x02\x02\x02\u0756\u0757\x03\x02\x02\x02\u0757\u0758\x03\x02" +
-		"\x02\x02\u0758\u0759\x07\x06\x02\x02\u0759\u07A1\x03\x02\x02\x02\u075A" +
-		"\u075B\t\x19\x02\x02\u075B\u075C\x07\x05\x02\x02\u075C\u075D\x07\x06\x02" +
-		"\x02\u075D\u075E\x07\x9A\x02\x02\u075E\u0760\x07\x05\x02\x02\u075F\u0761" +
-		"\x05\x9EP\x02\u0760\u075F\x03\x02\x02\x02\u0760\u0761\x03\x02\x02\x02" +
-		"\u0761\u0763\x03\x02\x02\x02\u0762\u0764\x05\xA0Q\x02\u0763\u0762\x03" +
-		"\x02\x02\x02\u0763\u0764\x03\x02\x02\x02\u0764\u0765\x03\x02\x02\x02\u0765" +
-		"\u07A1\x07\x06\x02\x02\u0766\u0767\t\x1A\x02\x02\u0767\u0768\x07\x05\x02" +
-		"\x02\u0768\u0769\x07\x06\x02\x02\u0769\u076A\x07\x9A\x02\x02\u076A\u076C" +
-		"\x07\x05\x02\x02\u076B\u076D\x05\x9EP\x02\u076C\u076B\x03\x02\x02\x02" +
-		"\u076C\u076D\x03\x02\x02\x02\u076D\u076E\x03\x02\x02\x02\u076E\u076F\x05" +
-		"\xA2R\x02\u076F\u0770\x07\x06\x02\x02\u0770\u07A1\x03\x02\x02\x02\u0771" +
-		"\u0772\t\x1B\x02\x02\u0772\u0773\x07\x05\x02\x02\u0773\u0775\x05B\"\x02" +
-		"\u0774\u0776\x05\x9AN\x02\u0775\u0774\x03\x02\x02\x02\u0775\u0776\x03" +
-		"\x02\x02\x02\u0776\u0778\x03\x02\x02\x02\u0777\u0779\x05\x9CO\x02\u0778" +
-		"\u0777\x03\x02\x02\x02\u0778\u0779\x03\x02\x02\x02\u0779\u077A\x03\x02" +
-		"\x02\x02\u077A\u077B\x07\x06\x02\x02\u077B\u077C\x07\x9A\x02\x02\u077C" +
-		"\u077E\x07\x05\x02\x02\u077D\u077F\x05\x9EP\x02\u077E\u077D\x03\x02\x02" +
-		"\x02\u077E\u077F\x03\x02\x02\x02\u077F\u0780\x03\x02\x02\x02\u0780\u0781" +
-		"\x05\xA2R\x02\u0781\u0782\x07\x06\x02\x02\u0782\u07A1\x03\x02\x02\x02" +
-		"\u0783\u0784\x07\xA6\x02\x02\u0784\u0785\x07\x05\x02\x02\u0785\u0786\x05" +
-		"B\"\x02\u0786\u0787\x07\x07\x02\x02\u0787\u0788\x05$\x13\x02\u0788\u0789" +
-		"\x07\x06\x02\x02\u0789\u078A\x07\x9A\x02\x02\u078A\u078C\x07\x05\x02\x02" +
-		"\u078B\u078D\x05\x9EP\x02\u078C\u078B\x03\x02\x02\x02\u078C\u078D\x03" +
-		"\x02\x02\x02\u078D\u078E\x03\x02\x02\x02\u078E\u0790\x05\xA2R\x02\u078F" +
-		"\u0791\x05\x80A\x02\u0790\u078F\x03\x02\x02\x02\u0790\u0791\x03\x02\x02" +
-		"\x02\u0791\u0792\x03\x02\x02\x02\u0792\u0793\x07\x06\x02\x02\u0793\u07A1" +
-		"\x03\x02\x02\x02\u0794\u0795\x07\xA7\x02\x02\u0795\u0796\x07\x05\x02\x02" +
-		"\u0796\u0797\x05B\"\x02\u0797\u0798\x07\x06\x02\x02\u0798\u0799\x07\x9A" +
-		"\x02\x02\u0799\u079B\x07\x05\x02\x02\u079A\u079C\x05\x9EP\x02\u079B\u079A" +
-		"\x03\x02\x02\x02\u079B\u079C\x03\x02\x02\x02\u079C\u079D\x03\x02\x02\x02" +
-		"\u079D\u079E\x05\xA2R\x02\u079E\u079F\x07\x06\x02\x02\u079F\u07A1\x03" +
-		"\x02\x02\x02\u07A0\u074B\x03\x02\x02\x02\u07A0\u075A\x03\x02\x02\x02\u07A0" +
-		"\u0766\x03\x02\x02\x02\u07A0\u0771\x03\x02\x02\x02\u07A0\u0783\x03\x02" +
-		"\x02\x02\u07A0\u0794\x03\x02\x02\x02\u07A1\x99\x03\x02\x02\x02\u07A2\u07A3" +
-		"\x07\x07\x02\x02\u07A3\u07A4\x05$\x13\x02\u07A4\x9B\x03\x02\x02\x02\u07A5" +
-		"\u07A6\x07\x07\x02\x02\u07A6\u07A7\x05$\x13\x02\u07A7\x9D\x03\x02\x02" +
-		"\x02\u07A8\u07A9\x07\x9B\x02\x02\u07A9\u07AB\x07*\x02\x02\u07AA\u07AC" +
-		"\x05B\"\x02\u07AB\u07AA\x03\x02\x02\x02\u07AC\u07AD\x03\x02\x02\x02\u07AD" +
-		"\u07AB\x03\x02\x02\x02\u07AD\u07AE\x03\x02\x02\x02\u07AE\x9F\x03\x02\x02" +
-		"\x02\u07AF\u07B0\x07o\x02\x02\u07B0\u07B2\x07*\x02\x02\u07B1\u07B3\x05" +
-		"B\"\x02\u07B2\u07B1\x03\x02\x02\x02\u07B3\u07B4\x03\x02\x02\x02\u07B4" +
-		"\u07B2\x03\x02\x02\x02\u07B4\u07B5\x03\x02\x02\x02\u07B5\xA1\x03\x02\x02" +
-		"\x02\u07B6\u07B7\x07o\x02\x02\u07B7\u07B8\x07*\x02\x02\u07B8\u07B9\x05" +
-		"\xA4S\x02\u07B9\xA3\x03\x02\x02\x02\u07BA\u07BC\x05B\"\x02\u07BB\u07BD" +
-		"\x05\x90I\x02\u07BC\u07BB\x03\x02\x02\x02\u07BC\u07BD\x03\x02\x02\x02" +
-		"\u07BD\u07C5\x03\x02\x02\x02\u07BE\u07BF\x07\x07\x02\x02\u07BF\u07C1\x05" +
-		"B\"\x02\u07C0\u07C2\x05\x90I\x02\u07C1\u07C0\x03\x02\x02\x02\u07C1\u07C2" +
-		"\x03\x02\x02\x02\u07C2\u07C4\x03\x02\x02\x02\u07C3\u07BE\x03\x02\x02\x02" +
-		"\u07C4\u07C7\x03\x02\x02\x02\u07C5\u07C3\x03\x02\x02\x02\u07C5\u07C6\x03" +
-		"\x02\x02\x02\u07C6\xA5\x03\x02\x02\x02\u07C7\u07C5\x03\x02\x02\x02\u07C8" +
-		"\u07C9\x05X-\x02\u07C9\xA7\x03\x02\x02\x02\u07CA\u07CB\x05X-\x02\u07CB" +
-		"\xA9\x03\x02\x02\x02\u07CC\u07CD\t\x1C\x02\x02\u07CD\xAB\x03\x02\x02\x02" +
-		"\u07CE\u07CF\x07\xBE\x02\x02\u07CF\xAD\x03\x02\x02\x02\u07D0\u07D3\x05" +
-		"B\"\x02\u07D1\u07D3\x05\x1E\x10\x02\u07D2\u07D0\x03\x02\x02\x02\u07D2" +
-		"\u07D1\x03\x02\x02\x02\u07D3\xAF\x03\x02\x02\x02\u07D4\u07D5\t\x1D\x02" +
-		"\x02\u07D5\xB1\x03\x02\x02\x02\u07D6\u07D7\t\x1E\x02\x02\u07D7\xB3\x03" +
-		"\x02\x02\x02\u07D8\u07D9\x05\xE2r\x02\u07D9\xB5\x03\x02\x02\x02\u07DA" +
-		"\u07DB\x05\xE2r\x02\u07DB\xB7\x03\x02\x02\x02\u07DC\u07DD\x05\xE2r\x02" +
-		"\u07DD\xB9\x03\x02\x02\x02\u07DE\u07DF\x05\xE2r\x02\u07DF\xBB\x03\x02" +
-		"\x02\x02\u07E0\u07E1\x05\xE2r\x02\u07E1\xBD\x03\x02\x02\x02\u07E2\u07E3" +
-		"\x05\xE2r\x02\u07E3\xBF\x03\x02\x02\x02\u07E4\u07E5\x05\xE2r\x02\u07E5" +
-		"\xC1\x03\x02\x02\x02\u07E6\u07E7\x05\xE2r\x02\u07E7\xC3\x03\x02\x02\x02" +
-		"\u07E8\u07E9\x05\xE2r\x02\u07E9\xC5\x03\x02\x02\x02\u07EA\u07EB\x05\xE2" +
-		"r\x02\u07EB\xC7\x03\x02\x02\x02\u07EC\u07ED\x05\xE2r\x02\u07ED\xC9\x03" +
-		"\x02\x02\x02\u07EE\u07EF\x05\xE2r\x02\u07EF\xCB\x03\x02\x02\x02\u07F0" +
-		"\u07F1\x05\xE2r\x02\u07F1\xCD\x03\x02\x02\x02\u07F2\u07F3\x05\xE2r\x02" +
-		"\u07F3\xCF\x03\x02\x02\x02\u07F4\u07F5\x05\xE2r\x02\u07F5\xD1\x03\x02" +
-		"\x02\x02\u07F6\u07F7\x05\xE2r\x02\u07F7\xD3\x03\x02\x02\x02\u07F8\u07F9" +
-		"\x05\xE2r\x02\u07F9\xD5\x03\x02\x02\x02\u07FA\u07FB\x05\xE2r\x02\u07FB" +
-		"\xD7\x03\x02\x02\x02\u07FC\u07FD\x05\xE2r\x02\u07FD\xD9\x03\x02\x02\x02" +
-		"\u07FE\u07FF\x05\xE2r\x02\u07FF\xDB\x03\x02\x02\x02\u0800\u0801\x05\xE2" +
-		"r\x02\u0801\xDD\x03\x02\x02\x02\u0802\u0803\x05\xE2r\x02\u0803\xDF\x03" +
-		"\x02\x02\x02\u0804\u0805\x05\xE2r\x02\u0805\xE1\x03\x02\x02\x02\u0806" +
-		"\u080E\x07\xBB\x02\x02\u0807\u080E\x05\xB2Z\x02\u0808\u080E\x07\xBE\x02" +
-		"\x02\u0809\u080A\x07\x05\x02\x02\u080A\u080B\x05\xE2r\x02\u080B\u080C" +
-		"\x07\x06\x02\x02\u080C\u080E\x03\x02\x02\x02\u080D\u0806\x03\x02\x02\x02" +
-		"\u080D\u0807\x03\x02\x02\x02\u080D\u0808\x03\x02\x02\x02\u080D\u0809\x03" +
-		"\x02\x02\x02\u080E\xE3\x03\x02\x02\x02\u012B\xE7\xEF\xF6\xFB\u0101\u0107" +
-		"\u0109\u0123\u012A\u0131\u0137\u013B\u0140\u0143\u014A\u014D\u0151\u0159" +
-		"\u015D\u015F\u0163\u0167\u016B\u016E\u0175\u017B\u0181\u0186\u0191\u0197" +
-		"\u019B\u019F\u01A2\u01A6\u01AC\u01B1\u01BA\u01C1\u01C7\u01CB\u01CF\u01D4" +
-		"\u01DA\u01E6\u01EA\u01EF\u01F2\u01F5\u01F8\u01FC\u01FF\u020D\u0214\u021B" +
-		"\u021D\u0220\u0226\u022B\u0233\u0238\u0247\u024D\u0257\u025C\u0266\u026A" +
-		"\u026C\u0270\u0275\u0277\u027F\u0285\u028A\u0291\u029C\u029F\u02A1\u02A8" +
-		"\u02AC\u02B3\u02B9\u02BF\u02C5\u02CA\u02D3\u02D8\u02E3\u02E8\u02F3\u02F8" +
-		"\u02FC\u030C\u0316\u031B\u0323\u032F\u0334\u033C\u0343\u0346\u0349\u0350" +
-		"\u0353\u0356\u0359\u035D\u0365\u036A\u0374\u0379\u0382\u0389\u038D\u0391" +
-		"\u0394\u039C\u03A9\u03AC\u03B4\u03BD\u03C1\u03C6\u03E1\u03EA\u03F6\u03FB" +
-		"\u0407\u040D\u0414\u0418\u0422\u0425\u042B\u0431\u043A\u043D\u0441\u0443" +
-		"\u0445\u044E\u045A\u0465\u0469\u0470\u0476\u047B\u0483\u0488\u048C\u048F" +
-		"\u0493\u0496\u049E\u04A9\u04AF\u04B1\u04B9\u04C0\u04C7\u04CC\u04CE\u04D4" +
-		"\u04DD\u04E2\u04E9\u04ED\u04EF\u04F2\u04FA\u04FE\u0501\u0507\u050B\u0510" +
-		"\u0517\u0520\u0524\u0526\u052A\u0533\u0538\u053A\u0547\u054A\u054D\u0552" +
-		"\u0556\u0559\u055C\u0561\u0565\u056A\u056D\u0570\u0575\u0579\u057C\u0583" +
-		"\u0588\u0591\u0596\u0599\u05A1\u05A5\u05AD\u05B0\u05B2\u05BB\u05BE\u05C0" +
-		"\u05C4\u05C8\u05CC\u05CF\u05DA\u05DF\u05E3\u05E7\u05EA\u05EF\u05F5\u05FC" +
-		"\u0603\u060C\u0610\u0612\u0616\u0619\u0621\u0627\u062C\u0632\u0639\u0640" +
-		"\u0645\u0648\u064B\u064E\u0653\u0658\u065F\u0663\u0667\u0671\u067A\u067D" +
-		"\u0686\u068A\u0692\u069B\u069E\u06A7\u06AA\u06AD\u06B0\u06BA\u06BC\u06C5" +
-		"\u06CE\u06D2\u06D9\u06E0\u06E4\u06E8\u06F1\u06F5\u06F9\u06FE\u0702\u0709" +
-		"\u0713\u071A\u071F\u0722\u0726\u0734\u0740\u0749\u0752\u0756\u0760\u0763" +
-		"\u076C\u0775\u0778\u077E\u078C\u0790\u079B\u07A0\u07AD\u07B4\u07BC\u07C1" +
-		"\u07C5\u07D2\u080D";
+		"\x02\x02\x02\u05DA\u05D8\x03\x02\x02\x02\u05DA\u05DB\x03\x02\x02\x02\u05DB" +
+		"\u05DD\x03\x02\x02\x02\u05DC\u05DA\x03\x02\x02\x02\u05DD\u05DE\x07\x06" +
+		"\x02\x02\u05DE\u05E0\x03\x02\x02\x02\u05DF\u05D1\x03\x02\x02\x02\u05DF" +
+		"\u05D3\x03\x02\x02\x02\u05E0k\x03\x02\x02\x02\u05E1\u05E3\x07\x8D\x02" +
+		"\x02\u05E2\u05E4\x07\x1F\x02\x02\u05E3\u05E2\x03\x02\x02\x02\u05E3\u05E4" +
+		"\x03\x02\x02\x02\u05E4\u05E8\x03\x02\x02\x02\u05E5\u05E8\x07\\\x02\x02" +
+		"\u05E6\u05E8\x07F\x02\x02\u05E7\u05E1\x03\x02\x02\x02\u05E7\u05E5\x03" +
+		"\x02\x02\x02\u05E7\u05E6\x03\x02\x02\x02\u05E8m\x03\x02\x02\x02\u05E9" +
+		"\u05EB\x052\x1A\x02\u05EA\u05E9\x03\x02\x02\x02\u05EA\u05EB\x03\x02\x02" +
+		"\x02\u05EB\u05EC\x03\x02\x02\x02\u05EC\u05EF\x07\x8F\x02\x02\u05ED\u05EE" +
+		"\x07n\x02\x02\u05EE\u05F0\t\n\x02\x02\u05EF\u05ED\x03\x02\x02\x02\u05EF" +
+		"\u05F0\x03\x02\x02\x02\u05F0\u05F1\x03\x02\x02\x02\u05F1\u05F2\x05t;\x02" +
+		"\u05F2\u05F5\x07\x85\x02\x02\u05F3\u05F6\x05\xBE`\x02\u05F4\u05F6\x05" +
+		"p9\x02\u05F5\u05F3\x03\x02\x02\x02\u05F5\u05F4\x03\x02\x02\x02\u05F6\u05F7" +
+		"\x03\x02\x02\x02\u05F7\u05F8\x07\b\x02\x02\u05F8\u0603\x05B\"\x02\u05F9" +
+		"\u05FC\x07\x07\x02\x02\u05FA\u05FD\x05\xBE`\x02\u05FB\u05FD\x05p9\x02" +
+		"\u05FC\u05FA\x03\x02\x02\x02\u05FC\u05FB\x03\x02\x02\x02\u05FD\u05FE\x03" +
+		"\x02\x02\x02\u05FE\u05FF\x07\b\x02\x02\u05FF\u0600\x05B\"\x02\u0600\u0602" +
+		"\x03\x02\x02\x02\u0601\u05F9\x03\x02\x02\x02\u0602\u0605\x03\x02\x02\x02" +
+		"\u0603\u0601\x03\x02\x02\x02\u0603\u0604\x03\x02\x02\x02\u0604\u0612\x03" +
+		"\x02\x02\x02\u0605\u0603\x03\x02\x02\x02\u0606\u0610\x07M\x02\x02\u0607" +
+		"\u060C\x05d3\x02\u0608\u0609\x07\x07\x02\x02\u0609\u060B\x05d3\x02\u060A" +
+		"\u0608\x03\x02\x02\x02\u060B\u060E\x03\x02\x02\x02\u060C\u060A\x03\x02" +
+		"\x02\x02\u060C\u060D\x03\x02\x02\x02\u060D\u0611\x03\x02\x02\x02\u060E" +
+		"\u060C\x03\x02\x02\x02\u060F\u0611\x05Z.\x02\u0610\u0607\x03\x02\x02\x02" +
+		"\u0610\u060F\x03\x02\x02\x02\u0611\u0613\x03\x02\x02\x02\u0612\u0606\x03" +
+		"\x02\x02\x02\u0612\u0613\x03\x02\x02\x02\u0613\u0616\x03\x02\x02\x02\u0614" +
+		"\u0615\x07\x96\x02\x02\u0615\u0617\x05B\"\x02\u0616\u0614\x03\x02\x02" +
+		"\x02\u0616\u0617\x03\x02\x02\x02\u0617\u0619\x03\x02\x02\x02\u0618\u061A" +
+		"\x05N(\x02\u0619\u0618\x03\x02\x02\x02\u0619\u061A\x03\x02\x02\x02\u061A" +
+		"o\x03\x02\x02\x02\u061B\u061C\x07\x05\x02\x02\u061C\u0621\x05\xBE`\x02" +
+		"\u061D\u061E\x07\x07\x02\x02\u061E\u0620\x05\xBE`\x02\u061F\u061D\x03" +
+		"\x02\x02\x02\u0620\u0623\x03\x02\x02\x02\u0621\u061F\x03\x02\x02\x02\u0621" +
+		"\u0622\x03\x02\x02\x02\u0622\u0624\x03\x02\x02\x02\u0623\u0621\x03\x02" +
+		"\x02\x02\u0624\u0625\x07\x06\x02\x02\u0625q\x03\x02\x02\x02\u0626\u0628" +
+		"\x052\x1A\x02\u0627\u0626\x03\x02\x02\x02\u0627\u0628\x03\x02\x02\x02" +
+		"\u0628\u0629\x03\x02\x02\x02\u0629\u062C\x07\x8F\x02\x02\u062A\u062B\x07" +
+		"n\x02\x02\u062B\u062D\t\n\x02\x02\u062C\u062A\x03\x02\x02\x02\u062C\u062D" +
+		"\x03\x02\x02\x02\u062D\u062E\x03\x02\x02\x02\u062E\u062F\x05t;\x02\u062F" +
+		"\u0632\x07\x85\x02\x02\u0630\u0633\x05\xBE`\x02\u0631\u0633\x05p9\x02" +
+		"\u0632\u0630\x03\x02\x02\x02\u0632\u0631\x03\x02\x02\x02\u0633\u0634\x03" +
+		"\x02\x02\x02\u0634\u0635\x07\b\x02\x02\u0635\u0640\x05B\"\x02\u0636\u0639" +
+		"\x07\x07\x02\x02\u0637\u063A\x05\xBE`\x02\u0638\u063A\x05p9\x02\u0639" +
+		"\u0637\x03\x02\x02\x02\u0639\u0638\x03\x02\x02\x02\u063A\u063B\x03\x02" +
+		"\x02\x02\u063B\u063C\x07\b\x02\x02\u063C\u063D\x05B\"\x02\u063D\u063F" +
+		"\x03\x02\x02\x02\u063E\u0636\x03\x02\x02\x02\u063F\u0642\x03\x02\x02\x02" +
+		"\u0640\u063E\x03\x02\x02\x02\u0640\u0641\x03\x02\x02\x02\u0641\u0645\x03" +
+		"\x02\x02\x02\u0642\u0640\x03\x02\x02\x02\u0643\u0644\x07\x96\x02\x02\u0644" +
+		"\u0646\x05B\"\x02\u0645\u0643\x03\x02\x02\x02\u0645\u0646\x03\x02\x02" +
+		"\x02\u0646\u0648\x03\x02\x02\x02\u0647\u0649\x05N(\x02\u0648\u0647\x03" +
+		"\x02\x02\x02\u0648\u0649\x03\x02\x02\x02\u0649\u064E\x03\x02\x02\x02\u064A" +
+		"\u064C\x05\x8AF\x02\u064B\u064A\x03\x02\x02\x02\u064B\u064C\x03\x02\x02" +
+		"\x02\u064C\u064D\x03\x02\x02\x02\u064D\u064F\x05\x8CG\x02\u064E\u064B" +
+		"\x03\x02\x02\x02\u064E\u064F\x03\x02\x02\x02\u064Fs\x03\x02\x02\x02\u0650" +
+		"\u0651\x05\xB8]\x02\u0651\u0652\x07\x04\x02\x02\u0652\u0654\x03\x02\x02" +
+		"\x02\u0653\u0650\x03\x02\x02\x02\u0653\u0654\x03\x02\x02\x02\u0654\u0655" +
+		"\x03\x02\x02\x02\u0655\u0658\x05\xBA^\x02\u0656\u0657\x07#\x02\x02\u0657" +
+		"\u0659\x05\xD6l\x02\u0658\u0656\x03\x02\x02\x02\u0658\u0659\x03\x02\x02" +
+		"\x02\u0659\u065F\x03\x02\x02\x02\u065A\u065B\x07W\x02\x02\u065B\u065C" +
+		"\x07*\x02\x02\u065C\u0660\x05\xC4c\x02\u065D\u065E\x07h\x02\x02\u065E" +
+		"\u0660\x07W\x02\x02\u065F\u065A\x03\x02\x02\x02\u065F\u065D\x03\x02\x02" +
+		"\x02\u065F\u0660\x03\x02\x02\x02\u0660u\x03\x02\x02\x02\u0661\u0663\x07" +
+		"\x91\x02\x02\u0662\u0664\x05\xB8]\x02\u0663\u0662\x03\x02\x02\x02\u0663" +
+		"\u0664\x03\x02\x02\x02\u0664\u0667\x03\x02\x02\x02\u0665\u0666\x07]\x02" +
+		"\x02\u0666\u0668\x05\xD8m\x02\u0667\u0665\x03\x02\x02\x02\u0667\u0668" +
+		"\x03\x02\x02\x02\u0668w\x03\x02\x02\x02\u0669\u066A\x07\xB4\x02\x02\u066A" +
+		"\u066B\x07\x05\x02\x02\u066B\u066C\x07\x96\x02\x02\u066C\u066D\x05B\"" +
+		"\x02\u066D\u066E\x07\x06\x02\x02\u066Ey\x03\x02\x02\x02\u066F\u0671\x07" +
+		"\x05\x02\x02\u0670\u0672\x05\xDAn\x02\u0671\u0670\x03\x02\x02\x02\u0671" +
+		"\u0672\x03\x02\x02\x02\u0672\u067D\x03\x02\x02\x02\u0673\u0674\x07\x9B" +
+		"\x02\x02\u0674\u0675\x07*\x02\x02\u0675\u067A\x05B\"\x02\u0676\u0677\x07" +
+		"\x07\x02\x02\u0677\u0679\x05B\"\x02\u0678\u0676\x03\x02\x02\x02\u0679" +
+		"\u067C\x03\x02\x02\x02\u067A\u0678\x03\x02\x02\x02\u067A\u067B\x03\x02" +
+		"\x02\x02\u067B\u067E\x03\x02\x02\x02\u067C\u067A\x03\x02\x02\x02\u067D" +
+		"\u0673\x03\x02\x02\x02\u067D\u067E\x03\x02\x02\x02\u067E\u067F\x03\x02" +
+		"\x02\x02\u067F\u0680\x07o\x02\x02\u0680\u0681\x07*\x02\x02\u0681\u0686" +
+		"\x05\x8EH\x02\u0682\u0683\x07\x07\x02\x02\u0683\u0685\x05\x8EH\x02\u0684" +
+		"\u0682\x03\x02\x02\x02\u0685\u0688\x03\x02\x02\x02\u0686\u0684\x03\x02" +
+		"\x02\x02\u0686\u0687\x03\x02\x02\x02\u0687\u068A\x03\x02\x02\x02\u0688" +
+		"\u0686\x03\x02\x02\x02\u0689\u068B\x05~@\x02\u068A\u0689\x03\x02\x02\x02" +
+		"\u068A\u068B\x03\x02\x02\x02\u068B\u068C\x03\x02\x02\x02\u068C\u068D\x07" +
+		"\x06\x02\x02\u068D{\x03\x02\x02\x02\u068E\u06B0\x07\x9A\x02\x02\u068F" +
+		"\u06B1\x05\xD4k\x02\u0690\u0692\x07\x05\x02\x02\u0691\u0693\x05\xDAn\x02" +
+		"\u0692\u0691\x03\x02\x02\x02\u0692\u0693\x03\x02\x02\x02\u0693\u069E\x03" +
+		"\x02\x02\x02\u0694\u0695\x07\x9B\x02\x02\u0695\u0696\x07*\x02\x02\u0696" +
+		"\u069B\x05B\"\x02\u0697\u0698\x07\x07\x02\x02\u0698\u069A\x05B\"\x02\u0699" +
+		"\u0697\x03\x02\x02\x02\u069A\u069D\x03\x02\x02\x02\u069B\u0699\x03\x02" +
+		"\x02\x02\u069B\u069C\x03\x02\x02\x02\u069C\u069F\x03\x02\x02\x02\u069D" +
+		"\u069B\x03\x02\x02\x02\u069E\u0694\x03\x02\x02\x02\u069E\u069F\x03\x02" +
+		"\x02\x02\u069F\u06AA\x03\x02\x02\x02\u06A0\u06A1\x07o\x02\x02\u06A1\u06A2" +
+		"\x07*\x02\x02\u06A2\u06A7\x05\x8EH\x02\u06A3\u06A4\x07\x07\x02\x02\u06A4" +
+		"\u06A6\x05\x8EH\x02\u06A5\u06A3\x03\x02\x02\x02\u06A6\u06A9\x03\x02\x02" +
+		"\x02\u06A7\u06A5\x03\x02\x02\x02\u06A7\u06A8\x03\x02\x02\x02\u06A8\u06AB" +
+		"\x03\x02\x02\x02\u06A9\u06A7\x03\x02\x02\x02\u06AA\u06A0\x03\x02\x02\x02" +
+		"\u06AA\u06AB\x03\x02\x02\x02\u06AB\u06AD\x03\x02\x02\x02\u06AC\u06AE\x05" +
+		"~@\x02\u06AD\u06AC\x03\x02\x02\x02\u06AD\u06AE\x03\x02\x02\x02\u06AE\u06AF" +
+		"\x03\x02\x02\x02\u06AF\u06B1\x07\x06\x02\x02\u06B0\u068F\x03\x02\x02\x02" +
+		"\u06B0\u0690\x03\x02\x02\x02\u06B1}\x03\x02\x02\x02\u06B2\u06BC\x05\x80" +
+		"A\x02\u06B3\u06BA\x07\xB6\x02\x02\u06B4\u06B5\x07g\x02\x02\u06B5\u06BB" +
+		"\x07\xB8\x02\x02\u06B6\u06B7\x07\x9F\x02\x02\u06B7\u06BB\x07\x81\x02\x02" +
+		"\u06B8\u06BB\x07P\x02\x02\u06B9\u06BB\x07\xB7\x02\x02\u06BA\u06B4\x03" +
+		"\x02\x02\x02\u06BA\u06B6\x03\x02\x02\x02\u06BA\u06B8\x03\x02\x02\x02\u06BA" +
+		"\u06B9\x03\x02\x02\x02\u06BB\u06BD\x03\x02\x02\x02\u06BC\u06B3\x03\x02" +
+		"\x02\x02\u06BC\u06BD\x03\x02\x02\x02\u06BD\x7F\x03\x02\x02\x02\u06BE\u06C5" +
+		"\t\x14\x02\x02\u06BF\u06C6\x05\x96L\x02\u06C0\u06C1\x07)\x02\x02\u06C1" +
+		"\u06C2\x05\x92J\x02\u06C2\u06C3\x07\"\x02\x02\u06C3\u06C4\x05\x94K\x02" +
+		"\u06C4\u06C6\x03\x02\x02\x02\u06C5\u06BF\x03\x02\x02\x02\u06C5\u06C0\x03" +
+		"\x02\x02\x02\u06C6\x81\x03\x02\x02\x02\u06C7\u06C8\x05\xDCo\x02\u06C8" +
+		"\u06D2\x07\x05\x02\x02\u06C9\u06CE\x05B\"\x02\u06CA\u06CB\x07\x07\x02" +
+		"\x02\u06CB\u06CD\x05B\"\x02\u06CC\u06CA\x03\x02\x02\x02\u06CD\u06D0\x03" +
+		"\x02\x02\x02\u06CE\u06CC\x03\x02\x02\x02\u06CE\u06CF\x03\x02\x02\x02\u06CF" +
+		"\u06D3\x03\x02\x02\x02\u06D0\u06CE\x03\x02\x02\x02\u06D1\u06D3\x07\t\x02" +
+		"\x02\u06D2\u06C9\x03\x02\x02\x02\u06D2\u06D1\x03\x02\x02\x02\u06D3\u06D4" +
+		"\x03\x02\x02\x02\u06D4\u06D5\x07\x06\x02\x02\u06D5\x83\x03\x02\x02\x02" +
+		"\u06D6\u06D7\x05\xDEp\x02\u06D7\u06E4\x07\x05\x02\x02\u06D8\u06DA\x07" +
+		"@\x02\x02\u06D9\u06D8\x03\x02\x02\x02\u06D9\u06DA\x03\x02\x02\x02\u06DA" +
+		"\u06DB\x03\x02\x02\x02\u06DB\u06E0\x05B\"\x02\u06DC\u06DD\x07\x07\x02" +
+		"\x02\u06DD\u06DF\x05B\"\x02\u06DE\u06DC\x03\x02\x02\x02\u06DF\u06E2\x03" +
+		"\x02\x02\x02\u06E0\u06DE\x03\x02\x02\x02\u06E0\u06E1\x03\x02\x02\x02\u06E1" +
+		"\u06E5\x03\x02\x02\x02\u06E2\u06E0\x03\x02\x02\x02\u06E3\u06E5\x07\t\x02" +
+		"\x02\u06E4\u06D9\x03\x02\x02\x02\u06E4\u06E3\x03\x02\x02\x02\u06E4\u06E5" +
+		"\x03\x02\x02\x02\u06E5\u06E6\x03\x02\x02\x02\u06E6\u06E8\x07\x06\x02\x02" +
+		"\u06E7\u06E9\x05x=\x02\u06E8\u06E7\x03\x02\x02\x02\u06E8\u06E9\x03\x02" +
+		"\x02\x02\u06E9\x85\x03\x02\x02\x02\u06EA\u06EB\x05\x98M\x02\u06EB\u06F5" +
+		"\x07\x05\x02\x02\u06EC\u06F1\x05B\"\x02\u06ED\u06EE\x07\x07\x02\x02\u06EE" +
+		"\u06F0\x05B\"\x02\u06EF\u06ED\x03\x02\x02\x02\u06F0\u06F3\x03\x02\x02" +
+		"\x02\u06F1\u06EF\x03\x02\x02\x02\u06F1\u06F2\x03\x02\x02\x02\u06F2\u06F6" +
+		"\x03\x02\x02\x02\u06F3\u06F1\x03\x02\x02\x02\u06F4\u06F6\x07\t\x02\x02" +
+		"\u06F5\u06EC\x03\x02\x02\x02\u06F5\u06F4\x03\x02\x02\x02\u06F5\u06F6\x03" +
+		"\x02\x02\x02\u06F6\u06F7\x03\x02\x02\x02\u06F7\u06F9\x07\x06\x02\x02\u06F8" +
+		"\u06FA\x05x=\x02\u06F9\u06F8\x03\x02\x02\x02\u06F9\u06FA\x03\x02\x02\x02" +
+		"\u06FA\u06FB\x03\x02\x02\x02\u06FB\u06FE\x07\x9A\x02\x02\u06FC\u06FF\x05" +
+		"z>\x02\u06FD\u06FF\x05\xD4k\x02\u06FE\u06FC\x03\x02\x02\x02\u06FE\u06FD" +
+		"\x03\x02\x02\x02\u06FF\x87\x03\x02\x02\x02\u0700\u0702\x07\x97\x02\x02" +
+		"\u0701\u0703\x07v\x02\x02\u0702\u0701\x03\x02\x02\x02\u0702\u0703\x03" +
+		"\x02\x02\x02\u0703\u0704\x03\x02\x02\x02\u0704\u0709\x058\x1D\x02\u0705" +
+		"\u0706\x07\x07\x02\x02\u0706\u0708\x058\x1D\x02\u0707\u0705\x03\x02\x02" +
+		"\x02\u0708\u070B\x03\x02\x02\x02\u0709\u0707\x03\x02\x02\x02\u0709\u070A" +
+		"\x03\x02\x02\x02\u070A\x89\x03\x02\x02\x02\u070B\u0709\x03\x02\x02\x02" +
+		"\u070C\u070D\x07o\x02\x02\u070D\u070E\x07*\x02\x02\u070E\u0713\x05\x8E" +
+		"H\x02\u070F\u0710\x07\x07\x02\x02\u0710\u0712\x05\x8EH\x02\u0711\u070F" +
+		"\x03\x02\x02\x02\u0712\u0715\x03\x02\x02\x02\u0713\u0711\x03\x02\x02\x02" +
+		"\u0713\u0714\x03\x02\x02\x02\u0714\x8B\x03\x02\x02\x02\u0715\u0713\x03" +
+		"\x02\x02\x02\u0716\u0717\x07d\x02\x02\u0717\u071A\x05B\"\x02\u0718\u0719" +
+		"\t\x15\x02\x02\u0719\u071B\x05B\"\x02\u071A\u0718\x03\x02\x02\x02\u071A" +
+		"\u071B\x03\x02\x02\x02\u071B\x8D\x03\x02\x02\x02\u071C\u071F\x05B\"\x02" +
+		"\u071D\u071E\x07/\x02\x02\u071E\u0720\x05\xC0a\x02\u071F\u071D\x03\x02" +
+		"\x02\x02\u071F\u0720\x03\x02\x02\x02\u0720\u0722\x03\x02\x02\x02\u0721" +
+		"\u0723\x05\x90I\x02\u0722\u0721\x03\x02\x02\x02\u0722\u0723\x03\x02\x02" +
+		"\x02\u0723\u0726\x03\x02\x02\x02\u0724\u0725\x07\xB1\x02\x02\u0725\u0727" +
+		"\t\x16\x02\x02\u0726\u0724\x03\x02\x02\x02\u0726\u0727\x03\x02\x02\x02" +
+		"\u0727\x8F\x03\x02\x02\x02\u0728\u0729\t\x17\x02\x02\u0729\x91\x03\x02" +
+		"\x02\x02\u072A\u072B\x05B\"\x02\u072B\u072C\x07\x9D\x02\x02\u072C\u0735" +
+		"\x03\x02\x02\x02\u072D\u072E\x05B\"\x02\u072E\u072F\x07\xA0\x02\x02\u072F" +
+		"\u0735\x03\x02\x02\x02\u0730\u0731\x07\x9F\x02\x02\u0731\u0735\x07\x81" +
+		"\x02\x02\u0732\u0733\x07\x9E\x02\x02\u0733\u0735\x07\x9D\x02\x02\u0734" +
+		"\u072A\x03\x02\x02\x02\u0734\u072D\x03\x02\x02\x02\u0734\u0730\x03\x02" +
+		"\x02\x02\u0734\u0732\x03\x02\x02\x02\u0735\x93\x03\x02\x02\x02\u0736\u0737" +
+		"\x05B\"\x02\u0737\u0738\x07\x9D\x02\x02\u0738\u0741\x03\x02\x02\x02\u0739" +
+		"\u073A\x05B\"\x02\u073A\u073B\x07\xA0\x02\x02\u073B\u0741\x03\x02\x02" +
+		"\x02\u073C\u073D\x07\x9F\x02\x02\u073D\u0741\x07\x81\x02\x02\u073E\u073F" +
+		"\x07\x9E\x02\x02\u073F\u0741\x07\xA0\x02\x02\u0740\u0736\x03\x02\x02\x02" +
+		"\u0740\u0739\x03\x02\x02\x02\u0740\u073C\x03\x02\x02\x02\u0740\u073E\x03" +
+		"\x02\x02\x02\u0741\x95\x03\x02\x02\x02\u0742\u0743\x05B\"\x02\u0743\u0744" +
+		"\x07\x9D\x02\x02\u0744\u074A\x03\x02\x02\x02\u0745\u0746\x07\x9E\x02\x02" +
+		"\u0746\u074A\x07\x9D\x02\x02\u0747\u0748\x07\x9F\x02\x02\u0748\u074A\x07" +
+		"\x81\x02\x02\u0749\u0742\x03\x02\x02\x02\u0749\u0745\x03\x02\x02\x02\u0749" +
+		"\u0747\x03\x02\x02\x02\u074A\x97\x03\x02\x02\x02\u074B\u074C\t\x18\x02" +
+		"\x02\u074C\u074D\x07\x05\x02\x02\u074D\u074E\x05B\"\x02\u074E\u074F\x07" +
+		"\x06\x02\x02\u074F\u0750\x07\x9A\x02\x02\u0750\u0752\x07\x05\x02\x02\u0751" +
+		"\u0753\x05\x9EP\x02\u0752\u0751\x03\x02\x02\x02\u0752\u0753\x03\x02\x02" +
+		"\x02\u0753\u0754\x03\x02\x02\x02\u0754\u0756\x05\xA2R\x02\u0755\u0757" +
+		"\x05\x80A\x02\u0756\u0755\x03\x02\x02\x02\u0756\u0757\x03\x02\x02\x02" +
+		"\u0757\u0758\x03\x02\x02\x02\u0758\u0759\x07\x06\x02\x02\u0759\u07A1\x03" +
+		"\x02\x02\x02\u075A\u075B\t\x19\x02\x02\u075B\u075C\x07\x05\x02\x02\u075C" +
+		"\u075D\x07\x06\x02\x02\u075D\u075E\x07\x9A\x02\x02\u075E\u0760\x07\x05" +
+		"\x02\x02\u075F\u0761\x05\x9EP\x02\u0760\u075F\x03\x02\x02\x02\u0760\u0761" +
+		"\x03\x02\x02\x02\u0761\u0763\x03\x02\x02\x02\u0762\u0764\x05\xA0Q\x02" +
+		"\u0763\u0762\x03\x02\x02\x02\u0763\u0764\x03\x02\x02\x02\u0764\u0765\x03" +
+		"\x02\x02\x02\u0765\u07A1\x07\x06\x02\x02\u0766\u0767\t\x1A\x02\x02\u0767" +
+		"\u0768\x07\x05\x02\x02\u0768\u0769\x07\x06\x02\x02\u0769\u076A\x07\x9A" +
+		"\x02\x02\u076A\u076C\x07\x05\x02\x02\u076B\u076D\x05\x9EP\x02\u076C\u076B" +
+		"\x03\x02\x02\x02\u076C\u076D\x03\x02\x02\x02\u076D\u076E\x03\x02\x02\x02" +
+		"\u076E\u076F\x05\xA2R\x02\u076F\u0770\x07\x06\x02\x02\u0770\u07A1\x03" +
+		"\x02\x02\x02\u0771\u0772\t\x1B\x02\x02\u0772\u0773\x07\x05\x02\x02\u0773" +
+		"\u0775\x05B\"\x02\u0774\u0776\x05\x9AN\x02\u0775\u0774\x03\x02\x02\x02" +
+		"\u0775\u0776\x03\x02\x02\x02\u0776\u0778\x03\x02\x02\x02\u0777\u0779\x05" +
+		"\x9CO\x02\u0778\u0777\x03\x02\x02\x02\u0778\u0779\x03\x02\x02\x02\u0779" +
+		"\u077A\x03\x02\x02\x02\u077A\u077B\x07\x06\x02\x02\u077B\u077C\x07\x9A" +
+		"\x02\x02\u077C\u077E\x07\x05\x02\x02\u077D\u077F\x05\x9EP\x02\u077E\u077D" +
+		"\x03\x02\x02\x02\u077E\u077F\x03\x02\x02\x02\u077F\u0780\x03\x02\x02\x02" +
+		"\u0780\u0781\x05\xA2R\x02\u0781\u0782\x07\x06\x02\x02\u0782\u07A1\x03" +
+		"\x02\x02\x02\u0783\u0784\x07\xA6\x02\x02\u0784\u0785\x07\x05\x02\x02\u0785" +
+		"\u0786\x05B\"\x02\u0786\u0787\x07\x07\x02\x02\u0787\u0788\x05$\x13\x02" +
+		"\u0788\u0789\x07\x06\x02\x02\u0789\u078A\x07\x9A\x02\x02\u078A\u078C\x07" +
+		"\x05\x02\x02\u078B\u078D\x05\x9EP\x02\u078C\u078B\x03\x02\x02\x02\u078C" +
+		"\u078D\x03\x02\x02\x02\u078D\u078E\x03\x02\x02\x02\u078E\u0790\x05\xA2" +
+		"R\x02\u078F\u0791\x05\x80A\x02\u0790\u078F\x03\x02\x02\x02\u0790\u0791" +
+		"\x03\x02\x02\x02\u0791\u0792\x03\x02\x02\x02\u0792\u0793\x07\x06\x02\x02" +
+		"\u0793\u07A1\x03\x02\x02\x02\u0794\u0795\x07\xA7\x02\x02\u0795\u0796\x07" +
+		"\x05\x02\x02\u0796\u0797\x05B\"\x02\u0797\u0798\x07\x06\x02\x02\u0798" +
+		"\u0799\x07\x9A\x02\x02\u0799\u079B\x07\x05\x02\x02\u079A\u079C\x05\x9E" +
+		"P\x02\u079B\u079A\x03\x02\x02\x02\u079B\u079C\x03\x02\x02\x02\u079C\u079D" +
+		"\x03\x02\x02\x02\u079D\u079E\x05\xA2R\x02\u079E\u079F\x07\x06\x02\x02" +
+		"\u079F\u07A1\x03\x02\x02\x02\u07A0\u074B\x03\x02\x02\x02\u07A0\u075A\x03" +
+		"\x02\x02\x02\u07A0\u0766\x03\x02\x02\x02\u07A0\u0771\x03\x02\x02\x02\u07A0" +
+		"\u0783\x03\x02\x02\x02\u07A0\u0794\x03\x02\x02\x02\u07A1\x99\x03\x02\x02" +
+		"\x02\u07A2\u07A3\x07\x07\x02\x02\u07A3\u07A4\x05$\x13\x02\u07A4\x9B\x03" +
+		"\x02\x02\x02\u07A5\u07A6\x07\x07\x02\x02\u07A6\u07A7\x05$\x13\x02\u07A7" +
+		"\x9D\x03\x02\x02\x02\u07A8\u07A9\x07\x9B\x02\x02\u07A9\u07AB\x07*\x02" +
+		"\x02\u07AA\u07AC\x05B\"\x02\u07AB\u07AA\x03\x02\x02\x02\u07AC\u07AD\x03" +
+		"\x02\x02\x02\u07AD\u07AB\x03\x02\x02\x02\u07AD\u07AE\x03\x02\x02\x02\u07AE" +
+		"\x9F\x03\x02\x02\x02\u07AF\u07B0\x07o\x02\x02\u07B0\u07B2\x07*\x02\x02" +
+		"\u07B1\u07B3\x05B\"\x02\u07B2\u07B1\x03\x02\x02\x02\u07B3\u07B4\x03\x02" +
+		"\x02\x02\u07B4\u07B2\x03\x02\x02\x02\u07B4\u07B5\x03\x02\x02\x02\u07B5" +
+		"\xA1\x03\x02\x02\x02\u07B6\u07B7\x07o\x02\x02\u07B7\u07B8\x07*\x02\x02" +
+		"\u07B8\u07B9\x05\xA4S\x02\u07B9\xA3\x03\x02\x02\x02\u07BA\u07BC\x05B\"" +
+		"\x02\u07BB\u07BD\x05\x90I\x02\u07BC\u07BB\x03\x02\x02\x02\u07BC\u07BD" +
+		"\x03\x02\x02\x02\u07BD\u07C5\x03\x02\x02\x02\u07BE\u07BF\x07\x07\x02\x02" +
+		"\u07BF\u07C1\x05B\"\x02\u07C0\u07C2\x05\x90I\x02\u07C1\u07C0\x03\x02\x02" +
+		"\x02\u07C1\u07C2\x03\x02\x02\x02\u07C2\u07C4\x03\x02\x02\x02\u07C3\u07BE" +
+		"\x03\x02\x02\x02\u07C4\u07C7\x03\x02\x02\x02\u07C5\u07C3\x03\x02\x02\x02" +
+		"\u07C5\u07C6\x03\x02\x02\x02\u07C6\xA5\x03\x02\x02\x02\u07C7\u07C5\x03" +
+		"\x02\x02\x02\u07C8\u07C9\x05X-\x02\u07C9\xA7\x03\x02\x02\x02\u07CA\u07CB" +
+		"\x05X-\x02\u07CB\xA9\x03\x02\x02\x02\u07CC\u07CD\t\x1C\x02\x02\u07CD\xAB" +
+		"\x03\x02\x02\x02\u07CE\u07CF\x07\xBE\x02\x02\u07CF\xAD\x03\x02\x02\x02" +
+		"\u07D0\u07D3\x05B\"\x02\u07D1\u07D3\x05\x1E\x10\x02\u07D2\u07D0\x03\x02" +
+		"\x02\x02\u07D2\u07D1\x03\x02\x02\x02\u07D3\xAF\x03\x02\x02\x02\u07D4\u07D5" +
+		"\t\x1D\x02\x02\u07D5\xB1\x03\x02\x02\x02\u07D6\u07D7\t\x1E\x02\x02\u07D7" +
+		"\xB3\x03\x02\x02\x02\u07D8\u07D9\x05\xE2r\x02\u07D9\xB5\x03\x02\x02\x02" +
+		"\u07DA\u07DB\x05\xE2r\x02\u07DB\xB7\x03\x02\x02\x02\u07DC\u07DD\x05\xE2" +
+		"r\x02\u07DD\xB9\x03\x02\x02\x02\u07DE\u07DF\x05\xE2r\x02\u07DF\xBB\x03" +
+		"\x02\x02\x02\u07E0\u07E1\x05\xE2r\x02\u07E1\xBD\x03\x02\x02\x02\u07E2" +
+		"\u07E3\x05\xE2r\x02\u07E3\xBF\x03\x02\x02\x02\u07E4\u07E5\x05\xE2r\x02" +
+		"\u07E5\xC1\x03\x02\x02\x02\u07E6\u07E7\x05\xE2r\x02\u07E7\xC3\x03\x02" +
+		"\x02\x02\u07E8\u07E9\x05\xE2r\x02\u07E9\xC5\x03\x02\x02\x02\u07EA\u07EB" +
+		"\x05\xE2r\x02\u07EB\xC7\x03\x02\x02\x02\u07EC\u07ED\x05\xE2r\x02\u07ED" +
+		"\xC9\x03\x02\x02\x02\u07EE\u07EF\x05\xE2r\x02\u07EF\xCB\x03\x02\x02\x02" +
+		"\u07F0\u07F1\x05\xE2r\x02\u07F1\xCD\x03\x02\x02\x02\u07F2\u07F3\x05\xE2" +
+		"r\x02\u07F3\xCF\x03\x02\x02\x02\u07F4\u07F5\x05\xE2r\x02\u07F5\xD1\x03" +
+		"\x02\x02\x02\u07F6\u07F7\x05\xE2r\x02\u07F7\xD3\x03\x02\x02\x02\u07F8" +
+		"\u07F9\x05\xE2r\x02\u07F9\xD5\x03\x02\x02\x02\u07FA\u07FB\x05\xE2r\x02" +
+		"\u07FB\xD7\x03\x02\x02\x02\u07FC\u07FD\x05\xE2r\x02\u07FD\xD9\x03\x02" +
+		"\x02\x02\u07FE\u07FF\x05\xE2r\x02\u07FF\xDB\x03\x02\x02\x02\u0800\u0801" +
+		"\x05\xE2r\x02\u0801\xDD\x03\x02\x02\x02\u0802\u0803\x05\xE2r\x02\u0803" +
+		"\xDF\x03\x02\x02\x02\u0804\u0805\x05\xE2r\x02\u0805\xE1\x03\x02\x02\x02" +
+		"\u0806\u080E\x07\xBB\x02\x02\u0807\u080E\x05\xB2Z\x02\u0808\u080E\x07" +
+		"\xBE\x02\x02\u0809\u080A\x07\x05\x02\x02\u080A\u080B\x05\xE2r\x02\u080B" +
+		"\u080C\x07\x06\x02\x02\u080C\u080E\x03\x02\x02\x02\u080D\u0806\x03\x02" +
+		"\x02\x02\u080D\u0807\x03\x02\x02\x02\u080D\u0808\x03\x02\x02\x02\u080D" +
+		"\u0809\x03\x02\x02\x02\u080E\xE3\x03\x02\x02\x02\u012B\xE7\xEF\xF6\xFB" +
+		"\u0101\u0107\u0109\u0123\u012A\u0131\u0137\u013B\u0140\u0143\u014A\u014D" +
+		"\u0151\u0159\u015D\u015F\u0163\u0167\u016B\u016E\u0175\u017B\u0181\u0186" +
+		"\u0191\u0197\u019B\u019F\u01A2\u01A6\u01AC\u01B1\u01BA\u01C1\u01C7\u01CB" +
+		"\u01CF\u01D4\u01DA\u01E6\u01EA\u01EF\u01F2\u01F5\u01F8\u01FC\u01FF\u020D" +
+		"\u0214\u021B\u021D\u0220\u0226\u022B\u0233\u0238\u0247\u024D\u0257\u025C" +
+		"\u0266\u026A\u026C\u0270\u0275\u0277\u027F\u0285\u028A\u0291\u029C\u029F" +
+		"\u02A1\u02A8\u02AC\u02B3\u02B9\u02BF\u02C5\u02CA\u02D3\u02D8\u02E3\u02E8" +
+		"\u02F3\u02F8\u02FC\u030C\u0316\u031B\u0323\u032F\u0334\u033C\u0343\u0346" +
+		"\u0349\u0350\u0353\u0356\u0359\u035D\u0365\u036A\u0374\u0379\u0382\u0389" +
+		"\u038D\u0391\u0394\u039C\u03A9\u03AC\u03B4\u03BD\u03C1\u03C6\u03E1\u03EA" +
+		"\u03F6\u03FB\u0407\u040D\u0414\u0418\u0422\u0425\u042B\u0431\u043A\u043D" +
+		"\u0441\u0443\u0445\u044E\u045A\u0465\u0469\u0470\u0476\u047B\u0483\u0488" +
+		"\u048C\u048F\u0493\u0496\u049E\u04A9\u04AF\u04B1\u04B9\u04C0\u04C7\u04CC" +
+		"\u04CE\u04D4\u04DD\u04E2\u04E9\u04ED\u04EF\u04F2\u04FA\u04FE\u0501\u0507" +
+		"\u050B\u0510\u0517\u0520\u0524\u0526\u052A\u0533\u0538\u053A\u0547\u054A" +
+		"\u054D\u0552\u0556\u0559\u055C\u0561\u0565\u056A\u056D\u0570\u0575\u0579" +
+		"\u057C\u0583\u0588\u0591\u0596\u0599\u05A1\u05A5\u05AD\u05B0\u05B2\u05BB" +
+		"\u05BE\u05C0\u05C4\u05C8\u05CC\u05CF\u05DA\u05DF\u05E3\u05E7\u05EA\u05EF" +
+		"\u05F5\u05FC\u0603\u060C\u0610\u0612\u0616\u0619\u0621\u0627\u062C\u0632" +
+		"\u0639\u0640\u0645\u0648\u064B\u064E\u0653\u0658\u065F\u0663\u0667\u0671" +
+		"\u067A\u067D\u0686\u068A\u0692\u069B\u069E\u06A7\u06AA\u06AD\u06B0\u06BA" +
+		"\u06BC\u06C5\u06CE\u06D2\u06D9\u06E0\u06E4\u06E8\u06F1\u06F5\u06F9\u06FE" +
+		"\u0702\u0709\u0713\u071A\u071F\u0722\u0726\u0734\u0740\u0749\u0752\u0756" +
+		"\u0760\u0763\u076C\u0775\u0778\u077E\u078C\u0790\u079B\u07A0\u07AD\u07B4" +
+		"\u07BC\u07C1\u07C5\u07D2\u080D";
 	public static readonly _serializedATN: string = Utils.join(
 		[
 			SQLiteParser._serializedATNSegment0,
@@ -11147,9 +11168,9 @@ export class Sql_stmtContext extends ParserRuleContext {
 	public vacuum_stmt(): Vacuum_stmtContext | undefined {
 		return this.tryGetRuleContext(0, Vacuum_stmtContext);
 	}
-	public EXPLAIN_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.EXPLAIN_, 0); }
-	public QUERY_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.QUERY_, 0); }
-	public PLAN_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.PLAN_, 0); }
+	public EXPLAIN(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.EXPLAIN, 0); }
+	public QUERY(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.QUERY, 0); }
+	public PLAN(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.PLAN, 0); }
 	constructor(parent: ParserRuleContext | undefined, invokingState: number) {
 		super(parent, invokingState);
 	}
@@ -11174,8 +11195,8 @@ export class Alter_table_stmtContext extends ParserRuleContext {
 	public _new_table_name!: Table_nameContext;
 	public _old_column_name!: Column_nameContext;
 	public _new_column_name!: Column_nameContext;
-	public ALTER_(): TerminalNode { return this.getToken(SQLiteParser.ALTER_, 0); }
-	public TABLE_(): TerminalNode { return this.getToken(SQLiteParser.TABLE_, 0); }
+	public ALTER(): TerminalNode { return this.getToken(SQLiteParser.ALTER, 0); }
+	public TABLE(): TerminalNode { return this.getToken(SQLiteParser.TABLE, 0); }
 	public table_name(): Table_nameContext[];
 	public table_name(i: number): Table_nameContext;
 	public table_name(i?: number): Table_nameContext | Table_nameContext[] {
@@ -11185,12 +11206,12 @@ export class Alter_table_stmtContext extends ParserRuleContext {
 			return this.getRuleContext(i, Table_nameContext);
 		}
 	}
-	public RENAME_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.RENAME_, 0); }
-	public ADD_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.ADD_, 0); }
+	public RENAME(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.RENAME, 0); }
+	public ADD(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.ADD, 0); }
 	public column_def(): Column_defContext | undefined {
 		return this.tryGetRuleContext(0, Column_defContext);
 	}
-	public DROP_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.DROP_, 0); }
+	public DROP(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.DROP, 0); }
 	public column_name(): Column_nameContext[];
 	public column_name(i: number): Column_nameContext;
 	public column_name(i?: number): Column_nameContext | Column_nameContext[] {
@@ -11204,8 +11225,8 @@ export class Alter_table_stmtContext extends ParserRuleContext {
 		return this.tryGetRuleContext(0, Schema_nameContext);
 	}
 	public DOT(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.DOT, 0); }
-	public TO_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.TO_, 0); }
-	public COLUMN_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.COLUMN_, 0); }
+	public TO(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.TO, 0); }
+	public COLUMN(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.COLUMN, 0); }
 	constructor(parent: ParserRuleContext | undefined, invokingState: number) {
 		super(parent, invokingState);
 	}
@@ -11227,7 +11248,7 @@ export class Alter_table_stmtContext extends ParserRuleContext {
 
 
 export class Analyze_stmtContext extends ParserRuleContext {
-	public ANALYZE_(): TerminalNode { return this.getToken(SQLiteParser.ANALYZE_, 0); }
+	public ANALYZE(): TerminalNode { return this.getToken(SQLiteParser.ANALYZE, 0); }
 	public schema_name(): Schema_nameContext | undefined {
 		return this.tryGetRuleContext(0, Schema_nameContext);
 	}
@@ -11256,15 +11277,15 @@ export class Analyze_stmtContext extends ParserRuleContext {
 
 
 export class Attach_stmtContext extends ParserRuleContext {
-	public ATTACH_(): TerminalNode { return this.getToken(SQLiteParser.ATTACH_, 0); }
+	public ATTACH(): TerminalNode { return this.getToken(SQLiteParser.ATTACH, 0); }
 	public expr(): ExprContext {
 		return this.getRuleContext(0, ExprContext);
 	}
-	public AS_(): TerminalNode { return this.getToken(SQLiteParser.AS_, 0); }
+	public AS(): TerminalNode { return this.getToken(SQLiteParser.AS, 0); }
 	public schema_name(): Schema_nameContext {
 		return this.getRuleContext(0, Schema_nameContext);
 	}
-	public DATABASE_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.DATABASE_, 0); }
+	public DATABASE(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.DATABASE, 0); }
 	constructor(parent: ParserRuleContext | undefined, invokingState: number) {
 		super(parent, invokingState);
 	}
@@ -11286,11 +11307,11 @@ export class Attach_stmtContext extends ParserRuleContext {
 
 
 export class Begin_stmtContext extends ParserRuleContext {
-	public BEGIN_(): TerminalNode { return this.getToken(SQLiteParser.BEGIN_, 0); }
-	public TRANSACTION_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.TRANSACTION_, 0); }
-	public DEFERRED_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.DEFERRED_, 0); }
-	public IMMEDIATE_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.IMMEDIATE_, 0); }
-	public EXCLUSIVE_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.EXCLUSIVE_, 0); }
+	public BEGIN(): TerminalNode { return this.getToken(SQLiteParser.BEGIN, 0); }
+	public TRANSACTION(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.TRANSACTION, 0); }
+	public DEFERRED(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.DEFERRED, 0); }
+	public IMMEDIATE(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.IMMEDIATE, 0); }
+	public EXCLUSIVE(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.EXCLUSIVE, 0); }
 	public transaction_name(): Transaction_nameContext | undefined {
 		return this.tryGetRuleContext(0, Transaction_nameContext);
 	}
@@ -11315,9 +11336,9 @@ export class Begin_stmtContext extends ParserRuleContext {
 
 
 export class Commit_stmtContext extends ParserRuleContext {
-	public COMMIT_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.COMMIT_, 0); }
-	public END_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.END_, 0); }
-	public TRANSACTION_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.TRANSACTION_, 0); }
+	public COMMIT(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.COMMIT, 0); }
+	public END(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.END, 0); }
+	public TRANSACTION(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.TRANSACTION, 0); }
 	constructor(parent: ParserRuleContext | undefined, invokingState: number) {
 		super(parent, invokingState);
 	}
@@ -11339,13 +11360,13 @@ export class Commit_stmtContext extends ParserRuleContext {
 
 
 export class Rollback_stmtContext extends ParserRuleContext {
-	public ROLLBACK_(): TerminalNode { return this.getToken(SQLiteParser.ROLLBACK_, 0); }
-	public TRANSACTION_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.TRANSACTION_, 0); }
-	public TO_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.TO_, 0); }
+	public ROLLBACK(): TerminalNode { return this.getToken(SQLiteParser.ROLLBACK, 0); }
+	public TRANSACTION(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.TRANSACTION, 0); }
+	public TO(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.TO, 0); }
 	public savepoint_name(): Savepoint_nameContext | undefined {
 		return this.tryGetRuleContext(0, Savepoint_nameContext);
 	}
-	public SAVEPOINT_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.SAVEPOINT_, 0); }
+	public SAVEPOINT(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.SAVEPOINT, 0); }
 	constructor(parent: ParserRuleContext | undefined, invokingState: number) {
 		super(parent, invokingState);
 	}
@@ -11367,7 +11388,7 @@ export class Rollback_stmtContext extends ParserRuleContext {
 
 
 export class Savepoint_stmtContext extends ParserRuleContext {
-	public SAVEPOINT_(): TerminalNode { return this.getToken(SQLiteParser.SAVEPOINT_, 0); }
+	public SAVEPOINT(): TerminalNode { return this.getToken(SQLiteParser.SAVEPOINT, 0); }
 	public savepoint_name(): Savepoint_nameContext {
 		return this.getRuleContext(0, Savepoint_nameContext);
 	}
@@ -11392,11 +11413,11 @@ export class Savepoint_stmtContext extends ParserRuleContext {
 
 
 export class Release_stmtContext extends ParserRuleContext {
-	public RELEASE_(): TerminalNode { return this.getToken(SQLiteParser.RELEASE_, 0); }
+	public RELEASE(): TerminalNode { return this.getToken(SQLiteParser.RELEASE, 0); }
 	public savepoint_name(): Savepoint_nameContext {
 		return this.getRuleContext(0, Savepoint_nameContext);
 	}
-	public SAVEPOINT_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.SAVEPOINT_, 0); }
+	public SAVEPOINT(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.SAVEPOINT, 0); }
 	constructor(parent: ParserRuleContext | undefined, invokingState: number) {
 		super(parent, invokingState);
 	}
@@ -11418,12 +11439,12 @@ export class Release_stmtContext extends ParserRuleContext {
 
 
 export class Create_index_stmtContext extends ParserRuleContext {
-	public CREATE_(): TerminalNode { return this.getToken(SQLiteParser.CREATE_, 0); }
-	public INDEX_(): TerminalNode { return this.getToken(SQLiteParser.INDEX_, 0); }
+	public CREATE(): TerminalNode { return this.getToken(SQLiteParser.CREATE, 0); }
+	public INDEX(): TerminalNode { return this.getToken(SQLiteParser.INDEX, 0); }
 	public index_name(): Index_nameContext {
 		return this.getRuleContext(0, Index_nameContext);
 	}
-	public ON_(): TerminalNode { return this.getToken(SQLiteParser.ON_, 0); }
+	public ON(): TerminalNode { return this.getToken(SQLiteParser.ON, 0); }
 	public table_name(): Table_nameContext {
 		return this.getRuleContext(0, Table_nameContext);
 	}
@@ -11438,10 +11459,10 @@ export class Create_index_stmtContext extends ParserRuleContext {
 		}
 	}
 	public CLOSE_PAR(): TerminalNode { return this.getToken(SQLiteParser.CLOSE_PAR, 0); }
-	public UNIQUE_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.UNIQUE_, 0); }
-	public IF_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.IF_, 0); }
-	public NOT_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.NOT_, 0); }
-	public EXISTS_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.EXISTS_, 0); }
+	public UNIQUE(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.UNIQUE, 0); }
+	public IF(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.IF, 0); }
+	public NOT(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.NOT, 0); }
+	public EXISTS(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.EXISTS, 0); }
 	public schema_name(): Schema_nameContext | undefined {
 		return this.tryGetRuleContext(0, Schema_nameContext);
 	}
@@ -11455,7 +11476,7 @@ export class Create_index_stmtContext extends ParserRuleContext {
 			return this.getToken(SQLiteParser.COMMA, i);
 		}
 	}
-	public WHERE_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.WHERE_, 0); }
+	public WHERE(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.WHERE, 0); }
 	public expr(): ExprContext | undefined {
 		return this.tryGetRuleContext(0, ExprContext);
 	}
@@ -11486,7 +11507,7 @@ export class Indexed_columnContext extends ParserRuleContext {
 	public expr(): ExprContext | undefined {
 		return this.tryGetRuleContext(0, ExprContext);
 	}
-	public COLLATE_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.COLLATE_, 0); }
+	public COLLATE(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.COLLATE, 0); }
 	public collation_name(): Collation_nameContext | undefined {
 		return this.tryGetRuleContext(0, Collation_nameContext);
 	}
@@ -11515,8 +11536,8 @@ export class Indexed_columnContext extends ParserRuleContext {
 
 export class Create_table_stmtContext extends ParserRuleContext {
 	public _row_ROW_ID!: Token;
-	public CREATE_(): TerminalNode { return this.getToken(SQLiteParser.CREATE_, 0); }
-	public TABLE_(): TerminalNode { return this.getToken(SQLiteParser.TABLE_, 0); }
+	public CREATE(): TerminalNode { return this.getToken(SQLiteParser.CREATE, 0); }
+	public TABLE(): TerminalNode { return this.getToken(SQLiteParser.TABLE, 0); }
 	public table_name(): Table_nameContext {
 		return this.getRuleContext(0, Table_nameContext);
 	}
@@ -11531,19 +11552,19 @@ export class Create_table_stmtContext extends ParserRuleContext {
 		}
 	}
 	public CLOSE_PAR(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.CLOSE_PAR, 0); }
-	public AS_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.AS_, 0); }
+	public AS(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.AS, 0); }
 	public select_stmt(): Select_stmtContext | undefined {
 		return this.tryGetRuleContext(0, Select_stmtContext);
 	}
-	public IF_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.IF_, 0); }
-	public NOT_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.NOT_, 0); }
-	public EXISTS_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.EXISTS_, 0); }
+	public IF(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.IF, 0); }
+	public NOT(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.NOT, 0); }
+	public EXISTS(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.EXISTS, 0); }
 	public schema_name(): Schema_nameContext | undefined {
 		return this.tryGetRuleContext(0, Schema_nameContext);
 	}
 	public DOT(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.DOT, 0); }
-	public TEMP_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.TEMP_, 0); }
-	public TEMPORARY_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.TEMPORARY_, 0); }
+	public TEMP(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.TEMP, 0); }
+	public TEMPORARY(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.TEMPORARY, 0); }
 	public COMMA(): TerminalNode[];
 	public COMMA(i: number): TerminalNode;
 	public COMMA(i?: number): TerminalNode | TerminalNode[] {
@@ -11562,7 +11583,7 @@ export class Create_table_stmtContext extends ParserRuleContext {
 			return this.getRuleContext(i, Table_constraintContext);
 		}
 	}
-	public WITHOUT_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.WITHOUT_, 0); }
+	public WITHOUT(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.WITHOUT, 0); }
 	public IDENTIFIER(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.IDENTIFIER, 0); }
 	constructor(parent: ParserRuleContext | undefined, invokingState: number) {
 		super(parent, invokingState);
@@ -11663,29 +11684,29 @@ export class Type_nameContext extends ParserRuleContext {
 
 
 export class Column_constraintContext extends ParserRuleContext {
-	public CHECK_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.CHECK_, 0); }
+	public CHECK(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.CHECK, 0); }
 	public OPEN_PAR(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.OPEN_PAR, 0); }
 	public expr(): ExprContext | undefined {
 		return this.tryGetRuleContext(0, ExprContext);
 	}
 	public CLOSE_PAR(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.CLOSE_PAR, 0); }
-	public DEFAULT_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.DEFAULT_, 0); }
-	public COLLATE_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.COLLATE_, 0); }
+	public DEFAULT(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.DEFAULT, 0); }
+	public COLLATE(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.COLLATE, 0); }
 	public collation_name(): Collation_nameContext | undefined {
 		return this.tryGetRuleContext(0, Collation_nameContext);
 	}
 	public foreign_key_clause(): Foreign_key_clauseContext | undefined {
 		return this.tryGetRuleContext(0, Foreign_key_clauseContext);
 	}
-	public AS_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.AS_, 0); }
-	public CONSTRAINT_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.CONSTRAINT_, 0); }
+	public AS(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.AS, 0); }
+	public CONSTRAINT(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.CONSTRAINT, 0); }
 	public name(): NameContext | undefined {
 		return this.tryGetRuleContext(0, NameContext);
 	}
-	public PRIMARY_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.PRIMARY_, 0); }
-	public KEY_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.KEY_, 0); }
-	public NULL_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.NULL_, 0); }
-	public UNIQUE_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.UNIQUE_, 0); }
+	public PRIMARY(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.PRIMARY, 0); }
+	public KEY(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.KEY, 0); }
+	public NULL(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.NULL, 0); }
+	public UNIQUE(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.UNIQUE, 0); }
 	public signed_number(): Signed_numberContext | undefined {
 		return this.tryGetRuleContext(0, Signed_numberContext);
 	}
@@ -11695,15 +11716,15 @@ export class Column_constraintContext extends ParserRuleContext {
 	public conflict_clause(): Conflict_clauseContext | undefined {
 		return this.tryGetRuleContext(0, Conflict_clauseContext);
 	}
-	public GENERATED_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.GENERATED_, 0); }
-	public ALWAYS_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.ALWAYS_, 0); }
-	public STORED_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.STORED_, 0); }
-	public VIRTUAL_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.VIRTUAL_, 0); }
+	public GENERATED(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.GENERATED, 0); }
+	public ALWAYS(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.ALWAYS, 0); }
+	public STORED(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.STORED, 0); }
+	public VIRTUAL(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.VIRTUAL, 0); }
 	public asc_desc(): Asc_descContext | undefined {
 		return this.tryGetRuleContext(0, Asc_descContext);
 	}
-	public AUTOINCREMENT_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.AUTOINCREMENT_, 0); }
-	public NOT_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.NOT_, 0); }
+	public AUTOINCREMENT(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.AUTOINCREMENT, 0); }
+	public NOT(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.NOT, 0); }
 	constructor(parent: ParserRuleContext | undefined, invokingState: number) {
 		super(parent, invokingState);
 	}
@@ -11760,12 +11781,12 @@ export class Table_constraintContext extends ParserRuleContext {
 		}
 	}
 	public CLOSE_PAR(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.CLOSE_PAR, 0); }
-	public CHECK_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.CHECK_, 0); }
+	public CHECK(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.CHECK, 0); }
 	public expr(): ExprContext | undefined {
 		return this.tryGetRuleContext(0, ExprContext);
 	}
-	public FOREIGN_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.FOREIGN_, 0); }
-	public KEY_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.KEY_, 0); }
+	public FOREIGN(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.FOREIGN, 0); }
+	public KEY(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.KEY, 0); }
 	public column_name(): Column_nameContext[];
 	public column_name(i: number): Column_nameContext;
 	public column_name(i?: number): Column_nameContext | Column_nameContext[] {
@@ -11778,12 +11799,12 @@ export class Table_constraintContext extends ParserRuleContext {
 	public foreign_key_clause(): Foreign_key_clauseContext | undefined {
 		return this.tryGetRuleContext(0, Foreign_key_clauseContext);
 	}
-	public CONSTRAINT_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.CONSTRAINT_, 0); }
+	public CONSTRAINT(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.CONSTRAINT, 0); }
 	public name(): NameContext | undefined {
 		return this.tryGetRuleContext(0, NameContext);
 	}
-	public PRIMARY_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.PRIMARY_, 0); }
-	public UNIQUE_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.UNIQUE_, 0); }
+	public PRIMARY(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.PRIMARY, 0); }
+	public UNIQUE(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.UNIQUE, 0); }
 	public COMMA(): TerminalNode[];
 	public COMMA(i: number): TerminalNode;
 	public COMMA(i?: number): TerminalNode | TerminalNode[] {
@@ -11817,7 +11838,7 @@ export class Table_constraintContext extends ParserRuleContext {
 
 
 export class Foreign_key_clauseContext extends ParserRuleContext {
-	public REFERENCES_(): TerminalNode { return this.getToken(SQLiteParser.REFERENCES_, 0); }
+	public REFERENCES(): TerminalNode { return this.getToken(SQLiteParser.REFERENCES, 0); }
 	public foreign_table(): Foreign_tableContext {
 		return this.getRuleContext(0, Foreign_tableContext);
 	}
@@ -11832,22 +11853,22 @@ export class Foreign_key_clauseContext extends ParserRuleContext {
 		}
 	}
 	public CLOSE_PAR(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.CLOSE_PAR, 0); }
-	public ON_(): TerminalNode[];
-	public ON_(i: number): TerminalNode;
-	public ON_(i?: number): TerminalNode | TerminalNode[] {
+	public ON(): TerminalNode[];
+	public ON(i: number): TerminalNode;
+	public ON(i?: number): TerminalNode | TerminalNode[] {
 		if (i === undefined) {
-			return this.getTokens(SQLiteParser.ON_);
+			return this.getTokens(SQLiteParser.ON);
 		} else {
-			return this.getToken(SQLiteParser.ON_, i);
+			return this.getToken(SQLiteParser.ON, i);
 		}
 	}
-	public MATCH_(): TerminalNode[];
-	public MATCH_(i: number): TerminalNode;
-	public MATCH_(i?: number): TerminalNode | TerminalNode[] {
+	public MATCH(): TerminalNode[];
+	public MATCH(i: number): TerminalNode;
+	public MATCH(i?: number): TerminalNode | TerminalNode[] {
 		if (i === undefined) {
-			return this.getTokens(SQLiteParser.MATCH_);
+			return this.getTokens(SQLiteParser.MATCH);
 		} else {
-			return this.getToken(SQLiteParser.MATCH_, i);
+			return this.getToken(SQLiteParser.MATCH, i);
 		}
 	}
 	public name(): NameContext[];
@@ -11859,68 +11880,68 @@ export class Foreign_key_clauseContext extends ParserRuleContext {
 			return this.getRuleContext(i, NameContext);
 		}
 	}
-	public DEFERRABLE_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.DEFERRABLE_, 0); }
-	public DELETE_(): TerminalNode[];
-	public DELETE_(i: number): TerminalNode;
-	public DELETE_(i?: number): TerminalNode | TerminalNode[] {
+	public DEFERRABLE(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.DEFERRABLE, 0); }
+	public DELETE(): TerminalNode[];
+	public DELETE(i: number): TerminalNode;
+	public DELETE(i?: number): TerminalNode | TerminalNode[] {
 		if (i === undefined) {
-			return this.getTokens(SQLiteParser.DELETE_);
+			return this.getTokens(SQLiteParser.DELETE);
 		} else {
-			return this.getToken(SQLiteParser.DELETE_, i);
+			return this.getToken(SQLiteParser.DELETE, i);
 		}
 	}
-	public UPDATE_(): TerminalNode[];
-	public UPDATE_(i: number): TerminalNode;
-	public UPDATE_(i?: number): TerminalNode | TerminalNode[] {
+	public UPDATE(): TerminalNode[];
+	public UPDATE(i: number): TerminalNode;
+	public UPDATE(i?: number): TerminalNode | TerminalNode[] {
 		if (i === undefined) {
-			return this.getTokens(SQLiteParser.UPDATE_);
+			return this.getTokens(SQLiteParser.UPDATE);
 		} else {
-			return this.getToken(SQLiteParser.UPDATE_, i);
+			return this.getToken(SQLiteParser.UPDATE, i);
 		}
 	}
-	public SET_(): TerminalNode[];
-	public SET_(i: number): TerminalNode;
-	public SET_(i?: number): TerminalNode | TerminalNode[] {
+	public SET(): TerminalNode[];
+	public SET(i: number): TerminalNode;
+	public SET(i?: number): TerminalNode | TerminalNode[] {
 		if (i === undefined) {
-			return this.getTokens(SQLiteParser.SET_);
+			return this.getTokens(SQLiteParser.SET);
 		} else {
-			return this.getToken(SQLiteParser.SET_, i);
+			return this.getToken(SQLiteParser.SET, i);
 		}
 	}
-	public CASCADE_(): TerminalNode[];
-	public CASCADE_(i: number): TerminalNode;
-	public CASCADE_(i?: number): TerminalNode | TerminalNode[] {
+	public CASCADE(): TerminalNode[];
+	public CASCADE(i: number): TerminalNode;
+	public CASCADE(i?: number): TerminalNode | TerminalNode[] {
 		if (i === undefined) {
-			return this.getTokens(SQLiteParser.CASCADE_);
+			return this.getTokens(SQLiteParser.CASCADE);
 		} else {
-			return this.getToken(SQLiteParser.CASCADE_, i);
+			return this.getToken(SQLiteParser.CASCADE, i);
 		}
 	}
-	public RESTRICT_(): TerminalNode[];
-	public RESTRICT_(i: number): TerminalNode;
-	public RESTRICT_(i?: number): TerminalNode | TerminalNode[] {
+	public RESTRICT(): TerminalNode[];
+	public RESTRICT(i: number): TerminalNode;
+	public RESTRICT(i?: number): TerminalNode | TerminalNode[] {
 		if (i === undefined) {
-			return this.getTokens(SQLiteParser.RESTRICT_);
+			return this.getTokens(SQLiteParser.RESTRICT);
 		} else {
-			return this.getToken(SQLiteParser.RESTRICT_, i);
+			return this.getToken(SQLiteParser.RESTRICT, i);
 		}
 	}
-	public NO_(): TerminalNode[];
-	public NO_(i: number): TerminalNode;
-	public NO_(i?: number): TerminalNode | TerminalNode[] {
+	public NO(): TerminalNode[];
+	public NO(i: number): TerminalNode;
+	public NO(i?: number): TerminalNode | TerminalNode[] {
 		if (i === undefined) {
-			return this.getTokens(SQLiteParser.NO_);
+			return this.getTokens(SQLiteParser.NO);
 		} else {
-			return this.getToken(SQLiteParser.NO_, i);
+			return this.getToken(SQLiteParser.NO, i);
 		}
 	}
-	public ACTION_(): TerminalNode[];
-	public ACTION_(i: number): TerminalNode;
-	public ACTION_(i?: number): TerminalNode | TerminalNode[] {
+	public ACTION(): TerminalNode[];
+	public ACTION(i: number): TerminalNode;
+	public ACTION(i?: number): TerminalNode | TerminalNode[] {
 		if (i === undefined) {
-			return this.getTokens(SQLiteParser.ACTION_);
+			return this.getTokens(SQLiteParser.ACTION);
 		} else {
-			return this.getToken(SQLiteParser.ACTION_, i);
+			return this.getToken(SQLiteParser.ACTION, i);
 		}
 	}
 	public COMMA(): TerminalNode[];
@@ -11932,28 +11953,28 @@ export class Foreign_key_clauseContext extends ParserRuleContext {
 			return this.getToken(SQLiteParser.COMMA, i);
 		}
 	}
-	public NULL_(): TerminalNode[];
-	public NULL_(i: number): TerminalNode;
-	public NULL_(i?: number): TerminalNode | TerminalNode[] {
+	public NULL(): TerminalNode[];
+	public NULL(i: number): TerminalNode;
+	public NULL(i?: number): TerminalNode | TerminalNode[] {
 		if (i === undefined) {
-			return this.getTokens(SQLiteParser.NULL_);
+			return this.getTokens(SQLiteParser.NULL);
 		} else {
-			return this.getToken(SQLiteParser.NULL_, i);
+			return this.getToken(SQLiteParser.NULL, i);
 		}
 	}
-	public DEFAULT_(): TerminalNode[];
-	public DEFAULT_(i: number): TerminalNode;
-	public DEFAULT_(i?: number): TerminalNode | TerminalNode[] {
+	public DEFAULT(): TerminalNode[];
+	public DEFAULT(i: number): TerminalNode;
+	public DEFAULT(i?: number): TerminalNode | TerminalNode[] {
 		if (i === undefined) {
-			return this.getTokens(SQLiteParser.DEFAULT_);
+			return this.getTokens(SQLiteParser.DEFAULT);
 		} else {
-			return this.getToken(SQLiteParser.DEFAULT_, i);
+			return this.getToken(SQLiteParser.DEFAULT, i);
 		}
 	}
-	public NOT_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.NOT_, 0); }
-	public INITIALLY_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.INITIALLY_, 0); }
-	public DEFERRED_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.DEFERRED_, 0); }
-	public IMMEDIATE_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.IMMEDIATE_, 0); }
+	public NOT(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.NOT, 0); }
+	public INITIALLY(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.INITIALLY, 0); }
+	public DEFERRED(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.DEFERRED, 0); }
+	public IMMEDIATE(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.IMMEDIATE, 0); }
 	constructor(parent: ParserRuleContext | undefined, invokingState: number) {
 		super(parent, invokingState);
 	}
@@ -11975,13 +11996,13 @@ export class Foreign_key_clauseContext extends ParserRuleContext {
 
 
 export class Conflict_clauseContext extends ParserRuleContext {
-	public ON_(): TerminalNode { return this.getToken(SQLiteParser.ON_, 0); }
-	public CONFLICT_(): TerminalNode { return this.getToken(SQLiteParser.CONFLICT_, 0); }
-	public ROLLBACK_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.ROLLBACK_, 0); }
-	public ABORT_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.ABORT_, 0); }
-	public FAIL_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.FAIL_, 0); }
-	public IGNORE_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.IGNORE_, 0); }
-	public REPLACE_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.REPLACE_, 0); }
+	public ON(): TerminalNode { return this.getToken(SQLiteParser.ON, 0); }
+	public CONFLICT(): TerminalNode { return this.getToken(SQLiteParser.CONFLICT, 0); }
+	public ROLLBACK(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.ROLLBACK, 0); }
+	public ABORT(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.ABORT, 0); }
+	public FAIL(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.FAIL, 0); }
+	public IGNORE(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.IGNORE, 0); }
+	public REPLACE(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.REPLACE, 0); }
 	constructor(parent: ParserRuleContext | undefined, invokingState: number) {
 		super(parent, invokingState);
 	}
@@ -12003,43 +12024,43 @@ export class Conflict_clauseContext extends ParserRuleContext {
 
 
 export class Create_trigger_stmtContext extends ParserRuleContext {
-	public CREATE_(): TerminalNode { return this.getToken(SQLiteParser.CREATE_, 0); }
-	public TRIGGER_(): TerminalNode { return this.getToken(SQLiteParser.TRIGGER_, 0); }
+	public CREATE(): TerminalNode { return this.getToken(SQLiteParser.CREATE, 0); }
+	public TRIGGER(): TerminalNode { return this.getToken(SQLiteParser.TRIGGER, 0); }
 	public trigger_name(): Trigger_nameContext {
 		return this.getRuleContext(0, Trigger_nameContext);
 	}
-	public ON_(): TerminalNode { return this.getToken(SQLiteParser.ON_, 0); }
+	public ON(): TerminalNode { return this.getToken(SQLiteParser.ON, 0); }
 	public table_name(): Table_nameContext {
 		return this.getRuleContext(0, Table_nameContext);
 	}
-	public BEGIN_(): TerminalNode { return this.getToken(SQLiteParser.BEGIN_, 0); }
-	public END_(): TerminalNode { return this.getToken(SQLiteParser.END_, 0); }
-	public DELETE_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.DELETE_, 0); }
-	public INSERT_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.INSERT_, 0); }
-	public UPDATE_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.UPDATE_, 0); }
-	public IF_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.IF_, 0); }
-	public NOT_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.NOT_, 0); }
-	public EXISTS_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.EXISTS_, 0); }
+	public BEGIN(): TerminalNode { return this.getToken(SQLiteParser.BEGIN, 0); }
+	public END(): TerminalNode { return this.getToken(SQLiteParser.END, 0); }
+	public DELETE(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.DELETE, 0); }
+	public INSERT(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.INSERT, 0); }
+	public UPDATE(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.UPDATE, 0); }
+	public IF(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.IF, 0); }
+	public NOT(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.NOT, 0); }
+	public EXISTS(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.EXISTS, 0); }
 	public schema_name(): Schema_nameContext | undefined {
 		return this.tryGetRuleContext(0, Schema_nameContext);
 	}
 	public DOT(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.DOT, 0); }
-	public BEFORE_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.BEFORE_, 0); }
-	public AFTER_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.AFTER_, 0); }
-	public INSTEAD_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.INSTEAD_, 0); }
-	public OF_(): TerminalNode[];
-	public OF_(i: number): TerminalNode;
-	public OF_(i?: number): TerminalNode | TerminalNode[] {
+	public BEFORE(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.BEFORE, 0); }
+	public AFTER(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.AFTER, 0); }
+	public INSTEAD(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.INSTEAD, 0); }
+	public OF(): TerminalNode[];
+	public OF(i: number): TerminalNode;
+	public OF(i?: number): TerminalNode | TerminalNode[] {
 		if (i === undefined) {
-			return this.getTokens(SQLiteParser.OF_);
+			return this.getTokens(SQLiteParser.OF);
 		} else {
-			return this.getToken(SQLiteParser.OF_, i);
+			return this.getToken(SQLiteParser.OF, i);
 		}
 	}
-	public FOR_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.FOR_, 0); }
-	public EACH_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.EACH_, 0); }
-	public ROW_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.ROW_, 0); }
-	public WHEN_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.WHEN_, 0); }
+	public FOR(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.FOR, 0); }
+	public EACH(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.EACH, 0); }
+	public ROW(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.ROW, 0); }
+	public WHEN(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.WHEN, 0); }
 	public expr(): ExprContext | undefined {
 		return this.tryGetRuleContext(0, ExprContext);
 	}
@@ -12052,8 +12073,8 @@ export class Create_trigger_stmtContext extends ParserRuleContext {
 			return this.getToken(SQLiteParser.SCOL, i);
 		}
 	}
-	public TEMP_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.TEMP_, 0); }
-	public TEMPORARY_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.TEMPORARY_, 0); }
+	public TEMP(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.TEMP, 0); }
+	public TEMPORARY(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.TEMPORARY, 0); }
 	public column_name(): Column_nameContext[];
 	public column_name(i: number): Column_nameContext;
 	public column_name(i?: number): Column_nameContext | Column_nameContext[] {
@@ -12129,18 +12150,18 @@ export class Create_trigger_stmtContext extends ParserRuleContext {
 
 
 export class Create_view_stmtContext extends ParserRuleContext {
-	public CREATE_(): TerminalNode { return this.getToken(SQLiteParser.CREATE_, 0); }
-	public VIEW_(): TerminalNode { return this.getToken(SQLiteParser.VIEW_, 0); }
+	public CREATE(): TerminalNode { return this.getToken(SQLiteParser.CREATE, 0); }
+	public VIEW(): TerminalNode { return this.getToken(SQLiteParser.VIEW, 0); }
 	public view_name(): View_nameContext {
 		return this.getRuleContext(0, View_nameContext);
 	}
-	public AS_(): TerminalNode { return this.getToken(SQLiteParser.AS_, 0); }
+	public AS(): TerminalNode { return this.getToken(SQLiteParser.AS, 0); }
 	public select_stmt(): Select_stmtContext {
 		return this.getRuleContext(0, Select_stmtContext);
 	}
-	public IF_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.IF_, 0); }
-	public NOT_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.NOT_, 0); }
-	public EXISTS_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.EXISTS_, 0); }
+	public IF(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.IF, 0); }
+	public NOT(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.NOT, 0); }
+	public EXISTS(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.EXISTS, 0); }
 	public schema_name(): Schema_nameContext | undefined {
 		return this.tryGetRuleContext(0, Schema_nameContext);
 	}
@@ -12156,8 +12177,8 @@ export class Create_view_stmtContext extends ParserRuleContext {
 		}
 	}
 	public CLOSE_PAR(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.CLOSE_PAR, 0); }
-	public TEMP_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.TEMP_, 0); }
-	public TEMPORARY_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.TEMPORARY_, 0); }
+	public TEMP(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.TEMP, 0); }
+	public TEMPORARY(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.TEMPORARY, 0); }
 	public COMMA(): TerminalNode[];
 	public COMMA(i: number): TerminalNode;
 	public COMMA(i?: number): TerminalNode | TerminalNode[] {
@@ -12188,19 +12209,19 @@ export class Create_view_stmtContext extends ParserRuleContext {
 
 
 export class Create_virtual_table_stmtContext extends ParserRuleContext {
-	public CREATE_(): TerminalNode { return this.getToken(SQLiteParser.CREATE_, 0); }
-	public VIRTUAL_(): TerminalNode { return this.getToken(SQLiteParser.VIRTUAL_, 0); }
-	public TABLE_(): TerminalNode { return this.getToken(SQLiteParser.TABLE_, 0); }
+	public CREATE(): TerminalNode { return this.getToken(SQLiteParser.CREATE, 0); }
+	public VIRTUAL(): TerminalNode { return this.getToken(SQLiteParser.VIRTUAL, 0); }
+	public TABLE(): TerminalNode { return this.getToken(SQLiteParser.TABLE, 0); }
 	public table_name(): Table_nameContext {
 		return this.getRuleContext(0, Table_nameContext);
 	}
-	public USING_(): TerminalNode { return this.getToken(SQLiteParser.USING_, 0); }
+	public USING(): TerminalNode { return this.getToken(SQLiteParser.USING, 0); }
 	public module_name(): Module_nameContext {
 		return this.getRuleContext(0, Module_nameContext);
 	}
-	public IF_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.IF_, 0); }
-	public NOT_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.NOT_, 0); }
-	public EXISTS_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.EXISTS_, 0); }
+	public IF(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.IF, 0); }
+	public NOT(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.NOT, 0); }
+	public EXISTS(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.EXISTS, 0); }
 	public schema_name(): Schema_nameContext | undefined {
 		return this.tryGetRuleContext(0, Schema_nameContext);
 	}
@@ -12246,7 +12267,7 @@ export class Create_virtual_table_stmtContext extends ParserRuleContext {
 
 
 export class With_clauseContext extends ParserRuleContext {
-	public WITH_(): TerminalNode { return this.getToken(SQLiteParser.WITH_, 0); }
+	public WITH(): TerminalNode { return this.getToken(SQLiteParser.WITH, 0); }
 	public cte_table_name(): Cte_table_nameContext[];
 	public cte_table_name(i: number): Cte_table_nameContext;
 	public cte_table_name(i?: number): Cte_table_nameContext | Cte_table_nameContext[] {
@@ -12256,13 +12277,13 @@ export class With_clauseContext extends ParserRuleContext {
 			return this.getRuleContext(i, Cte_table_nameContext);
 		}
 	}
-	public AS_(): TerminalNode[];
-	public AS_(i: number): TerminalNode;
-	public AS_(i?: number): TerminalNode | TerminalNode[] {
+	public AS(): TerminalNode[];
+	public AS(i: number): TerminalNode;
+	public AS(i?: number): TerminalNode | TerminalNode[] {
 		if (i === undefined) {
-			return this.getTokens(SQLiteParser.AS_);
+			return this.getTokens(SQLiteParser.AS);
 		} else {
-			return this.getToken(SQLiteParser.AS_, i);
+			return this.getToken(SQLiteParser.AS, i);
 		}
 	}
 	public OPEN_PAR(): TerminalNode[];
@@ -12292,7 +12313,7 @@ export class With_clauseContext extends ParserRuleContext {
 			return this.getToken(SQLiteParser.CLOSE_PAR, i);
 		}
 	}
-	public RECURSIVE_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.RECURSIVE_, 0); }
+	public RECURSIVE(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.RECURSIVE, 0); }
 	public COMMA(): TerminalNode[];
 	public COMMA(i: number): TerminalNode;
 	public COMMA(i?: number): TerminalNode | TerminalNode[] {
@@ -12370,17 +12391,17 @@ export class Recursive_cteContext extends ParserRuleContext {
 	public cte_table_name(): Cte_table_nameContext {
 		return this.getRuleContext(0, Cte_table_nameContext);
 	}
-	public AS_(): TerminalNode { return this.getToken(SQLiteParser.AS_, 0); }
+	public AS(): TerminalNode { return this.getToken(SQLiteParser.AS, 0); }
 	public OPEN_PAR(): TerminalNode { return this.getToken(SQLiteParser.OPEN_PAR, 0); }
 	public initial_select(): Initial_selectContext {
 		return this.getRuleContext(0, Initial_selectContext);
 	}
-	public UNION_(): TerminalNode { return this.getToken(SQLiteParser.UNION_, 0); }
+	public UNION(): TerminalNode { return this.getToken(SQLiteParser.UNION, 0); }
 	public recursive_select(): Recursive_selectContext {
 		return this.getRuleContext(0, Recursive_selectContext);
 	}
 	public CLOSE_PAR(): TerminalNode { return this.getToken(SQLiteParser.CLOSE_PAR, 0); }
-	public ALL_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.ALL_, 0); }
+	public ALL(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.ALL, 0); }
 	constructor(parent: ParserRuleContext | undefined, invokingState: number) {
 		super(parent, invokingState);
 	}
@@ -12405,7 +12426,7 @@ export class Common_table_expressionContext extends ParserRuleContext {
 	public table_name(): Table_nameContext {
 		return this.getRuleContext(0, Table_nameContext);
 	}
-	public AS_(): TerminalNode { return this.getToken(SQLiteParser.AS_, 0); }
+	public AS(): TerminalNode { return this.getToken(SQLiteParser.AS, 0); }
 	public OPEN_PAR(): TerminalNode[];
 	public OPEN_PAR(i: number): TerminalNode;
 	public OPEN_PAR(i?: number): TerminalNode | TerminalNode[] {
@@ -12466,15 +12487,15 @@ export class Common_table_expressionContext extends ParserRuleContext {
 
 
 export class Delete_stmtContext extends ParserRuleContext {
-	public DELETE_(): TerminalNode { return this.getToken(SQLiteParser.DELETE_, 0); }
-	public FROM_(): TerminalNode { return this.getToken(SQLiteParser.FROM_, 0); }
+	public DELETE(): TerminalNode { return this.getToken(SQLiteParser.DELETE, 0); }
+	public FROM(): TerminalNode { return this.getToken(SQLiteParser.FROM, 0); }
 	public qualified_table_name(): Qualified_table_nameContext {
 		return this.getRuleContext(0, Qualified_table_nameContext);
 	}
 	public with_clause(): With_clauseContext | undefined {
 		return this.tryGetRuleContext(0, With_clauseContext);
 	}
-	public WHERE_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.WHERE_, 0); }
+	public WHERE(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.WHERE, 0); }
 	public expr(): ExprContext | undefined {
 		return this.tryGetRuleContext(0, ExprContext);
 	}
@@ -12502,15 +12523,15 @@ export class Delete_stmtContext extends ParserRuleContext {
 
 
 export class Delete_stmt_limitedContext extends ParserRuleContext {
-	public DELETE_(): TerminalNode { return this.getToken(SQLiteParser.DELETE_, 0); }
-	public FROM_(): TerminalNode { return this.getToken(SQLiteParser.FROM_, 0); }
+	public DELETE(): TerminalNode { return this.getToken(SQLiteParser.DELETE, 0); }
+	public FROM(): TerminalNode { return this.getToken(SQLiteParser.FROM, 0); }
 	public qualified_table_name(): Qualified_table_nameContext {
 		return this.getRuleContext(0, Qualified_table_nameContext);
 	}
 	public with_clause(): With_clauseContext | undefined {
 		return this.tryGetRuleContext(0, With_clauseContext);
 	}
-	public WHERE_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.WHERE_, 0); }
+	public WHERE(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.WHERE, 0); }
 	public expr(): ExprContext | undefined {
 		return this.tryGetRuleContext(0, ExprContext);
 	}
@@ -12544,11 +12565,11 @@ export class Delete_stmt_limitedContext extends ParserRuleContext {
 
 
 export class Detach_stmtContext extends ParserRuleContext {
-	public DETACH_(): TerminalNode { return this.getToken(SQLiteParser.DETACH_, 0); }
+	public DETACH(): TerminalNode { return this.getToken(SQLiteParser.DETACH, 0); }
 	public schema_name(): Schema_nameContext {
 		return this.getRuleContext(0, Schema_nameContext);
 	}
-	public DATABASE_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.DATABASE_, 0); }
+	public DATABASE(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.DATABASE, 0); }
 	constructor(parent: ParserRuleContext | undefined, invokingState: number) {
 		super(parent, invokingState);
 	}
@@ -12571,16 +12592,16 @@ export class Detach_stmtContext extends ParserRuleContext {
 
 export class Drop_stmtContext extends ParserRuleContext {
 	public _object!: Token;
-	public DROP_(): TerminalNode { return this.getToken(SQLiteParser.DROP_, 0); }
+	public DROP(): TerminalNode { return this.getToken(SQLiteParser.DROP, 0); }
 	public any_name(): Any_nameContext {
 		return this.getRuleContext(0, Any_nameContext);
 	}
-	public INDEX_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.INDEX_, 0); }
-	public TABLE_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.TABLE_, 0); }
-	public TRIGGER_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.TRIGGER_, 0); }
-	public VIEW_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.VIEW_, 0); }
-	public IF_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.IF_, 0); }
-	public EXISTS_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.EXISTS_, 0); }
+	public INDEX(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.INDEX, 0); }
+	public TABLE(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.TABLE, 0); }
+	public TRIGGER(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.TRIGGER, 0); }
+	public VIEW(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.VIEW, 0); }
+	public IF(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.IF, 0); }
+	public EXISTS(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.EXISTS, 0); }
 	public schema_name(): Schema_nameContext | undefined {
 		return this.tryGetRuleContext(0, Schema_nameContext);
 	}
@@ -12658,17 +12679,17 @@ export class ExprContext extends ParserRuleContext {
 	public EQ(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.EQ, 0); }
 	public NOT_EQ1(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.NOT_EQ1, 0); }
 	public NOT_EQ2(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.NOT_EQ2, 0); }
-	public IS_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.IS_, 0); }
-	public NOT_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.NOT_, 0); }
-	public DISTINCT_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.DISTINCT_, 0); }
-	public FROM_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.FROM_, 0); }
-	public IN_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.IN_, 0); }
-	public LIKE_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.LIKE_, 0); }
-	public GLOB_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.GLOB_, 0); }
-	public MATCH_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.MATCH_, 0); }
-	public REGEXP_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.REGEXP_, 0); }
-	public AND_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.AND_, 0); }
-	public OR_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.OR_, 0); }
+	public IS(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.IS, 0); }
+	public NOT(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.NOT, 0); }
+	public DISTINCT(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.DISTINCT, 0); }
+	public FROM(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.FROM, 0); }
+	public IN(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.IN, 0); }
+	public LIKE(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.LIKE, 0); }
+	public GLOB(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.GLOB, 0); }
+	public MATCH(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.MATCH, 0); }
+	public REGEXP(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.REGEXP, 0); }
+	public AND(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.AND, 0); }
+	public OR(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.OR, 0); }
 	public function_name(): Function_nameContext | undefined {
 		return this.tryGetRuleContext(0, Function_nameContext);
 	}
@@ -12689,48 +12710,48 @@ export class ExprContext extends ParserRuleContext {
 			return this.getToken(SQLiteParser.COMMA, i);
 		}
 	}
-	public CAST_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.CAST_, 0); }
-	public AS_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.AS_, 0); }
+	public CAST(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.CAST, 0); }
+	public AS(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.AS, 0); }
 	public type_name(): Type_nameContext | undefined {
 		return this.tryGetRuleContext(0, Type_nameContext);
 	}
-	public COLLATE_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.COLLATE_, 0); }
+	public COLLATE(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.COLLATE, 0); }
 	public collation_name(): Collation_nameContext | undefined {
 		return this.tryGetRuleContext(0, Collation_nameContext);
 	}
-	public ESCAPE_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.ESCAPE_, 0); }
-	public ISNULL_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.ISNULL_, 0); }
-	public NOTNULL_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.NOTNULL_, 0); }
-	public NULL_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.NULL_, 0); }
-	public BETWEEN_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.BETWEEN_, 0); }
+	public ESCAPE(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.ESCAPE, 0); }
+	public ISNULL(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.ISNULL, 0); }
+	public NOTNULL(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.NOTNULL, 0); }
+	public NULL(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.NULL, 0); }
+	public BETWEEN(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.BETWEEN, 0); }
 	public table_function_name(): Table_function_nameContext | undefined {
 		return this.tryGetRuleContext(0, Table_function_nameContext);
 	}
 	public select_stmt(): Select_stmtContext | undefined {
 		return this.tryGetRuleContext(0, Select_stmtContext);
 	}
-	public EXISTS_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.EXISTS_, 0); }
-	public CASE_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.CASE_, 0); }
-	public END_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.END_, 0); }
-	public WHEN_(): TerminalNode[];
-	public WHEN_(i: number): TerminalNode;
-	public WHEN_(i?: number): TerminalNode | TerminalNode[] {
+	public EXISTS(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.EXISTS, 0); }
+	public CASE(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.CASE, 0); }
+	public END(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.END, 0); }
+	public WHEN(): TerminalNode[];
+	public WHEN(i: number): TerminalNode;
+	public WHEN(i?: number): TerminalNode | TerminalNode[] {
 		if (i === undefined) {
-			return this.getTokens(SQLiteParser.WHEN_);
+			return this.getTokens(SQLiteParser.WHEN);
 		} else {
-			return this.getToken(SQLiteParser.WHEN_, i);
+			return this.getToken(SQLiteParser.WHEN, i);
 		}
 	}
-	public THEN_(): TerminalNode[];
-	public THEN_(i: number): TerminalNode;
-	public THEN_(i?: number): TerminalNode | TerminalNode[] {
+	public THEN(): TerminalNode[];
+	public THEN(i: number): TerminalNode;
+	public THEN(i?: number): TerminalNode | TerminalNode[] {
 		if (i === undefined) {
-			return this.getTokens(SQLiteParser.THEN_);
+			return this.getTokens(SQLiteParser.THEN);
 		} else {
-			return this.getToken(SQLiteParser.THEN_, i);
+			return this.getToken(SQLiteParser.THEN, i);
 		}
 	}
-	public ELSE_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.ELSE_, 0); }
+	public ELSE(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.ELSE, 0); }
 	public raise_function(): Raise_functionContext | undefined {
 		return this.tryGetRuleContext(0, Raise_functionContext);
 	}
@@ -12755,17 +12776,17 @@ export class ExprContext extends ParserRuleContext {
 
 
 export class Raise_functionContext extends ParserRuleContext {
-	public RAISE_(): TerminalNode { return this.getToken(SQLiteParser.RAISE_, 0); }
+	public RAISE(): TerminalNode { return this.getToken(SQLiteParser.RAISE, 0); }
 	public OPEN_PAR(): TerminalNode { return this.getToken(SQLiteParser.OPEN_PAR, 0); }
 	public CLOSE_PAR(): TerminalNode { return this.getToken(SQLiteParser.CLOSE_PAR, 0); }
-	public IGNORE_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.IGNORE_, 0); }
+	public IGNORE(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.IGNORE, 0); }
 	public COMMA(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.COMMA, 0); }
 	public error_message(): Error_messageContext | undefined {
 		return this.tryGetRuleContext(0, Error_messageContext);
 	}
-	public ROLLBACK_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.ROLLBACK_, 0); }
-	public ABORT_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.ABORT_, 0); }
-	public FAIL_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.FAIL_, 0); }
+	public ROLLBACK(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.ROLLBACK, 0); }
+	public ABORT(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.ABORT, 0); }
+	public FAIL(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.FAIL, 0); }
 	constructor(parent: ParserRuleContext | undefined, invokingState: number) {
 		super(parent, invokingState);
 	}
@@ -12790,12 +12811,12 @@ export class Literal_valueContext extends ParserRuleContext {
 	public NUMERIC_LITERAL(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.NUMERIC_LITERAL, 0); }
 	public STRING_LITERAL(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.STRING_LITERAL, 0); }
 	public BLOB_LITERAL(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.BLOB_LITERAL, 0); }
-	public NULL_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.NULL_, 0); }
-	public TRUE_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.TRUE_, 0); }
-	public FALSE_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.FALSE_, 0); }
-	public CURRENT_TIME_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.CURRENT_TIME_, 0); }
-	public CURRENT_DATE_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.CURRENT_DATE_, 0); }
-	public CURRENT_TIMESTAMP_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.CURRENT_TIMESTAMP_, 0); }
+	public NULL(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.NULL, 0); }
+	public TRUE(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.TRUE, 0); }
+	public FALSE(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.FALSE, 0); }
+	public CURRENT_TIME(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.CURRENT_TIME, 0); }
+	public CURRENT_DATE(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.CURRENT_DATE, 0); }
+	public CURRENT_TIMESTAMP(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.CURRENT_TIMESTAMP, 0); }
 	constructor(parent: ParserRuleContext | undefined, invokingState: number) {
 		super(parent, invokingState);
 	}
@@ -12858,7 +12879,7 @@ export class Value_rowContext extends ParserRuleContext {
 
 
 export class Values_clauseContext extends ParserRuleContext {
-	public VALUES_(): TerminalNode { return this.getToken(SQLiteParser.VALUES_, 0); }
+	public VALUES(): TerminalNode { return this.getToken(SQLiteParser.VALUES, 0); }
 	public value_row(): Value_rowContext[];
 	public value_row(i: number): Value_rowContext;
 	public value_row(i?: number): Value_rowContext | Value_rowContext[] {
@@ -12898,27 +12919,27 @@ export class Values_clauseContext extends ParserRuleContext {
 
 
 export class Insert_stmtContext extends ParserRuleContext {
-	public INTO_(): TerminalNode { return this.getToken(SQLiteParser.INTO_, 0); }
+	public INTO(): TerminalNode { return this.getToken(SQLiteParser.INTO, 0); }
 	public table_name(): Table_nameContext {
 		return this.getRuleContext(0, Table_nameContext);
 	}
-	public INSERT_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.INSERT_, 0); }
-	public REPLACE_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.REPLACE_, 0); }
-	public OR_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.OR_, 0); }
-	public DEFAULT_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.DEFAULT_, 0); }
-	public VALUES_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.VALUES_, 0); }
+	public INSERT(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.INSERT, 0); }
+	public REPLACE(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.REPLACE, 0); }
+	public OR(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.OR, 0); }
+	public DEFAULT(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.DEFAULT, 0); }
+	public VALUES(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.VALUES, 0); }
 	public with_clause(): With_clauseContext | undefined {
 		return this.tryGetRuleContext(0, With_clauseContext);
 	}
-	public ROLLBACK_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.ROLLBACK_, 0); }
-	public ABORT_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.ABORT_, 0); }
-	public FAIL_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.FAIL_, 0); }
-	public IGNORE_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.IGNORE_, 0); }
+	public ROLLBACK(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.ROLLBACK, 0); }
+	public ABORT(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.ABORT, 0); }
+	public FAIL(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.FAIL, 0); }
+	public IGNORE(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.IGNORE, 0); }
 	public schema_name(): Schema_nameContext | undefined {
 		return this.tryGetRuleContext(0, Schema_nameContext);
 	}
 	public DOT(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.DOT, 0); }
-	public AS_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.AS_, 0); }
+	public AS(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.AS, 0); }
 	public table_alias(): Table_aliasContext | undefined {
 		return this.tryGetRuleContext(0, Table_aliasContext);
 	}
@@ -12975,7 +12996,7 @@ export class Insert_stmtContext extends ParserRuleContext {
 
 
 export class Returning_clauseContext extends ParserRuleContext {
-	public RETURNING_(): TerminalNode { return this.getToken(SQLiteParser.RETURNING_, 0); }
+	public RETURNING(): TerminalNode { return this.getToken(SQLiteParser.RETURNING, 0); }
 	public result_column(): Result_columnContext[];
 	public result_column(i: number): Result_columnContext;
 	public result_column(i?: number): Result_columnContext | Result_columnContext[] {
@@ -13015,12 +13036,12 @@ export class Returning_clauseContext extends ParserRuleContext {
 
 
 export class Upsert_clauseContext extends ParserRuleContext {
-	public ON_(): TerminalNode { return this.getToken(SQLiteParser.ON_, 0); }
-	public CONFLICT_(): TerminalNode { return this.getToken(SQLiteParser.CONFLICT_, 0); }
-	public DO_(): TerminalNode { return this.getToken(SQLiteParser.DO_, 0); }
-	public NOTHING_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.NOTHING_, 0); }
-	public UPDATE_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.UPDATE_, 0); }
-	public SET_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.SET_, 0); }
+	public ON(): TerminalNode { return this.getToken(SQLiteParser.ON, 0); }
+	public CONFLICT(): TerminalNode { return this.getToken(SQLiteParser.CONFLICT, 0); }
+	public DO(): TerminalNode { return this.getToken(SQLiteParser.DO, 0); }
+	public NOTHING(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.NOTHING, 0); }
+	public UPDATE(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.UPDATE, 0); }
+	public SET(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.SET, 0); }
 	public OPEN_PAR(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.OPEN_PAR, 0); }
 	public indexed_column(): Indexed_columnContext[];
 	public indexed_column(i: number): Indexed_columnContext;
@@ -13059,13 +13080,13 @@ export class Upsert_clauseContext extends ParserRuleContext {
 			return this.getToken(SQLiteParser.COMMA, i);
 		}
 	}
-	public WHERE_(): TerminalNode[];
-	public WHERE_(i: number): TerminalNode;
-	public WHERE_(i?: number): TerminalNode | TerminalNode[] {
+	public WHERE(): TerminalNode[];
+	public WHERE(i: number): TerminalNode;
+	public WHERE(i?: number): TerminalNode | TerminalNode[] {
 		if (i === undefined) {
-			return this.getTokens(SQLiteParser.WHERE_);
+			return this.getTokens(SQLiteParser.WHERE);
 		} else {
-			return this.getToken(SQLiteParser.WHERE_, i);
+			return this.getToken(SQLiteParser.WHERE, i);
 		}
 	}
 	public column_name(): Column_nameContext[];
@@ -13107,7 +13128,7 @@ export class Upsert_clauseContext extends ParserRuleContext {
 
 
 export class Pragma_stmtContext extends ParserRuleContext {
-	public PRAGMA_(): TerminalNode { return this.getToken(SQLiteParser.PRAGMA_, 0); }
+	public PRAGMA(): TerminalNode { return this.getToken(SQLiteParser.PRAGMA, 0); }
 	public pragma_name(): Pragma_nameContext {
 		return this.getRuleContext(0, Pragma_nameContext);
 	}
@@ -13170,7 +13191,7 @@ export class Pragma_valueContext extends ParserRuleContext {
 
 
 export class Reindex_stmtContext extends ParserRuleContext {
-	public REINDEX_(): TerminalNode { return this.getToken(SQLiteParser.REINDEX_, 0); }
+	public REINDEX(): TerminalNode { return this.getToken(SQLiteParser.REINDEX, 0); }
 	public collation_name(): Collation_nameContext | undefined {
 		return this.tryGetRuleContext(0, Collation_nameContext);
 	}
@@ -13305,7 +13326,7 @@ export class Select_coreContext extends ParserRuleContext {
 	public _expr!: ExprContext;
 	public _groupByExpr: ExprContext[] = [];
 	public _havingExpr!: ExprContext;
-	public SELECT_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.SELECT_, 0); }
+	public SELECT(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.SELECT, 0); }
 	public result_column(): Result_columnContext[];
 	public result_column(i: number): Result_columnContext;
 	public result_column(i?: number): Result_columnContext | Result_columnContext[] {
@@ -13324,11 +13345,11 @@ export class Select_coreContext extends ParserRuleContext {
 			return this.getToken(SQLiteParser.COMMA, i);
 		}
 	}
-	public FROM_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.FROM_, 0); }
-	public WHERE_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.WHERE_, 0); }
-	public GROUP_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.GROUP_, 0); }
-	public BY_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.BY_, 0); }
-	public WINDOW_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.WINDOW_, 0); }
+	public FROM(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.FROM, 0); }
+	public WHERE(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.WHERE, 0); }
+	public GROUP(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.GROUP, 0); }
+	public BY(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.BY, 0); }
+	public WINDOW(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.WINDOW, 0); }
 	public window_name(): Window_nameContext[];
 	public window_name(i: number): Window_nameContext;
 	public window_name(i?: number): Window_nameContext | Window_nameContext[] {
@@ -13338,13 +13359,13 @@ export class Select_coreContext extends ParserRuleContext {
 			return this.getRuleContext(i, Window_nameContext);
 		}
 	}
-	public AS_(): TerminalNode[];
-	public AS_(i: number): TerminalNode;
-	public AS_(i?: number): TerminalNode | TerminalNode[] {
+	public AS(): TerminalNode[];
+	public AS(i: number): TerminalNode;
+	public AS(i?: number): TerminalNode | TerminalNode[] {
 		if (i === undefined) {
-			return this.getTokens(SQLiteParser.AS_);
+			return this.getTokens(SQLiteParser.AS);
 		} else {
-			return this.getToken(SQLiteParser.AS_, i);
+			return this.getToken(SQLiteParser.AS, i);
 		}
 	}
 	public window_defn(): Window_defnContext[];
@@ -13356,8 +13377,8 @@ export class Select_coreContext extends ParserRuleContext {
 			return this.getRuleContext(i, Window_defnContext);
 		}
 	}
-	public DISTINCT_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.DISTINCT_, 0); }
-	public ALL_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.ALL_, 0); }
+	public DISTINCT(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.DISTINCT, 0); }
+	public ALL(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.ALL, 0); }
 	public expr(): ExprContext[];
 	public expr(i: number): ExprContext;
 	public expr(i?: number): ExprContext | ExprContext[] {
@@ -13379,7 +13400,7 @@ export class Select_coreContext extends ParserRuleContext {
 	public join_clause(): Join_clauseContext | undefined {
 		return this.tryGetRuleContext(0, Join_clauseContext);
 	}
-	public HAVING_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.HAVING_, 0); }
+	public HAVING(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.HAVING, 0); }
 	public values_clause(): Values_clauseContext | undefined {
 		return this.tryGetRuleContext(0, Values_clauseContext);
 	}
@@ -13479,40 +13500,40 @@ export class Compound_select_stmtContext extends ParserRuleContext {
 	public limit_stmt(): Limit_stmtContext | undefined {
 		return this.tryGetRuleContext(0, Limit_stmtContext);
 	}
-	public UNION_(): TerminalNode[];
-	public UNION_(i: number): TerminalNode;
-	public UNION_(i?: number): TerminalNode | TerminalNode[] {
+	public UNION(): TerminalNode[];
+	public UNION(i: number): TerminalNode;
+	public UNION(i?: number): TerminalNode | TerminalNode[] {
 		if (i === undefined) {
-			return this.getTokens(SQLiteParser.UNION_);
+			return this.getTokens(SQLiteParser.UNION);
 		} else {
-			return this.getToken(SQLiteParser.UNION_, i);
+			return this.getToken(SQLiteParser.UNION, i);
 		}
 	}
-	public INTERSECT_(): TerminalNode[];
-	public INTERSECT_(i: number): TerminalNode;
-	public INTERSECT_(i?: number): TerminalNode | TerminalNode[] {
+	public INTERSECT(): TerminalNode[];
+	public INTERSECT(i: number): TerminalNode;
+	public INTERSECT(i?: number): TerminalNode | TerminalNode[] {
 		if (i === undefined) {
-			return this.getTokens(SQLiteParser.INTERSECT_);
+			return this.getTokens(SQLiteParser.INTERSECT);
 		} else {
-			return this.getToken(SQLiteParser.INTERSECT_, i);
+			return this.getToken(SQLiteParser.INTERSECT, i);
 		}
 	}
-	public EXCEPT_(): TerminalNode[];
-	public EXCEPT_(i: number): TerminalNode;
-	public EXCEPT_(i?: number): TerminalNode | TerminalNode[] {
+	public EXCEPT(): TerminalNode[];
+	public EXCEPT(i: number): TerminalNode;
+	public EXCEPT(i?: number): TerminalNode | TerminalNode[] {
 		if (i === undefined) {
-			return this.getTokens(SQLiteParser.EXCEPT_);
+			return this.getTokens(SQLiteParser.EXCEPT);
 		} else {
-			return this.getToken(SQLiteParser.EXCEPT_, i);
+			return this.getToken(SQLiteParser.EXCEPT, i);
 		}
 	}
-	public ALL_(): TerminalNode[];
-	public ALL_(i: number): TerminalNode;
-	public ALL_(i?: number): TerminalNode | TerminalNode[] {
+	public ALL(): TerminalNode[];
+	public ALL(i: number): TerminalNode;
+	public ALL(i?: number): TerminalNode | TerminalNode[] {
 		if (i === undefined) {
-			return this.getTokens(SQLiteParser.ALL_);
+			return this.getTokens(SQLiteParser.ALL);
 		} else {
-			return this.getToken(SQLiteParser.ALL_, i);
+			return this.getToken(SQLiteParser.ALL, i);
 		}
 	}
 	constructor(parent: ParserRuleContext | undefined, invokingState: number) {
@@ -13546,13 +13567,13 @@ export class Table_or_subqueryContext extends ParserRuleContext {
 	public table_alias(): Table_aliasContext | undefined {
 		return this.tryGetRuleContext(0, Table_aliasContext);
 	}
-	public INDEXED_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.INDEXED_, 0); }
-	public BY_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.BY_, 0); }
+	public INDEXED(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.INDEXED, 0); }
+	public BY(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.BY, 0); }
 	public index_name(): Index_nameContext | undefined {
 		return this.tryGetRuleContext(0, Index_nameContext);
 	}
-	public NOT_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.NOT_, 0); }
-	public AS_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.AS_, 0); }
+	public NOT(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.NOT, 0); }
+	public AS(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.AS, 0); }
 	public table_function_name(): Table_function_nameContext | undefined {
 		return this.tryGetRuleContext(0, Table_function_nameContext);
 	}
@@ -13623,7 +13644,7 @@ export class Result_columnContext extends ParserRuleContext {
 	public column_alias(): Column_aliasContext | undefined {
 		return this.tryGetRuleContext(0, Column_aliasContext);
 	}
-	public AS_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.AS_, 0); }
+	public AS(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.AS, 0); }
 	constructor(parent: ParserRuleContext | undefined, invokingState: number) {
 		super(parent, invokingState);
 	}
@@ -13646,14 +13667,14 @@ export class Result_columnContext extends ParserRuleContext {
 
 export class Join_operatorContext extends ParserRuleContext {
 	public COMMA(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.COMMA, 0); }
-	public JOIN_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.JOIN_, 0); }
-	public NATURAL_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.NATURAL_, 0); }
-	public INNER_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.INNER_, 0); }
-	public CROSS_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.CROSS_, 0); }
-	public LEFT_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.LEFT_, 0); }
-	public RIGHT_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.RIGHT_, 0); }
-	public FULL_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.FULL_, 0); }
-	public OUTER_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.OUTER_, 0); }
+	public JOIN(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.JOIN, 0); }
+	public NATURAL(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.NATURAL, 0); }
+	public INNER(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.INNER, 0); }
+	public CROSS(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.CROSS, 0); }
+	public LEFT(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.LEFT, 0); }
+	public RIGHT(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.RIGHT, 0); }
+	public FULL(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.FULL, 0); }
+	public OUTER(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.OUTER, 0); }
 	constructor(parent: ParserRuleContext | undefined, invokingState: number) {
 		super(parent, invokingState);
 	}
@@ -13675,11 +13696,11 @@ export class Join_operatorContext extends ParserRuleContext {
 
 
 export class Join_constraintContext extends ParserRuleContext {
-	public ON_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.ON_, 0); }
+	public ON(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.ON, 0); }
 	public expr(): ExprContext | undefined {
 		return this.tryGetRuleContext(0, ExprContext);
 	}
-	public USING_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.USING_, 0); }
+	public USING(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.USING, 0); }
 	public OPEN_PAR(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.OPEN_PAR, 0); }
 	public column_name(): Column_nameContext[];
 	public column_name(i: number): Column_nameContext;
@@ -13721,10 +13742,10 @@ export class Join_constraintContext extends ParserRuleContext {
 
 
 export class Compound_operatorContext extends ParserRuleContext {
-	public UNION_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.UNION_, 0); }
-	public ALL_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.ALL_, 0); }
-	public INTERSECT_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.INTERSECT_, 0); }
-	public EXCEPT_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.EXCEPT_, 0); }
+	public UNION(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.UNION, 0); }
+	public ALL(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.ALL, 0); }
+	public INTERSECT(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.INTERSECT, 0); }
+	public EXCEPT(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.EXCEPT, 0); }
 	constructor(parent: ParserRuleContext | undefined, invokingState: number) {
 		super(parent, invokingState);
 	}
@@ -13746,11 +13767,11 @@ export class Compound_operatorContext extends ParserRuleContext {
 
 
 export class Update_stmtContext extends ParserRuleContext {
-	public UPDATE_(): TerminalNode { return this.getToken(SQLiteParser.UPDATE_, 0); }
+	public UPDATE(): TerminalNode { return this.getToken(SQLiteParser.UPDATE, 0); }
 	public qualified_table_name(): Qualified_table_nameContext {
 		return this.getRuleContext(0, Qualified_table_nameContext);
 	}
-	public SET_(): TerminalNode { return this.getToken(SQLiteParser.SET_, 0); }
+	public SET(): TerminalNode { return this.getToken(SQLiteParser.SET, 0); }
 	public ASSIGN(): TerminalNode[];
 	public ASSIGN(i: number): TerminalNode;
 	public ASSIGN(i?: number): TerminalNode | TerminalNode[] {
@@ -13790,7 +13811,7 @@ export class Update_stmtContext extends ParserRuleContext {
 	public with_clause(): With_clauseContext | undefined {
 		return this.tryGetRuleContext(0, With_clauseContext);
 	}
-	public OR_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.OR_, 0); }
+	public OR(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.OR, 0); }
 	public COMMA(): TerminalNode[];
 	public COMMA(i: number): TerminalNode;
 	public COMMA(i?: number): TerminalNode | TerminalNode[] {
@@ -13800,16 +13821,16 @@ export class Update_stmtContext extends ParserRuleContext {
 			return this.getToken(SQLiteParser.COMMA, i);
 		}
 	}
-	public FROM_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.FROM_, 0); }
-	public WHERE_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.WHERE_, 0); }
+	public FROM(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.FROM, 0); }
+	public WHERE(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.WHERE, 0); }
 	public returning_clause(): Returning_clauseContext | undefined {
 		return this.tryGetRuleContext(0, Returning_clauseContext);
 	}
-	public ROLLBACK_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.ROLLBACK_, 0); }
-	public ABORT_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.ABORT_, 0); }
-	public REPLACE_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.REPLACE_, 0); }
-	public FAIL_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.FAIL_, 0); }
-	public IGNORE_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.IGNORE_, 0); }
+	public ROLLBACK(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.ROLLBACK, 0); }
+	public ABORT(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.ABORT, 0); }
+	public REPLACE(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.REPLACE, 0); }
+	public FAIL(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.FAIL, 0); }
+	public IGNORE(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.IGNORE, 0); }
 	public table_or_subquery(): Table_or_subqueryContext[];
 	public table_or_subquery(i: number): Table_or_subqueryContext;
 	public table_or_subquery(i?: number): Table_or_subqueryContext | Table_or_subqueryContext[] {
@@ -13884,11 +13905,11 @@ export class Column_name_listContext extends ParserRuleContext {
 
 
 export class Update_stmt_limitedContext extends ParserRuleContext {
-	public UPDATE_(): TerminalNode { return this.getToken(SQLiteParser.UPDATE_, 0); }
+	public UPDATE(): TerminalNode { return this.getToken(SQLiteParser.UPDATE, 0); }
 	public qualified_table_name(): Qualified_table_nameContext {
 		return this.getRuleContext(0, Qualified_table_nameContext);
 	}
-	public SET_(): TerminalNode { return this.getToken(SQLiteParser.SET_, 0); }
+	public SET(): TerminalNode { return this.getToken(SQLiteParser.SET, 0); }
 	public ASSIGN(): TerminalNode[];
 	public ASSIGN(i: number): TerminalNode;
 	public ASSIGN(i?: number): TerminalNode | TerminalNode[] {
@@ -13928,7 +13949,7 @@ export class Update_stmt_limitedContext extends ParserRuleContext {
 	public with_clause(): With_clauseContext | undefined {
 		return this.tryGetRuleContext(0, With_clauseContext);
 	}
-	public OR_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.OR_, 0); }
+	public OR(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.OR, 0); }
 	public COMMA(): TerminalNode[];
 	public COMMA(i: number): TerminalNode;
 	public COMMA(i?: number): TerminalNode | TerminalNode[] {
@@ -13938,18 +13959,18 @@ export class Update_stmt_limitedContext extends ParserRuleContext {
 			return this.getToken(SQLiteParser.COMMA, i);
 		}
 	}
-	public WHERE_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.WHERE_, 0); }
+	public WHERE(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.WHERE, 0); }
 	public returning_clause(): Returning_clauseContext | undefined {
 		return this.tryGetRuleContext(0, Returning_clauseContext);
 	}
 	public limit_stmt(): Limit_stmtContext | undefined {
 		return this.tryGetRuleContext(0, Limit_stmtContext);
 	}
-	public ROLLBACK_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.ROLLBACK_, 0); }
-	public ABORT_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.ABORT_, 0); }
-	public REPLACE_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.REPLACE_, 0); }
-	public FAIL_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.FAIL_, 0); }
-	public IGNORE_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.IGNORE_, 0); }
+	public ROLLBACK(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.ROLLBACK, 0); }
+	public ABORT(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.ABORT, 0); }
+	public REPLACE(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.REPLACE, 0); }
+	public FAIL(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.FAIL, 0); }
+	public IGNORE(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.IGNORE, 0); }
 	public order_by_stmt(): Order_by_stmtContext | undefined {
 		return this.tryGetRuleContext(0, Order_by_stmtContext);
 	}
@@ -13981,16 +14002,16 @@ export class Qualified_table_nameContext extends ParserRuleContext {
 		return this.tryGetRuleContext(0, Schema_nameContext);
 	}
 	public DOT(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.DOT, 0); }
-	public AS_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.AS_, 0); }
+	public AS(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.AS, 0); }
 	public alias(): AliasContext | undefined {
 		return this.tryGetRuleContext(0, AliasContext);
 	}
-	public INDEXED_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.INDEXED_, 0); }
-	public BY_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.BY_, 0); }
+	public INDEXED(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.INDEXED, 0); }
+	public BY(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.BY, 0); }
 	public index_name(): Index_nameContext | undefined {
 		return this.tryGetRuleContext(0, Index_nameContext);
 	}
-	public NOT_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.NOT_, 0); }
+	public NOT(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.NOT, 0); }
 	constructor(parent: ParserRuleContext | undefined, invokingState: number) {
 		super(parent, invokingState);
 	}
@@ -14012,11 +14033,11 @@ export class Qualified_table_nameContext extends ParserRuleContext {
 
 
 export class Vacuum_stmtContext extends ParserRuleContext {
-	public VACUUM_(): TerminalNode { return this.getToken(SQLiteParser.VACUUM_, 0); }
+	public VACUUM(): TerminalNode { return this.getToken(SQLiteParser.VACUUM, 0); }
 	public schema_name(): Schema_nameContext | undefined {
 		return this.tryGetRuleContext(0, Schema_nameContext);
 	}
-	public INTO_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.INTO_, 0); }
+	public INTO(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.INTO, 0); }
 	public filename(): FilenameContext | undefined {
 		return this.tryGetRuleContext(0, FilenameContext);
 	}
@@ -14041,9 +14062,9 @@ export class Vacuum_stmtContext extends ParserRuleContext {
 
 
 export class Filter_clauseContext extends ParserRuleContext {
-	public FILTER_(): TerminalNode { return this.getToken(SQLiteParser.FILTER_, 0); }
+	public FILTER(): TerminalNode { return this.getToken(SQLiteParser.FILTER, 0); }
 	public OPEN_PAR(): TerminalNode { return this.getToken(SQLiteParser.OPEN_PAR, 0); }
-	public WHERE_(): TerminalNode { return this.getToken(SQLiteParser.WHERE_, 0); }
+	public WHERE(): TerminalNode { return this.getToken(SQLiteParser.WHERE, 0); }
 	public expr(): ExprContext {
 		return this.getRuleContext(0, ExprContext);
 	}
@@ -14071,14 +14092,14 @@ export class Filter_clauseContext extends ParserRuleContext {
 export class Window_defnContext extends ParserRuleContext {
 	public OPEN_PAR(): TerminalNode { return this.getToken(SQLiteParser.OPEN_PAR, 0); }
 	public CLOSE_PAR(): TerminalNode { return this.getToken(SQLiteParser.CLOSE_PAR, 0); }
-	public ORDER_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.ORDER_, 0); }
-	public BY_(): TerminalNode[];
-	public BY_(i: number): TerminalNode;
-	public BY_(i?: number): TerminalNode | TerminalNode[] {
+	public ORDER(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.ORDER, 0); }
+	public BY(): TerminalNode[];
+	public BY(i: number): TerminalNode;
+	public BY(i?: number): TerminalNode | TerminalNode[] {
 		if (i === undefined) {
-			return this.getTokens(SQLiteParser.BY_);
+			return this.getTokens(SQLiteParser.BY);
 		} else {
-			return this.getToken(SQLiteParser.BY_, i);
+			return this.getToken(SQLiteParser.BY, i);
 		}
 	}
 	public ordering_term(): Ordering_termContext[];
@@ -14093,7 +14114,7 @@ export class Window_defnContext extends ParserRuleContext {
 	public base_window_name(): Base_window_nameContext | undefined {
 		return this.tryGetRuleContext(0, Base_window_nameContext);
 	}
-	public PARTITION_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.PARTITION_, 0); }
+	public PARTITION(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.PARTITION, 0); }
 	public expr(): ExprContext[];
 	public expr(i: number): ExprContext;
 	public expr(i?: number): ExprContext | ExprContext[] {
@@ -14136,7 +14157,7 @@ export class Window_defnContext extends ParserRuleContext {
 
 
 export class Over_clauseContext extends ParserRuleContext {
-	public OVER_(): TerminalNode { return this.getToken(SQLiteParser.OVER_, 0); }
+	public OVER(): TerminalNode { return this.getToken(SQLiteParser.OVER, 0); }
 	public window_name(): Window_nameContext | undefined {
 		return this.tryGetRuleContext(0, Window_nameContext);
 	}
@@ -14145,14 +14166,14 @@ export class Over_clauseContext extends ParserRuleContext {
 	public base_window_name(): Base_window_nameContext | undefined {
 		return this.tryGetRuleContext(0, Base_window_nameContext);
 	}
-	public PARTITION_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.PARTITION_, 0); }
-	public BY_(): TerminalNode[];
-	public BY_(i: number): TerminalNode;
-	public BY_(i?: number): TerminalNode | TerminalNode[] {
+	public PARTITION(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.PARTITION, 0); }
+	public BY(): TerminalNode[];
+	public BY(i: number): TerminalNode;
+	public BY(i?: number): TerminalNode | TerminalNode[] {
 		if (i === undefined) {
-			return this.getTokens(SQLiteParser.BY_);
+			return this.getTokens(SQLiteParser.BY);
 		} else {
-			return this.getToken(SQLiteParser.BY_, i);
+			return this.getToken(SQLiteParser.BY, i);
 		}
 	}
 	public expr(): ExprContext[];
@@ -14164,7 +14185,7 @@ export class Over_clauseContext extends ParserRuleContext {
 			return this.getRuleContext(i, ExprContext);
 		}
 	}
-	public ORDER_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.ORDER_, 0); }
+	public ORDER(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.ORDER, 0); }
 	public ordering_term(): Ordering_termContext[];
 	public ordering_term(i: number): Ordering_termContext;
 	public ordering_term(i?: number): Ordering_termContext | Ordering_termContext[] {
@@ -14210,13 +14231,13 @@ export class Frame_specContext extends ParserRuleContext {
 	public frame_clause(): Frame_clauseContext {
 		return this.getRuleContext(0, Frame_clauseContext);
 	}
-	public EXCLUDE_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.EXCLUDE_, 0); }
-	public NO_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.NO_, 0); }
-	public OTHERS_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.OTHERS_, 0); }
-	public CURRENT_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.CURRENT_, 0); }
-	public ROW_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.ROW_, 0); }
-	public GROUP_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.GROUP_, 0); }
-	public TIES_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.TIES_, 0); }
+	public EXCLUDE(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.EXCLUDE, 0); }
+	public NO(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.NO, 0); }
+	public OTHERS(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.OTHERS, 0); }
+	public CURRENT(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.CURRENT, 0); }
+	public ROW(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.ROW, 0); }
+	public GROUP(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.GROUP, 0); }
+	public TIES(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.TIES, 0); }
 	constructor(parent: ParserRuleContext | undefined, invokingState: number) {
 		super(parent, invokingState);
 	}
@@ -14238,17 +14259,17 @@ export class Frame_specContext extends ParserRuleContext {
 
 
 export class Frame_clauseContext extends ParserRuleContext {
-	public RANGE_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.RANGE_, 0); }
-	public ROWS_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.ROWS_, 0); }
-	public GROUPS_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.GROUPS_, 0); }
+	public RANGE(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.RANGE, 0); }
+	public ROWS(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.ROWS, 0); }
+	public GROUPS(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.GROUPS, 0); }
 	public frame_single(): Frame_singleContext | undefined {
 		return this.tryGetRuleContext(0, Frame_singleContext);
 	}
-	public BETWEEN_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.BETWEEN_, 0); }
+	public BETWEEN(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.BETWEEN, 0); }
 	public frame_left(): Frame_leftContext | undefined {
 		return this.tryGetRuleContext(0, Frame_leftContext);
 	}
-	public AND_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.AND_, 0); }
+	public AND(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.AND, 0); }
 	public frame_right(): Frame_rightContext | undefined {
 		return this.tryGetRuleContext(0, Frame_rightContext);
 	}
@@ -14336,7 +14357,7 @@ export class Aggregate_function_invocationContext extends ParserRuleContext {
 	public filter_clause(): Filter_clauseContext | undefined {
 		return this.tryGetRuleContext(0, Filter_clauseContext);
 	}
-	public DISTINCT_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.DISTINCT_, 0); }
+	public DISTINCT(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.DISTINCT, 0); }
 	public COMMA(): TerminalNode[];
 	public COMMA(i: number): TerminalNode;
 	public COMMA(i?: number): TerminalNode | TerminalNode[] {
@@ -14372,7 +14393,7 @@ export class Window_function_invocationContext extends ParserRuleContext {
 	}
 	public OPEN_PAR(): TerminalNode { return this.getToken(SQLiteParser.OPEN_PAR, 0); }
 	public CLOSE_PAR(): TerminalNode { return this.getToken(SQLiteParser.CLOSE_PAR, 0); }
-	public OVER_(): TerminalNode { return this.getToken(SQLiteParser.OVER_, 0); }
+	public OVER(): TerminalNode { return this.getToken(SQLiteParser.OVER, 0); }
 	public window_defn(): Window_defnContext | undefined {
 		return this.tryGetRuleContext(0, Window_defnContext);
 	}
@@ -14422,7 +14443,7 @@ export class Window_function_invocationContext extends ParserRuleContext {
 
 
 export class Common_table_stmtContext extends ParserRuleContext {
-	public WITH_(): TerminalNode { return this.getToken(SQLiteParser.WITH_, 0); }
+	public WITH(): TerminalNode { return this.getToken(SQLiteParser.WITH, 0); }
 	public common_table_expression(): Common_table_expressionContext[];
 	public common_table_expression(i: number): Common_table_expressionContext;
 	public common_table_expression(i?: number): Common_table_expressionContext | Common_table_expressionContext[] {
@@ -14432,7 +14453,7 @@ export class Common_table_stmtContext extends ParserRuleContext {
 			return this.getRuleContext(i, Common_table_expressionContext);
 		}
 	}
-	public RECURSIVE_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.RECURSIVE_, 0); }
+	public RECURSIVE(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.RECURSIVE, 0); }
 	public COMMA(): TerminalNode[];
 	public COMMA(i: number): TerminalNode;
 	public COMMA(i?: number): TerminalNode | TerminalNode[] {
@@ -14463,8 +14484,8 @@ export class Common_table_stmtContext extends ParserRuleContext {
 
 
 export class Order_by_stmtContext extends ParserRuleContext {
-	public ORDER_(): TerminalNode { return this.getToken(SQLiteParser.ORDER_, 0); }
-	public BY_(): TerminalNode { return this.getToken(SQLiteParser.BY_, 0); }
+	public ORDER(): TerminalNode { return this.getToken(SQLiteParser.ORDER, 0); }
+	public BY(): TerminalNode { return this.getToken(SQLiteParser.BY, 0); }
 	public ordering_term(): Ordering_termContext[];
 	public ordering_term(i: number): Ordering_termContext;
 	public ordering_term(i?: number): Ordering_termContext | Ordering_termContext[] {
@@ -14504,7 +14525,7 @@ export class Order_by_stmtContext extends ParserRuleContext {
 
 
 export class Limit_stmtContext extends ParserRuleContext {
-	public LIMIT_(): TerminalNode { return this.getToken(SQLiteParser.LIMIT_, 0); }
+	public LIMIT(): TerminalNode { return this.getToken(SQLiteParser.LIMIT, 0); }
 	public expr(): ExprContext[];
 	public expr(i: number): ExprContext;
 	public expr(i?: number): ExprContext | ExprContext[] {
@@ -14514,7 +14535,7 @@ export class Limit_stmtContext extends ParserRuleContext {
 			return this.getRuleContext(i, ExprContext);
 		}
 	}
-	public OFFSET_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.OFFSET_, 0); }
+	public OFFSET(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.OFFSET, 0); }
 	public COMMA(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.COMMA, 0); }
 	constructor(parent: ParserRuleContext | undefined, invokingState: number) {
 		super(parent, invokingState);
@@ -14540,16 +14561,16 @@ export class Ordering_termContext extends ParserRuleContext {
 	public expr(): ExprContext {
 		return this.getRuleContext(0, ExprContext);
 	}
-	public COLLATE_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.COLLATE_, 0); }
+	public COLLATE(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.COLLATE, 0); }
 	public collation_name(): Collation_nameContext | undefined {
 		return this.tryGetRuleContext(0, Collation_nameContext);
 	}
 	public asc_desc(): Asc_descContext | undefined {
 		return this.tryGetRuleContext(0, Asc_descContext);
 	}
-	public NULLS_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.NULLS_, 0); }
-	public FIRST_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.FIRST_, 0); }
-	public LAST_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.LAST_, 0); }
+	public NULLS(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.NULLS, 0); }
+	public FIRST(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.FIRST, 0); }
+	public LAST(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.LAST, 0); }
 	constructor(parent: ParserRuleContext | undefined, invokingState: number) {
 		super(parent, invokingState);
 	}
@@ -14571,8 +14592,8 @@ export class Ordering_termContext extends ParserRuleContext {
 
 
 export class Asc_descContext extends ParserRuleContext {
-	public ASC_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.ASC_, 0); }
-	public DESC_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.DESC_, 0); }
+	public ASC(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.ASC, 0); }
+	public DESC(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.DESC, 0); }
 	constructor(parent: ParserRuleContext | undefined, invokingState: number) {
 		super(parent, invokingState);
 	}
@@ -14597,11 +14618,11 @@ export class Frame_leftContext extends ParserRuleContext {
 	public expr(): ExprContext | undefined {
 		return this.tryGetRuleContext(0, ExprContext);
 	}
-	public PRECEDING_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.PRECEDING_, 0); }
-	public FOLLOWING_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.FOLLOWING_, 0); }
-	public CURRENT_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.CURRENT_, 0); }
-	public ROW_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.ROW_, 0); }
-	public UNBOUNDED_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.UNBOUNDED_, 0); }
+	public PRECEDING(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.PRECEDING, 0); }
+	public FOLLOWING(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.FOLLOWING, 0); }
+	public CURRENT(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.CURRENT, 0); }
+	public ROW(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.ROW, 0); }
+	public UNBOUNDED(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.UNBOUNDED, 0); }
 	constructor(parent: ParserRuleContext | undefined, invokingState: number) {
 		super(parent, invokingState);
 	}
@@ -14626,11 +14647,11 @@ export class Frame_rightContext extends ParserRuleContext {
 	public expr(): ExprContext | undefined {
 		return this.tryGetRuleContext(0, ExprContext);
 	}
-	public PRECEDING_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.PRECEDING_, 0); }
-	public FOLLOWING_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.FOLLOWING_, 0); }
-	public CURRENT_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.CURRENT_, 0); }
-	public ROW_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.ROW_, 0); }
-	public UNBOUNDED_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.UNBOUNDED_, 0); }
+	public PRECEDING(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.PRECEDING, 0); }
+	public FOLLOWING(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.FOLLOWING, 0); }
+	public CURRENT(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.CURRENT, 0); }
+	public ROW(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.ROW, 0); }
+	public UNBOUNDED(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.UNBOUNDED, 0); }
 	constructor(parent: ParserRuleContext | undefined, invokingState: number) {
 		super(parent, invokingState);
 	}
@@ -14655,10 +14676,10 @@ export class Frame_singleContext extends ParserRuleContext {
 	public expr(): ExprContext | undefined {
 		return this.tryGetRuleContext(0, ExprContext);
 	}
-	public PRECEDING_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.PRECEDING_, 0); }
-	public UNBOUNDED_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.UNBOUNDED_, 0); }
-	public CURRENT_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.CURRENT_, 0); }
-	public ROW_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.ROW_, 0); }
+	public PRECEDING(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.PRECEDING, 0); }
+	public UNBOUNDED(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.UNBOUNDED, 0); }
+	public CURRENT(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.CURRENT, 0); }
+	public ROW(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.ROW, 0); }
 	constructor(parent: ParserRuleContext | undefined, invokingState: number) {
 		super(parent, invokingState);
 	}
@@ -14701,40 +14722,40 @@ export class Window_functionContext extends ParserRuleContext {
 			return this.getToken(SQLiteParser.CLOSE_PAR, i);
 		}
 	}
-	public OVER_(): TerminalNode { return this.getToken(SQLiteParser.OVER_, 0); }
+	public OVER(): TerminalNode { return this.getToken(SQLiteParser.OVER, 0); }
 	public order_by_expr_asc_desc(): Order_by_expr_asc_descContext | undefined {
 		return this.tryGetRuleContext(0, Order_by_expr_asc_descContext);
 	}
-	public FIRST_VALUE_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.FIRST_VALUE_, 0); }
-	public LAST_VALUE_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.LAST_VALUE_, 0); }
+	public FIRST_VALUE(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.FIRST_VALUE, 0); }
+	public LAST_VALUE(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.LAST_VALUE, 0); }
 	public partition_by(): Partition_byContext | undefined {
 		return this.tryGetRuleContext(0, Partition_byContext);
 	}
 	public frame_clause(): Frame_clauseContext | undefined {
 		return this.tryGetRuleContext(0, Frame_clauseContext);
 	}
-	public CUME_DIST_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.CUME_DIST_, 0); }
-	public PERCENT_RANK_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.PERCENT_RANK_, 0); }
+	public CUME_DIST(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.CUME_DIST, 0); }
+	public PERCENT_RANK(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.PERCENT_RANK, 0); }
 	public order_by_expr(): Order_by_exprContext | undefined {
 		return this.tryGetRuleContext(0, Order_by_exprContext);
 	}
-	public DENSE_RANK_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.DENSE_RANK_, 0); }
-	public RANK_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.RANK_, 0); }
-	public ROW_NUMBER_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.ROW_NUMBER_, 0); }
-	public LAG_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.LAG_, 0); }
-	public LEAD_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.LEAD_, 0); }
+	public DENSE_RANK(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.DENSE_RANK, 0); }
+	public RANK(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.RANK, 0); }
+	public ROW_NUMBER(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.ROW_NUMBER, 0); }
+	public LAG(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.LAG, 0); }
+	public LEAD(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.LEAD, 0); }
 	public offset(): OffsetContext | undefined {
 		return this.tryGetRuleContext(0, OffsetContext);
 	}
 	public default_value(): Default_valueContext | undefined {
 		return this.tryGetRuleContext(0, Default_valueContext);
 	}
-	public NTH_VALUE_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.NTH_VALUE_, 0); }
+	public NTH_VALUE(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.NTH_VALUE, 0); }
 	public COMMA(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.COMMA, 0); }
 	public signed_number(): Signed_numberContext | undefined {
 		return this.tryGetRuleContext(0, Signed_numberContext);
 	}
-	public NTILE_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.NTILE_, 0); }
+	public NTILE(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.NTILE, 0); }
 	constructor(parent: ParserRuleContext | undefined, invokingState: number) {
 		super(parent, invokingState);
 	}
@@ -14806,8 +14827,8 @@ export class Default_valueContext extends ParserRuleContext {
 
 
 export class Partition_byContext extends ParserRuleContext {
-	public PARTITION_(): TerminalNode { return this.getToken(SQLiteParser.PARTITION_, 0); }
-	public BY_(): TerminalNode { return this.getToken(SQLiteParser.BY_, 0); }
+	public PARTITION(): TerminalNode { return this.getToken(SQLiteParser.PARTITION, 0); }
+	public BY(): TerminalNode { return this.getToken(SQLiteParser.BY, 0); }
 	public expr(): ExprContext[];
 	public expr(i: number): ExprContext;
 	public expr(i?: number): ExprContext | ExprContext[] {
@@ -14838,8 +14859,8 @@ export class Partition_byContext extends ParserRuleContext {
 
 
 export class Order_by_exprContext extends ParserRuleContext {
-	public ORDER_(): TerminalNode { return this.getToken(SQLiteParser.ORDER_, 0); }
-	public BY_(): TerminalNode { return this.getToken(SQLiteParser.BY_, 0); }
+	public ORDER(): TerminalNode { return this.getToken(SQLiteParser.ORDER, 0); }
+	public BY(): TerminalNode { return this.getToken(SQLiteParser.BY, 0); }
 	public expr(): ExprContext[];
 	public expr(i: number): ExprContext;
 	public expr(i?: number): ExprContext | ExprContext[] {
@@ -14870,8 +14891,8 @@ export class Order_by_exprContext extends ParserRuleContext {
 
 
 export class Order_by_expr_asc_descContext extends ParserRuleContext {
-	public ORDER_(): TerminalNode { return this.getToken(SQLiteParser.ORDER_, 0); }
-	public BY_(): TerminalNode { return this.getToken(SQLiteParser.BY_, 0); }
+	public ORDER(): TerminalNode { return this.getToken(SQLiteParser.ORDER, 0); }
+	public BY(): TerminalNode { return this.getToken(SQLiteParser.BY, 0); }
 	public expr_asc_desc(): Expr_asc_descContext {
 		return this.getRuleContext(0, Expr_asc_descContext);
 	}
@@ -14995,7 +15016,7 @@ export class Unary_operatorContext extends ParserRuleContext {
 	public MINUS(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.MINUS, 0); }
 	public PLUS(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.PLUS, 0); }
 	public TILDE(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.TILDE, 0); }
-	public NOT_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.NOT_, 0); }
+	public NOT(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.NOT, 0); }
 	constructor(parent: ParserRuleContext | undefined, invokingState: number) {
 		super(parent, invokingState);
 	}
@@ -15089,161 +15110,166 @@ export class Column_aliasContext extends ParserRuleContext {
 
 
 export class KeywordContext extends ParserRuleContext {
-	public ABORT_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.ABORT_, 0); }
-	public ACTION_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.ACTION_, 0); }
-	public ADD_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.ADD_, 0); }
-	public AFTER_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.AFTER_, 0); }
-	public ALL_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.ALL_, 0); }
-	public ALTER_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.ALTER_, 0); }
-	public ANALYZE_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.ANALYZE_, 0); }
-	public AND_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.AND_, 0); }
-	public AS_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.AS_, 0); }
-	public ASC_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.ASC_, 0); }
-	public ATTACH_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.ATTACH_, 0); }
-	public AUTOINCREMENT_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.AUTOINCREMENT_, 0); }
-	public BEFORE_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.BEFORE_, 0); }
-	public BEGIN_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.BEGIN_, 0); }
-	public BETWEEN_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.BETWEEN_, 0); }
-	public BY_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.BY_, 0); }
-	public CASCADE_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.CASCADE_, 0); }
-	public CASE_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.CASE_, 0); }
-	public CAST_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.CAST_, 0); }
-	public CHECK_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.CHECK_, 0); }
-	public COLLATE_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.COLLATE_, 0); }
-	public COLUMN_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.COLUMN_, 0); }
-	public COMMIT_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.COMMIT_, 0); }
-	public CONFLICT_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.CONFLICT_, 0); }
-	public CONSTRAINT_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.CONSTRAINT_, 0); }
-	public CREATE_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.CREATE_, 0); }
-	public CROSS_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.CROSS_, 0); }
-	public CURRENT_DATE_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.CURRENT_DATE_, 0); }
-	public CURRENT_TIME_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.CURRENT_TIME_, 0); }
-	public CURRENT_TIMESTAMP_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.CURRENT_TIMESTAMP_, 0); }
-	public DATABASE_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.DATABASE_, 0); }
-	public DEFAULT_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.DEFAULT_, 0); }
-	public DEFERRABLE_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.DEFERRABLE_, 0); }
-	public DEFERRED_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.DEFERRED_, 0); }
-	public DELETE_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.DELETE_, 0); }
-	public DESC_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.DESC_, 0); }
-	public DETACH_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.DETACH_, 0); }
-	public DISTINCT_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.DISTINCT_, 0); }
-	public DROP_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.DROP_, 0); }
-	public EACH_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.EACH_, 0); }
-	public ELSE_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.ELSE_, 0); }
-	public END_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.END_, 0); }
-	public ESCAPE_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.ESCAPE_, 0); }
-	public EXCEPT_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.EXCEPT_, 0); }
-	public EXCLUSIVE_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.EXCLUSIVE_, 0); }
-	public EXISTS_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.EXISTS_, 0); }
-	public EXPLAIN_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.EXPLAIN_, 0); }
-	public FAIL_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.FAIL_, 0); }
-	public FOR_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.FOR_, 0); }
-	public FOREIGN_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.FOREIGN_, 0); }
-	public FROM_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.FROM_, 0); }
-	public FULL_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.FULL_, 0); }
-	public GLOB_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.GLOB_, 0); }
-	public GROUP_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.GROUP_, 0); }
-	public HAVING_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.HAVING_, 0); }
-	public IF_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.IF_, 0); }
-	public IGNORE_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.IGNORE_, 0); }
-	public IMMEDIATE_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.IMMEDIATE_, 0); }
-	public IN_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.IN_, 0); }
-	public INDEX_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.INDEX_, 0); }
-	public INDEXED_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.INDEXED_, 0); }
-	public INITIALLY_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.INITIALLY_, 0); }
-	public INNER_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.INNER_, 0); }
-	public INSERT_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.INSERT_, 0); }
-	public INSTEAD_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.INSTEAD_, 0); }
-	public INTERSECT_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.INTERSECT_, 0); }
-	public INTO_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.INTO_, 0); }
-	public IS_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.IS_, 0); }
-	public ISNULL_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.ISNULL_, 0); }
-	public JOIN_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.JOIN_, 0); }
-	public KEY_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.KEY_, 0); }
-	public LEFT_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.LEFT_, 0); }
-	public LIKE_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.LIKE_, 0); }
-	public LIMIT_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.LIMIT_, 0); }
-	public MATCH_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.MATCH_, 0); }
-	public NATURAL_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.NATURAL_, 0); }
-	public NO_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.NO_, 0); }
-	public NOT_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.NOT_, 0); }
-	public NOTNULL_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.NOTNULL_, 0); }
-	public NULL_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.NULL_, 0); }
-	public OF_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.OF_, 0); }
-	public OFFSET_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.OFFSET_, 0); }
-	public ON_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.ON_, 0); }
-	public OR_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.OR_, 0); }
-	public ORDER_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.ORDER_, 0); }
-	public OUTER_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.OUTER_, 0); }
-	public PLAN_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.PLAN_, 0); }
-	public PRAGMA_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.PRAGMA_, 0); }
-	public PRIMARY_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.PRIMARY_, 0); }
-	public QUERY_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.QUERY_, 0); }
-	public RAISE_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.RAISE_, 0); }
-	public RECURSIVE_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.RECURSIVE_, 0); }
-	public REFERENCES_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.REFERENCES_, 0); }
-	public REGEXP_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.REGEXP_, 0); }
-	public REINDEX_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.REINDEX_, 0); }
-	public RELEASE_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.RELEASE_, 0); }
-	public RENAME_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.RENAME_, 0); }
-	public REPLACE_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.REPLACE_, 0); }
-	public RESTRICT_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.RESTRICT_, 0); }
-	public RIGHT_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.RIGHT_, 0); }
-	public ROLLBACK_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.ROLLBACK_, 0); }
-	public ROW_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.ROW_, 0); }
-	public ROWS_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.ROWS_, 0); }
-	public SAVEPOINT_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.SAVEPOINT_, 0); }
-	public SELECT_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.SELECT_, 0); }
-	public SET_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.SET_, 0); }
-	public TABLE_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.TABLE_, 0); }
-	public TEMP_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.TEMP_, 0); }
-	public TEMPORARY_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.TEMPORARY_, 0); }
-	public THEN_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.THEN_, 0); }
-	public TO_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.TO_, 0); }
-	public TRANSACTION_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.TRANSACTION_, 0); }
-	public TRIGGER_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.TRIGGER_, 0); }
-	public UNION_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.UNION_, 0); }
-	public UNIQUE_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.UNIQUE_, 0); }
-	public UPDATE_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.UPDATE_, 0); }
-	public USING_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.USING_, 0); }
-	public VACUUM_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.VACUUM_, 0); }
-	public VALUES_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.VALUES_, 0); }
-	public VIEW_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.VIEW_, 0); }
-	public VIRTUAL_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.VIRTUAL_, 0); }
-	public WHEN_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.WHEN_, 0); }
-	public WHERE_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.WHERE_, 0); }
-	public WITH_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.WITH_, 0); }
-	public WITHOUT_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.WITHOUT_, 0); }
-	public FIRST_VALUE_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.FIRST_VALUE_, 0); }
-	public OVER_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.OVER_, 0); }
-	public PARTITION_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.PARTITION_, 0); }
-	public RANGE_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.RANGE_, 0); }
-	public PRECEDING_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.PRECEDING_, 0); }
-	public UNBOUNDED_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.UNBOUNDED_, 0); }
-	public CURRENT_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.CURRENT_, 0); }
-	public FOLLOWING_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.FOLLOWING_, 0); }
-	public CUME_DIST_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.CUME_DIST_, 0); }
-	public DENSE_RANK_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.DENSE_RANK_, 0); }
-	public LAG_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.LAG_, 0); }
-	public LAST_VALUE_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.LAST_VALUE_, 0); }
-	public LEAD_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.LEAD_, 0); }
-	public NTH_VALUE_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.NTH_VALUE_, 0); }
-	public NTILE_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.NTILE_, 0); }
-	public PERCENT_RANK_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.PERCENT_RANK_, 0); }
-	public RANK_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.RANK_, 0); }
-	public ROW_NUMBER_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.ROW_NUMBER_, 0); }
-	public GENERATED_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.GENERATED_, 0); }
-	public ALWAYS_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.ALWAYS_, 0); }
-	public STORED_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.STORED_, 0); }
-	public TRUE_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.TRUE_, 0); }
-	public FALSE_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.FALSE_, 0); }
-	public WINDOW_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.WINDOW_, 0); }
-	public NULLS_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.NULLS_, 0); }
-	public FIRST_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.FIRST_, 0); }
-	public LAST_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.LAST_, 0); }
-	public FILTER_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.FILTER_, 0); }
-	public GROUPS_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.GROUPS_, 0); }
-	public EXCLUDE_(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.EXCLUDE_, 0); }
+	public ABORT(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.ABORT, 0); }
+	public ACTION(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.ACTION, 0); }
+	public ADD(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.ADD, 0); }
+	public AFTER(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.AFTER, 0); }
+	public ALL(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.ALL, 0); }
+	public ALTER(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.ALTER, 0); }
+	public ANALYZE(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.ANALYZE, 0); }
+	public AND(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.AND, 0); }
+	public AS(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.AS, 0); }
+	public ASC(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.ASC, 0); }
+	public ATTACH(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.ATTACH, 0); }
+	public AUTOINCREMENT(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.AUTOINCREMENT, 0); }
+	public BEFORE(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.BEFORE, 0); }
+	public BEGIN(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.BEGIN, 0); }
+	public BETWEEN(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.BETWEEN, 0); }
+	public BY(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.BY, 0); }
+	public CASCADE(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.CASCADE, 0); }
+	public CASE(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.CASE, 0); }
+	public CAST(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.CAST, 0); }
+	public CHECK(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.CHECK, 0); }
+	public COLLATE(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.COLLATE, 0); }
+	public COLUMN(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.COLUMN, 0); }
+	public COMMIT(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.COMMIT, 0); }
+	public CONFLICT(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.CONFLICT, 0); }
+	public CONSTRAINT(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.CONSTRAINT, 0); }
+	public CREATE(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.CREATE, 0); }
+	public CROSS(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.CROSS, 0); }
+	public CURRENT_DATE(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.CURRENT_DATE, 0); }
+	public CURRENT_TIME(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.CURRENT_TIME, 0); }
+	public CURRENT_TIMESTAMP(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.CURRENT_TIMESTAMP, 0); }
+	public DATABASE(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.DATABASE, 0); }
+	public DEFAULT(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.DEFAULT, 0); }
+	public DEFERRABLE(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.DEFERRABLE, 0); }
+	public DEFERRED(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.DEFERRED, 0); }
+	public DELETE(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.DELETE, 0); }
+	public DESC(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.DESC, 0); }
+	public DETACH(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.DETACH, 0); }
+	public DISTINCT(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.DISTINCT, 0); }
+	public DROP(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.DROP, 0); }
+	public EACH(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.EACH, 0); }
+	public ELSE(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.ELSE, 0); }
+	public END(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.END, 0); }
+	public ESCAPE(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.ESCAPE, 0); }
+	public EXCEPT(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.EXCEPT, 0); }
+	public EXCLUSIVE(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.EXCLUSIVE, 0); }
+	public EXISTS(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.EXISTS, 0); }
+	public EXPLAIN(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.EXPLAIN, 0); }
+	public FAIL(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.FAIL, 0); }
+	public FOR(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.FOR, 0); }
+	public FOREIGN(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.FOREIGN, 0); }
+	public FROM(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.FROM, 0); }
+	public FULL(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.FULL, 0); }
+	public GLOB(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.GLOB, 0); }
+	public GROUP(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.GROUP, 0); }
+	public HAVING(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.HAVING, 0); }
+	public IF(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.IF, 0); }
+	public IGNORE(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.IGNORE, 0); }
+	public IMMEDIATE(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.IMMEDIATE, 0); }
+	public IN(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.IN, 0); }
+	public INDEX(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.INDEX, 0); }
+	public INDEXED(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.INDEXED, 0); }
+	public INITIALLY(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.INITIALLY, 0); }
+	public INNER(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.INNER, 0); }
+	public INSERT(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.INSERT, 0); }
+	public INSTEAD(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.INSTEAD, 0); }
+	public INTERSECT(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.INTERSECT, 0); }
+	public INTO(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.INTO, 0); }
+	public IS(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.IS, 0); }
+	public ISNULL(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.ISNULL, 0); }
+	public JOIN(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.JOIN, 0); }
+	public KEY(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.KEY, 0); }
+	public LEFT(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.LEFT, 0); }
+	public LIKE(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.LIKE, 0); }
+	public LIMIT(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.LIMIT, 0); }
+	public MATCH(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.MATCH, 0); }
+	public NATURAL(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.NATURAL, 0); }
+	public NO(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.NO, 0); }
+	public NOT(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.NOT, 0); }
+	public NOTNULL(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.NOTNULL, 0); }
+	public NULL(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.NULL, 0); }
+	public OF(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.OF, 0); }
+	public OFFSET(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.OFFSET, 0); }
+	public ON(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.ON, 0); }
+	public OR(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.OR, 0); }
+	public ORDER(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.ORDER, 0); }
+	public OUTER(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.OUTER, 0); }
+	public PLAN(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.PLAN, 0); }
+	public PRAGMA(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.PRAGMA, 0); }
+	public PRIMARY(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.PRIMARY, 0); }
+	public QUERY(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.QUERY, 0); }
+	public RAISE(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.RAISE, 0); }
+	public RECURSIVE(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.RECURSIVE, 0); }
+	public REFERENCES(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.REFERENCES, 0); }
+	public REGEXP(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.REGEXP, 0); }
+	public REINDEX(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.REINDEX, 0); }
+	public RELEASE(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.RELEASE, 0); }
+	public RENAME(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.RENAME, 0); }
+	public REPLACE(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.REPLACE, 0); }
+	public RESTRICT(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.RESTRICT, 0); }
+	public RETURNING(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.RETURNING, 0); }
+	public RIGHT(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.RIGHT, 0); }
+	public ROLLBACK(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.ROLLBACK, 0); }
+	public ROW(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.ROW, 0); }
+	public ROWS(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.ROWS, 0); }
+	public SAVEPOINT(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.SAVEPOINT, 0); }
+	public SELECT(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.SELECT, 0); }
+	public SET(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.SET, 0); }
+	public TABLE(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.TABLE, 0); }
+	public TEMP(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.TEMP, 0); }
+	public TEMPORARY(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.TEMPORARY, 0); }
+	public THEN(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.THEN, 0); }
+	public TO(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.TO, 0); }
+	public TRANSACTION(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.TRANSACTION, 0); }
+	public TRIGGER(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.TRIGGER, 0); }
+	public UNION(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.UNION, 0); }
+	public UNIQUE(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.UNIQUE, 0); }
+	public UPDATE(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.UPDATE, 0); }
+	public USING(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.USING, 0); }
+	public VACUUM(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.VACUUM, 0); }
+	public VALUES(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.VALUES, 0); }
+	public VIEW(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.VIEW, 0); }
+	public VIRTUAL(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.VIRTUAL, 0); }
+	public WHEN(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.WHEN, 0); }
+	public WHERE(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.WHERE, 0); }
+	public WITH(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.WITH, 0); }
+	public WITHOUT(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.WITHOUT, 0); }
+	public FIRST_VALUE(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.FIRST_VALUE, 0); }
+	public OVER(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.OVER, 0); }
+	public PARTITION(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.PARTITION, 0); }
+	public RANGE(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.RANGE, 0); }
+	public PRECEDING(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.PRECEDING, 0); }
+	public UNBOUNDED(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.UNBOUNDED, 0); }
+	public CURRENT(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.CURRENT, 0); }
+	public FOLLOWING(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.FOLLOWING, 0); }
+	public CUME_DIST(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.CUME_DIST, 0); }
+	public DENSE_RANK(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.DENSE_RANK, 0); }
+	public LAG(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.LAG, 0); }
+	public LAST_VALUE(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.LAST_VALUE, 0); }
+	public LEAD(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.LEAD, 0); }
+	public NTH_VALUE(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.NTH_VALUE, 0); }
+	public NTILE(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.NTILE, 0); }
+	public PERCENT_RANK(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.PERCENT_RANK, 0); }
+	public RANK(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.RANK, 0); }
+	public ROW_NUMBER(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.ROW_NUMBER, 0); }
+	public GENERATED(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.GENERATED, 0); }
+	public ALWAYS(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.ALWAYS, 0); }
+	public STORED(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.STORED, 0); }
+	public TRUE(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.TRUE, 0); }
+	public FALSE(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.FALSE, 0); }
+	public WINDOW(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.WINDOW, 0); }
+	public NULLS(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.NULLS, 0); }
+	public FIRST(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.FIRST, 0); }
+	public LAST(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.LAST, 0); }
+	public FILTER(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.FILTER, 0); }
+	public GROUPS(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.GROUPS, 0); }
+	public EXCLUDE(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.EXCLUDE, 0); }
+	public TIES(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.TIES, 0); }
+	public OTHERS(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.OTHERS, 0); }
+	public DO(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.DO, 0); }
+	public NOTHING(): TerminalNode | undefined { return this.tryGetToken(SQLiteParser.NOTHING, 0); }
 	constructor(parent: ParserRuleContext | undefined, invokingState: number) {
 		super(parent, invokingState);
 	}
