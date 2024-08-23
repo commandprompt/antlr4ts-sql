@@ -26,7 +26,7 @@ var __importStar = (this && this.__importStar) || function (mod) {
     return result;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.PlSQLGrammar = exports.PLpgSQLGrammar = exports.MySQLGrammar = void 0;
+exports.SQLiteGrammar = exports.PlSQLGrammar = exports.PLpgSQLGrammar = exports.MySQLGrammar = void 0;
 __exportStar(require("antlr4ts"), exports);
 __exportStar(require("antlr4ts/atn"), exports);
 __exportStar(require("antlr4ts/dfa"), exports);
@@ -47,4 +47,7 @@ __exportStar(require("./src/grammar-output/plpgsql/PLpgSQLLexer"), exports);
 exports.PlSQLGrammar = __importStar(require("./src/grammar-output/plsql/PlSqlParser"));
 __exportStar(require("./src/grammar-output/plsql/PlSqlParserListener"), exports);
 __exportStar(require("./src/grammar-output/plsql/PlSqlLexer"), exports);
+exports.SQLiteGrammar = __importStar(require("./src/grammar-output/sqlite/SQLiteParser"));
+__exportStar(require("./src/grammar-output/sqlite/SQLiteParserListener"), exports);
+__exportStar(require("./src/grammar-output/sqlite/SQLiteLexer"), exports);
 //# sourceMappingURL=index.js.map

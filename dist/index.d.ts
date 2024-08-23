@@ -18,3 +18,6 @@ export * from "./src/grammar-output/plpgsql/PLpgSQLLexer";
 export * as PlSQLGrammar from "./src/grammar-output/plsql/PlSqlParser";
 export * from "./src/grammar-output/plsql/PlSqlParserListener";
 export * from "./src/grammar-output/plsql/PlSqlLexer";
+export * as SQLiteGrammar from "./src/grammar-output/sqlite/SQLiteParser";
+export * from "./src/grammar-output/sqlite/SQLiteParserListener";
+export * from "./src/grammar-output/sqlite/SQLiteLexer";

@@ -10,6 +10,8 @@ const PLpgSQLLexer_1 = require("./grammar-output/plpgsql/PLpgSQLLexer");
 const PLpgSQLParser_1 = require("./grammar-output/plpgsql/PLpgSQLParser");
 const PlSqlParser_1 = require("./grammar-output/plsql/PlSqlParser");
 const PlSqlLexer_1 = require("./grammar-output/plsql/PlSqlLexer");
+const SQLiteLexer_1 = require("./grammar-output/sqlite/SQLiteLexer");
+const SQLiteParser_1 = require("./grammar-output/sqlite/SQLiteParser");
 class antlr4tsSQL {
     constructor(dialect) {
         this.dialect = dialect;
@@ -26,6 +28,9 @@ class antlr4tsSQL {
         }
         else if (this.dialect === SQLDialect_1.SQLDialect.MYSQL) {
             lexer = new MySQLLexer_1.MySQLLexer(chars);
+        }
+        else if (this.dialect === SQLDialect_1.SQLDialect.SQLITE) {
+            lexer = new SQLiteLexer_1.SQLiteLexer(chars);
         }
         if (errorListeners !== null && errorListeners !== undefined) {
             lexer.removeErrorListener(antlr4ts_1.ConsoleErrorListener.INSTANCE);
@@ -47,6 +52,9 @@ class antlr4tsSQL {
         else if (this.dialect === SQLDialect_1.SQLDialect.MYSQL) {
             parser = new MultiQueryMySQLParser_1.MultiQueryMySQLParser(tokens);
         }
+        else if (this.dialect === SQLDialect_1.SQLDialect.SQLITE) {
+            parser = new SQLiteParser_1.SQLiteParser(tokens);
+        }
         if (errorListeners !== null && errorListeners !== undefined) {
             parser.removeErrorListener(antlr4ts_1.ConsoleErrorListener.INSTANCE);
             for (const listener of errorListeners) {
@@ -64,6 +72,9 @@ class antlr4tsSQL {
         }
         else if (parser instanceof MultiQueryMySQLParser_1.MultiQueryMySQLParser) {
             return parser.sql_script();
+        }
+        else if (parser instanceof SQLiteParser_1.SQLiteParser) {
+            return parser.parse();
         }
         return null;
     }
