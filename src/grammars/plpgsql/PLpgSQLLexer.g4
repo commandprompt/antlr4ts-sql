@@ -18,16 +18,11 @@
 
 lexer grammar PLpgSQLLexer;
 
-@header {
-package cz.startnet.utils.pgdiff.parsers.antlr;
-import java.util.ArrayDeque;
-import java.util.Deque;
-}
 
 @members {
 /* This field stores the tags which are used to detect the end of a dollar-quoted string literal.
 */
-private final Deque<String> _tags = new ArrayDeque<String>();
+private _tags: any[] = [];
 }
 
     /*
@@ -817,8 +812,8 @@ fragment
 OperatorBasic
     : [+*<>=]
     // check so that comment start sequences are not matched by this
-    | '-' {_input.LA(1) != '-'}?
-    | '/' {_input.LA(1) != '*'}?;
+    | '-' {String.fromCharCode(this._input.LA(1)) != '-'}?
+    | '/' {String.fromCharCode(this._input.LA(1)) != '*'}?;
 fragment
 OperatorBasicEnd: [*/<>=];
 fragment
@@ -832,7 +827,7 @@ Digit : '0'..'9';
 REAL_NUMBER
     // fail double dots into a separate token
     // otherwise 1..10 would lex into 2 numbers
-    :   Digit+ '.' {_input.LA(1) != '.'}?
+    :   Digit+ '.' {String.fromCharCode(this._input.LA(1)) != '.'}?
     |   Digit+ '.' Digit+ EXPONENT?
     |   Digit+ '.' EXPONENT
     |   '.' Digit+ EXPONENT?
@@ -852,7 +847,7 @@ DOLLAR_NUMBER
 Identifier
     : IdentifierStartChar IdentifierChar*
     // always lowercase unquoted ids
-        { setText(getText().toLowerCase(java.util.Locale.ROOT)); }
+        {this.text = this.text.toLowerCase(); }
     ;
 fragment
 IdentifierStartChar
@@ -861,9 +856,9 @@ IdentifierStartChar
     | // these are the valid characters from 0x80 to 0xFF
     [\u00AA\u00B5\u00BA\u00C0-\u00D6\u00D8-\u00F6\u00F8-\u00FF]
     | // these are the letters above 0xFF which only need a single UTF-16 code unit
-    [\u0100-\uD7FF\uE000-\uFFFF] {Character.isLetter((char)_input.LA(-1))}?
+    [\u0100-\uD7FF\uE000-\uFFFF] {RegExp(/^\p{L}/,'u').test(String.fromCharCode(this._input.LA(-1)))}?
     | // letters which require multiple UTF-16 code units
-    [\uD800-\uDBFF] [\uDC00-\uDFFF] {Character.isLetter(Character.toCodePoint((char)_input.LA(-2), (char)_input.LA(-1)))}?
+    [\uD800-\uDBFF] [\uDC00-\uDFFF] {RegExp(/^\p{L}/,'u').test(String.fromCharCode((this._input.LA(-2)) + String.fromCharCode(this._input.LA(-1)).codePointAt(0)))}?
     ;
 fragment
 IdentifierChar
@@ -885,8 +880,8 @@ QuotedIdentifier
     : UnterminatedQuotedIdentifier '"'
     // unquote so that we may always call getText() and not worry about quotes
         {
-            String __tx = getText();
-            setText(__tx.substring(1, __tx.length() - 1).replace("\"\"", "\""));
+let __tx = this.text;
+this.text = (__tx.substring(1, __tx.length - 1).replace("\"\"", "\""));
         }
     ;
 // This is a quoted identifier which only contains valid characters but is not terminated
@@ -925,7 +920,7 @@ EXPONENT : ('e'|'E') ('+'|'-')? Digit+ ;
 
 // Dollar-quoted String Constants (§4.1.2.4)
 BeginDollarStringConstant
-    : '$' Tag? '$' {_tags.push(getText());} -> pushMode(DollarQuotedStringMode)
+    : '$' Tag? '$' {this._tags.push(this.text);} -> pushMode(DollarQuotedStringMode)
     ;
 
 fragment
@@ -971,5 +966,5 @@ Text_between_Dollar
     ;
 
 EndDollarStringConstant
-    : '$' Tag? '$' {getText().equals(_tags.peek())}? {_tags.pop();} -> popMode
+    : '$' Tag? '$' {this.text === this._tags[this._tags.length - 1]}? {this._tags.pop();} -> popMode
     ;

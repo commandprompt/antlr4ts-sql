@@ -5,7 +5,6 @@ options {
     tokenVocab=PLpgSQLLexer;
 }
 
-@header {package cz.startnet.utils.pgdiff.parsers.antlr;}
 
 // to start parsing, it is recommended to use only rules with EOF
 // this eliminates the ambiguous parsing options and speeds up the process
@@ -2687,8 +2686,11 @@ type_coercion
 ===============================================================================
 */
 schema_qualified_name
-    : identifier ( DOT identifier ( DOT identifier )? )?
+    : query_schema_name ( DOT identifier ( DOT identifier )? )?
     ;
+
+query_schema_name
+    : identifier;
  
 set_qualifier
     : DISTINCT | ALL

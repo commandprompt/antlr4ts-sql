@@ -308,6 +308,7 @@ import { Array_expressionContext } from "./PLpgSQLParser";
 import { Array_elementsContext } from "./PLpgSQLParser";
 import { Type_coercionContext } from "./PLpgSQLParser";
 import { Schema_qualified_nameContext } from "./PLpgSQLParser";
+import { Query_schema_nameContext } from "./PLpgSQLParser";
 import { Set_qualifierContext } from "./PLpgSQLParser";
 import { Table_subqueryContext } from "./PLpgSQLParser";
 import { Select_stmtContext } from "./PLpgSQLParser";
@@ -3474,6 +3475,16 @@ export interface PLpgSQLParserListener extends ParseTreeListener {
      * @param ctx the parse tree
      */
     exitSchema_qualified_name?: (ctx: Schema_qualified_nameContext) => void;
+    /**
+     * Enter a parse tree produced by `PLpgSQLParser.query_schema_name`.
+     * @param ctx the parse tree
+     */
+    enterQuery_schema_name?: (ctx: Query_schema_nameContext) => void;
+    /**
+     * Exit a parse tree produced by `PLpgSQLParser.query_schema_name`.
+     * @param ctx the parse tree
+     */
+    exitQuery_schema_name?: (ctx: Query_schema_nameContext) => void;
     /**
      * Enter a parse tree produced by `PLpgSQLParser.set_qualifier`.
      * @param ctx the parse tree
