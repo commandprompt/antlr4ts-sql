@@ -1,11 +1,12 @@
+import { MySQLBaseParser } from "./MySQLBaseParser";
 import { ATN } from "antlr4ts/atn/ATN";
+import { FailedPredicateException } from "antlr4ts/FailedPredicateException";
 import { ParserRuleContext } from "antlr4ts/ParserRuleContext";
 import { RuleContext } from "antlr4ts/RuleContext";
 import { TerminalNode } from "antlr4ts/tree/TerminalNode";
 import { Token } from "antlr4ts/Token";
 import { TokenStream } from "antlr4ts/TokenStream";
 import { Vocabulary } from "antlr4ts/Vocabulary";
-import { MySQLBaseParser } from "./MySQLBaseParser";
 import { MultiQueryMySQLParserListener } from "./MultiQueryMySQLParserListener";
 export declare class MultiQueryMySQLParser extends MySQLBaseParser {
     static readonly ACCOUNT_SYMBOL = 1;
@@ -1405,6 +1406,7 @@ export declare class MultiQueryMySQLParser extends MySQLBaseParser {
     get grammarFileName(): string;
     get ruleNames(): string[];
     get serializedATN(): string;
+    protected createFailedPredicateException(predicate?: string, message?: string): FailedPredicateException;
     constructor(input: TokenStream);
     sql_script(): Sql_scriptContext;
     query(): QueryContext;
@@ -9074,6 +9076,8 @@ export declare class TableRefWithWildcardContext extends ParserRuleContext {
     exitRule(listener: MultiQueryMySQLParserListener): void;
 }
 export declare class TableRefContext extends ParserRuleContext {
+    schemaName(): SchemaNameContext | undefined;
+    DOT_SYMBOL(): TerminalNode | undefined;
     qualifiedIdentifier(): QualifiedIdentifierContext | undefined;
     dotIdentifier(): DotIdentifierContext | undefined;
     constructor(parent: ParserRuleContext | undefined, invokingState: number);

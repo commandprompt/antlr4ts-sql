@@ -1,4 +1,4 @@
-// Generated from grammars/mysql/MultiQueryMySQLParser.g4 by ANTLR 4.7.3-SNAPSHOT
+// Generated from src/grammars/mysql/MultiQueryMySQLParser.g4 by ANTLR 4.9.0-SNAPSHOT
 
 /*
  * Copyright (c) 2018, 2019, Oracle and/or its affiliates. All rights reserved.
@@ -22,6 +22,8 @@
  * along with this program; if not, write to the Free Software Foundation, Inc.,
  * 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA
  */
+import { MySQLBaseParser } from "./MySQLBaseParser";
+import { SqlMode } from "./common";
 
 
 import { ParseTreeListener } from "antlr4ts/tree/ParseTreeListener";

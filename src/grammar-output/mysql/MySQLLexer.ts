@@ -1,4 +1,4 @@
-// Generated from grammars/mysql/MySQLLexer.g4 by ANTLR 4.7.3-SNAPSHOT
+// Generated from src/grammars/mysql/MySQLLexer.g4 by ANTLR 4.9.0-SNAPSHOT
 
 /*
  * Copyright (c) 2018, 2019, Oracle and/or its affiliates. All rights reserved.
@@ -23,6 +23,11 @@
  * 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA
 */
 
+/* eslint-disable @typescript-eslint/no-unused-vars, no-useless-escape */
+import { MySQLBaseLexer } from "./MySQLBaseLexer.js";
+import { SqlMode } from "./common";
+
+
 
 import { ATN } from "antlr4ts/atn/ATN";
 import { ATNDeserializer } from "antlr4ts/atn/ATNDeserializer";
@@ -36,8 +41,6 @@ import { Vocabulary } from "antlr4ts/Vocabulary";
 import { VocabularyImpl } from "antlr4ts/VocabularyImpl";
 
 import * as Utils from "antlr4ts/misc/Utils";
-import { MySQLBaseLexer } from "./MySQLBaseLexer";
-import { SqlMode } from "./common";
 
 
 export class MySQLLexer extends MySQLBaseLexer {

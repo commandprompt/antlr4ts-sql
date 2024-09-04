@@ -1,8 +1,8 @@
+import { MySQLBaseLexer } from "./MySQLBaseLexer.js";
 import { ATN } from "antlr4ts/atn/ATN";
 import { CharStream } from "antlr4ts/CharStream";
 import { RuleContext } from "antlr4ts/RuleContext";
 import { Vocabulary } from "antlr4ts/Vocabulary";
-import { MySQLBaseLexer } from "./MySQLBaseLexer";
 export declare class MySQLLexer extends MySQLBaseLexer {
     static readonly ACCOUNT_SYMBOL = 1;
     static readonly ASCII_SYMBOL = 2;

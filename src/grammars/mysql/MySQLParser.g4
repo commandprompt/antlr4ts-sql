@@ -74,6 +74,8 @@ options {
  * along with this program; if not, write to the Free Software Foundation, Inc.,
  * 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA
  */
+import { MySQLBaseParser } from "./MySQLBaseParser";
+import { SqlMode } from "./common";
 }
 
 @postinclude {
@@ -94,7 +96,7 @@ simpleStatement:
     | dropStatement
     | renameTableStatement
     | truncateTableStatement
-    | {serverVersion >= 80000}? importStatement
+    | {this.serverVersion >= 80000}? importStatement
 
     // DML
     | callStatement
@@ -111,7 +113,7 @@ simpleStatement:
     | preparedStatement
 
     // Data Directory
-    | {serverVersion >= 80000}? cloneStatement
+    | {this.serverVersion >= 80000}? cloneStatement
 
     // Database administration
     | accountManagementStatement
@@ -119,12 +121,12 @@ simpleStatement:
     | installUninstallStatment
     | setStatement // SET PASSWORD is handled in accountManagementStatement.
     | showStatement
-    | {serverVersion >= 80000}? resourceGroupManagement
+    | {this.serverVersion >= 80000}? resourceGroupManagement
     | otherAdministrativeStatement
 
     // MySQL utilitity statements
     | utilityStatement
-    | {serverVersion >= 50604}? getDiagnostics
+    | {this.serverVersion >= 50604}? getDiagnostics
     | signalStatement
     | resignalStatement
 ;
@@ -140,18 +142,18 @@ alterStatement:
         | alterView
         | alterEvent
         | alterTablespace
-        | {serverVersion >= 80014}? alterUndoTablespace
+        | {this.serverVersion >= 80014}? alterUndoTablespace
         | alterLogfileGroup
         | alterServer
         // ALTER USER is part of the user management rule.
-        | {serverVersion >= 50713}? INSTANCE_SYMBOL ROTATE_SYMBOL textOrIdentifier MASTER_SYMBOL KEY_SYMBOL
+        | {this.serverVersion >= 50713}? INSTANCE_SYMBOL ROTATE_SYMBOL textOrIdentifier MASTER_SYMBOL KEY_SYMBOL
     )
 ;
 
 alterDatabase:
     DATABASE_SYMBOL schemaRef (
         createDatabaseOption+
-        | {serverVersion < 80000}? UPGRADE_SYMBOL DATA_SYMBOL DIRECTORY_SYMBOL NAME_SYMBOL
+        | {this.serverVersion < 80000}? UPGRADE_SYMBOL DATA_SYMBOL DIRECTORY_SYMBOL NAME_SYMBOL
     )
 ;
 
@@ -183,7 +185,7 @@ alterServer:
 ;
 
 alterTable:
-    onlineOption? ({serverVersion < 50700}? IGNORE_SYMBOL)? TABLE_SYMBOL tableRef alterTableActions?
+    onlineOption? ({this.serverVersion < 50700}? IGNORE_SYMBOL)? TABLE_SYMBOL tableRef alterTableActions?
 ;
 
 alterTableActions:
@@ -206,7 +208,7 @@ standaloneAlterCommands:
     DISCARD_SYMBOL TABLESPACE_SYMBOL
     | IMPORT_SYMBOL TABLESPACE_SYMBOL
     | alterPartition
-    | {serverVersion >= 80014}? (SECONDARY_LOAD_SYMBOL | SECONDARY_UNLOAD_SYMBOL)
+    | {this.serverVersion >= 80014}? (SECONDARY_LOAD_SYMBOL | SECONDARY_UNLOAD_SYMBOL)
 ;
 
 alterPartition:
@@ -229,8 +231,8 @@ alterPartition:
         identifierList INTO_SYMBOL partitionDefinitions
     )?
     | EXCHANGE_SYMBOL PARTITION_SYMBOL identifier WITH_SYMBOL TABLE_SYMBOL tableRef withValidation?
-    | {serverVersion >= 50704}? DISCARD_SYMBOL PARTITION_SYMBOL allOrPartitionNameList TABLESPACE_SYMBOL
-    | {serverVersion >= 50704}? IMPORT_SYMBOL PARTITION_SYMBOL allOrPartitionNameList TABLESPACE_SYMBOL
+    | {this.serverVersion >= 50704}? DISCARD_SYMBOL PARTITION_SYMBOL allOrPartitionNameList TABLESPACE_SYMBOL
+    | {this.serverVersion >= 50704}? IMPORT_SYMBOL PARTITION_SYMBOL allOrPartitionNameList TABLESPACE_SYMBOL
 ;
 
 alterList:
@@ -261,8 +263,8 @@ alterListItem:
         COLUMN_SYMBOL? columnInternalRef restrict?
         | FOREIGN_SYMBOL KEY_SYMBOL (
             // This part is no longer optional starting with 5.7.
-            {serverVersion >= 50700}? columnInternalRef
-            | {serverVersion < 50700}? columnInternalRef?
+            {this.serverVersion >= 50700}? columnInternalRef
+            | {this.serverVersion < 50700}? columnInternalRef?
         )
         | PRIMARY_SYMBOL KEY_SYMBOL
         | keyOrIndex indexRef
@@ -271,23 +273,23 @@ alterListItem:
     | ENABLE_SYMBOL KEYS_SYMBOL
     | ALTER_SYMBOL COLUMN_SYMBOL? columnInternalRef (
         SET_SYMBOL DEFAULT_SYMBOL (
-            {serverVersion >= 80014}? exprWithParentheses
+            {this.serverVersion >= 80014}? exprWithParentheses
             | signedLiteral
         )
         | DROP_SYMBOL DEFAULT_SYMBOL
     )
-    | {serverVersion >= 80000}? ALTER_SYMBOL INDEX_SYMBOL indexRef visibility
-    | {serverVersion >= 80017}? ALTER_SYMBOL CHECK_SYMBOL identifier constraintEnforcement
-    | {serverVersion >= 80000}? RENAME_SYMBOL COLUMN_SYMBOL columnInternalRef TO_SYMBOL identifier
+    | {this.serverVersion >= 80000}? ALTER_SYMBOL INDEX_SYMBOL indexRef visibility
+    | {this.serverVersion >= 80017}? ALTER_SYMBOL CHECK_SYMBOL identifier constraintEnforcement
+    | {this.serverVersion >= 80000}? RENAME_SYMBOL COLUMN_SYMBOL columnInternalRef TO_SYMBOL identifier
     | RENAME_SYMBOL (TO_SYMBOL | AS_SYMBOL)? tableName
-    | {serverVersion >= 50700}? RENAME_SYMBOL keyOrIndex indexRef TO_SYMBOL indexName
+    | {this.serverVersion >= 50700}? RENAME_SYMBOL keyOrIndex indexRef TO_SYMBOL indexName
     | CONVERT_SYMBOL TO_SYMBOL charset (
-        {serverVersion >= 80014}? DEFAULT_SYMBOL
+        {this.serverVersion >= 80014}? DEFAULT_SYMBOL
         | charsetName
     ) collate?
     | FORCE_SYMBOL
     | ORDER_SYMBOL BY_SYMBOL alterOrderList
-    | {serverVersion >= 50708 && serverVersion < 80000}? UPGRADE_SYMBOL PARTITIONING_SYMBOL
+    | {this.serverVersion >= 50708 && this.serverVersion < 80000}? UPGRADE_SYMBOL PARTITIONING_SYMBOL
 ;
 
 place:
@@ -318,7 +320,7 @@ indexLockAndAlgorithm:
 ;
 
 withValidation:
-    {serverVersion >= 50706}? (WITH_SYMBOL | WITHOUT_SYMBOL) VALIDATION_SYMBOL
+    {this.serverVersion >= 50706}? (WITH_SYMBOL | WITHOUT_SYMBOL) VALIDATION_SYMBOL
 ;
 
 removePartitioning:
@@ -339,7 +341,7 @@ reorgPartitionRule:
 alterTablespace:
     TABLESPACE_SYMBOL tablespaceRef (
         (ADD_SYMBOL | DROP_SYMBOL) DATAFILE_SYMBOL textLiteral alterTablespaceOptions?
-        | {serverVersion < 80000}? (
+        | {this.serverVersion < 80000}? (
             | CHANGE_SYMBOL DATAFILE_SYMBOL textLiteral (
                 changeTablespaceOption (COMMA_SYMBOL? changeTablespaceOption)*
             )?
@@ -347,7 +349,7 @@ alterTablespace:
             | NOT_SYMBOL ACCESSIBLE_SYMBOL
         )
         | RENAME_SYMBOL TO_SYMBOL identifier
-        | {serverVersion >= 80014}? alterTablespaceOptions
+        | {this.serverVersion >= 80014}? alterTablespaceOptions
     )
 ;
 
@@ -419,9 +421,9 @@ createStatement:
         | createServer
         | createTablespace
         | createEvent
-        | {serverVersion >= 80000}? createRole
-        | {serverVersion >= 80011}? createSpatialReference
-        | {serverVersion >= 80014}? createUndoTablespace
+        | {this.serverVersion >= 80000}? createRole
+        | {this.serverVersion >= 80011}? createSpatialReference
+        | {this.serverVersion >= 80014}? createUndoTablespace
     )
 ;
 
@@ -432,7 +434,7 @@ createDatabase:
 createDatabaseOption:
     defaultCharset
     | defaultCollation
-    | {serverVersion >= 80016}? defaultEncryption
+    | {this.serverVersion >= 80016}? defaultEncryption
 ;
 
 createTable:
@@ -510,7 +512,7 @@ routineOption:
 createIndex:
     onlineOption? (
         UNIQUE_SYMBOL? type = INDEX_SYMBOL (
-            {serverVersion >= 80014}? indexName indexTypeClause?
+            {this.serverVersion >= 80014}? indexName indexTypeClause?
             | indexNameAndType?
         ) createIndexTarget indexOption*
         | type = FULLTEXT_SYMBOL INDEX_SYMBOL indexName createIndexTarget fulltextIndexOption*
@@ -594,7 +596,7 @@ createUndoTablespace:
 ;
 
 tsDataFileName:
-    {serverVersion >= 80014}? (ADD_SYMBOL tsDataFile)?
+    {this.serverVersion >= 80014}? (ADD_SYMBOL tsDataFile)?
     | ADD_SYMBOL tsDataFile
 ;
 
@@ -615,8 +617,8 @@ tablespaceOption:
     | tsOptionEngine
     | tsOptionWait
     | tsOptionComment
-    | {serverVersion >= 50707}? tsOptionFileblockSize
-    | {serverVersion >= 80014}? tsOptionEncryption
+    | {this.serverVersion >= 50707}? tsOptionFileblockSize
+    | {this.serverVersion >= 80014}? tsOptionEncryption
 ;
 
 tsOptionInitialSize:
@@ -693,7 +695,7 @@ createTrigger:
 ;
 
 triggerFollowsPrecedesClause:
-    {serverVersion >= 50700}? ordering = (FOLLOWS_SYMBOL | PRECEDES_SYMBOL) textOrIdentifier // not a trigger reference!
+    {this.serverVersion >= 50700}? ordering = (FOLLOWS_SYMBOL | PRECEDES_SYMBOL) textOrIdentifier // not a trigger reference!
 ;
 
 createEvent:
@@ -736,9 +738,9 @@ dropStatement:
         | dropTableSpace
         | dropTrigger
         | dropView
-        | {serverVersion >= 80000}? dropRole
-        | {serverVersion >= 80011}? dropSpatialReference
-        | {serverVersion >= 80014}? dropUndoTablespace
+        | {this.serverVersion >= 80000}? dropRole
+        | {this.serverVersion >= 80011}? dropSpatialReference
+        | {this.serverVersion >= 80014}? dropUndoTablespace
     )
 ;
 
@@ -839,10 +841,10 @@ callStatement:
 ;
 
 deleteStatement:
-    ({serverVersion >= 80000}? withClause)? DELETE_SYMBOL deleteStatementOption* (
+    ({this.serverVersion >= 80000}? withClause)? DELETE_SYMBOL deleteStatementOption* (
         FROM_SYMBOL (
             tableAliasRefList USING_SYMBOL tableReferenceList whereClause?           // Multi table variant 1.
-            | tableRef ({serverVersion >= 80017}? tableAlias)? partitionDelete?
+            | tableRef ({this.serverVersion >= 80017}? tableAlias)? partitionDelete?
                 whereClause? orderClause? simpleLimitClause? // Single table delete.
         )
         | tableAliasRefList FROM_SYMBOL tableReferenceList whereClause? // Multi table variant 2.
@@ -850,7 +852,7 @@ deleteStatement:
 ;
 
 partitionDelete:
-    {serverVersion >= 50602}? PARTITION_SYMBOL OPEN_PAR_SYMBOL identifierList CLOSE_PAR_SYMBOL
+    {this.serverVersion >= 50602}? PARTITION_SYMBOL OPEN_PAR_SYMBOL identifierList CLOSE_PAR_SYMBOL
 ;
 
 deleteStatementOption: // opt_delete_option in sql_yacc.yy, but the name collides with another rule (delete_options).
@@ -862,8 +864,8 @@ deleteStatementOption: // opt_delete_option in sql_yacc.yy, but the name collide
 
 doStatement:
     DO_SYMBOL (
-        {serverVersion < 50709}? exprList
-        | {serverVersion >= 50709}? selectItemList
+        {this.serverVersion < 50709}? exprList
+        | {this.serverVersion >= 50709}? selectItemList
     )
 ;
 
@@ -896,8 +898,8 @@ handlerReadOrScan:
 
 insertStatement:
     INSERT_SYMBOL insertLockOption? IGNORE_SYMBOL? INTO_SYMBOL? tableRef usePartition? (
-        insertFromConstructor ({ serverVersion >= 80018}? valuesReference)?
-        | SET_SYMBOL updateList ({ serverVersion >= 80018}? valuesReference)?
+        insertFromConstructor ({ this.serverVersion >= 80018}? valuesReference)?
+        | SET_SYMBOL updateList ({ this.serverVersion >= 80018}? valuesReference)?
         | insertQueryExpression
     ) insertUpdateList?
 ;
@@ -1034,11 +1036,11 @@ selectStatementWithInto:
 ;
 
 queryExpression:
-    ({serverVersion >= 80000}? withClause)? (
+    ({this.serverVersion >= 80000}? withClause)? (
         queryExpressionBody orderClause? limitClause?
         | queryExpressionParens (orderClause limitClause? | limitClause)
-    ) ({serverVersion < 80000}? procedureAnalyseClause)? lockingClause?
-    | {serverVersion >= 80000}? withClause queryExpressionParens lockingClause?
+    ) ({this.serverVersion < 80000}? procedureAnalyseClause)? lockingClause?
+    | {this.serverVersion >= 80000}? withClause queryExpressionParens lockingClause?
 ;
 
 queryExpressionBody:
@@ -1059,7 +1061,7 @@ queryExpressionParens:
 
 querySpecification:
     SELECT_SYMBOL selectOption* selectItemList intoClause? fromClause? whereClause? groupByClause? havingClause? (
-        {serverVersion >= 80000}? windowClause
+        {this.serverVersion >= 80000}? windowClause
     )?
 ;
 
@@ -1191,7 +1193,7 @@ groupByClause:
 
 olapOption:
     WITH_SYMBOL ROLLUP_SYMBOL
-    | {serverVersion < 80000}? WITH_SYMBOL CUBE_SYMBOL
+    | {this.serverVersion < 80000}? WITH_SYMBOL CUBE_SYMBOL
 ;
 
 orderClause:
@@ -1214,20 +1216,20 @@ tableReferenceList:
 selectOption:
     querySpecOption
     | SQL_NO_CACHE_SYMBOL // Deprecated and ignored in 8.0.
-    | {serverVersion < 80000}? SQL_CACHE_SYMBOL
-    | {serverVersion >= 50704 && serverVersion < 50708}? MAX_STATEMENT_TIME_SYMBOL EQUAL_OPERATOR real_ulong_number
+    | {this.serverVersion < 80000}? SQL_CACHE_SYMBOL
+    | {this.serverVersion >= 50704 && this.serverVersion < 50708}? MAX_STATEMENT_TIME_SYMBOL EQUAL_OPERATOR real_ulong_number
 ;
 
 lockingClause:
-    FOR_SYMBOL lockStrengh ({serverVersion >= 80000}? OF_SYMBOL tableAliasRefList)? (
-        {serverVersion >= 80000}? lockedRowAction
+    FOR_SYMBOL lockStrengh ({this.serverVersion >= 80000}? OF_SYMBOL tableAliasRefList)? (
+        {this.serverVersion >= 80000}? lockedRowAction
     )?
     | LOCK_SYMBOL IN_SYMBOL SHARE_SYMBOL MODE_SYMBOL
 ;
 
 lockStrengh:
     UPDATE_SYMBOL
-    | {serverVersion >= 80000}? SHARE_SYMBOL
+    | {this.serverVersion >= 80000}? SHARE_SYMBOL
 ;
 
 lockedRowAction:
@@ -1253,7 +1255,7 @@ whereClause:
 
 tableReference: ( // Note: we have also a tableRef rule for identifiers that reference a table anywhere.
         tableFactor
-        | OPEN_CURLY_SYMBOL ({serverVersion < 80017}? identifier | OJ_SYMBOL) escapedTableReference CLOSE_CURLY_SYMBOL // ODBC syntax
+        | OPEN_CURLY_SYMBOL ({this.serverVersion < 80017}? identifier | OJ_SYMBOL) escapedTableReference CLOSE_CURLY_SYMBOL // ODBC syntax
     ) joinedTable*
 ;
 
@@ -1304,7 +1306,7 @@ tableFactor:
     | singleTableParens
     | derivedTable
     | tableReferenceListParens
-    | {serverVersion >= 80004}? tableFunction
+    | {this.serverVersion >= 80004}? tableFunction
 ;
 
 singleTable:
@@ -1316,8 +1318,8 @@ singleTableParens:
 ;
 
 derivedTable:
-    subquery tableAlias? ({serverVersion >= 80000}? columnInternalRefList)?
-    | {serverVersion >= 80014}? LATERAL_SYMBOL subquery tableAlias? columnInternalRefList?
+    subquery tableAlias? ({this.serverVersion >= 80000}? columnInternalRefList)?
+    | {this.serverVersion >= 80014}? LATERAL_SYMBOL subquery tableAlias? columnInternalRefList?
 ;
 
 // This rule covers both: joined_table_parens and table_reference_list_parens from sql_yacc.yy.
@@ -1336,7 +1338,7 @@ columnsClause:
 
 jtColumn:
     identifier FOR_SYMBOL ORDINALITY_SYMBOL
-    | identifier dataType ({serverVersion >= 80014}? collate)? EXISTS_SYMBOL? PATH_SYMBOL textStringLiteral onEmptyOrError?
+    | identifier dataType ({this.serverVersion >= 80014}? collate)? EXISTS_SYMBOL? PATH_SYMBOL textStringLiteral onEmptyOrError?
     | NESTED_SYMBOL PATH_SYMBOL textStringLiteral columnsClause
 ;
 
@@ -1365,7 +1367,7 @@ unionOption:
 ;
 
 tableAlias:
-    (AS_SYMBOL | {serverVersion < 80017}? EQUAL_OPERATOR)? identifier
+    (AS_SYMBOL | {this.serverVersion < 80017}? EQUAL_OPERATOR)? identifier
 ;
 
 indexHintList:
@@ -1408,7 +1410,7 @@ indexListElement:
 //----------------------------------------------------------------------------------------------------------------------
 
 updateStatement:
-    ({serverVersion >= 80000}? withClause)? UPDATE_SYMBOL LOW_PRIORITY_SYMBOL? IGNORE_SYMBOL? tableReferenceList SET_SYMBOL
+    ({this.serverVersion >= 80000}? withClause)? UPDATE_SYMBOL LOW_PRIORITY_SYMBOL? IGNORE_SYMBOL? tableReferenceList SET_SYMBOL
         updateList whereClause? orderClause? simpleLimitClause?
 ;
 
@@ -1436,7 +1438,7 @@ beginWork:
 
 transactionCharacteristic:
     WITH_SYMBOL CONSISTENT_SYMBOL SNAPSHOT_SYMBOL
-    | {serverVersion >= 50605}? READ_SYMBOL (WRITE_SYMBOL | ONLY_SYMBOL)
+    | {this.serverVersion >= 50605}? READ_SYMBOL (WRITE_SYMBOL | ONLY_SYMBOL)
 ;
 
 savepointStatement:
@@ -1450,11 +1452,11 @@ savepointStatement:
 
 lockStatement:
     LOCK_SYMBOL (TABLES_SYMBOL | TABLE_SYMBOL) lockItem (COMMA_SYMBOL lockItem)*
-    | {serverVersion >= 80000}? LOCK_SYMBOL INSTANCE_SYMBOL FOR_SYMBOL BACKUP_SYMBOL
+    | {this.serverVersion >= 80000}? LOCK_SYMBOL INSTANCE_SYMBOL FOR_SYMBOL BACKUP_SYMBOL
     | UNLOCK_SYMBOL (
         TABLES_SYMBOL
         | TABLE_SYMBOL
-        | {serverVersion >= 80000}? INSTANCE_SYMBOL
+        | {this.serverVersion >= 80000}? INSTANCE_SYMBOL
     )
 ;
 
@@ -1479,7 +1481,7 @@ xaStatement:
 ;
 
 xaConvert:
-    {serverVersion >= 50704}? (CONVERT_SYMBOL XID_SYMBOL)?
+    {this.serverVersion >= 50704}? (CONVERT_SYMBOL XID_SYMBOL)?
     | /* empty */
 ;
 
@@ -1496,23 +1498,23 @@ replicationStatement:
     )
     | changeMaster
     | RESET_SYMBOL resetOption (COMMA_SYMBOL resetOption)*
-    | {serverVersion > 80000}? RESET_SYMBOL PERSIST_SYMBOL (ifExists identifier)?
+    | {this.serverVersion > 80000}? RESET_SYMBOL PERSIST_SYMBOL (ifExists identifier)?
     | slave
-    | {serverVersion >= 50700}? changeReplication
+    | {this.serverVersion >= 50700}? changeReplication
     | replicationLoad
-    | {serverVersion > 50706}? groupReplication
+    | {this.serverVersion > 50706}? groupReplication
 ;
 
 resetOption:
     option = MASTER_SYMBOL masterResetOptions?
-    | {serverVersion < 80000}? option = QUERY_SYMBOL CACHE_SYMBOL
+    | {this.serverVersion < 80000}? option = QUERY_SYMBOL CACHE_SYMBOL
     | option = SLAVE_SYMBOL ALL_SYMBOL? channel?
 ;
 
 masterResetOptions:
-    {serverVersion >= 80000}? TO_SYMBOL (
-        {serverVersion < 80017}? real_ulong_number
-        | {serverVersion >= 80017}? real_ulonglong_number
+    {this.serverVersion >= 80000}? TO_SYMBOL (
+        {this.serverVersion < 80017}? real_ulong_number
+        | {this.serverVersion >= 80017}? real_ulonglong_number
     )
 ;
 
@@ -1584,7 +1586,7 @@ serverIdList:
 changeReplication:
     CHANGE_SYMBOL REPLICATION_SYMBOL FILTER_SYMBOL filterDefinition (
         COMMA_SYMBOL filterDefinition
-    )* ({serverVersion >= 80000}? channel)?
+    )* ({this.serverVersion >= 80000}? channel)?
 ;
 
 filterDefinition:
@@ -1625,16 +1627,16 @@ slave:
 slaveUntilOptions:
     (
         masterFileDef
-        | {serverVersion >= 50606}? (
+        | {this.serverVersion >= 50606}? (
             SQL_BEFORE_GTIDS_SYMBOL
             | SQL_AFTER_GTIDS_SYMBOL
         ) EQUAL_OPERATOR textString
-        | {serverVersion >= 50606}? SQL_AFTER_MTS_GAPS_SYMBOL
+        | {this.serverVersion >= 50606}? SQL_AFTER_MTS_GAPS_SYMBOL
     ) (COMMA_SYMBOL masterFileDef)*
 ;
 
 slaveConnectionOptions:
-    {serverVersion >= 50604}? (USER_SYMBOL EQUAL_OPERATOR textString)? (
+    {this.serverVersion >= 50604}? (USER_SYMBOL EQUAL_OPERATOR textString)? (
         PASSWORD_SYMBOL EQUAL_OPERATOR textString
     )? (DEFAULT_AUTH_SYMBOL EQUAL_OPERATOR textString)? (
         PLUGIN_DIR_SYMBOL EQUAL_OPERATOR textString
@@ -1676,7 +1678,7 @@ cloneStatement:
         LOCAL_SYMBOL DATA_SYMBOL DIRECTORY_SYMBOL equal? textStringLiteral
         // Clone remote has been removed in 8.0.14. This alt is taken out by the conditional REMOTE_SYMBOL.
         | REMOTE_SYMBOL (FOR_SYMBOL REPLICATION_SYMBOL)?
-        | {serverVersion >= 80014}? INSTANCE_SYMBOL FROM_SYMBOL user COLON_SYMBOL ulong_number IDENTIFIED_SYMBOL BY_SYMBOL
+        | {this.serverVersion >= 80014}? INSTANCE_SYMBOL FROM_SYMBOL user COLON_SYMBOL ulong_number IDENTIFIED_SYMBOL BY_SYMBOL
             textStringLiteral dataDirSSL?
     )
 ;
@@ -1694,31 +1696,31 @@ ssl:
 
 // Note: SET PASSWORD is part of the SET statement.
 accountManagementStatement:
-    {serverVersion >= 50606}? alterUser
+    {this.serverVersion >= 50606}? alterUser
     | createUser
     | dropUser
     | grant
     | renameUser
     | revoke
-    | {serverVersion >= 80000}? setRole
+    | {this.serverVersion >= 80000}? setRole
 ;
 
 alterUser:
-    ALTER_SYMBOL USER_SYMBOL ({serverVersion >= 50706}? ifExists)? alterUserTail
+    ALTER_SYMBOL USER_SYMBOL ({this.serverVersion >= 50706}? ifExists)? alterUserTail
 ;
 
 alterUserTail:
-    ({serverVersion < 80014}? createUserList | {serverVersion >= 80014}? alterUserList) createUserTail
-    | {serverVersion >= 50706}? user IDENTIFIED_SYMBOL BY_SYMBOL textString (
-        {serverVersion >= 80014}? replacePassword
-    )? ({serverVersion >= 80014}? retainCurrentPassword)?
-    | {serverVersion >= 80014}? user discardOldPassword
-    | {serverVersion >= 80000}? user DEFAULT_SYMBOL ROLE_SYMBOL (
+    ({this.serverVersion < 80014}? createUserList | {this.serverVersion >= 80014}? alterUserList) createUserTail
+    | {this.serverVersion >= 50706}? user IDENTIFIED_SYMBOL BY_SYMBOL textString (
+        {this.serverVersion >= 80014}? replacePassword
+    )? ({this.serverVersion >= 80014}? retainCurrentPassword)?
+    | {this.serverVersion >= 80014}? user discardOldPassword
+    | {this.serverVersion >= 80000}? user DEFAULT_SYMBOL ROLE_SYMBOL (
         ALL_SYMBOL
         | NONE_SYMBOL
         | roleList
     )
-    | {serverVersion >= 80018}? user IDENTIFIED_SYMBOL (WITH_SYMBOL textOrIdentifier)? BY_SYMBOL RANDOM_SYMBOL PASSWORD_SYMBOL
+    | {this.serverVersion >= 80018}? user IDENTIFIED_SYMBOL (WITH_SYMBOL textOrIdentifier)? BY_SYMBOL RANDOM_SYMBOL PASSWORD_SYMBOL
         retainCurrentPassword?
 ;
 
@@ -1727,17 +1729,17 @@ userFunction:
 ;
 
 createUser:
-    CREATE_SYMBOL USER_SYMBOL ({serverVersion >= 50706}? ifNotExists | /* empty */) createUserList defaultRoleClause
+    CREATE_SYMBOL USER_SYMBOL ({this.serverVersion >= 50706}? ifNotExists | /* empty */) createUserList defaultRoleClause
         createUserTail
 ;
 
 createUserTail:
-    {serverVersion >= 50706}? requireClause? connectOptions? accountLockPasswordExpireOptions*
+    {this.serverVersion >= 50706}? requireClause? connectOptions? accountLockPasswordExpireOptions*
     | /* empty */
 ;
 
 defaultRoleClause:
-    {serverVersion >= 80000}? (DEFAULT_SYMBOL ROLE_SYMBOL roleList)?
+    {this.serverVersion >= 80000}? (DEFAULT_SYMBOL ROLE_SYMBOL roleList)?
     | /* empty */
 ;
 
@@ -1767,7 +1769,7 @@ accountLockPasswordExpireOptions:
             real_ulong_number DAY_SYMBOL
             | DEFAULT_SYMBOL
         )
-        | {serverVersion >= 80014}? REQUIRE_SYMBOL CURRENT_SYMBOL (
+        | {this.serverVersion >= 80014}? REQUIRE_SYMBOL CURRENT_SYMBOL (
             DEFAULT_SYMBOL
             | OPTIONAL_SYMBOL
         )?
@@ -1775,12 +1777,12 @@ accountLockPasswordExpireOptions:
 ;
 
 dropUser:
-    DROP_SYMBOL USER_SYMBOL ({serverVersion >= 50706}? ifExists)? userList
+    DROP_SYMBOL USER_SYMBOL ({this.serverVersion >= 50706}? ifExists)? userList
 ;
 
 grant:
     GRANT_SYMBOL (
-        {serverVersion >= 80000}? roleOrPrivilegesList TO_SYMBOL userList (
+        {this.serverVersion >= 80000}? roleOrPrivilegesList TO_SYMBOL userList (
             WITH_SYMBOL ADMIN_SYMBOL OPTION_SYMBOL
         )?
         | (roleOrPrivilegesList | ALL_SYMBOL PRIVILEGES_SYMBOL?) ON_SYMBOL aclType? grantIdentifier TO_SYMBOL grantTargetList
@@ -1792,13 +1794,13 @@ grant:
 ;
 
 grantTargetList:
-    {serverVersion < 80011}? createUserList
-    | {serverVersion >= 80011}? userList
+    {this.serverVersion < 80011}? createUserList
+    | {this.serverVersion >= 80011}? userList
 ;
 
 grantOptions:
-    {serverVersion < 80011}? WITH_SYMBOL grantOption+
-    | {serverVersion >= 80011}? WITH_SYMBOL GRANT_SYMBOL OPTION_SYMBOL
+    {this.serverVersion < 80011}? WITH_SYMBOL grantOption+
+    | {this.serverVersion >= 80011}? WITH_SYMBOL GRANT_SYMBOL OPTION_SYMBOL
 ;
 
 exceptRoleList:
@@ -1819,7 +1821,7 @@ grantAs:
 ;
 
 versionedRequireClause:
-    {serverVersion < 80011}? requireClause
+    {this.serverVersion < 80011}? requireClause
 ;
 
 renameUser:
@@ -1828,10 +1830,10 @@ renameUser:
 
 revoke:
     REVOKE_SYMBOL (
-        {serverVersion >= 80000}? roleOrPrivilegesList FROM_SYMBOL userList
+        {this.serverVersion >= 80000}? roleOrPrivilegesList FROM_SYMBOL userList
         | roleOrPrivilegesList onTypeTo FROM_SYMBOL userList
         | ALL_SYMBOL PRIVILEGES_SYMBOL? (
-            {serverVersion >= 80000}? ON_SYMBOL aclType? grantIdentifier
+            {this.serverVersion >= 80000}? ON_SYMBOL aclType? grantIdentifier
             | COMMA_SYMBOL GRANT_SYMBOL OPTION_SYMBOL FROM_SYMBOL userList
         )
         | PROXY_SYMBOL ON_SYMBOL user FROM_SYMBOL userList
@@ -1839,8 +1841,8 @@ revoke:
 ;
 
 onTypeTo: // Optional, starting with 8.0.1.
-    {serverVersion < 80000}? ON_SYMBOL aclType? grantIdentifier
-    | {serverVersion >= 80000}? (ON_SYMBOL aclType? grantIdentifier)?
+    {this.serverVersion < 80000}? ON_SYMBOL aclType? grantIdentifier
+    | {this.serverVersion >= 80000}? (ON_SYMBOL aclType? grantIdentifier)?
 ;
 
 aclType:
@@ -1854,7 +1856,7 @@ roleOrPrivilegesList:
 ;
 
 roleOrPrivilege:
-    {serverVersion > 80000}? (
+    {this.serverVersion > 80000}? (
         roleIdentifierOrText columnInternalRefList?
         | roleIdentifierOrText (AT_TEXT_SUFFIX | AT_SIGN_SYMBOL textOrIdentifier)
     )
@@ -1884,14 +1886,14 @@ roleOrPrivilege:
     | REPLICATION_SYMBOL object = (CLIENT_SYMBOL | SLAVE_SYMBOL)
     | SHOW_SYMBOL VIEW_SYMBOL
     | ALTER_SYMBOL ROUTINE_SYMBOL?
-    | {serverVersion > 80000}? (CREATE_SYMBOL | DROP_SYMBOL) ROLE_SYMBOL
+    | {this.serverVersion > 80000}? (CREATE_SYMBOL | DROP_SYMBOL) ROLE_SYMBOL
 ;
 
 grantIdentifier:
     MULT_OPERATOR (DOT_SYMBOL MULT_OPERATOR)?
     | schemaRef (DOT_SYMBOL MULT_OPERATOR)?
     | tableRef
-    | {serverVersion >= 80017}? schemaRef DOT_SYMBOL tableRef
+    | {this.serverVersion >= 80017}? schemaRef DOT_SYMBOL tableRef
 ;
 
 requireList:
@@ -1931,7 +1933,7 @@ role:
 
 tableAdministrationStatement:
     type = ANALYZE_SYMBOL noWriteToBinLog? TABLE_SYMBOL tableRefList (
-        {serverVersion >= 80000}? histogram
+        {this.serverVersion >= 80000}? histogram
     )?
     | type = CHECK_SYMBOL TABLE_SYMBOL tableRefList checkOption*
     | type = CHECKSUM_SYMBOL TABLE_SYMBOL tableRefList (
@@ -1986,10 +1988,10 @@ startOptionValueList:
     | PASSWORD_SYMBOL (FOR_SYMBOL user)? equal (
         textString replacePassword? retainCurrentPassword?
         | textString replacePassword? retainCurrentPassword?
-        | {serverVersion < 50706}? OLD_PASSWORD_SYMBOL OPEN_PAR_SYMBOL textString CLOSE_PAR_SYMBOL
-        | {serverVersion < 80014}? PASSWORD_SYMBOL OPEN_PAR_SYMBOL textString CLOSE_PAR_SYMBOL
+        | {this.serverVersion < 50706}? OLD_PASSWORD_SYMBOL OPEN_PAR_SYMBOL textString CLOSE_PAR_SYMBOL
+        | {this.serverVersion < 80014}? PASSWORD_SYMBOL OPEN_PAR_SYMBOL textString CLOSE_PAR_SYMBOL
     )
-    | {serverVersion >= 80018}? PASSWORD_SYMBOL (FOR_SYMBOL user)? TO_SYMBOL RANDOM_SYMBOL replacePassword?
+    | {this.serverVersion >= 80018}? PASSWORD_SYMBOL (FOR_SYMBOL user)? TO_SYMBOL RANDOM_SYMBOL replacePassword?
         retainCurrentPassword?
 ;
 
@@ -2022,7 +2024,7 @@ optionValueNoOptionType:
     | NAMES_SYMBOL (
         equal expr
         | charsetName collate?
-        | {serverVersion >= 80011}? DEFAULT_SYMBOL
+        | {this.serverVersion >= 80011}? DEFAULT_SYMBOL
     )
 ;
 
@@ -2047,14 +2049,14 @@ optionValueFollowingOptionType:
 setExprOrDefault:
     expr
     | (DEFAULT_SYMBOL | ON_SYMBOL | ALL_SYMBOL | BINARY_SYMBOL)
-    | {serverVersion >= 80000}? (ROW_SYMBOL | SYSTEM_SYMBOL)
+    | {this.serverVersion >= 80000}? (ROW_SYMBOL | SYSTEM_SYMBOL)
 ;
 
 //----------------------------------------------------------------------------------------------------------------------
 
 showStatement:
     SHOW_SYMBOL (
-        {serverVersion < 50700}? value = AUTHORS_SYMBOL
+        {this.serverVersion < 50700}? value = AUTHORS_SYMBOL
         | value = DATABASES_SYMBOL likeOrWhere?
         | showCommandType? value = TABLES_SYMBOL inDb? likeOrWhere?
         | FULL_SYMBOL? value = TRIGGERS_SYMBOL inDb? likeOrWhere?
@@ -2073,7 +2075,7 @@ showStatement:
         | value = (BINLOG_SYMBOL | RELAYLOG_SYMBOL) EVENTS_SYMBOL (
             IN_SYMBOL textString
         )? (FROM_SYMBOL ulonglong_number)? limitClause? channel?
-        | ({serverVersion >= 80000}? EXTENDED_SYMBOL)? value = (
+        | ({this.serverVersion >= 80000}? EXTENDED_SYMBOL)? value = (
             INDEX_SYMBOL
             | INDEXES_SYMBOL
             | KEYS_SYMBOL
@@ -2093,7 +2095,7 @@ showStatement:
         | FULL_SYMBOL? value = PROCESSLIST_SYMBOL
         | charset likeOrWhere?
         | value = COLLATION_SYMBOL likeOrWhere?
-        | {serverVersion < 50700}? value = CONTRIBUTORS_SYMBOL
+        | {this.serverVersion < 50700}? value = CONTRIBUTORS_SYMBOL
         | value = PRIVILEGES_SYMBOL
         | value = GRANTS_SYMBOL (FOR_SYMBOL user)?
         | value = GRANTS_SYMBOL FOR_SYMBOL user USING_SYMBOL userList
@@ -2106,7 +2108,7 @@ showStatement:
             | object = TABLE_SYMBOL tableRef
             | object = TRIGGER_SYMBOL triggerRef
             | object = VIEW_SYMBOL viewRef
-            | {serverVersion >= 50704}? object = USER_SYMBOL user
+            | {this.serverVersion >= 50704}? object = USER_SYMBOL user
         )
         | value = PROCEDURE_SYMBOL STATUS_SYMBOL likeOrWhere?
         | value = FUNCTION_SYMBOL STATUS_SYMBOL likeOrWhere?
@@ -2117,11 +2119,11 @@ showStatement:
 
 showCommandType:
     FULL_SYMBOL
-    | {serverVersion >= 80000}? EXTENDED_SYMBOL FULL_SYMBOL?
+    | {this.serverVersion >= 80000}? EXTENDED_SYMBOL FULL_SYMBOL?
 ;
 
 nonBlocking:
-    {serverVersion >= 50700 && serverVersion < 50706}? NONBLOCKING_SYMBOL?
+    {this.serverVersion >= 50700 && this.serverVersion < 50706}? NONBLOCKING_SYMBOL?
     | /* empty */
 ;
 
@@ -2162,7 +2164,7 @@ otherAdministrativeStatement:
     )
     | type = KILL_SYMBOL (CONNECTION_SYMBOL | QUERY_SYMBOL)? expr
     | type = LOAD_SYMBOL INDEX_SYMBOL INTO_SYMBOL CACHE_SYMBOL preloadTail
-    | {serverVersion >= 50709}? type = SHUTDOWN_SYMBOL
+    | {this.serverVersion >= 50709}? type = SHUTDOWN_SYMBOL
 ;
 
 keyCacheListOrParts:
@@ -2205,8 +2207,8 @@ flushOption:
     )
     | logType? option = LOGS_SYMBOL
     | option = RELAY_SYMBOL LOGS_SYMBOL channel?
-    | {serverVersion < 80000}? option = QUERY_SYMBOL CACHE_SYMBOL
-    | {serverVersion >= 50706}? option = OPTIMIZER_COSTS_SYMBOL
+    | {this.serverVersion < 80000}? option = QUERY_SYMBOL CACHE_SYMBOL
+    | {this.serverVersion >= 50706}? option = OPTIMIZER_COSTS_SYMBOL
 ;
 
 logType:
@@ -2225,7 +2227,7 @@ flushTables:
 ;
 
 flushTablesOptions:
-    {serverVersion >= 50606}? FOR_SYMBOL EXPORT_SYMBOL
+    {this.serverVersion >= 50606}? FOR_SYMBOL EXPORT_SYMBOL
     | WITH_SYMBOL READ_SYMBOL LOCK_SYMBOL
 ;
 
@@ -2303,7 +2305,7 @@ utilityStatement:
     | explainCommand
     | helpCommand
     | useCommand
-    | {serverVersion >= 80011}? restartServer
+    | {this.serverVersion >= 80011}? restartServer
 ;
 
 describeCommand:
@@ -2313,23 +2315,23 @@ describeCommand:
 explainCommand:
     (EXPLAIN_SYMBOL | DESCRIBE_SYMBOL | DESC_SYMBOL) (
         // Format must be "traditional" or "json".
-        {serverVersion < 80000}? EXTENDED_SYMBOL
-        | {serverVersion < 80000}? PARTITIONS_SYMBOL
-        | {serverVersion >= 50605}? FORMAT_SYMBOL EQUAL_OPERATOR textOrIdentifier // "JSON", "TRADITIONAL", "TREE"
-        | {serverVersion >= 80018}? ANALYZE_SYMBOL
+        {this.serverVersion < 80000}? EXTENDED_SYMBOL
+        | {this.serverVersion < 80000}? PARTITIONS_SYMBOL
+        | {this.serverVersion >= 50605}? FORMAT_SYMBOL EQUAL_OPERATOR textOrIdentifier // "JSON", "TRADITIONAL", "TREE"
+        | {this.serverVersion >= 80018}? ANALYZE_SYMBOL
     )? explainableStatement
 ;
 
 // Before server version 5.6 only select statements were explainable.
 explainableStatement:
     selectStatement
-    | {serverVersion >= 50603}? (
+    | {this.serverVersion >= 50603}? (
         deleteStatement
         | insertStatement
         | replaceStatement
         | updateStatement
     )
-    | {serverVersion >= 50700}? FOR_SYMBOL CONNECTION_SYMBOL real_ulong_number
+    | {this.serverVersion >= 50700}? FOR_SYMBOL CONNECTION_SYMBOL real_ulong_number
 ;
 
 helpCommand:
@@ -2374,7 +2376,7 @@ compOp:
 predicate:
     bitExpr (
         notRule? predicateOperations
-        | {serverVersion >= 80017}? MEMBER_SYMBOL OF_SYMBOL? simpleExprWithParentheses
+        | {this.serverVersion >= 80017}? MEMBER_SYMBOL OF_SYMBOL? simpleExprWithParentheses
         | SOUNDS_SYMBOL LIKE_SYMBOL bitExpr
     )?
 ;
@@ -2412,8 +2414,8 @@ simpleExpr:
     | literal                                                                                            # simpleExprLiteral
     | PARAM_MARKER                                                                                       # simpleExprParamMarker
     | sumExpr                                                                                            # simpleExprSum
-    | {serverVersion >= 80000}? groupingOperation                                                        # simpleExprGroupingOperation
-    | {serverVersion >= 80000}? windowFunctionCall                                                       # simpleExprWindowingFunction
+    | {this.serverVersion >= 80000}? groupingOperation                                                        # simpleExprGroupingOperation
+    | {this.serverVersion >= 80000}? windowFunctionCall                                                       # simpleExprWindowingFunction
     | simpleExpr CONCAT_PIPES_SYMBOL simpleExpr                                                          # simpleExprConcat
     | op = (PLUS_OPERATOR | MINUS_OPERATOR | BITWISE_NOT_OPERATOR) simpleExpr                            # simpleExprUnary
     | not2Rule simpleExpr                                                                                # simpleExprNot
@@ -2432,54 +2434,54 @@ simpleExpr:
 ;
 
 arrayCast:
-    {serverVersion >= 80017}? ARRAY_SYMBOL
+    {this.serverVersion >= 80017}? ARRAY_SYMBOL
 ;
 
 jsonOperator:
-    {serverVersion >= 50708}? JSON_SEPARATOR_SYMBOL textStringLiteral
-    | {serverVersion >= 50713}? JSON_UNQUOTED_SEPARATOR_SYMBOL textStringLiteral
+    {this.serverVersion >= 50708}? JSON_SEPARATOR_SYMBOL textStringLiteral
+    | {this.serverVersion >= 50713}? JSON_UNQUOTED_SEPARATOR_SYMBOL textStringLiteral
 ;
 
 sumExpr:
     name = AVG_SYMBOL OPEN_PAR_SYMBOL DISTINCT_SYMBOL? inSumExpr CLOSE_PAR_SYMBOL (
-        {serverVersion >= 80000}? windowingClause
+        {this.serverVersion >= 80000}? windowingClause
     )?
     | name = (BIT_AND_SYMBOL | BIT_OR_SYMBOL | BIT_XOR_SYMBOL) OPEN_PAR_SYMBOL inSumExpr CLOSE_PAR_SYMBOL (
-        {serverVersion >= 80000}? windowingClause
+        {this.serverVersion >= 80000}? windowingClause
     )?
-    | {serverVersion >= 80000}? jsonFunction
+    | {this.serverVersion >= 80000}? jsonFunction
     | name = COUNT_SYMBOL OPEN_PAR_SYMBOL ALL_SYMBOL? MULT_OPERATOR CLOSE_PAR_SYMBOL (
-        {serverVersion >= 80000}? windowingClause
+        {this.serverVersion >= 80000}? windowingClause
     )?
     | name = COUNT_SYMBOL OPEN_PAR_SYMBOL (
         ALL_SYMBOL? MULT_OPERATOR
         | inSumExpr
         | DISTINCT_SYMBOL exprList
-    ) CLOSE_PAR_SYMBOL ({serverVersion >= 80000}? windowingClause)?
+    ) CLOSE_PAR_SYMBOL ({this.serverVersion >= 80000}? windowingClause)?
     | name = MIN_SYMBOL OPEN_PAR_SYMBOL DISTINCT_SYMBOL? inSumExpr CLOSE_PAR_SYMBOL (
-        {serverVersion >= 80000}? windowingClause
+        {this.serverVersion >= 80000}? windowingClause
     )?
     | name = MAX_SYMBOL OPEN_PAR_SYMBOL DISTINCT_SYMBOL? inSumExpr CLOSE_PAR_SYMBOL (
-        {serverVersion >= 80000}? windowingClause
+        {this.serverVersion >= 80000}? windowingClause
     )?
     | name = STD_SYMBOL OPEN_PAR_SYMBOL inSumExpr CLOSE_PAR_SYMBOL (
-        {serverVersion >= 80000}? windowingClause
+        {this.serverVersion >= 80000}? windowingClause
     )?
     | name = VARIANCE_SYMBOL OPEN_PAR_SYMBOL inSumExpr CLOSE_PAR_SYMBOL (
-        {serverVersion >= 80000}? windowingClause
+        {this.serverVersion >= 80000}? windowingClause
     )?
     | name = STDDEV_SAMP_SYMBOL OPEN_PAR_SYMBOL inSumExpr CLOSE_PAR_SYMBOL (
-        {serverVersion >= 80000}? windowingClause
+        {this.serverVersion >= 80000}? windowingClause
     )?
     | name = VAR_SAMP_SYMBOL OPEN_PAR_SYMBOL inSumExpr CLOSE_PAR_SYMBOL (
-        {serverVersion >= 80000}? windowingClause
+        {this.serverVersion >= 80000}? windowingClause
     )?
     | name = SUM_SYMBOL OPEN_PAR_SYMBOL DISTINCT_SYMBOL? inSumExpr CLOSE_PAR_SYMBOL (
-        {serverVersion >= 80000}? windowingClause
+        {this.serverVersion >= 80000}? windowingClause
     )?
     | name = GROUP_CONCAT_SYMBOL OPEN_PAR_SYMBOL DISTINCT_SYMBOL? exprList orderClause? (
         SEPARATOR_SYMBOL textString
-    )? CLOSE_PAR_SYMBOL ({serverVersion >= 80000}? windowingClause)?
+    )? CLOSE_PAR_SYMBOL ({this.serverVersion >= 80000}? windowingClause)?
 ;
 
 groupingOperation:
@@ -2591,8 +2593,8 @@ runtimeFunctionCall:
     | name = FORMAT_SYMBOL OPEN_PAR_SYMBOL expr COMMA_SYMBOL expr (COMMA_SYMBOL expr)? CLOSE_PAR_SYMBOL
     | name = MICROSECOND_SYMBOL exprWithParentheses
     | name = MOD_SYMBOL OPEN_PAR_SYMBOL expr COMMA_SYMBOL expr CLOSE_PAR_SYMBOL
-    | {serverVersion < 50607}? name = OLD_PASSWORD_SYMBOL OPEN_PAR_SYMBOL textLiteral CLOSE_PAR_SYMBOL
-    | {serverVersion < 80011}? name = PASSWORD_SYMBOL exprWithParentheses
+    | {this.serverVersion < 50607}? name = OLD_PASSWORD_SYMBOL OPEN_PAR_SYMBOL textLiteral CLOSE_PAR_SYMBOL
+    | {this.serverVersion < 80011}? name = PASSWORD_SYMBOL exprWithParentheses
     | name = QUARTER_SYMBOL exprWithParentheses
     | name = REPEAT_SYMBOL OPEN_PAR_SYMBOL expr COMMA_SYMBOL expr CLOSE_PAR_SYMBOL
     | name = REPLACE_SYMBOL OPEN_PAR_SYMBOL expr COMMA_SYMBOL expr COMMA_SYMBOL expr CLOSE_PAR_SYMBOL
@@ -2602,7 +2604,7 @@ runtimeFunctionCall:
     | name = WEEK_SYMBOL OPEN_PAR_SYMBOL expr (COMMA_SYMBOL expr)? CLOSE_PAR_SYMBOL
     | name = WEIGHT_STRING_SYMBOL OPEN_PAR_SYMBOL expr (
         (AS_SYMBOL CHAR_SYMBOL wsNumCodepoints)? (
-            {serverVersion < 80000}? weightStringLevels
+            {this.serverVersion < 80000}? weightStringLevels
         )?
         | AS_SYMBOL BINARY_SYMBOL wsNumCodepoints
         | COMMA_SYMBOL ulong_number COMMA_SYMBOL ulong_number COMMA_SYMBOL ulong_number
@@ -2611,7 +2613,7 @@ runtimeFunctionCall:
 ;
 
 geometryFunction:
-    {serverVersion < 50706}? name = CONTAINS_SYMBOL OPEN_PAR_SYMBOL expr COMMA_SYMBOL expr CLOSE_PAR_SYMBOL
+    {this.serverVersion < 50706}? name = CONTAINS_SYMBOL OPEN_PAR_SYMBOL expr COMMA_SYMBOL expr CLOSE_PAR_SYMBOL
     | name = GEOMETRYCOLLECTION_SYMBOL OPEN_PAR_SYMBOL exprList? CLOSE_PAR_SYMBOL
     | name = LINESTRING_SYMBOL exprListWithParentheses
     | name = MULTILINESTRING_SYMBOL exprListWithParentheses
@@ -2626,7 +2628,7 @@ timeFunctionParameters:
 ;
 
 fractionalPrecision:
-    {serverVersion >= 50604}? INT_NUMBER
+    {this.serverVersion >= 50604}? INT_NUMBER
 ;
 
 weightStringLevels:
@@ -2692,8 +2694,8 @@ systemVariable:
 
 internalVariableName: (
         // Check in semantic phase that the first id is not global/local/session/default.
-        {serverVersion < 80017}? identifier dotIdentifier?
-        | {serverVersion >= 80017}? lValueIdentifier dotIdentifier?
+        {this.serverVersion < 80017}? identifier dotIdentifier?
+        | {this.serverVersion >= 80017}? lValueIdentifier dotIdentifier?
     )
     | DEFAULT_SYMBOL dotIdentifier
 ;
@@ -2720,9 +2722,9 @@ castType:
     | TIME_SYMBOL typeDatetimePrecision?
     | DATETIME_SYMBOL typeDatetimePrecision?
     | DECIMAL_SYMBOL floatOptions?
-    | {serverVersion >= 50708}? JSON_SYMBOL
-    | {serverVersion >= 80017}? realType
-    | {serverVersion >= 80017}? FLOAT_SYMBOL standardFloatOptions?
+    | {this.serverVersion >= 50708}? JSON_SYMBOL
+    | {this.serverVersion >= 80017}? realType
+    | {this.serverVersion >= 80017}? FLOAT_SYMBOL standardFloatOptions?
 ;
 
 exprList:
@@ -2804,7 +2806,7 @@ groupingExpression:
 ;
 
 channel:
-    {serverVersion >= 50706}? FOR_SYMBOL CHANNEL_SYMBOL textStringNoLinebreak
+    {this.serverVersion >= 50706}? FOR_SYMBOL CHANNEL_SYMBOL textStringNoLinebreak
 ;
 
 //----------------- Stored routines rules ------------------------------------------------------------------------------
@@ -2947,7 +2949,7 @@ leaveStatement:
 ;
 
 getDiagnostics:
-    GET_SYMBOL (CURRENT_SYMBOL | {serverVersion >= 50700}? STACKED_SYMBOL)? DIAGNOSTICS_SYMBOL (
+    GET_SYMBOL (CURRENT_SYMBOL | {this.serverVersion >= 50700}? STACKED_SYMBOL)? DIAGNOSTICS_SYMBOL (
         statementInformationItem (COMMA_SYMBOL statementInformationItem)*
         | CONDITION_SYMBOL signalAllowedExpr conditionInformationItem (
             COMMA_SYMBOL conditionInformationItem
@@ -3029,7 +3031,7 @@ columnDefinition:
 ;
 
 checkOrReferences:
-    {serverVersion < 80016}? checkConstraint
+    {this.serverVersion < 80016}? checkConstraint
     | references
 ;
 
@@ -3048,7 +3050,7 @@ tableConstraintDef:
     | constraintName? (
         (type = PRIMARY_SYMBOL KEY_SYMBOL | type = UNIQUE_SYMBOL keyOrIndex?) indexNameAndType? keyListVariants indexOption*
         | type = FOREIGN_SYMBOL KEY_SYMBOL indexName? keyList references
-        | checkConstraint ({serverVersion >= 80017}? constraintEnforcement)?
+        | checkConstraint ({this.serverVersion >= 80017}? constraintEnforcement)?
     )
 ;
 
@@ -3059,23 +3061,23 @@ constraintName:
 fieldDefinition:
     dataType (
         columnAttribute*
-        | {serverVersion >= 50707}? collate? (GENERATED_SYMBOL ALWAYS_SYMBOL)? AS_SYMBOL exprWithParentheses (
+        | {this.serverVersion >= 50707}? collate? (GENERATED_SYMBOL ALWAYS_SYMBOL)? AS_SYMBOL exprWithParentheses (
             VIRTUAL_SYMBOL
             | STORED_SYMBOL
         )? (
-            {serverVersion < 80000}? gcolAttribute*
-            | {serverVersion >= 80000}? columnAttribute* // Beginning with 8.0 the full attribute set is supported.
+            {this.serverVersion < 80000}? gcolAttribute*
+            | {this.serverVersion >= 80000}? columnAttribute* // Beginning with 8.0 the full attribute set is supported.
         )
     )
 ;
 
 columnAttribute:
     NOT_SYMBOL? nullLiteral
-    | {serverVersion >= 80014}? NOT_SYMBOL SECONDARY_SYMBOL
+    | {this.serverVersion >= 80014}? NOT_SYMBOL SECONDARY_SYMBOL
     | value = DEFAULT_SYMBOL (
         signedLiteral
         | NOW_SYMBOL timeFunctionParameters?
-        | {serverVersion >= 80013}? exprWithParentheses
+        | {this.serverVersion >= 80013}? exprWithParentheses
     )
     | value = ON_SYMBOL UPDATE_SYMBOL NOW_SYMBOL timeFunctionParameters?
     | value = AUTO_INCREMENT_SYMBOL
@@ -3086,9 +3088,9 @@ columnAttribute:
     | collate
     | value = COLUMN_FORMAT_SYMBOL columnFormat
     | value = STORAGE_SYMBOL storageMedia
-    | {serverVersion >= 80000}? value = SRID_SYMBOL real_ulonglong_number
-    | {serverVersion >= 80017}? constraintName? checkConstraint
-    | {serverVersion >= 80017}? constraintEnforcement
+    | {this.serverVersion >= 80000}? value = SRID_SYMBOL real_ulonglong_number
+    | {this.serverVersion >= 80017}? constraintName? checkConstraint
+    | {this.serverVersion >= 80017}? constraintEnforcement
 ;
 
 columnFormat:
@@ -3147,8 +3149,8 @@ keyPartOrExpression: // key_part_with_expression in sql_yacc.yy.
 ;
 
 keyListVariants:
-    {serverVersion >= 80013}? keyListWithExpression
-    | {serverVersion < 80013}? keyList
+    {this.serverVersion >= 80013}? keyListWithExpression
+    | {this.serverVersion < 80013}? keyList
 ;
 
 indexType:
@@ -3164,7 +3166,7 @@ indexOption:
 commonIndexOption:
     KEY_BLOCK_SIZE_SYMBOL EQUAL_OPERATOR? ulong_number
     | COMMENT_SYMBOL textLiteral
-    | {serverVersion >= 80000}? visibility
+    | {this.serverVersion >= 80000}? visibility
 ;
 
 visibility:
@@ -3230,7 +3232,7 @@ dataType: // type in sql_yacc.yy
     | type = ENUM_SYMBOL stringList charsetWithOptBinary?
     | type = SET_SYMBOL stringList charsetWithOptBinary?
     | type = SERIAL_SYMBOL
-    | {serverVersion >= 50708}? type = JSON_SYMBOL
+    | {this.serverVersion >= 50708}? type = JSON_SYMBOL
     | type = (
         GEOMETRY_SYMBOL
         | GEOMETRYCOLLECTION_SYMBOL
@@ -3289,13 +3291,13 @@ typeDatetimePrecision:
 charsetName:
     textOrIdentifier
     | BINARY_SYMBOL
-    | {serverVersion < 80011}? DEFAULT_SYMBOL
+    | {this.serverVersion < 80011}? DEFAULT_SYMBOL
 ;
 
 collationName:
     textOrIdentifier
-    | {serverVersion < 80011}? DEFAULT_SYMBOL
-    | {serverVersion >= 80018}? BINARY_SYMBOL
+    | {this.serverVersion < 80011}? DEFAULT_SYMBOL
+    | {this.serverVersion >= 80018}? BINARY_SYMBOL
 ;
 
 createTableOptions:
@@ -3308,7 +3310,7 @@ createTableOptionsSpaceSeparated:
 
 createTableOption: // In the order as they appear in the server grammar.
     option = ENGINE_SYMBOL EQUAL_OPERATOR? engineRef
-    | {serverVersion >= 80014}? option = SECONDARY_ENGINE_SYMBOL equal? (
+    | {this.serverVersion >= 80014}? option = SECONDARY_ENGINE_SYMBOL equal? (
         NULL_SYMBOL
         | textOrIdentifier
     )
@@ -3317,8 +3319,8 @@ createTableOption: // In the order as they appear in the server grammar.
     | option = AVG_ROW_LENGTH_SYMBOL EQUAL_OPERATOR? ulong_number
     | option = PASSWORD_SYMBOL EQUAL_OPERATOR? textStringLiteral
     | option = COMMENT_SYMBOL EQUAL_OPERATOR? textStringLiteral
-    | {serverVersion >= 50708}? option = COMPRESSION_SYMBOL EQUAL_OPERATOR? textString
-    | {serverVersion >= 50711}? option = ENCRYPTION_SYMBOL EQUAL_OPERATOR? textString
+    | {this.serverVersion >= 50708}? option = COMPRESSION_SYMBOL EQUAL_OPERATOR? textString
+    | {this.serverVersion >= 50711}? option = ENCRYPTION_SYMBOL EQUAL_OPERATOR? textString
     | option = AUTO_INCREMENT_SYMBOL EQUAL_OPERATOR? ulonglong_number
     | option = PACK_KEYS_SYMBOL EQUAL_OPERATOR? ternaryOption
     | option = (
@@ -3347,7 +3349,7 @@ createTableOption: // In the order as they appear in the server grammar.
     | option = DATA_SYMBOL DIRECTORY_SYMBOL EQUAL_OPERATOR? textString
     | option = INDEX_SYMBOL DIRECTORY_SYMBOL EQUAL_OPERATOR? textString
     | option = TABLESPACE_SYMBOL (
-        {serverVersion >= 50707}? EQUAL_OPERATOR?
+        {this.serverVersion >= 50707}? EQUAL_OPERATOR?
         | /* empty */
     ) identifier
     | option = STORAGE_SYMBOL (DISK_SYMBOL | MEMORY_SYMBOL)
@@ -3394,7 +3396,7 @@ subPartitions:
 ;
 
 partitionKeyAlgorithm: // Actually only 1 and 2 are allowed. Needs a semantic check.
-    {serverVersion >= 50700}? ALGORITHM_SYMBOL EQUAL_OPERATOR real_ulong_number
+    {this.serverVersion >= 50700}? ALGORITHM_SYMBOL EQUAL_OPERATOR real_ulong_number
 ;
 
 partitionDefinitions:
@@ -3522,12 +3524,12 @@ alterUserList:
 createUserEntry: // create_user in sql_yacc.yy
     user (
         IDENTIFIED_SYMBOL (
-            BY_SYMBOL ({serverVersion < 80011}? PASSWORD_SYMBOL)? textString
+            BY_SYMBOL ({this.serverVersion < 80011}? PASSWORD_SYMBOL)? textString
             | WITH_SYMBOL textOrIdentifier (
                 AS_SYMBOL textStringHash
-                | {serverVersion >= 50706}? BY_SYMBOL textString
+                | {this.serverVersion >= 50706}? BY_SYMBOL textString
             )?
-            | {serverVersion >= 80018}? (WITH_SYMBOL textOrIdentifier)? BY_SYMBOL RANDOM_SYMBOL PASSWORD_SYMBOL
+            | {this.serverVersion >= 80018}? (WITH_SYMBOL textOrIdentifier)? BY_SYMBOL RANDOM_SYMBOL PASSWORD_SYMBOL
         )
     )?
 ;
@@ -3587,7 +3589,7 @@ noWriteToBinLog:
 ;
 
 usePartition:
-    {serverVersion >= 50602}? PARTITION_SYMBOL identifierListWithParentheses
+    {this.serverVersion >= 50602}? PARTITION_SYMBOL identifierListWithParentheses
 ;
 
 //----------------- Object names and references ------------------------------------------------------------------------
@@ -3606,8 +3608,8 @@ fieldIdentifier:
 
 columnName:
     // With server 8.0 this became a simple identifier.
-    {serverVersion >= 80000}? identifier
-    | {serverVersion < 80000}? fieldIdentifier
+    {this.serverVersion >= 80000}? identifier
+    | {this.serverVersion < 80000}? fieldIdentifier
 ;
 
 // A reference to a column of the object we are working on.
@@ -3736,7 +3738,7 @@ tableRefWithWildcard:
 ;
 
 tableRef:
-    qualifiedIdentifier
+    schemaName (DOT_SYMBOL qualifiedIdentifier)?
     | dotIdentifier
 ;
 
@@ -3791,7 +3793,7 @@ windowName:
 // Identifiers excluding keywords (except if they are quoted). IDENT_sys in sql_yacc.yy.
 pureIdentifier:
     (IDENTIFIER | BACK_TICK_QUOTED_ID)
-    | {isSqlModeActive(AnsiQuotes)}? DOUBLE_QUOTED_TEXT
+    | {this.isSqlModeActive(SqlMode.AnsiQuotes)}? DOUBLE_QUOTED_TEXT
 ;
 
 // Identifiers including a certain set of keywords, which are allowed also if not quoted.
@@ -3815,7 +3817,7 @@ qualifiedIdentifier:
 
 simpleIdentifier: // simple_ident + simple_ident_q
     identifier (dotIdentifier dotIdentifier?)?
-    | {serverVersion < 80000}? dotIdentifier dotIdentifier
+    | {this.serverVersion < 80000}? dotIdentifier dotIdentifier
 ;
 
 // This rule encapsulates the frequently used dot + identifier sequence, which also requires a special
@@ -3850,7 +3852,7 @@ ulonglong_number:
 
 real_ulonglong_number:
     INT_NUMBER
-    | {serverVersion >= 80017}? HEX_NUMBER
+    | {this.serverVersion >= 80017}? HEX_NUMBER
     | ULONGLONG_NUMBER
     | LONG_NUMBER
 ;
@@ -3878,7 +3880,7 @@ stringList:
 // TEXT_STRING_validated in sql_yacc.yy.
 textStringLiteral:
     value = SINGLE_QUOTED_TEXT
-    | {!isSqlModeActive(AnsiQuotes)}? value = DOUBLE_QUOTED_TEXT
+    | {!this.isSqlModeActive(SqlMode.AnsiQuotes)}? value = DOUBLE_QUOTED_TEXT
 ;
 
 textString:
@@ -3889,7 +3891,7 @@ textString:
 
 textStringHash:
     textStringLiteral
-    | {serverVersion >= 80017}? HEX_NUMBER
+    | {this.serverVersion >= 80017}? HEX_NUMBER
 ;
 
 textLiteral:
@@ -4016,12 +4018,12 @@ setVarIdentType:
 // the rule `ident_keywords_unambiguous`. If they cause grammar conflicts, try
 // one of `ident_keywords_ambiguous_...` rules instead.
 identifierKeyword:
-    {serverVersion < 80017}? (
+    {this.serverVersion < 80017}? (
         labelKeyword
         | roleOrIdentifierKeyword
         | EXECUTE_SYMBOL
-        | {serverVersion >= 50709}? SHUTDOWN_SYMBOL // Previously allowed as SP label as well.
-        | {serverVersion >= 80011}? RESTART_SYMBOL
+        | {this.serverVersion >= 50709}? SHUTDOWN_SYMBOL // Previously allowed as SP label as well.
+        | {this.serverVersion >= 80011}? RESTART_SYMBOL
     )
     | (
         identifierKeywordsUnambiguous
@@ -4088,7 +4090,7 @@ identifierKeywordsAmbiguous2Labels:
 //   ident_keywords_ambiguous_1_roles_and_labels
 //   ident_keywords_ambiguous_2_labels
 labelKeyword:
-    {serverVersion < 80017}? (
+    {this.serverVersion < 80017}? (
         roleOrLabelKeyword
         | EVENT_SYMBOL
         | FILE_SYMBOL
@@ -4499,7 +4501,7 @@ identifierKeywordsUnambiguous:
 //    ident_keywords_ambiguous_1_roles_and_labels
 //    ident_keywords_ambiguous_3_roles
 roleKeyword:
-    {serverVersion < 80017}? (roleOrLabelKeyword | roleOrIdentifierKeyword)
+    {this.serverVersion < 80017}? (roleOrLabelKeyword | roleOrIdentifierKeyword)
     | (
         identifierKeywordsUnambiguous
         | identifierKeywordsAmbiguous2Labels
@@ -4602,8 +4604,8 @@ roleOrIdentifierKeyword:
         | XA_SYMBOL
     )
     // Rules that entered or left this rule in specific versions.
-    | {serverVersion >= 50709}? SHUTDOWN_SYMBOL
-    | {serverVersion >= 80000}? IMPORT_SYMBOL
+    | {this.serverVersion >= 50709}? SHUTDOWN_SYMBOL
+    | {this.serverVersion >= 80000}? IMPORT_SYMBOL
 ;
 
 roleOrLabelKeyword:
@@ -4953,15 +4955,15 @@ roleOrLabelKeyword:
     )
     // Tokens that entered or left this rule in specific versions and are not automatically
     // handled in the lexer.
-    | {serverVersion < 50709}? SHUTDOWN_SYMBOL
-    | {serverVersion < 80000}? (
+    | {this.serverVersion < 50709}? SHUTDOWN_SYMBOL
+    | {this.serverVersion < 80000}? (
         CUBE_SYMBOL
         | IMPORT_SYMBOL
         | FUNCTION_SYMBOL
         | ROWS_SYMBOL
         | ROW_SYMBOL
     )
-    | {serverVersion >= 80000}? (
+    | {this.serverVersion >= 80000}? (
         EXCHANGE_SYMBOL
         | EXPIRE_SYMBOL
         | ONLY_SYMBOL
@@ -4969,5 +4971,5 @@ roleOrLabelKeyword:
         | VALIDATION_SYMBOL
         | WITHOUT_SYMBOL
     )
-    | {serverVersion >= 80014}? ADMIN_SYMBOL
+    | {this.serverVersion >= 80014}? ADMIN_SYMBOL
 ;

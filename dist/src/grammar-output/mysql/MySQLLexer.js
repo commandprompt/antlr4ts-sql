@@ -1,5 +1,5 @@
 "use strict";
-// Generated from grammars/mysql/MySQLLexer.g4 by ANTLR 4.7.3-SNAPSHOT
+// Generated from src/grammars/mysql/MySQLLexer.g4 by ANTLR 4.9.0-SNAPSHOT
 var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
     if (k2 === undefined) k2 = k;
     var desc = Object.getOwnPropertyDescriptor(m, k);
@@ -25,13 +25,36 @@ var __importStar = (this && this.__importStar) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.MySQLLexer = void 0;
+/*
+ * Copyright (c) 2018, 2019, Oracle and/or its affiliates. All rights reserved.
+ *
+ * This program is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License, version 2.0,
+ * as published by the Free Software Foundation.
+ *
+ * This program is also distributed with certain software (including
+ * but not limited to OpenSSL) that is licensed under separate terms, as
+ * designated in a particular file or component or in included license
+ * documentation. The authors of MySQL hereby grant you an additional
+ * permission to link the program and your derivative works with the
+ * separately licensed software that they have included with MySQL.
+ * This program is distributed in the hope that it will be useful, but
+ * WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See
+ * the GNU General Public License, version 2.0, for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program; if not, write to the Free Software Foundation, Inc.,
+ * 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA
+*/
+/* eslint-disable @typescript-eslint/no-unused-vars, no-useless-escape */
+const MySQLBaseLexer_js_1 = require("./MySQLBaseLexer.js");
+const common_1 = require("./common");
 const ATNDeserializer_1 = require("antlr4ts/atn/ATNDeserializer");
 const LexerATNSimulator_1 = require("antlr4ts/atn/LexerATNSimulator");
 const VocabularyImpl_1 = require("antlr4ts/VocabularyImpl");
 const Utils = __importStar(require("antlr4ts/misc/Utils"));
-const MySQLBaseLexer_1 = require("./MySQLBaseLexer");
-const common_1 = require("./common");
-class MySQLLexer extends MySQLBaseLexer_1.MySQLBaseLexer {
+class MySQLLexer extends MySQLBaseLexer_js_1.MySQLBaseLexer {
     // @Override
     // @NotNull
     get vocabulary() {
