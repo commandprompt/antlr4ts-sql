@@ -12,6 +12,8 @@ const PlSqlParser_1 = require("./grammar-output/plsql/PlSqlParser");
 const PlSqlLexer_1 = require("./grammar-output/plsql/PlSqlLexer");
 const SQLiteLexer_1 = require("./grammar-output/sqlite/SQLiteLexer");
 const SQLiteParser_1 = require("./grammar-output/sqlite/SQLiteParser");
+const TSqlParser_1 = require("./grammar-output/tsql/TSqlParser");
+const TSqlLexer_1 = require("./grammar-output/tsql/TSqlLexer");
 class antlr4tsSQL {
     constructor(dialect) {
         this.dialect = dialect;
@@ -31,6 +33,9 @@ class antlr4tsSQL {
         }
         else if (this.dialect === SQLDialect_1.SQLDialect.SQLITE) {
             lexer = new SQLiteLexer_1.SQLiteLexer(chars);
+        }
+        else if (this.dialect === SQLDialect_1.SQLDialect.TSQL) {
+            lexer = new TSqlLexer_1.TSqlLexer(caseChangingCharStream);
         }
         if (errorListeners !== null && errorListeners !== undefined) {
             lexer.removeErrorListener(antlr4ts_1.ConsoleErrorListener.INSTANCE);
@@ -55,6 +60,9 @@ class antlr4tsSQL {
         else if (this.dialect === SQLDialect_1.SQLDialect.SQLITE) {
             parser = new SQLiteParser_1.SQLiteParser(tokens);
         }
+        else if (this.dialect === SQLDialect_1.SQLDialect.TSQL) {
+            parser = new TSqlParser_1.TSqlParser(tokens);
+        }
         if (errorListeners !== null && errorListeners !== undefined) {
             parser.removeErrorListener(antlr4ts_1.ConsoleErrorListener.INSTANCE);
             for (const listener of errorListeners) {
@@ -75,6 +83,9 @@ class antlr4tsSQL {
         }
         else if (parser instanceof SQLiteParser_1.SQLiteParser) {
             return parser.parse();
+        }
+        else if (parser instanceof TSqlParser_1.TSqlParser) {
+            return parser.tsql_file();
         }
         return null;
     }

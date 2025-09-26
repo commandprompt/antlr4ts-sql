@@ -7,5 +7,6 @@ var SQLDialect;
     SQLDialect["PLSQL"] = "PLSQL";
     SQLDialect["PLpgSQL"] = "PLpgSQL";
     SQLDialect["SQLITE"] = "SQLite";
+    SQLDialect["TSQL"] = "TSQL";
 })(SQLDialect = exports.SQLDialect || (exports.SQLDialect = {}));
 //# sourceMappingURL=SQLDialect.js.map
