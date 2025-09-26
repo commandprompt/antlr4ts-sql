@@ -3,4 +3,5 @@ export enum SQLDialect {
   PLSQL = "PLSQL",
   PLpgSQL = "PLpgSQL",
   SQLITE = "SQLite",
+  TSQL = "TSQL",
 }

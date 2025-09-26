@@ -27,3 +27,7 @@ export * from "./src/grammar-output/plsql/PlSqlLexer";
 export * as SQLiteGrammar from "./src/grammar-output/sqlite/SQLiteParser";
 export * from "./src/grammar-output/sqlite/SQLiteParserListener";
 export * from "./src/grammar-output/sqlite/SQLiteLexer";
+
+export * as TSQLGrammar from "./src/grammar-output/tsql/TSqlParser";
+export * from "./src/grammar-output/tsql/TSqlParserListener";
+export * from "./src/grammar-output/tsql/TSqlLexer";

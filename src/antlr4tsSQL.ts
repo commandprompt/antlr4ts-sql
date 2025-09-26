@@ -17,6 +17,8 @@ import { PlSqlParser } from "./grammar-output/plsql/PlSqlParser";
 import { PlSqlLexer } from "./grammar-output/plsql/PlSqlLexer";
 import { SQLiteLexer } from "./grammar-output/sqlite/SQLiteLexer";
 import { SQLiteParser } from "./grammar-output/sqlite/SQLiteParser";
+import { TSqlParser } from "./grammar-output/tsql/TSqlParser";
+import { TSqlLexer } from "./grammar-output/tsql/TSqlLexer";
 
 export class antlr4tsSQL {
   dialect: SQLDialect;
@@ -40,6 +42,8 @@ export class antlr4tsSQL {
       lexer = new MySQLLexer(chars);
     } else if (this.dialect === SQLDialect.SQLITE) {
       lexer =  new SQLiteLexer(chars);
+    } else if (this.dialect === SQLDialect.TSQL) {
+      lexer = new TSqlLexer(caseChangingCharStream);
     }
     if (errorListeners !== null && errorListeners !== undefined) {
       lexer.removeErrorListener(ConsoleErrorListener.INSTANCE);
@@ -64,6 +68,8 @@ export class antlr4tsSQL {
       parser = new MultiQueryMySQLParser(tokens);
     } else if (this.dialect === SQLDialect.SQLITE) {
       parser = new SQLiteParser(tokens);
+    } else if (this.dialect === SQLDialect.TSQL) {
+      parser = new TSqlParser(tokens);
     }
     if (errorListeners !== null && errorListeners !== undefined) {
       parser.removeErrorListener(ConsoleErrorListener.INSTANCE);
@@ -83,6 +89,8 @@ export class antlr4tsSQL {
       return (parser as MultiQueryMySQLParser).sql_script();
     } else if (parser instanceof SQLiteParser) {
       return (parser as SQLiteParser).parse();
+    } else if (parser instanceof TSqlParser) {
+      return parser.tsql_file()
     }
     return null;
   }
